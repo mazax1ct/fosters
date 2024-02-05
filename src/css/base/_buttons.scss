@@ -1,0 +1,63 @@
+.button {
+    align-items: center;
+    border: none;
+    background-color: var(--button_bg);
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: center;
+    height: 65px;
+    line-height: 1.4;
+    text-decoration: none;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    user-select: none;
+    white-space: nowrap;
+    width: 100%;
+    @media(min-width: $fhd) {
+        font-size: 20px;
+    }
+
+    svg {
+        fill: #fff;
+        height: 24px;
+        transition: fill 0.3s;
+        width: 24px;
+    }
+
+    &--bordered {
+        background-color: #fff;
+        border: 1px solid #000;
+        color: var(--black);
+
+        svg {
+            fill: var(--black);
+        }
+    }
+
+    &.disabled,
+    &:disabled,
+    &[data-disabled] {
+        cursor: default;
+        opacity: 0.6;
+        pointer-events: none;
+
+        &::after {
+            display: none;
+        }
+    }
+
+    &:not(.disabled),
+    &:not(:disabled),
+    &:not([data-disabled]) {
+        @include hover {
+            color: #fff;
+            background-color: var(--black);
+
+            svg {
+                fill: #fff;
+            }
+        }
+    }
+}
