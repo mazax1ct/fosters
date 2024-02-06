@@ -4,6 +4,7 @@
     position: relative;
     z-index: 1;
     @media(min-width: $hd) {
+        padding-top: 60px;
         padding-bottom: 35px;
     }
 
@@ -18,34 +19,22 @@
     }
 
     &__logo {
-        color: var(--text_color);
-        display: block;
-        font-family: var(--secondary_font_family);
-        margin-bottom: 20px;
-        text-decoration: none;
-        width: 140px;
-        @media(min-width: $sm) {
-            width: 190px;
-        }
+        margin-bottom: 15px;
         @media(min-width: $md) {
-            margin-bottom: 50px;
+            margin-bottom: 30px;
         }
-        @media(min-width: $fhd) {
-            width: 250px;
+        @media(min-width: $hd) {
+            margin-bottom: 50px;
         }
 
         svg {
             display: block;
             fill: currentColor;
-            height: 22px;
-            width: 140px;
-            @media(min-width: $sm) {
-                height: 30px;
-                width: 190px;
-            }
+            height: 45px;
+            width: 295px;
             @media(min-width: $fhd) {
-                height: 38px;
-                width: 250px;
+                height: 70px;
+                width: 458px;
             }
         }
     }
@@ -92,8 +81,8 @@
         text-transform: uppercase;
         z-index: 1;
         @media(max-width: $md - 0.01px) {
-            padding-top: 10px;
-            padding-bottom: 10px;
+            padding-top: 15px;
+            padding-bottom: 15px;
         }
         @media(min-width: $md) {
             margin-bottom: 15px;
@@ -102,10 +91,10 @@
             font-size: 18px;
         }
         @media(min-width: $lg) {
-            font-size: 20px;
+            font-size: 22px;
         }
         @media(min-width: $fhd) {
-            font-size: 24px;
+            font-size: 28px;
             margin-bottom: 25px;
         }
 
@@ -136,8 +125,7 @@
         @include list-reset;
         display: none;
         @media(max-width: $md - 0.01px) {
-            padding-bottom: 10px;
-            padding-left: 25%;
+            padding-bottom: 25px;
         }
         @media(min-width: $md) {
             display: block !important;
@@ -147,15 +135,11 @@
     &__menu-link {
         color: var(--footer_menu_color);
         display: block;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         text-decoration: none;
         @include hover {
             color: var(--primary_color);
-        }
-        @media(min-width: $md) {
-            padding-top: 10px;
-            padding-bottom: 10px;
         }
     }
 

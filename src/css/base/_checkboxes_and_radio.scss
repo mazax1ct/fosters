@@ -1,5 +1,6 @@
 .checkbox {
     align-items: center;
+    color: var(--secondary_color_dark);
     display: flex;
 
     input {
@@ -10,7 +11,8 @@
         width: 1px;
 
         &:checked ~ .checkbox__icon {
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M19.6,23.2H4.4c-1.9,0-3.5-1.5-3.5-3.4V4.2c0-1.9,1.6-3.4,3.5-3.4h13.8c0.3,0,0.5,0.2,0.5,0.5s-0.2,0.5-0.5,0.5H4.4C3,1.8,1.9,2.9,1.9,4.2v15.5c0,1.3,1.1,2.4,2.5,2.4h15.3c1.4,0,2.5-1.1,2.5-2.4v-8.3c0-0.3,0.2-0.5,0.5-0.5s0.5,0.2,0.5,0.5v8.3C23.1,21.6,21.6,23.2,19.6,23.2z'/%3E%3Cpath d='M11.6,15.9L11.6,15.9c-0.1,0-0.3-0.1-0.4-0.2l-5-5.2C6,10.3,6,10,6.2,9.8c0.2-0.2,0.5-0.2,0.7,0l4.7,4.8L22.5,3.4c0.2-0.2,0.5-0.2,0.7,0c0.2,0.2,0.2,0.5,0,0.7L12,15.7C11.9,15.8,11.8,15.9,11.6,15.9z'/%3E%3C/svg%3E");
+            background-color: var(--primary_color);
+            border-color: var(--primary_color);
         }
 
         &:not(:disabled) ~ .checkbox__icon {
@@ -25,19 +27,16 @@
     }
 
     &__icon {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M19.6,23.1H4.4c-1.9,0-3.5-1.6-3.5-3.5V4.4c0-1.9,1.6-3.5,3.5-3.5h15.3c1.9,0,3.5,1.6,3.5,3.5v15.3C23.1,21.6,21.6,23.1,19.6,23.1z M4.4,1.9C3,1.9,1.9,3,1.9,4.4v15.3c0,1.4,1.1,2.5,2.5,2.5h15.3c1.4,0,2.5-1.1,2.5-2.5V4.4c0-1.4-1.1-2.5-2.5-2.5H4.4z'/%3E%3C/svg%3E%0A");
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
+        border: 1px solid var(--primary_color);
         display: block;
-        height: 24px;
-        min-width: 24px;
-        margin-right: 16px;
-        width: 24px;
+        height: 20px;
+        margin-right: 10px;
+        min-width: 20px;
+        width: 20px;
         @media(min-width: $fhd) {
-            height: 28px;
-            min-width: 28px;
-            width: 28px;
+            height: 30px;
+            min-width: 30px;
+            width: 30px;
         }
     }
 }

@@ -26,39 +26,6 @@
         }
     }
 
-    &__logo {
-        @include active-area;
-        color: var(--text_color);
-        font-family: var(--secondary_font_family);
-        position: relative;
-        text-decoration: none;
-        width: 140px;
-        z-index: 1;
-        @media(min-width: $sm) {
-            width: 190px;
-        }
-        @media(min-width: $fhd) {
-            width: 250px;
-        }
-        @include hover {
-            color: var(--text_color);
-        }
-
-        svg {
-            display: block;
-            height: 22px;
-            width: 140px;
-            @media(min-width: $sm) {
-                height: 30px;
-                width: 190px;
-            }
-            @media(min-width: $fhd) {
-                height: 38px;
-                width: 250px;
-            }
-        }
-    }
-
     &__right-block {
         display: flex;
         gap: 25px;
@@ -70,7 +37,7 @@
         }
         @media(min-width: $fhd) {
             gap: 30px;
-            min-width: 250px;
+            min-width: 388px;
         }
     }
 
@@ -107,6 +74,35 @@
                 width: 30px;
             }
         }
+    }
+}
+
+.header-logo {
+    display: flex;
+
+    &__icon {
+        height: 45px;
+        width: 52px;
+        @media(min-width: $fhd) {
+            height: 60px;
+            width: 70px;
+        }
+    }
+
+    &__text {
+        display: none;
+        height: 45px;
+        width: 243px;
+        @media(min-width: $sm) {
+            display: block;
+        }
+        @media(min-width: $fhd) {
+            height: 60px;
+            width: 318px;
+        }
+    }
+    @include hover {
+        color: var(--text_color);
     }
 }
 
@@ -174,6 +170,7 @@
         svg {
             fill: currentColor;
             height: 25px;
+            margin-top: 8px;
             width: 25px;
             @media(min-width: $hd) {
                 display: none;

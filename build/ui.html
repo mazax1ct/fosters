@@ -28,136 +28,363 @@
 
 <body class="page">
     <div class="page__content">
-        <div class="container">
-            <form action="" style="margin-bottom: 32px;">
-                <div class="form-group" style="margin-bottom: 32px;">
-                    <label class="form-label" for="email">Email <span class="required">*</span></label>
-                    <input id="email" class="input" type="text" value="" name="email" placeholder="example@mail.ru">
+        <header class="header compensate-for-scrollbar">
+            <div class="header__inner container">
+                <a class="header-logo" href="#" title="FOSTERS PC">
+                    <svg class="header-logo__icon" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#logo_icon" />
+                    </svg>
+                    <svg class="header-logo__text" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#logo_text" />
+                    </svg>
+                </a>
+        
+                <nav class="main-menu">
+                    <ul class="main-menu__list">
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">
+                                <span>Компания</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">
+                                <span>Компьютеры</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">
+                                <span>Конфигуратор</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">
+                                <span>Периферия</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">
+                                <span>Клиентам</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+        
+                <div class="header__right-block">
+                    <button class="js-theme-toggler header__link" type="button" title="Переключить на тёмную тему">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#moon" />
+                        </svg>
+                    </button>
+                    <a class="header__link" href="personal.html" title="Личный кабинет">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#user" />
+                        </svg>
+                    </a>
+                    <a class="header__link" href="cart.html" title="Корзина">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#cart" />
+                        </svg>
+                    </a>
+                    <button class="js-main-menu-toggler header__link header__link--burger" type="button" title="Открыть меню">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#burger" />
+                        </svg>
+                    </button>
                 </div>
-
-                <div class="form-group" style="margin-bottom: 32px;">
-                    <label class="form-label" for="email">Email <span class="required">*</span></label>
-                    <input id="email" class="input error" type="text" value="example@mail.ru" name="email" placeholder="example@mail.ru">
-                    <div class="error-text">Правильный формат ввода email: login@example.com</div>
-                </div>
-
-                <div class="form-group disabled" style="margin-bottom: 32px;">
-                    <label class="form-label" for="email">Email <span class="required">*</span></label>
-                    <input id="email" class="input" type="text" value="" name="email" placeholder="example@mail.ru" disabled>
-                </div>
-
-                <div class="form-group" style="margin-bottom: 32px;">
-                    <label class="form-label" for="email">Email <span class="required">*</span></label>
-                    <input id="email" class="input input--filled" type="text" value="" name="email" placeholder="example@mail.ru">
-                </div>
-
-                <label class="checkbox">
-                    <input type="checkbox" name="" value="">
-                    <span class="checkbox__icon"></span>
-                    <span class="checkbox__text">Я согласен с <a href="#">политикой конфиденциальности</a> и на обработку персональных данных</span>
-                </label>
-
-                <button class="button" type="button" style="margin-bottom: 32px;">Войти</button>
-
-                <button class="button" type="button" style="margin-bottom: 32px;" disabled>Войти</button>
-
-                <button class="button button--bordered" type="button" style="margin-bottom: 32px;">Войти</button>
-
-                <button class="button button--bordered" type="button" disabled>Войти</button>
-            </form>
-
-            <a class="button" href="#" style="margin-bottom: 32px;">Ссылка кнопка</a>
-
-            <a class="button button--bordered" href="#" style="margin-bottom: 32px;">Ссылка кнопка</a>
-
-            <button class="button" type="button" title="Добавить в избранное" style="width: 65px">
-                <svg aria-hidden="true">
-                    <use xlink:href="images/sprite.svg#favorite" />
-                </svg>
-            </button>
-
-            <button class="button button--bordered" type="button" title="Добавить в избранное" style="width: 65px">
-                <svg aria-hidden="true">
-                    <use xlink:href="images/sprite.svg#favorite" />
-                </svg>
-            </button>
-            <br>
-            <br>
-            <br>
-            <div class="responsive-table">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>SIZE</th>
-                            <th>ГРУДЬ</th>
-                            <th>ТАЛИЯ</th>
-                            <th>БЁДРА</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>XS</td>
-                            <td>64-68</td>
-                            <td>54-59</td>
-                            <td>66-73</td>
-                        </tr>
-                        <tr>
-                            <td>S</td>
-                            <td>68-74</td>
-                            <td>59-63</td>
-                            <td>73-79</td>
-                        </tr>
-                        <tr>
-                            <td>M</td>
-                            <td>74-78</td>
-                            <td>63-67</td>
-                            <td>79-84</td>
-                        </tr>
-                        <tr>
-                            <td>L</td>
-                            <td>78-85</td>
-                            <td>67-73</td>
-                            <td>84-90</td>
-                        </tr>
-                        <tr>
-                            <td>XL</td>
-                            <td>85-93</td>
-                            <td>73-80</td>
-                            <td>90-97</td>
-                        </tr>
-                        <tr>
-                            <td>XXL</td>
-                            <td>93-101</td>
-                            <td>80-88</td>
-                            <td>97-103</td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
+        </header>
 
-            <br>
-            <br>
-            <br>
+        <main>
+            <div class="container">
+                <form action="" style="margin-bottom: 32px;">
+                    <div class="form-group">
+                        <label class="form-label">Email*</label>
+                        <input class="input" type="text" value="" name="email" placeholder="example@mail.ru" autocomplete="off">
+                    </div>
 
-            <p>CREAMSHOP – это отечественный street wear-магазин основанный в северной столице в 2008 году и представляющий собственный бренд Anteater.</p>
+                    <div class="form-group">
+                        <label class="form-label">Email*</label>
+                        <input class="input error" type="text" value="example@mail.ru" name="email" placeholder="example@mail.ru" autocomplete="off">
+                        <div class="error-text">Правильный формат ввода email: login@example.com</div>
+                    </div>
 
-            <p>
-                В магазине собрана полная линейка марки: <b>анораки, футболки, брюки, свитшоты, рубашки, куртки, поясные сумки и кепки</b> — она постоянно обновляется за счет новых коллабораций с известными художниками, иллюстраторами и другими
-                участниками
-                уличного движения.
-            </p>
+                    <div class="form-group disabled">
+                        <label class="form-label">Email*</label>
+                        <input class="input" type="text" value="" name="email" placeholder="example@mail.ru" disabled autocomplete="off">
+                    </div>
 
-            <p>Магазин воплощает идею о том, что уличная одежда в своем первозданном виде должна быть доступной. Настоящая уличная одежда далека от массовой моды, она является мерчем уличного сообщества, впитывает дух и энергетику людей.</p>
+                    <label class="form-group">
+                        <input class="input input--underlined" type="text" value="" name="name" placeholder="Ваше имя" autocomplete="off">
+                    </label>
 
-            <p>
-                <b>Бренд Anteater</b> тесно сотрудничает с экстремалами, татуировщиками, граффити-художниками, иллюстраторами, дизайнерами и другими активистами стрит-комьюнити. Продукт постоянно тестируется и совершенствуется благодаря тесному
-                контакту с
-                целевой аудиторией.
-            </p>
-        </div>
+                    <label class="form-group">
+                        <input class="input input--underlined error" type="text" value="example@mail.ru" name="name" placeholder="Ваше имя" autocomplete="off">
+                        <div class="error-text">Правильный формат ввода email: login@example.com</div>
+                    </label>
+
+                    <label class="form-group disabled">
+                        <input class="input input--underlined" type="text" value="" name="name" placeholder="Ваше имя" disabled autocomplete="off">
+                    </label>
+
+                    <label class="checkbox">
+                        <input type="checkbox" name="" value="">
+                        <span class="checkbox__icon"></span>
+                        <span class="checkbox__text">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a></span>
+                    </label>
+
+                    <button class="button" type="button" style="margin-bottom: 32px;">
+                        <span>Войти</span>
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#button_arrow" />
+                        </svg>
+                    </button>
+
+                    <button class="button" type="button" style="margin-bottom: 32px;" disabled>
+                        <span>Войти</span>
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#button_arrow" />
+                        </svg>
+                    </button>
+
+                    <button class="button button--bordered" type="button" style="margin-bottom: 32px;">
+                        <span>Войти</span>
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#button_arrow" />
+                        </svg>
+                    </button>
+
+                    <button class="button button--bordered" type="button" disabled>
+                        <span>Войти</span>
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#button_arrow" />
+                        </svg>
+                    </button>
+                </form>
+
+                <a class="button" href="#" style="margin-bottom: 32px;">
+                    <span>Ссылка кнопка</span>
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#button_arrow" />
+                    </svg>
+                </a>
+
+                <a class="button button--bordered" href="#" style="margin-bottom: 32px;">
+                    <span>Ссылка кнопка</span>
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#button_arrow" />
+                    </svg>
+                </a>
+
+                <br>
+                <br>
+                <br>
+                <div class="responsive-table">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>SIZE</th>
+                                <th>ГРУДЬ</th>
+                                <th>ТАЛИЯ</th>
+                                <th>БЁДРА</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>XS</td>
+                                <td>64-68</td>
+                                <td>54-59</td>
+                                <td>66-73</td>
+                            </tr>
+                            <tr>
+                                <td>S</td>
+                                <td>68-74</td>
+                                <td>59-63</td>
+                                <td>73-79</td>
+                            </tr>
+                            <tr>
+                                <td>M</td>
+                                <td>74-78</td>
+                                <td>63-67</td>
+                                <td>79-84</td>
+                            </tr>
+                            <tr>
+                                <td>L</td>
+                                <td>78-85</td>
+                                <td>67-73</td>
+                                <td>84-90</td>
+                            </tr>
+                            <tr>
+                                <td>XL</td>
+                                <td>85-93</td>
+                                <td>73-80</td>
+                                <td>90-97</td>
+                            </tr>
+                            <tr>
+                                <td>XXL</td>
+                                <td>93-101</td>
+                                <td>80-88</td>
+                                <td>97-103</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <br>
+                <br>
+                <br>
+
+                <p>CREAMSHOP – это отечественный street wear-магазин основанный в северной столице в 2008 году и представляющий собственный бренд Anteater.</p>
+
+                <p>
+                    В магазине собрана полная линейка марки: <b>анораки, футболки, брюки, свитшоты, рубашки, куртки, поясные сумки и кепки</b> — она постоянно обновляется за счет новых коллабораций с известными художниками, иллюстраторами и другими
+                    участниками
+                    уличного движения.
+                </p>
+
+                <p>Магазин воплощает идею о том, что уличная одежда в своем первозданном виде должна быть доступной. Настоящая уличная одежда далека от массовой моды, она является мерчем уличного сообщества, впитывает дух и энергетику людей.</p>
+
+                <p>
+                    <b>Бренд Anteater</b> тесно сотрудничает с экстремалами, татуировщиками, граффити-художниками, иллюстраторами, дизайнерами и другими активистами стрит-комьюнити. Продукт постоянно тестируется и совершенствуется благодаря тесному
+                    контакту с
+                    целевой аудиторией.
+                </p>
+            </div>
+        </main>
     </div>
 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__logo">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#logo" />
+                </svg>
+            </div>
+    
+            <div class="footer__menu">
+                <div class="footer__menu-section">
+                    <div class="footer__menu-title">
+                        Каталог товаров
+                        <button class="js-footer-menu-toggler" type="button">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#arrow_down" />
+                            </svg>
+                        </button>
+                    </div>
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Игровые компьютеры</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Готовые компьютеры</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Аксессуары</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__menu-section">
+                    <div class="footer__menu-title">
+                        Клиентам
+                        <button class="js-footer-menu-toggler" type="button">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#arrow_down" />
+                            </svg>
+                        </button>
+                    </div>
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Доставка</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Оплата</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Гарантия</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Сервис</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Акции</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__menu-section">
+                    <div class="footer__menu-title">
+                        О компании
+                        <button class="js-footer-menu-toggler" type="button">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#arrow_down" />
+                            </svg>
+                        </button>
+                    </div>
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Отзывы</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Договор оферты</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Личный кабинет</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__menu-section">
+                    <div class="footer__menu-title">Социальные сети</div>
+                    <div class="socials">
+                        <a class="social-link" href="#" title="Мы Вконтакте" target="_blank" rel="nofollow noreferrer">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#vk" />
+                            </svg>
+                        </a>
+                        <a class="social-link" href="#" title="Наш Yotube" target="_blank" rel="nofollow noreferrer">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#yt" />
+                            </svg>
+                        </a>
+                        <a class="social-link" href="#" title="Наш WhatsApp" target="_blank" rel="nofollow noreferrer">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#wa" />
+                            </svg>
+                        </a>
+                        <a class="social-link" href="#" title="Наш Telegram" target="_blank" rel="nofollow noreferrer">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#tg" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer__bottom">
+                <p class="footer__copyright">2023 © Fosterspc. Все права защищены.</p>
+                <p class="footer__note">
+                    Fosters и логотип Fosters являются товарными знаками компании ООО "Форсайт Северо-Запад", зарегистрированными в России и других странах. Другие наименования и товарные знаки являются собственностью своих законных
+                    владельцев.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

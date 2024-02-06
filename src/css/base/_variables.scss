@@ -8,10 +8,12 @@ $fhd: 1900px;
 :root {
     --primary_color: #34B7BC;
     --secondary_color: #BEBEBE;
+    --secondary_color_dark: #9B9B9B;
     --body_bg: #fff;
     --text_color: #0E0E0E;
     --title_color: #0E0E0E;
     --footer_menu_color: #565656;
+    --error_color: #E80000;
     --primary_font_family: 'Rawline', Arial, sans-serif;
     --secondary_font_family: 'Wadik', Arial, sans-serif;
     --container_padding: 15px;
@@ -30,7 +32,40 @@ $fhd: 1900px;
     --title_color: #BEBEBE;
     --footer_menu_color: #BEBEBE;
 
+    ::-moz-selection {
+        background: #333;
+        text-shadow: 0 0 white;
+    }
+
+    ::selection {
+        background: #333;
+        text-shadow: 0 0 white;
+    }
+
     .header {
         background-color: #151515;
+    }
+
+    .button,
+    a.button {
+        --text_color: #0E0E0E;
+        @include hover {
+            background-color: #fff !important;
+            border-color: #fff;
+            //color: #0E0E0E;
+        }
+    }
+
+    .disabled {
+        .form-label {
+            opacity: 0.3;
+        }
+    }
+
+    .input {
+        &.disabled,
+        &:disabled {
+            opacity: 0.3;
+        }
     }
 }

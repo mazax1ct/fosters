@@ -19,7 +19,7 @@ html {
     font-size: 14px;
     font-family: var(--primary_font_family);
     font-weight: 500;
-    line-height: 1.1;
+    line-height: 1.5;
     overflow-x: hidden;
     @media(min-width: $hd) {
         font-size: 15px;
@@ -110,6 +110,29 @@ h3 {
     color: var(--title_color);
     font-family: var(--secondary_font_family);
     font-weight: 700;
+    letter-spacing: -2px;
+    margin-top: 0;
+}
+
+.h2,
+h2 {
+    font-size: 28px;
+    line-height: 1;
+    margin-bottom: 15px;
+    @media(min-width: $sm) {
+        font-size: 32px;
+    }
+    @media(min-width: $md) {
+        font-size: 48px;
+        margin-bottom: 25px;
+    }
+    @media(min-width: $hd) {
+        font-size: 56px;
+    }
+    @media(min-width: $fhd) {
+        font-size: 100px;
+        margin-bottom: 35px;
+    }
 }
 
 p {

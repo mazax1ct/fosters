@@ -1,0 +1,13 @@
+.form-group {
+    display: block;
+    margin-bottom: 15px;
+    @media(min-width: $md) {
+        margin-bottom: 20px;
+    }
+    @media(min-width: $hd) {
+        margin-bottom: 25px;
+    }
+    @media(min-width: $fhd) {
+        margin-bottom: 30px;
+    }
+}
