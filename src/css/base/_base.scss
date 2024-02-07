@@ -97,6 +97,7 @@ button {
     transition: color 0.3s;
 
     svg {
+        fill: currentColor;
         transition: fill 0.3s;
     }
 }
@@ -141,6 +142,56 @@ p {
 
     &:last-child {
         margin-bottom: 0;
+    }
+}
+
+.pre-title {
+    --gap: 5px;
+    align-items: flex-end;
+    color: var(--pre_title_color);
+    display: flex;
+    font-size: 6px;
+    font-weight: 700;
+    gap: var(--gap);
+    line-height: 1;
+    margin-bottom: 5px;
+    @media(min-width: $md) {
+        --gap: 20px;
+        font-size: 10px;
+    }
+    @media(min-width: $hd) {
+        font-size: 13px;
+        letter-spacing: -0.5px;
+        margin-bottom: 0;
+    }
+
+    span {
+        background-color: var(--primary_color);
+        min-height: 15px;
+        padding: 5px;
+        width: 27.8%;
+        @media(min-width: $md) {
+            min-height: 20px;
+            padding: 5px 10px;
+            width: calc(25% - var(--gap) * 3 / 4);
+        }
+        @media(min-width: $hd) {
+            min-height: 30px;
+            padding: 7px 10px;
+        }
+    }
+
+    &::after {
+        border-top: 1px solid var(--primary_color);
+        content: '';
+        display: block;
+        flex-grow: 1;
+        @media(min-width: $hd) {
+            border-top-width: 2px;
+        }
+        @media(min-width: $fhd) {
+            border-top-width: 4px;
+        }
     }
 }
 

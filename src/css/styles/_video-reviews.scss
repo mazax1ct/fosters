@@ -1,0 +1,94 @@
+.video-reviews {
+    .slider-navigation {
+        @media(min-width: $hd) {
+            display: none;
+        }
+    }
+
+    .swiper {
+        @extend .cursor-onward;
+    }
+}
+
+.video-review {
+    display: block;
+    max-width: 455px;
+    text-decoration: none;
+    @media(min-width: $hd) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    @include hover {
+        color: var(--tect_color);
+
+        img {
+            transform: scale(1.02);
+        }
+
+        svg {
+            fill: var(--primary_color);
+        }
+    }
+
+    &__title {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 5px;
+        @media(min-width: $hd) {
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+        @media(min-width: $fhd) {
+            font-size: 24px;
+        }
+    }
+
+    &__image {
+        display: block;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+
+        &::after {
+            background-color: rgba(0,0,0,0.3);
+            bottom: 0;
+            content: '';
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 1;
+        }
+    }
+
+    img {
+        display: block;
+        transition: transform 0.3s;
+        transform: scale(1);
+    }
+
+    &__button {
+        @include button-reset;
+        height: 50px;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        width: 50px;
+        z-index: 2;
+        @media(min-width: $fhd) {
+            height: 100px;
+            width: 100px;
+        }
+
+        svg {
+            fill: #fff;
+            height: 50px;
+            width: 50px;
+            @media(min-width: $fhd) {
+                height: 100px;
+                width: 100px;
+            }
+        }
+    }
+}

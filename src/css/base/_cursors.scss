@@ -1,0 +1,54 @@
+.cursor-horizontal-arrows {
+    @media (any-hover: hover) {
+        cursor: url("../images/icons/cursors/horizontal-arrows.svg") 64 64, pointer !important;
+
+        a,
+        button {
+            cursor: inherit;
+        }
+    }
+}
+
+.cursor-details {
+    @media (any-hover: hover) {
+        cursor: url("../images/icons/cursors/details.svg") 64 64, pointer !important;
+
+        a,
+        button {
+            cursor: inherit;
+        }
+    }
+}
+
+.cursor-link {
+    @media (any-hover: hover) {
+        cursor: url("../images/icons/cursors/link.svg") 64 64, pointer !important;
+
+        a,
+        button {
+            cursor: inherit;
+        }
+    }
+}
+
+.cursor-onward {
+    @media (any-hover: hover) {
+        cursor: url("../images/icons/cursors/onward.svg") 64 64, pointer;
+
+        a,
+        button {
+            cursor: inherit;
+        }
+    }
+}
+
+.cursor-vertical-scroll {
+    @media (any-hover: hover) {
+        cursor: url("../images/icons/cursors/vertical-scroll.svg") 64 64, pointer !important;
+
+        a,
+        button {
+            cursor: inherit;
+        }
+    }
+}

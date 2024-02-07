@@ -59,3 +59,42 @@ $(document).on('click', '.js-footer-menu-toggler', function () {
   $(this).closest('.footer__menu-section').find('.footer__menu-list').slideToggle();
   return false;
 });
+
+//аккордеон
+$(document).on('click', '.js-accordion-toggler', function () {
+  $(this).toggleClass('is-active');
+  $(this).closest('.accordion').find('.accordion__body').slideToggle();
+  return false;
+});
+
+if($('.js-video-reviews').length) {
+  const videoReviewsSlider = new Swiper('.js-video-reviews', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    breakpoints: {
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 10
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 10
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+      1200: {
+        slidesPerView: 4,
+      },
+    },
+    pagination: {
+      el: '.js-video-reviews-navigation',
+    },
+    navigation: {
+      nextEl: '.js-video-reviews-next',
+      prevEl: '.js-video-reviews-prev',
+    }
+  });
+}

@@ -1,0 +1,34 @@
+.faq-item {
+    --gap: 20px;
+    gap: var(--gap);
+
+    &__text {
+        @media(min-width: $md) {
+            margin-left: calc(100% / 4 - var(--gap) * 3 / 4 + var(--gap));
+            width: calc(100% / 4 * 2 - var(--gap) * 3 / 4);
+        }
+    }
+
+    &--video {
+        @media(min-width: $md) {
+            display: flex;
+        }
+
+        .faq-item__text {
+            @media(max-width: $md - 0.01px) {
+                margin-bottom: 0.55em;
+            }
+            @media(min-width: $md) {
+                margin-left: calc(100% / 4 - var(--gap) * 3 / 4 + var(--gap));
+                width: calc(100% / 4 - var(--gap) * 3 / 4);
+            }
+        }
+
+        .faq-item__video {
+            @media(min-width: $md) {
+                max-width: 800px;
+                width: calc(100% / 4 * 2 - var(--gap) * 3 / 4);
+            }
+        }
+    }
+}
