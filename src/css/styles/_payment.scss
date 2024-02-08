@@ -1,0 +1,61 @@
+.payment {
+    --gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    @media(min-width: $md) {
+        --gap: 20px;
+    }
+
+    &__item {
+        background-color: var(--primary_color);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        min-height: 110px;
+        padding: 10px;
+        width: calc(100% / 2 - var(--gap) / 2);
+        @media(min-width: $sm) {
+            width: calc(100% / 3 - var(--gap) * 2 / 3);
+        }
+        @media(min-width: $md) {
+            font-size: 18px;
+            padding: 20px;
+            min-height: 160px;
+        }
+        @media(min-width: $hd) {
+            font-size: 20px;
+            min-height: 200px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 24px;
+            min-height: 340px;
+        }
+
+        small {
+            @media(max-width: $sm - 0.01px) {
+                font-size: 10px;
+            }
+        }
+    }
+
+    &__item-num {
+        display: block;
+        font-family: var(--secondary_font_family);
+        font-size: 24px;
+        line-height: 1;
+        margin-bottom: auto;
+        @media(min-width: $sm) {
+            font-size: 32px;
+        }
+        @media(min-width: $md) {
+            font-size: 40px;
+        }
+        @media(min-width: $hd) {
+            font-size: 56px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 70px;
+        }
+    }
+}

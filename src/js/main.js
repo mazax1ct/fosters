@@ -67,6 +67,7 @@ $(document).on('click', '.js-accordion-toggler', function () {
   return false;
 });
 
+//слайдер видео отзывов
 if($('.js-video-reviews').length) {
   const videoReviewsSlider = new Swiper('.js-video-reviews', {
     loop: true,
@@ -95,6 +96,39 @@ if($('.js-video-reviews').length) {
     navigation: {
       nextEl: '.js-video-reviews-next',
       prevEl: '.js-video-reviews-prev',
+    }
+  });
+}
+
+//слайдер отзывов
+if($('.js-reviews').length) {
+  const reviewsSlider = new Swiper('.js-reviews', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    breakpoints: {
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 10
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 10
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+      1200: {
+        slidesPerView: 4,
+      },
+    },
+    pagination: {
+      el: '.js-reviews-navigation',
+    },
+    navigation: {
+      nextEl: '.js-reviews-next',
+      prevEl: '.js-reviews-prev',
     }
   });
 }

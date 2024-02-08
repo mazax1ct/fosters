@@ -18,10 +18,13 @@ $fhd: 1900px;
     --primary_font_family: 'Rawline', Arial, sans-serif;
     --secondary_font_family: 'Wadik', Arial, sans-serif;
     --container_padding: 15px;
-    @media(min-width: $hd) {
+    @media(min-width: $md) {
         --container_padding: 20px;
     }
     --page_section_vertical_gap: 80px;
+    @media(min-width: $hd) {
+        --page_section_vertical_gap: 120px;
+    }
     @media(min-width: $fhd) {
         --page_section_vertical_gap: 200px;
     }
@@ -54,7 +57,15 @@ $fhd: 1900px;
         @include hover {
             background-color: #fff !important;
             border-color: #fff;
-            //color: #0E0E0E;
+        }
+    }
+
+    .to-social {
+        @include hover {
+            .to-social__button {
+                background-color: #fff !important;
+                border-color: #fff;
+            }
         }
     }
 

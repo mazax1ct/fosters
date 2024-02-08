@@ -19,7 +19,7 @@
         flex-direction: column-reverse;
     }
     @include hover {
-        color: var(--tect_color);
+        color: var(--text_color);
 
         img {
             transform: scale(1.02);
