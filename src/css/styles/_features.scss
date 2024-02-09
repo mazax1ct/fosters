@@ -12,12 +12,10 @@
     padding-top: 10px;
     padding-bottom: 10px;
     @media(min-width: $sm) {
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-    @media(min-width: $md) {
         display: flex;
         gap: var(--container_padding);
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
     @media(min-width: $fhd) {
         padding-top: 20px;
@@ -33,8 +31,6 @@
         margin-bottom: 0;
         @media(min-width: $sm) {
             font-size: 16px;
-        }
-        @media(min-width: $md) {
             width: calc(100% / 3 * 2 - var(--container_padding) * 2 / 3);
         }
         @media(min-width: $hd) {
@@ -47,7 +43,7 @@
 
     &__text {
         padding-left: calc(27.8% + 5px);
-        @media(min-width: $md) {
+        @media(min-width: $sm) {
             padding-left: 0;
             width: calc(100% / 3 - var(--container_padding) * 2 / 3);
         }

@@ -1,0 +1,45 @@
+.marquee {
+    align-items: center;
+    background-color: var(--primary_color);
+    color: #fff;
+    display: flex;
+    font-family: var(--secondary_font_family);
+    font-size: 12px;
+    line-height: 1;
+    margin-top: 30px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    overflow: hidden;
+    @media(min-width: $md) {
+        font-size: 16px;
+        margin-top: 50px;
+    }
+    @media(min-width: $fhd) {
+        font-size: 28px;
+        margin-top: 70px;
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+
+    &__inner {
+        animation: marquee 60s linear infinite;
+        white-space: nowrap;
+
+        &::before {
+            content: attr(data-text);
+        }
+
+        &::after {
+            content: attr(data-text);
+        }
+    }
+}
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}

@@ -200,12 +200,12 @@ p {
 
     span {
         background-color: var(--primary_color);
-        min-height: 15px;
-        padding: 2px 5px;
-        width: 27.8%;
+        min-height: 20px;
+        padding: 5px;
+        min-width: 27.8%;
         @media(min-width: $md) {
-            min-height: 20px;
             padding: 5px 10px;
+            min-width: calc(25% - var(--gap) * 3 / 4);
             width: calc(25% - var(--gap) * 3 / 4);
         }
         @media(min-width: $hd) {

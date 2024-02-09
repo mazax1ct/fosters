@@ -1,0 +1,68 @@
+.intro {
+    @media(min-width: $sm) {
+        align-items: center;
+        --gap: 10px;
+        display: flex;
+        gap: var(--gap);
+    }
+    @media(min-width: $md) {
+        --gap: 20px;
+    }
+
+    &__title {
+        align-items: center;
+        display: flex;
+        font-size: 18px;
+        font-weight: 600;
+        gap: 10px;
+        margin-bottom: 15px;
+        @media(min-width: $sm) {
+            display: block;
+            margin-bottom: 0;
+            width: calc(100% / 2 - var(--gap) / 2);
+        }
+        @media(min-width: $hd) {
+            font-size: 24px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 40px;
+        }
+
+        span {
+            font-family: var(--secondary_font_family);
+            font-size: 30px;
+            @media(min-width: $sm) {
+                display: block;
+                font-size: 40px;
+                line-height: 1;
+            }
+            @media(min-width: $md) {
+                font-size: 48px;
+            }
+            @media(min-width: $hd) {
+                font-size: 56px;
+            }
+            @media(min-width: $lg) {
+                font-size: 64px;
+            }
+            @media(min-width: $fhd) {
+                font-size: 100px;
+            }
+        }
+    }
+
+    &__text {
+        @media(min-width: $sm) {
+            width: calc(100% / 2 - var(--gap) / 2);
+        }
+        @media(min-width: $md) {
+            font-size: 16px;
+        }
+        @media(min-width: $hd) {
+            font-size: 24px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 32px;
+        }
+    }
+}

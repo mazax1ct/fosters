@@ -37,6 +37,12 @@
                 font-size: 10px;
             }
         }
+
+        &:nth-child(4) {
+            @media(min-width: $sm) {
+                margin-left: auto;
+            }
+        }
     }
 
     &__item-num {

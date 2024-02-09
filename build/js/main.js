@@ -67,6 +67,40 @@ $(document).on('click', '.js-accordion-toggler', function () {
   return false;
 });
 
+//слайдер готовых проектов
+if($('.js-already').length) {
+  const alreadySlider = new Swiper('.js-already', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    centeredSlides: true,
+    breakpoints: {
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 10
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 10
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+      1200: {
+        slidesPerView: 4,
+      },
+    },
+    pagination: {
+      el: '.js-already-navigation',
+    },
+    navigation: {
+      nextEl: '.js-already-next',
+      prevEl: '.js-already-prev',
+    }
+  });
+}
+
 //слайдер видео отзывов
 if($('.js-video-reviews').length) {
   const videoReviewsSlider = new Swiper('.js-video-reviews', {
