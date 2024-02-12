@@ -3,6 +3,36 @@
     z-index: 1;
 }
 
+.slider {
+    @media(min-width: $hd) {
+        margin-left: calc(0.01px - var(--container_padding));
+        margin-right: calc(0.01px - var(--container_padding));
+    }
+
+    &__link {
+        display: block;
+        overflow: hidden;
+        @include hover {
+            img {
+                transform: scale(1.02);
+            }
+        }
+
+        img {
+            display: block;
+            transition: transform 0.3s;
+            transform: scale(1);
+        }
+    }
+
+    .slider-navigation {
+        @media(min-width: $hd) {
+            padding-left: var(--container_padding);
+            padding-right: var(--container_padding);
+        }
+    }
+}
+
 .slider-navigation {
     align-items: center;
     display: flex;
@@ -41,6 +71,10 @@
         svg {
             height: 20px;
             width: 20px;
+            @media(min-width: $fhd) {
+                height: 30px;
+                width: 30px;
+            }
         }
 
         &.swiper-button-lock {
@@ -80,6 +114,47 @@
             &.swiper-pagination-bullet-active {
                 background-color: var(--primary_color);
             }
+        }
+    }
+}
+
+.main-banner {
+    margin-bottom: 20px;
+    @media(min-width: $hd) {
+        position: relative;
+        z-index: 1;
+    }
+
+    .slider-navigation {
+        @media(min-width: $hd) {
+            left: 0;
+            margin-top: 0;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            z-index: 1;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            @media(min-width: $hd) {
+                color: #fff;
+                border-color: #fff;
+            }
+            @include hover {
+                @media(min-width: $hd) {
+                    background-color: #fff;
+                    border-color: #fff;
+                    color: var(--primary_color);
+                }
+            }
+        }
+    }
+
+    .swiper-pagination {
+        @media(min-width: $hd) {
+            display: none;
         }
     }
 }

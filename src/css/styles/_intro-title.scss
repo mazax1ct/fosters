@@ -1,0 +1,25 @@
+.intro-title {
+    color: var(--primary_color);
+    font-family: var(--secondary_font_family);
+    font-size: clamp(14px, 2.25vw, 44px);
+    line-height: 1;
+    letter-spacing: -1px;
+    text-align: center;
+
+    span {
+        font-size: clamp(38px, 10.6vw, 214px);
+        line-height: 1;
+        white-space: nowrap;
+        @media(min-width: $fhd) {
+            font-size: 214px;
+            letter-spacing: -5px;
+        }
+    }
+}
+
+.to-catalog {
+    text-align: center;
+    @media(min-width: $md) {
+        text-align: right;
+    }
+}

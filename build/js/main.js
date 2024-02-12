@@ -67,6 +67,22 @@ $(document).on('click', '.js-accordion-toggler', function () {
   return false;
 });
 
+//обычный слайдер
+if($('.js-slider').length) {
+  const slider = new Swiper('.js-slider', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+      el: '.js-slider-navigation',
+    },
+    navigation: {
+      nextEl: '.js-slider-next',
+      prevEl: '.js-slider-prev',
+    }
+  });
+}
+
 //слайдер готовых проектов
 if($('.js-already').length) {
   const alreadySlider = new Swiper('.js-already', {
@@ -122,6 +138,7 @@ if($('.js-video-reviews').length) {
       },
       1200: {
         slidesPerView: 4,
+        spaceBetween: 20
       },
     },
     pagination: {
@@ -155,6 +172,7 @@ if($('.js-reviews').length) {
       },
       1200: {
         slidesPerView: 4,
+        spaceBetween: 20
       },
     },
     pagination: {
