@@ -117,6 +117,24 @@ if($('.js-already').length) {
   });
 }
 
+//слайдер периферии
+if($('.js-accessories').length) {
+  if($('body').width() < 768) {
+    const accessoriesSlider = new Swiper('.js-accessories', {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: '.js-accessories-navigation',
+      },
+      navigation: {
+        nextEl: '.js-accessories-next',
+        prevEl: '.js-accessories-prev',
+      }
+    });
+  }
+}
+
 //слайдер видео отзывов
 if($('.js-video-reviews').length) {
   const videoReviewsSlider = new Swiper('.js-video-reviews', {
@@ -184,3 +202,21 @@ if($('.js-reviews').length) {
     }
   });
 }
+
+//аккордеон блока наше производство
+$(document).on('click', '.produce-item', function () {
+  var h = 80;
+  if($('body').width() > 1900){
+    h = 140;
+  }
+  if(!$(this).hasClass('is-open')) {
+    $('.produce-item.is-open').animate({height: h}, 500, function () {
+      $(this).removeClass('is-open');
+    });
+
+    $(this).animate({height: $(this).prop('scrollHeight') + parseInt($(this).css('padding-top'))}, 500, function () {
+      $(this).addClass('is-open');
+    });
+  }
+  return false;
+});
