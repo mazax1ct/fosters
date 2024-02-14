@@ -1,0 +1,105 @@
+.series-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    @media(min-width: $sm) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        --horizontal_gap: 20px;
+        gap: 40px var(--horizontal_gap);
+    }
+    @media(min-width: $md) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media(min-width: $hd) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 60px var(--horizontal_gap);
+    }
+    @media(min-width: $fhd) {
+        gap: 100px var(--horizontal_gap);
+    }
+}
+
+.series-item {
+    @extend .cursor-link;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    @media(max-width: $sm - 0.01px) {
+        max-width: 385px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @include hover {
+        .series-item__image {
+            img {
+                transform: scale(1.02);
+            }
+        }
+    }
+
+    &__pre-title {
+        text-transform: uppercase;
+        white-space: nowrap;
+        @media(min-width: $hd) {
+            display: none;
+        }
+
+        span {
+            width: auto !important;
+        }
+    }
+
+    &__title {
+        align-items: center;
+        display: flex;
+        font-family: var(--secondary_font_family);
+        font-size: 32px;
+        gap: 8px;
+        line-height: 1;
+        letter-spacing: -2px;
+        margin-bottom: 40px;
+        @media(min-width: $md) and (max-width: $xlg - 0.01px) {
+            font-size: 24px;
+        }
+        @media(min-width: $hd) {
+            margin-bottom: 0;
+            order: 1;
+            justify-content: center;
+        }
+
+        svg {
+            height: 14px;
+            margin-top: 4px;
+            width: 20px;
+            @media(max-width: $hd - 0.01px) {
+                display: none;
+            }
+            @media(min-width: $xlg) {
+                height: 18px;
+                width: 32px;
+            }
+            @media(min-width: $fhd) {
+                height: 20px;
+                width: 34px;
+            }
+        }
+    }
+
+    &__image {
+        display: block;
+        margin-bottom: 20px;
+        text-align: center;
+
+        img {
+            transform: scale(1);
+            transition: transform 0.3s;
+        }
+    }
+
+    &__button {
+        @media(min-width: $hd) {
+            display: none;
+        }
+    }
+}

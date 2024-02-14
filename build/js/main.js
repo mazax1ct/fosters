@@ -104,7 +104,7 @@ if($('.js-already').length) {
         spaceBetween: 20
       },
       1200: {
-        slidesPerView: 4,
+        slidesPerView: 4
       },
     },
     pagination: {
@@ -218,5 +218,15 @@ $(document).on('click', '.produce-item', function () {
       $(this).addClass('is-open');
     });
   }
+  return false;
+});
+
+//табы
+$(document).on('click', '.tabs-menu__button', function () {
+  $(this).closest('.tabs').find('.tabs-menu__button.is-active').removeClass('is-active');
+  $(this).addClass('is-active');
+
+  $(this).closest('.tabs').find('.tab.is-active').removeClass('is-active');
+  $(this).closest('.tabs').find('.tab[data-target="'+ $(this).attr('data-target') +'"]').addClass('is-active');
   return false;
 });

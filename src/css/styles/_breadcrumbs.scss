@@ -1,0 +1,26 @@
+.breadcrumbs {
+    @include list-reset;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    gap: 8px;
+    margin-bottom: 10px;
+    @media(min-width: $fhd) {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            &::after {
+                content: '/';
+            }
+        }
+    }
+
+    &__link {
+        color: var(--secondary_color);
+        text-decoration: none;
+    }
+}

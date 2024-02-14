@@ -51,6 +51,14 @@ html {
         &:not(:last-child) {
             margin-bottom: var(--page_section_vertical_gap);
         }
+
+        &--mod_1 {
+            &:not(:last-child) {
+                @media(min-width: $fhd) {
+                    margin-bottom: 120px;
+                }
+            }
+        }
     }
 
     &__section-inner {
@@ -143,14 +151,40 @@ h3 {
     color: var(--title_color);
     font-family: var(--secondary_font_family);
     font-weight: 700;
-    letter-spacing: -2px;
     margin-top: 0;
+}
+
+.h1,
+h1 {
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -4px;
+    margin-bottom: 30px;
+    @media(min-width: $sm) {
+        font-size: 48px;
+    }
+    @media(min-width: $md) {
+        font-size: 56px;
+        margin-bottom: 40px;
+    }
+    @media(min-width: $hd) {
+        font-size: 64px;
+        margin-bottom: 60px;
+    }
+    @media(min-width: $lg) {
+        font-size: 72px;
+    }
+    @media(min-width: $fhd) {
+        font-size: 124px;
+        margin-bottom: 120px;
+    }
 }
 
 .h2,
 h2 {
     font-size: 28px;
     line-height: 1;
+    letter-spacing: -2px;
     margin-bottom: 15px;
     @media(min-width: $sm) {
         font-size: 32px;
@@ -203,6 +237,7 @@ p {
         min-height: 20px;
         padding: 5px;
         min-width: 27.8%;
+        text-align: center;
         @media(min-width: $md) {
             padding: 5px 10px;
             min-width: calc(25% - var(--gap) * 3 / 4);

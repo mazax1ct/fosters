@@ -43,3 +43,13 @@
         transform: translateX(-50%);
     }
 }
+
+.container {
+    .marquee {
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%);
+        width: 100vw;
+        z-index: 1;
+    }
+}
