@@ -37,7 +37,7 @@ html {
 
     &__content {
         flex: 1 0 auto;
-        padding-top: 90px;
+        padding-top: 75px;
         padding-bottom: 80px;
         @media(min-width: $hd) {
             padding-top: 110px;
@@ -156,12 +156,12 @@ h3 {
 
 .h1,
 h1 {
-    font-size: 40px;
+    font-size: 32px;
     line-height: 1;
     letter-spacing: -4px;
     margin-bottom: 30px;
     @media(min-width: $sm) {
-        font-size: 48px;
+        font-size: 40px;
     }
     @media(min-width: $md) {
         font-size: 56px;
@@ -237,7 +237,6 @@ p {
         min-height: 20px;
         padding: 5px;
         min-width: 27.8%;
-        text-align: center;
         @media(min-width: $md) {
             padding: 5px 10px;
             min-width: calc(25% - var(--gap) * 3 / 4);

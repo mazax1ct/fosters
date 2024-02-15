@@ -1,0 +1,247 @@
+.series {
+    .product-intro {
+        margin-bottom: 0;
+    }
+
+    &__inner {
+        @media(min-width: $md) {
+            display: flex;
+            gap: 20px;
+        }
+    }
+
+    &__image {
+        margin-bottom: 20px;
+        padding-top: 20px;
+        text-align: center;
+        @media(min-width: $md) {
+            margin-bottom: 0;
+            width: calc(100% / 2 - 20px / 2);
+        }
+        @media(min-width: $lg) {
+            padding-top: 40px;
+        }
+        @media(min-width: $fhd) {
+            padding-top: 60px;
+        }
+
+        .slider-container {
+            @media(max-width: $fhd - 0.01px) {
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 500px;
+            }
+        }
+    }
+
+    &__info {
+        @media(min-width: $md) {
+            width: calc(100% / 2 - 20px / 2);
+        }
+    }
+
+    &__info-top {
+        border-top: 1px solid var(--primary_color);
+        display: flex;
+        margin-bottom: 30px;
+        @media(min-width: $md) {
+            border-top: none;
+        }
+        @media(min-width: $fhd) {
+            margin-bottom: 90px;
+        }
+
+        & > div {
+            border-left: 1px solid var(--primary_color);
+            padding: 10px 10px 0;
+            width: 50%;
+            @media(min-width: $md) {
+                padding: 20px 20px 0;
+            }
+            @media(min-width: $hd) {
+                border-left-width: 2px;
+            }
+        }
+    }
+
+    &__info-num,
+    &__info-title {
+        @media(max-width: $md - 0.01px) {
+            font-size: 12px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 20px;
+        }
+    }
+
+    &__info-num {
+        @media(min-width: $md) {
+            margin-bottom: 1em;
+        }
+    }
+
+    &__info-val {
+        font-weight: 600;
+        @media(min-width: $hd) {
+            font-size: 16px;
+        }
+        @media(min-width: $lg) {
+            font-size: 18px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 24px;
+        }
+    }
+
+    &__info-table {
+        margin-bottom: 40px;
+
+        p {
+            align-items: center;
+            border-bottom: 1px solid var(--primary_color);
+            display: flex;
+            min-height: 64px;
+            margin-bottom: 0;
+            @media(min-width: $fhd) {
+                min-height: 90px;
+            }
+
+            &:first-child {
+                border-top: 1px solid var(--primary_color);
+            }
+
+            span {
+                padding-top: 10px;
+                padding-bottom: 10px;
+
+                &:nth-child(1) {
+                    width: 21%;
+                    @media(max-width: $sm - 0.01px) {
+                        display: none;
+                    }
+                    @media(min-width: $fhd) {
+                        font-size: 22px;
+                    }
+                }
+
+                &:nth-child(2) {
+                    padding-right: 10px;
+                    @media(max-width: $sm - 0.01px) {
+                        font-weight: 600;
+                        width: 40%;
+                    }
+                    @media(min-width: $sm) {
+                        padding-right: 20px;
+                        width: 32%;
+                    }
+                    @media(min-width: $fhd) {
+                        font-size: 22px;
+                    }
+                }
+
+                &:nth-child(3) {
+                    @media(min-width: $sm) {
+                        align-items: center;
+                        display: flex;
+                        gap: 10px;
+                        justify-content: space-between;
+                        width: 47%;
+                    }
+                    @media(max-width: $sm - 0.01px) {
+                        width: 60%;
+                    }
+
+                    svg {
+                        fill: var(--text_color);
+                        height: 12px;
+                        min-width: 12px;
+                        width: 12px;
+                        @media(min-width: $fhd) {
+                            height: 16px;
+                            min-width: 16px;
+                            width: 16px;
+                        }
+                        @media(max-width: $sm - 0.01px) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__price-block {}
+
+    &__price-container {
+        align-items: center;
+        border-bottom: 1px solid var(--primary_color);
+        display: flex;
+        padding-bottom: 10px;
+    }
+
+    &__price-title {
+        @media(max-width: $sm - 0.01px) {
+            font-weight: 600;
+            width: 40%;
+        }
+        @media(min-width: $sm) {
+            width: 21%;
+        }
+        @media(min-width: $fhd) {
+            font-size: 22px;
+        }
+    }
+
+    &__price {
+        font-size: 16px;
+        font-weight: 700;
+        @media(min-width: $sm) {
+            font-size: 18px;
+            width: 79%;
+        }
+        @media(min-width: $hd) {
+            font-size: 20px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 24px;
+        }
+
+        span {
+            white-space: nowrap;
+        }
+    }
+
+    &__credit {
+        align-items: center;
+        display: flex;
+        gap: 4px;
+        padding-left: 21%;
+        @media(max-width: $sm - 0.01px) {
+            font-size: 12px;
+            padding-left: 40%;
+        }
+
+        a {
+            @include active-area;
+            align-items: center;
+            display: inline-flex;
+            gap: 8px;
+            position: relative;
+            text-decoration: none;
+
+            svg {
+                height: 16px;
+                min-width: 16px;
+                margin-top: 2px;
+                width: 16px;
+            }
+        }
+    }
+
+    &__button-block {
+        margin-top: 40px;
+        @media(max-width: $md - 0.01px) {
+            text-align: center;
+        }
+    }
+}

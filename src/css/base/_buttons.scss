@@ -54,6 +54,19 @@
         }
     }
 
+    &--bordered {
+        background-color: transparent;
+
+        &:not(.disabled),
+        &:not(:disabled),
+        &:not([data-disabled]) {
+            @include hover {
+                background-color: var(--primary_color);
+                color: var(--text_color);
+            }
+        }
+    }
+
     &--w_385 {
         max-width: 385px;
         width: 100%;

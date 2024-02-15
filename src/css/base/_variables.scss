@@ -61,6 +61,14 @@ $fhd: 1900px;
         }
     }
 
+    .button--bordered,
+    a.button--bordered {
+        --text_color: #34B7BC;
+        @include hover {
+            --text_color: #0E0E0E;
+        }
+    }
+
     .to-social {
         @include hover {
             .to-social__button {

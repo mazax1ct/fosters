@@ -230,3 +230,42 @@ $(document).on('click', '.tabs-menu__button', function () {
   $(this).closest('.tabs').find('.tab[data-target="'+ $(this).attr('data-target') +'"]').addClass('is-active');
   return false;
 });
+
+//слайдер изображений серии
+if($('.js-series').length) {
+  const seriesSlider = new Swiper('.js-series', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+      el: '.js-series-navigation',
+    }
+  });
+}
+
+//слайдер карточек готовых компов
+if($('.js-cards-slider').length) {
+  const cardsSlider = new Swiper('.js-cards-slider', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      1024: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 20
+      }
+    },
+    pagination: {
+      el: '.js-cards-slider-navigation',
+    },
+    navigation: {
+      nextEl: '.js-cards-slider-next',
+      prevEl: '.js-cards-slider-prev',
+    }
+  });
+}
