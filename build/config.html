@@ -112,193 +112,200 @@
 
         <main>
             <div class="container">
-                <h1>Полезная информация</h1>
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Готовые компьютеры</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Project one</a>
+                    </li>
+
+                    <li class="breadcrumbs__item">Конфигуратор</li>
+                </ul>
 
                 <section class="page__section">
-                    <div class="video-wide">
-                        <div class="js-video video video--wide">
-                            <a class="js-video__link video__link" href="https://www.youtube.com/watch?v=pOWbR8Lt2Fk" target="_blank">
-                                <img class="video__media" src="images/content/video_wide.jpg" srcset="images/content/video_wide@2x.jpg 2x" alt="" title="" />
-                                <button class="js-video__button video__button" type="button" aria-label="Запустить видео">
-                                    <svg class="video__svg" aria-hidden="true">
-                                        <use xlink:href="images/sprite.svg#play" />
+                    <h1>Project ONE</h1>
+                    <div class="config"></div>
+                </section>
+
+                <section class="page__section">
+                    <p class="pre-title"><span>Ваш улучшенный пк готов</span></p>
+                    <h2>Ваш улучшенный компьютер готов</h2>
+
+                    <div class="image-wide">
+                        <img src="images/content/img_wide.jpg" srcset="images/content/img_wide@2x.jpg 2x" alt="">
+                    </div>
+
+                    <div class="conf-compare">
+                        <div class="conf-compare__tabs">
+                            <div class="conf-compare__tabs-menu">
+                                <button class="conf-compare__tabs-button is-active" type="button" data-target="1">Конфигурация</button>
+                                <button class="conf-compare__tabs-button" type="button" data-target="2">Улучшенная конфигурация</button>
+                            </div>
+
+                            <div class="conf-compare__tab is-active" data-target="1">
+                                <p class="conf-compare__tab-title">Конфигурация</p>
+
+                                <div class="conf-compare__params">
+                                    <p><span>Видеокарта</span> <span>GTX 1650 на 4GB</span></p>
+                                    <p><span>Процессор</span> <span>Intel i3-10100F</span></p>
+                                    <p><span>Материнская плата</span> <span>MSI PRO H410M</span></p>
+                                    <p><span>Оперативная память</span> <span>ADATA XPG на 16GB</span></p>
+                                    <p><span>SSD накопитель</span> <span>Colorful SL500 на 1TB</span></p>
+                                    <p><span>Блок питания</span> <span>Deepcool на 600W</span></p>
+                                    <p><span>Охлаждение</span> <span>PCCooler EX400S</span></p>
+                                </div>
+
+                                <p class="conf-compare__tab-title">Показатели FPS</p>
+
+                                <div class="conf-compare__fps">
+                                    <div class="fps-item">
+                                        <div class="fps-item__image"><img src="images/content/games/img_1.jpg" srcset="images/content/games/img_1@2x.jpg 2x" alt=""></div>
+                                        <div class="fps-item__bar-container">
+                                            <div class="fps-item__bar" style="width: 90%"></div>
+                                            <div class="fps-item__title">Tom Clancy's Rainbow Six Siege</div>
+                                            <div class="fps-item__value">214 <span>FPS</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="fps-item">
+                                        <div class="fps-item__image"><img src="images/content/games/img_2.jpg" srcset="images/content/games/img_2@2x.jpg 2x" alt=""></div>
+                                        <div class="fps-item__bar-container">
+                                            <div class="fps-item__bar" style="width: 80%"></div>
+                                            <div class="fps-item__title">Doom Eternal (2020)</div>
+                                            <div class="fps-item__value">159 <span>FPS</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="fps-item">
+                                        <div class="fps-item__image"><img src="images/content/games/img_3.jpg" srcset="images/content/games/img_3@2x.jpg 2x" alt=""></div>
+                                        <div class="fps-item__bar-container">
+                                            <div class="fps-item__bar" style="width: 50%"></div>
+                                            <div class="fps-item__title">World of Tanks</div>
+                                            <div class="fps-item__value">142 <span>FPS</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="fps-item">
+                                        <div class="fps-item__image"><img src="images/content/games/img_4.jpg" srcset="images/content/games/img_4@2x.jpg 2x" alt=""></div>
+                                        <div class="fps-item__bar-container">
+                                            <div class="fps-item__bar" style="width: 30%"></div>
+                                            <div class="fps-item__title">Destiny 2</div>
+                                            <div class="fps-item__value">140 <span>FPS</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="fps-item">
+                                        <div class="fps-item__image"><img src="images/content/games/img_5.jpg" srcset="images/content/games/img_5@2x.jpg 2x" alt=""></div>
+                                        <div class="fps-item__bar-container">
+                                            <div class="fps-item__bar" style="width: 10%"></div>
+                                            <div class="fps-item__title">Hitman III</div>
+                                            <div class="fps-item__value">95 <span>FPS</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="conf-compare__price-block">
+                                    <p class="conf-compare__price-container">
+                                        <span class="conf-compare__price-title">Цена</span>
+                                        <span class="conf-compare__price"><span>от 112 700 ₽</span></span>
+                                    </p>
+                                    <p class="conf-compare__credit">
+                                        <a href="#">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#question"></use>
+                                            </svg>
+                                            Доступно в кредит
+                                        </a>
+                                    </p>
+                                </div>
+
+                                <a class="button button--w_385" href="#">
+                                    <span>Добавить в корзину</span>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#button_arrow"></use>
                                     </svg>
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="video-caption">
-                        <p>Мы гордимся тем, что имеем собственное производство, где мы контролируем каждый этап создания наших компьютеров, чтобы обеспечить высокое качество и надежность.</p>
-                    </div>
-                </section>
+                                </a>
+                            </div>
 
-                <section class="page__section">
-                    <p class="pre-title"><span>Тестирование</span></p>
-                    <h2>Тестирование</h2>
-                    <div class="page__section-inner">
-                        <div class="page__section-text">
-                            <p>Вы получаете видеоотчет со всеми этапами сборки: от распаковки комплектующих и до финальной упаковки уже готового ПК</p>
-                        </div>
-                
-                        <div class="features">
-                            <div class="feature">
-                                <p class="feature__title">Видео с комплектующими</p>
-                                <div class="feature__text">
-                                    <p>Присылаю вам видео, где показываю все комплектующие, что будут использоваться в вашем ПК. На этом этапе комплектующие запакованы, вы сможете оценить целостность упаковки и заводских пломб</p>
-                                </div>
-                            </div>
-                            <div class="feature">
-                                <p class="feature__title">Видео для оценки внешнего вида</p>
-                                <div class="feature__text">
-                                    <p>После сборки ПК присылаю видео для оценки финального внешнего вида. Вы оцените, как выполнен кабель-менеджмент и полюбуетесь на свой ПК</p>
-                                </div>
-                            </div>
-                            <div class="feature">
-                                <p class="feature__title">Видео с тестами</p>
-                                <div class="feature__text">
-                                    <p>Присылаю видео с тестами стабильности вашего ПК. Вы сможете оценить показатели по нагреву комплектующих и тесты FPS (AIDA64 + FurMark)</p>
-                                </div>
-                            </div>
-                            <div class="feature">
-                                <p class="feature__title">Видео с финальной упаковкой</p>
-                                <div class="feature__text">
-                                    <p>Присылаю видео с финальной упаковкой вашего ПК перед передачей в доставку. У нас вы сможете оценить каждый этап сборки вашего ПК</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                
-                </section>
+                            <div class="conf-compare__tab" data-target="2">
+                                <p class="conf-compare__tab-title">Улучшенная конфигурация</p>
 
-                <section class="page__section">
-                    <p class="pre-title"><span>О доставке</span></p>
-                    <h2>Наша доставка</h2>
-                    <div class="page__section-inner">
-                        <div class="features">
-                            <div class="feature">
-                                <p class="feature__title">Доставка в любой город</p>
-                                <div class="feature__text">
-                                    <p>Доставка по всей стране до двери или до ближайшего к вам пункта выдачи СДЭК</p>
+                                <div class="conf-compare__params">
+                                    <p><span>Видеокарта</span> <span>GTX 1650 на 4GB</span></p>
+                                    <p><span>Процессор</span> <span><span>+800 ₽</span> Intel i3-10100F</span></p>
+                                    <p><span>Материнская плата</span> <span>MSI PRO H410M</span></p>
+                                    <p><span>Оперативная память</span> <span>ADATA XPG на 16GB</span></p>
+                                    <p><span>SSD накопитель</span> <span><span>+800 ₽</span> Colorful SL500 на 1TB</span></p>
+                                    <p><span>Блок питания</span> <span>Deepcool на 600W</span></p>
+                                    <p><span>Охлаждение</span> <span><span>+800 ₽</span> PCCooler EX400S</span></p>
                                 </div>
-                            </div>
-                            <div class="feature">
-                                <p class="feature__title">Надежная упаковка</p>
-                                <div class="feature__text">
-                                    <p>Все компьютеры отправляю в надежной упаковке с пенопластом внутри. Вес ПК в упаковке от 10 до 30 кг, зависит от габаритов ПК</p>
-                                </div>
-                            </div>
-                            <div class="feature">
-                                <p class="feature__title">Страховка груза</p>
-                                <div class="feature__text">
-                                    <p>Если при транспортировке случится поломка, мы заменим неисправные комплектующие и ваша гарантия при этом сохранится</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="page__button-block">
-                            <a class="button button--w_385" href="#">
-                                <span>Подробнее</span>
-                                <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#button_arrow" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </section>
 
-                <section class="page__section">
-                    <p class="pre-title"><span>О гарантии</span></p>
-                    <h2>Наша гарантия</h2>
-                    <div class="page__section-inner">
-                        <div class="page__section-text">
-                            <p>Даем фирменную гарантию на компьютеры, чтобы избавить клиентов от обращения в сервисные центры производителей. Решаем неисправности заменой компонентов на новые</p>
-                        </div>
-                        <div class="guaranty">
-                            <div class="guaranty__item">
-                                <span class="guaranty__item-num">1</span>
-                                <p>Фирменная гарантия до 3 лет</p>
-                            </div>
-                            <div class="guaranty__item">
-                                <span class="guaranty__item-num">2</span>
-                                <p>Каждый ПК перед доставкой проходит все этапы тестирования</p>
-                            </div>
-                            <div class="guaranty__item">
-                                <span class="guaranty__item-num">3</span>
-                                <p>Поддержка в течение гарантийного срока</p>
-                            </div>
-                            <div class="guaranty__item">
-                                <span class="guaranty__item-num">4</span>
-                                <p>Апгрейд компьютера с зачетом компонентов</p>
-                            </div>
-                            <div class="guaranty__item">
-                                <span class="guaranty__item-num">5</span>
-                                <p>Замена компонентов на новые без ремонта</p>
-                            </div>
-                            <div class="guaranty__item guaranty__item--background"></div>
-                        </div>
-                    </div>
-                </section>
+                                <p class="conf-compare__tab-title">Улучшенные показатели FPS</p>
 
-                <section class="page__section">
-                    <p class="pre-title"><span>Комплектация</span></p>
-                    <h2>Вместе с ПК вы получите</h2>
-                    <div class="page__section-inner">
-                        <div class="page__section-text">
-                            <p>Все комплектующие новые, с официальной гарантией. Вы получаете полный комплект вместе со своим ПК</p>
-                        </div>
-                
-                        <div class="features">
-                            <div class="feature">
-                                <p class="feature__title">Чеки</p>
-                                <div class="feature__text">
-                                    <p>Чеки на все комплектующие, подтверждающие официальную гарантию. На видеокарты гарантия 2 года, на блоки питания от 3х лет, на процессоры 3 года, на оперативную память 10 лет и так далее</p>
+                                <div class="conf-compare__fps">
+                                    <div class="fps-item">
+                                        <div class="fps-item__image"><img src="images/content/games/img_1.jpg" srcset="images/content/games/img_1@2x.jpg 2x" alt=""></div>
+                                        <div class="fps-item__bar-container">
+                                            <div class="fps-item__bar fps-item__bar--green" style="width: 95%"></div>
+                                            <div class="fps-item__title">Tom Clancy's Rainbow Six Siege</div>
+                                            <div class="fps-item__value">256 <span>FPS</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="fps-item">
+                                        <div class="fps-item__image"><img src="images/content/games/img_2.jpg" srcset="images/content/games/img_2@2x.jpg 2x" alt=""></div>
+                                        <div class="fps-item__bar-container">
+                                            <div class="fps-item__bar fps-item__bar--green" style="width: 85%"></div>
+                                            <div class="fps-item__title">Doom Eternal (2020)</div>
+                                            <div class="fps-item__value">180 <span>FPS</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="fps-item">
+                                        <div class="fps-item__image"><img src="images/content/games/img_3.jpg" srcset="images/content/games/img_3@2x.jpg 2x" alt=""></div>
+                                        <div class="fps-item__bar-container">
+                                            <div class="fps-item__bar fps-item__bar--green" style="width: 55%"></div>
+                                            <div class="fps-item__title">World of Tanks</div>
+                                            <div class="fps-item__value">163 <span>FPS</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="fps-item">
+                                        <div class="fps-item__image"><img src="images/content/games/img_4.jpg" srcset="images/content/games/img_4@2x.jpg 2x" alt=""></div>
+                                        <div class="fps-item__bar-container">
+                                            <div class="fps-item__bar fps-item__bar--green" style="width: 35%"></div>
+                                            <div class="fps-item__title">Destiny 2</div>
+                                            <div class="fps-item__value">153 <span>FPS</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="fps-item">
+                                        <div class="fps-item__image"><img src="images/content/games/img_5.jpg" srcset="images/content/games/img_5@2x.jpg 2x" alt=""></div>
+                                        <div class="fps-item__bar-container">
+                                            <div class="fps-item__bar fps-item__bar--green" style="width: 15%"></div>
+                                            <div class="fps-item__title">Hitman III</div>
+                                            <div class="fps-item__value">105 <span>FPS</span></div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="feature">
-                                <p class="feature__title">Коробки</p>
-                                <div class="feature__text">
-                                    <p>Коробки от всех комплектующих, что используются в вашей сборке</p>
-                                </div>
-                            </div>
-                            <div class="feature">
-                                <p class="feature__title">Документация</p>
-                                <div class="feature__text">
-                                    <p>Документация от всех комплектующих, что используются в вашей сборке</p>
-                                </div>
-                            </div>
-                            <div class="feature">
-                                <p class="feature__title">Кабели</p>
-                                <div class="feature__text">
-                                    <p>Кабель питания, кабели SATA, дополнительные крепления, Wi-Fi модуль (по вашему желанию)</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
-                <section class="page__section">
-                    <p class="pre-title"><span>Об оплате</span></p>
-                    <h2>Способы оплаты</h2>
-                    <div class="page__section-inner">
-                        <div class="payment">
-                            <div class="payment__item">
-                                <span class="payment__item-num">01</span>
-                                <p>Наличный расчёт в офисе</p>
-                            </div>
-                            <div class="payment__item">
-                                <span class="payment__item-num">02</span>
-                                <p>Безналичный расчёт в офисе</p>
-                            </div>
-                            <div class="payment__item">
-                                <span class="payment__item-num">03</span>
-                                <p>Банковский перевод</p>
-                            </div>
-                            <div class="payment__item">
-                                <span class="payment__item-num">04</span>
-                                <p>Оплата по счёту для юридического лица</p>
-                            </div>
-                            <div class="payment__item">
-                                <span class="payment__item-num">05</span>
-                                <p>Кредит от банка Тинькофф<br> <small>Срок от 3х месяцев до 2х лет</small></p>
+                                <div class="conf-compare__price-block">
+                                    <p class="conf-compare__price-container">
+                                        <span class="conf-compare__price-title">Цена</span>
+                                        <span class="conf-compare__price"><span>от 113 500 ₽</span></span>
+                                    </p>
+                                    <p class="conf-compare__credit">
+                                        <a href="#">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#question"></use>
+                                            </svg>
+                                            Доступно в кредит
+                                        </a>
+                                    </p>
+                                </div>
+
+                                <a class="button button--w_385" href="#">
+                                    <span>Добавить в корзину</span>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#button_arrow"></use>
+                                    </svg>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -311,7 +318,7 @@
                     <div class="faq-list">
                         <div class="accordion">
                             <button class="js-accordion-toggler accordion__toggler" type="button">
-                                <span>Вопрос клиента</span>
+                                <span>Видеокарта</span>
                                 <svg aria-hidden="true">
                                     <use xlink:href="images/sprite.svg#arrow_down" />
                                 </svg>
@@ -339,7 +346,7 @@
                         </div>
                         <div class="accordion">
                             <button class="js-accordion-toggler accordion__toggler" type="button">
-                                <span>Длинный заголовок вопроса для проверки как это будет выглядеть в реале</span>
+                                <span>Материнская плата</span>
                                 <svg aria-hidden="true">
                                     <use xlink:href="images/sprite.svg#arrow_down" />
                                 </svg>
@@ -358,7 +365,89 @@
                         </div>
                         <div class="accordion">
                             <button class="js-accordion-toggler accordion__toggler" type="button">
-                                <span>Вопрос клиента</span>
+                                <span>Процессор</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_down" />
+                                </svg>
+                            </button>
+                            <div class="accordion__body accordion__body--parent">
+                                <div class="accordion">
+                                    <button class="js-accordion-toggler accordion__toggler" type="button">
+                                        <span>Intel i3-10100F</span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#arrow_down" />
+                                        </svg>
+                                    </button>
+                                    <div class="accordion__body">
+                                        <div class="faq-item faq-item--video">
+                                            <div class="faq-item__text">
+                                                <p>Необходимо регулярно проводить чистку компьютера, и наши специалисты с удовольствием проведут полную диагностику и обслуживание, предоставив вам подробный отчет.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio dicta quisquam earum, non voluptatem odit consequatur ipsam, pariatur, est ut ad numquam natus deleniti. Labore aperiam vero enim delectus numquam.</p>
+                                            </div>
+                                            <div class="faq-item__video">
+                                                <div class="js-video video">
+                                                    <a class="js-video__link video__link" href="https://www.youtube.com/watch?v=QvWfoxM-woU" target="_blank">
+                                                        <img class="video__media" src="images/content/video.jpg" srcset="images/content/video@2x.jpg 2x" alt="Видео 1" title="Видео 1" />
+                                                        <button class="js-video__button video__button" type="button" aria-label="Запустить видео">
+                                                            <svg class="video__svg" aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#play" />
+                                                            </svg>
+                                                        </button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion">
+                                    <button class="js-accordion-toggler accordion__toggler" type="button">
+                                        <span>Intel i3-10100F</span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#arrow_down" />
+                                        </svg>
+                                    </button>
+                                    <div class="accordion__body">
+                                        <div class="faq-item">
+                                            <div class="faq-item__text">
+                                                <p>Необходимо регулярно проводить чистку компьютера, и наши специалисты с удовольствием проведут полную диагностику и обслуживание, предоставив вам подробный отчет.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio dicta quisquam earum, non voluptatem odit consequatur ipsam, pariatur, est ut ad numquam natus deleniti. Labore aperiam vero enim delectus numquam.</p>
+                                                <p>Vel libero eligendi odio quis illum impedit repellendus enim ipsa aliquid, quam quia animi adipisci debitis voluptas dolor velit quos asperiores repudiandae.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam harum nostrum consequuntur ut voluptatem, dignissimos commodi perspiciatis aut culpa dolores quod! Labore ipsum molestias aliquam, laudantium maiores
+                                                    sunt
+                                                    consequatur, eaque.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion">
+                                    <button class="js-accordion-toggler accordion__toggler" type="button">
+                                        <span>Intel i3-10100F</span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#arrow_down" />
+                                        </svg>
+                                    </button>
+                                    <div class="accordion__body">
+                                        <div class="faq-item">
+                                            <div class="faq-item__video">
+                                                <div class="js-video video">
+                                                    <a class="js-video__link video__link" href="https://www.youtube.com/watch?v=QvWfoxM-woU" target="_blank">
+                                                        <img class="video__media" src="images/content/video.jpg" srcset="images/content/video@2x.jpg 2x" alt="Видео 1" title="Видео 1" />
+                                                        <button class="js-video__button video__button" type="button" aria-label="Запустить видео">
+                                                            <svg class="video__svg" aria-hidden="true">
+                                                                <use xlink:href="images/sprite.svg#play" />
+                                                            </svg>
+                                                        </button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <button class="js-accordion-toggler accordion__toggler" type="button">
+                                <span>Оперативная память</span>
                                 <svg aria-hidden="true">
                                     <use xlink:href="images/sprite.svg#arrow_down" />
                                 </svg>
@@ -368,9 +457,6 @@
                                     <div class="faq-item__text">
                                         <p>Необходимо регулярно проводить чистку компьютера, и наши специалисты с удовольствием проведут полную диагностику и обслуживание, предоставив вам подробный отчет.</p>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio dicta quisquam earum, non voluptatem odit consequatur ipsam, pariatur, est ut ad numquam natus deleniti. Labore aperiam vero enim delectus numquam.</p>
-                                        <p>Vel libero eligendi odio quis illum impedit repellendus enim ipsa aliquid, quam quia animi adipisci debitis voluptas dolor velit quos asperiores repudiandae.</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam harum nostrum consequuntur ut voluptatem, dignissimos commodi perspiciatis aut culpa dolores quod! Labore ipsum molestias aliquam, laudantium maiores sunt
-                                            consequatur, eaque.</p>
                                     </div>
                                     <div class="faq-item__video">
                                         <div class="js-video video">
@@ -389,35 +475,7 @@
                         </div>
                         <div class="accordion">
                             <button class="js-accordion-toggler accordion__toggler" type="button">
-                                <span>Вопрос клиента</span>
-                                <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#arrow_down" />
-                                </svg>
-                            </button>
-                            <div class="accordion__body">
-                                <div class="faq-item faq-item--video">
-                                    <div class="faq-item__text">
-                                        <p>Необходимо регулярно проводить чистку компьютера, и наши специалисты с удовольствием проведут полную диагностику и обслуживание, предоставив вам подробный отчет.</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio dicta quisquam earum, non voluptatem odit consequatur ipsam, pariatur, est ut ad numquam natus deleniti. Labore aperiam vero enim delectus numquam.</p>
-                                    </div>
-                                    <div class="faq-item__video">
-                                        <div class="js-video video">
-                                            <a class="js-video__link video__link" href="https://www.youtube.com/watch?v=QvWfoxM-woU" target="_blank">
-                                                <img class="video__media" src="images/content/video.jpg" srcset="images/content/video@2x.jpg 2x" alt="Видео 1" title="Видео 1" />
-                                                <button class="js-video__button video__button" type="button" aria-label="Запустить видео">
-                                                    <svg class="video__svg" aria-hidden="true">
-                                                        <use xlink:href="images/sprite.svg#play" />
-                                                    </svg>
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion">
-                            <button class="js-accordion-toggler accordion__toggler" type="button">
-                                <span>Длинный заголовок вопроса для проверки как это будет выглядеть в реале</span>
+                                <span>SSD накопитель</span>
                                 <svg aria-hidden="true">
                                     <use xlink:href="images/sprite.svg#arrow_down" />
                                 </svg>
@@ -436,7 +494,7 @@
                         </div>
                         <div class="accordion">
                             <button class="js-accordion-toggler accordion__toggler" type="button">
-                                <span>Вопрос клиента</span>
+                                <span>Oхлаждение</span>
                                 <svg aria-hidden="true">
                                     <use xlink:href="images/sprite.svg#arrow_down" />
                                 </svg>
@@ -501,6 +559,7 @@
                         </div>
                     </div>
                 </section>
+
             </div>
         </main>
     </div>

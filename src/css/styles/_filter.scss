@@ -1,0 +1,22 @@
+.filter {
+    --gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    margin-bottom: 50px;
+    @media(min-width: $sm) {
+        flex-direction: row;
+    }
+    @media(min-width: $md) {
+        --gap: 20px;
+    }
+
+    .sorting {
+        @media(min-width: $sm) {
+            width: calc(100% / 2 - var(--gap)/2);
+        }
+        @media(min-width: $md) {
+            max-width: 455px;
+        }
+    }
+}

@@ -175,8 +175,9 @@ h1 {
         font-size: 72px;
     }
     @media(min-width: $fhd) {
-        font-size: 124px;
-        margin-bottom: 120px;
+        font-size: 110px;
+        letter-spacing: -8px;
+        margin-bottom: 60px;
     }
 }
 
@@ -201,6 +202,7 @@ h2 {
     }
     @media(min-width: $fhd) {
         font-size: 100px;
+        letter-spacing: -4px;
         margin-bottom: 35px;
     }
 }
@@ -336,4 +338,20 @@ hr {
 
 .text-right {
     text-align: right;
+}
+
+.image-wide {
+    @media(min-width: $hd) {
+        margin-left: calc(0.01px - var(--container_padding));
+        margin-right: calc(0.01px - var(--container_padding));
+    }
+
+    img {
+        display: block;
+        max-height: calc(100vh - 80px);
+        max-width: initial;
+        object-position: center;
+        object-fit: cover;
+        width: 100%;
+    }
 }

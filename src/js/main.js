@@ -63,7 +63,7 @@ $(document).on('click', '.js-footer-menu-toggler', function () {
 //аккордеон
 $(document).on('click', '.js-accordion-toggler', function () {
   $(this).toggleClass('is-active');
-  $(this).closest('.accordion').find('.accordion__body').slideToggle();
+  $(this).closest('.accordion').find('.accordion__body:first').slideToggle();
   return false;
 });
 
@@ -269,3 +269,19 @@ if($('.js-cards-slider').length) {
     }
   });
 }
+
+//тогглер сортировки
+$(document).on('click', '.js-sorting-toggler', function () {
+  if(!$(this).closest('.sorting').hasClass('is-active')) {
+    $(this).closest('.sorting').addClass('is-active');
+    $(this).addClass('is-active');
+    $(this).closest('.sorting').find('.sorting__dropdown').slideToggle();
+  }else {
+    $(this).removeClass('is-active');
+    $(this).closest('.sorting').find('.sorting__dropdown').slideToggle(function () {
+      $(this).closest('.sorting').removeClass('is-active');
+    });
+  }
+
+  return false
+});

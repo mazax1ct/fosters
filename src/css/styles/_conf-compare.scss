@@ -1,0 +1,192 @@
+.conf-compare {
+    margin-top: 15px;
+    @media(min-width: $fhd) {
+        margin-top: 50px;
+    }
+
+    &__tabs {
+        @media(min-width: $sm) {
+            --gap: 20px;
+            display: flex;
+            gap: var(--gap);
+        }
+        @media(min-width: $hd) {
+            --gap: 40px;
+        }
+    }
+
+    &__tabs-menu {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 15px;
+        @media(min-width: $sm) {
+            display: none;
+        }
+    }
+
+    &__tabs-button {
+        @include button-reset;
+        border: 1px solid var(--secondary_color_dark);
+        color: var(--secondary_color);
+        flex-grow: 1;
+        padding: 5px 10px;
+
+        &.is-active {
+            border-color: var(--primary_color);
+            color: var(--text_color);
+        }
+    }
+
+    &__tab {
+        display: none;
+        @media(min-width: $sm) {
+            display: block;
+            width: calc(100% / 2 - var(--gap) / 2);
+        }
+
+        &.is-active {
+            display: block;
+        }
+    }
+
+    &__tab-title {
+        color: var(--secondary_color);
+        @media(min-width: $fhd) {
+            font-size: 22px;
+        }
+    }
+
+    &__params {
+        margin-bottom: 40px;
+
+        p {
+            align-items: center;
+            border-bottom: 1px solid var(--secondary_color);
+            display: flex;
+            min-height: 40px;
+            margin-bottom: 0;
+            @media(min-width: $fhd) {
+                min-height: 50px;
+            }
+
+            &:first-child {
+                border-top: 1px solid var(--secondary_color);
+            }
+
+            & > span {
+                padding-top: 5px;
+                padding-bottom: 5px;
+
+                &:nth-child(1) {
+                    font-weight: 600;
+                    padding-right: 10px;
+                    width: 40%;
+                    @media(min-width: $sm) {
+                        padding-right: 20px;
+                    }
+                }
+
+                &:nth-child(2) {
+                    text-align: right;
+                    width: 60%;
+
+                    span {
+                        color: var(--primary_color);
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+
+    &__fps {
+        margin-bottom: 50px;
+
+        .fps-item {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+            @media(min-width: $sm) {
+                border-bottom: 1px solid var(--secondary_color);
+                padding-bottom: 10px;
+            }
+        }
+    }
+
+    &__price-block {
+        margin-bottom: 20px;
+        @media(min-width: $hd) {
+            width: 50%;
+        }
+    }
+
+    &__price-container {
+        align-items: center;
+        border-bottom: 1px solid var(--secondary_color);
+        display: flex;
+        padding-bottom: 10px;
+    }
+
+    &__price-title {
+        width: 40%;
+        @media(min-width: $fhd) {
+            font-size: 22px;
+        }
+    }
+
+    &__price {
+        font-size: 18px;
+        font-weight: 700;
+        text-align: right;
+        width: 60%;
+        @media(min-width: $sm) {
+            font-size: 20px;
+        }
+        @media(min-width: $hd) {
+            font-size: 24px;
+        }
+        @media(min-width: $lg) {
+            font-size: 28px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 32px;
+        }
+
+        span {
+            white-space: nowrap;
+        }
+    }
+
+    &__credit {
+        align-items: center;
+        display: flex;
+        gap: 4px;
+        justify-content: flex-end;
+        padding-left: 40%;
+        @media(max-width: $sm - 0.01px) {
+            font-size: 12px;
+        }
+
+        a {
+            @include active-area;
+            align-items: center;
+            display: inline-flex;
+            gap: 8px;
+            position: relative;
+            text-decoration: none;
+
+            svg {
+                height: 16px;
+                min-width: 16px;
+                margin-top: 2px;
+                width: 16px;
+            }
+        }
+    }
+
+    .button {
+        @media(min-width: $hd) {
+            width: 50%;
+        }
+    }
+}

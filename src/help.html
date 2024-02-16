@@ -23,23 +23,41 @@
         //= template/header.html
 
         <main>
-            <h1>Полезная информация</h1>
+            <div class="container">
+                <h1>Полезная информация</h1>
 
-            видео
+                <section class="page__section">
+                    <div class="video-wide">
+                        <div class="js-video video video--wide">
+                            <a class="js-video__link video__link" href="https://www.youtube.com/watch?v=pOWbR8Lt2Fk" target="_blank">
+                                <img class="video__media" src="images/content/video_wide.jpg" srcset="images/content/video_wide@2x.jpg 2x" alt="" title="" />
+                                <button class="js-video__button video__button" type="button" aria-label="Запустить видео">
+                                    <svg class="video__svg" aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#play" />
+                                    </svg>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="video-caption">
+                        <p>Мы гордимся тем, что имеем собственное производство, где мы контролируем каждый этап создания наших компьютеров, чтобы обеспечить высокое качество и надежность.</p>
+                    </div>
+                </section>
 
-            //= template/testing.html
+                //= template/testing.html
 
-            //= template/delivery.html
+                //= template/delivery.html
 
-            //= template/guaranty.html
+                //= template/guaranty.html
 
-            //= template/complect.html
+                //= template/complect.html
 
-            //= template/payment.html
+                //= template/payment.html
 
-            //= template/faq.html
+                //= template/faq.html
 
-            //= template/feedback.html
+                //= template/feedback.html
+            </div>
         </main>
     </div>
 

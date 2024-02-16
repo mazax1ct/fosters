@@ -1,0 +1,92 @@
+.sorting {
+    position: relative;
+    z-index: 1;
+
+    &.is-active {
+        z-index: 2;
+    }
+
+    &__toggler {
+        @include button-reset;
+        align-items: center;
+        background-color: var(--body_bg);
+        border: 2px solid var(--primary_color);
+        display: flex;
+        gap: 10px;
+        font-size: 18px;
+        justify-content: space-between;
+        height: 50px;
+        line-height: 1;
+        padding: 15px;
+        width: 100%;
+        @media(min-width: $fhd) {
+            font-size: 24px;
+            height: 60px;
+            padding: 20px;
+        }
+
+        svg {
+            fill: var(--primary_color);
+            height: 24px;
+            min-width: 24px;
+            width: 24px;
+            @media(min-width: $fhd) {
+                height: 30px;
+                min-width: 30px;
+                width: 30px;
+            }
+        }
+
+        &.is-active {
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__dropdown {
+        background-color: var(--body_bg);
+        border: 2px solid var(--primary_color);
+        border-top: none;
+        display: none;
+        left: 0;
+        padding: 0 15px 15px;
+        position: absolute;
+        top: calc(100% - 2px);
+        width: 100%;
+        z-index: 1;
+        @media(min-width: $fhd) {
+            padding: 0 20px 20px;
+        }
+
+        &::before {
+            border-top: 1px solid var(--secondary_color);
+            display: block;
+            content: '';
+            margin-bottom: 15px;
+            width: 100%;
+            @media(min-width: $fhd) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__list {
+        max-height: 300px;
+        overflow-y: auto;
+
+        .checkbox {
+            color: var(--text_color);
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+
+        .checkbox__text {
+            span {
+                color: var(--secondary_color_dark);
+            }
+        }
+    }
+}
