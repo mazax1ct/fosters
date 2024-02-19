@@ -14,8 +14,10 @@
 
     //= template/fonts_preload.html
 
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="plugins_css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="plugins_css/select2.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
 </head>
 
 <body class="page">
@@ -38,10 +40,7 @@
                     <li class="breadcrumbs__item">Конфигуратор</li>
                 </ul>
 
-                <section class="page__section">
-                    <h1>Project ONE</h1>
-                    <div class="config"></div>
-                </section>
+                //= template/config.html
 
                 <section class="page__section">
                     <p class="pre-title"><span>Ваш улучшенный пк готов</span></p>
@@ -54,8 +53,8 @@
                     <div class="conf-compare">
                         <div class="conf-compare__tabs">
                             <div class="conf-compare__tabs-menu">
-                                <button class="conf-compare__tabs-button is-active" type="button" data-target="1">Конфигурация</button>
-                                <button class="conf-compare__tabs-button" type="button" data-target="2">Улучшенная конфигурация</button>
+                                <button class="js-conf-compare conf-compare__tabs-button is-active" type="button" data-target="1">Конфигурация</button>
+                                <button class="js-conf-compare conf-compare__tabs-button" type="button" data-target="2">Улучшенная конфигурация</button>
                             </div>
 
                             <div class="conf-compare__tab is-active" data-target="1">

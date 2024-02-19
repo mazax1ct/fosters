@@ -23,8 +23,10 @@
     <link rel="preload" href="fonts/Rawline/subset-Rawline-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/Wadik/subset-WadikBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="plugins_css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="plugins_css/select2.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
 </head>
 
 <body class="page">
@@ -126,9 +128,547 @@
                     <li class="breadcrumbs__item">Конфигуратор</li>
                 </ul>
 
-                <section class="page__section">
+                <section class="page__section config">
                     <h1>Project ONE</h1>
-                    <div class="config"></div>
+                
+                    <div class="config__inner">
+                        <div class="config__image-block">
+                            <div class="js-config-slider swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="images/content/config/img_1.jpg" srcset="images/content/config/img_1@2x.jpg 2x" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/content/config/img_1.jpg" srcset="images/content/config/img_1@2x.jpg 2x" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/content/config/img_1.jpg" srcset="images/content/config/img_1@2x.jpg 2x" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/content/config/img_1.jpg" srcset="images/content/config/img_1@2x.jpg 2x" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/content/config/img_1.jpg" srcset="images/content/config/img_1@2x.jpg 2x" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div thumbsSlider="" class="js-config-thumbs swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="images/content/config/img_2.jpg" srcset="images/content/config/img_2@2x.jpg 2x" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/content/config/img_2.jpg" srcset="images/content/config/img_2@2x.jpg 2x" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/content/config/img_2.jpg" srcset="images/content/config/img_2@2x.jpg 2x" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/content/config/img_2.jpg" srcset="images/content/config/img_2@2x.jpg 2x" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="images/content/config/img_2.jpg" srcset="images/content/config/img_2@2x.jpg 2x" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="config__config">
+                            <p class="config__title">Комплектующие</p>
+                            <div>
+                                <div class="accordion set-item">
+                                    <button class="js-accordion-toggler accordion__toggler" type="button">
+                                        <span>
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#gpu" />
+                                            </svg>
+                                            Видеокарта
+                                        </span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#arrow_down" />
+                                        </svg>
+                                    </button>
+                                    <div class="accordion__body">
+                                        <div class="set-variants">
+                                            <label class="checkbox set-variant">
+                                                <input type="radio" name="gpu" value="Nvidia GTX 1650">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">
+                                                    <span>Nvidia GTX 1650</span>
+                                                    <span>+800 ₽</span>
+                                                </span>
+                                            </label>
+                                            <label class="checkbox set-variant">
+                                                <input type="radio" name="gpu" value="Nvidia GTX 1660">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">
+                                                    <span>Nvidia GTX 1660</span>
+                                                    <span>+2400 ₽</span>
+                                                </span>
+                                            </label>
+                                            <label class="checkbox set-variant">
+                                                <input type="radio" name="gpu" value="Nvidia GTX 2050">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">
+                                                    <span>Nvidia GTX 2050</span>
+                                                    <span>+3000 ₽</span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion set-item">
+                                    <button class="js-accordion-toggler accordion__toggler" type="button">
+                                        <span>
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#cpu" />
+                                            </svg>
+                                            Процессор
+                                        </span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#arrow_down" />
+                                        </svg>
+                                    </button>
+                                    <div class="accordion__body">
+                                        <div class="set-variants">
+                                            <label class="checkbox set-variant">
+                                                <input type="radio" name="cpu" value="i3-10100F">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">
+                                                    <span>Intel i3-10100F</span>
+                                                    <span>+800 ₽</span>
+                                                </span>
+                                            </label>
+                                            <label class="checkbox set-variant">
+                                                <input type="radio" name="cpu" value="i3-10200F">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">
+                                                    <span>Intel i3-10200F</span>
+                                                    <span>+2400 ₽</span>
+                                                </span>
+                                            </label>
+                                            <label class="checkbox set-variant">
+                                                <input type="radio" name="cpu" value="i3-10300F">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">
+                                                    <span>Intel i3-10300F</span>
+                                                    <span>+3000 ₽</span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion set-item">
+                                    <button class="js-accordion-toggler accordion__toggler" type="button">
+                                        <span>
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#mb" />
+                                            </svg>
+                                            Материнская плата
+                                        </span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#arrow_down" />
+                                        </svg>
+                                    </button>
+                                    <div class="accordion__body">
+                                        <div class="set-variants">
+                                            <label class="checkbox set-variant">
+                                                <input type="radio" name="mb" value="AsRock B450">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">
+                                                    <span>AsRock B450</span>
+                                                    <span>+800 ₽</span>
+                                                </span>
+                                            </label>
+                                            <label class="checkbox set-variant">
+                                                <input type="radio" name="mb" value="MSI B450">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">
+                                                    <span>MSI B450</span>
+                                                    <span>+2400 ₽</span>
+                                                </span>
+                                            </label>
+                                            <label class="checkbox set-variant">
+                                                <input type="radio" name="mb" value="MSI B460">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">
+                                                    <span>MSI B460</span>
+                                                    <span>+3000 ₽</span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion set-item">
+                                    <button class="js-accordion-toggler accordion__toggler" type="button">
+                                        <span>
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#ram" />
+                                            </svg>
+                                            Оперативная память
+                                        </span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#arrow_down" />
+                                        </svg>
+                                    </button>
+                                    <div class="accordion__body">
+                                        <div class="set-variants">
+                                            <label class="checkbox set-variant">
+                                                <input type="radio" name="ram" value="AData 16GB">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">
+                                                    <span>AData 16GB</span>
+                                                    <span>+800 ₽</span>
+                                                </span>
+                                            </label>
+                                            <label class="checkbox set-variant">
+                                                <input type="radio" name="ram" value="Kingston Fury Beast Black KF432C16BBK2/16 DDR4 - 2x 8ГБ 3200МГц, DIMM, Ret">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">
+                                                    <span>Kingston Fury Beast Black KF432C16BBK2/16 DDR4 - 2x 8ГБ 3200МГц, DIMM, Ret</span>
+                                                    <span>+2400 ₽</span>
+                                                </span>
+                                            </label>
+                                            <label class="checkbox set-variant">
+                                                <input type="radio" name="ram" value="Patriot Signature PSD48G320081 DDR4 - 8ГБ 3200МГц, DIMM, Ret">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">
+                                                    <span>Patriot Signature PSD48G320081 DDR4 - 8ГБ 3200МГц, DIMM, Ret</span>
+                                                    <span>+3000 ₽</span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion set-item">
+                                    <button class="js-accordion-toggler accordion__toggler" type="button">
+                                        <span>
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#ssd" />
+                                            </svg>
+                                            SSD накопитель
+                                        </span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#arrow_down" />
+                                        </svg>
+                                    </button>
+                                    <div class="accordion__body">
+                                        <div class="set-variants">
+                                            <label class="checkbox set-variant">
+                                                <input type="radio" name="ssd" value="Kingston A400 SA400S37/480G 480ГБ, 2.5, SATA III, SATA">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">
+                                                    <span>Kingston A400 SA400S37/480G 480ГБ, 2.5", SATA III, SATA</span>
+                                                    <span>+800 ₽</span>
+                                                </span>
+                                            </label>
+                                            <label class="checkbox set-variant">
+                                                <input type="radio" name="ssd" value="KINGSPEC P3-256 256ГБ">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">
+                                                    <span>KINGSPEC P3-256 256ГБ</span>
+                                                    <span>+2400 ₽</span>
+                                                </span>
+                                            </label>
+                                            <label class="checkbox set-variant">
+                                                <input type="radio" name="ssd" value="Samsung 970 EVO Plus MZ-V7S250BW 250ГБ, M.2 2280, PCIe 3.0 x4, NVMe, M.2">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">
+                                                    <span>Samsung 970 EVO Plus MZ-V7S250BW 250ГБ, M.2 2280, PCIe 3.0 x4, NVMe, M.2</span>
+                                                    <span>+3000 ₽</span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion set-item">
+                                    <button class="js-accordion-toggler accordion__toggler" type="button">
+                                        <span>
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#power" />
+                                            </svg>
+                                            Блок питания
+                                        </span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#arrow_down" />
+                                        </svg>
+                                    </button>
+                                    <div class="accordion__body">
+                                        <div class="set-variants">
+                                            <label class="checkbox set-variant">
+                                                <input type="radio" name="power" value="Aerocool VX PLUS 500W, 500Вт, 120мм, черный, retail">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">
+                                                    <span>Aerocool VX PLUS 500W, 500Вт, 120мм, черный, retail</span>
+                                                    <span>+800 ₽</span>
+                                                </span>
+                                            </label>
+                                            <label class="checkbox set-variant">
+                                                <input type="radio" name="power" value="GMNG PSU-650W-80BR, 650Вт, 120мм, черный, retail">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">
+                                                    <span>GMNG PSU-650W-80BR, 650Вт, 120мм, черный, retail</span>
+                                                    <span>+2400 ₽</span>
+                                                </span>
+                                            </label>
+                                            <label class="checkbox set-variant">
+                                                <input type="radio" name="power" value="KINGPRICE KPPSU400, 400Вт, 120мм, черный, retail">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">
+                                                    <span>KINGPRICE KPPSU400, 400Вт, 120мм, черный, retail</span>
+                                                    <span>+3000 ₽</span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion set-item">
+                                    <button class="js-accordion-toggler accordion__toggler" type="button">
+                                        <span>
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#air" />
+                                            </svg>
+                                            Охлаждение
+                                        </span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#arrow_down" />
+                                        </svg>
+                                    </button>
+                                    <div class="accordion__body">
+                                        <div class="set-variants">
+                                            <label class="checkbox set-variant">
+                                                <input type="radio" name="cooler" value="DeepCool Ice Edge Mini FS V2.0, 80мм, Ret">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">
+                                                    <span>DeepCool Ice Edge Mini FS V2.0, 80мм, Ret</span>
+                                                    <span>+800 ₽</span>
+                                                </span>
+                                            </label>
+                                            <label class="checkbox set-variant">
+                                                <input type="radio" name="cooler" value="Zalman CNPS9X Optima, 120мм, Ret">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">
+                                                    <span>Zalman CNPS9X Optima, 120мм, Ret</span>
+                                                    <span>+2400 ₽</span>
+                                                </span>
+                                            </label>
+                                            <label class="checkbox set-variant">
+                                                <input type="radio" name="cooler" value="ID-COOLING SE-214-XT, 120мм, Ret">
+                                                <span class="checkbox__icon"></span>
+                                                <span class="checkbox__text">
+                                                    <span>ID-COOLING SE-214-XT, 120мм, Ret</span>
+                                                    <span>+3000 ₽</span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="js-perf-opener perf-opener" title="Показать производительность сборки">
+                        <div class="container">
+                            <p class="perf-opener__title">Показатели FPS</p>
+                            <div class="perf-opener__fps">
+                                <div class="fps-item">
+                                    <div class="fps-item__image"><img src="images/content/games/img_1.jpg" srcset="images/content/games/img_1@2x.jpg 2x" alt=""></div>
+                                    <div class="fps-item__bar-container">
+                                        <div class="fps-item__bar fps-item__bar--green" style="width: 90%"></div>
+                                        <div class="fps-item__title">Tom Clancy's Rainbow Six Siege</div>
+                                        <div class="fps-item__value">214 <span>FPS</span></div>
+                                    </div>
+                                </div>
+                                <div class="fps-item">
+                                    <div class="fps-item__image"><img src="images/content/games/img_2.jpg" srcset="images/content/games/img_2@2x.jpg 2x" alt=""></div>
+                                    <div class="fps-item__bar-container">
+                                        <div class="fps-item__bar fps-item__bar--green" style="width: 80%"></div>
+                                        <div class="fps-item__title">Doom Eternal (2020)</div>
+                                        <div class="fps-item__value">159 <span>FPS</span></div>
+                                    </div>
+                                </div>
+                                <div class="fps-item">
+                                    <div class="fps-item__image"><img src="images/content/games/img_3.jpg" srcset="images/content/games/img_3@2x.jpg 2x" alt=""></div>
+                                    <div class="fps-item__bar-container">
+                                        <div class="fps-item__bar fps-item__bar--green" style="width: 50%"></div>
+                                        <div class="fps-item__title">World of Tanks</div>
+                                        <div class="fps-item__value">142 <span>FPS</span></div>
+                                    </div>
+                                </div>
+                                <div class="fps-item">
+                                    <div class="fps-item__image"><img src="images/content/games/img_4.jpg" srcset="images/content/games/img_4@2x.jpg 2x" alt=""></div>
+                                    <div class="fps-item__bar-container">
+                                        <div class="fps-item__bar fps-item__bar--green" style="width: 30%"></div>
+                                        <div class="fps-item__title">Destiny 2</div>
+                                        <div class="fps-item__value">140 <span>FPS</span></div>
+                                    </div>
+                                </div>
+                                <div class="fps-item">
+                                    <div class="fps-item__image"><img src="images/content/games/img_5.jpg" srcset="images/content/games/img_5@2x.jpg 2x" alt=""></div>
+                                    <div class="fps-item__bar-container">
+                                        <div class="fps-item__bar fps-item__bar--green" style="width: 10%"></div>
+                                        <div class="fps-item__title">Hitman III</div>
+                                        <div class="fps-item__value">95 <span>FPS</span></div>
+                                    </div>
+                                </div>
+                                <div class="fps-item">
+                                    <div class="fps-item__image"><img src="images/content/games/img_5.jpg" srcset="images/content/games/img_5@2x.jpg 2x" alt=""></div>
+                                    <div class="fps-item__bar-container">
+                                        <div class="fps-item__bar fps-item__bar--green" style="width: 10%"></div>
+                                        <div class="fps-item__title">Hitman III</div>
+                                        <div class="fps-item__value">95 <span>FPS</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <svg class="perf-opener__icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#config_arrow" />
+                            </svg>
+                        </div>
+                    </div>
+                
+                    <div class="perf">
+                        <div class="container">
+                            <button class="js-perf-closer perf__closer" type="button" type="button" title="Скрыть блок производительность сборки">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#config_arrow" />
+                                </svg>
+                            </button>
+                
+                            <p class="perf__title">Производительность</p>
+                
+                            <div class="perf__inner">
+                                <div class="perf__text">
+                                    <p>Здесь вы можете сравнить показатели в играх. Выберете до 6 игр, которые вас интересуют и в моменте, когда вы будете менять комплектующие вашего нового компьютера, показатели FPS в выбранных вами играх будет меняться</p>
+                                </div>
+                
+                                <div class="perf__params">
+                                    <div class="perf__params-block">
+                                        <p class="perf__params-title">Разрешение</p>
+                                        <div class="select-wrapper">
+                                            <select class="js-select">
+                                                <option value="1">FullHD | 1920 x 1080</option>
+                                                <option value="2">2K | 2560 x 1440</option>
+                                                <option value="3">4K | 3840 x 2160</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                
+                                    <div class="perf__params-block">
+                                        <p class="perf__params-title">Настройки графики</p>
+                                        <div class="select-wrapper">
+                                            <select class="js-select">
+                                                <option value="1">Низкое качество</option>
+                                                <option value="2">Среднее качество</option>
+                                                <option value="3">Высокое качество</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="perf__fps">
+                                    <div class="perf__fps-point" style="left: 60%"><span>60 Hz</span></div>
+                                    <div class="perf__fps-point" style="left: 85%"><span>144 Hz</span></div>
+                
+                                    <div class="fps-item">
+                                        <div class="fps-item__image"><img src="images/content/games/img_1.jpg" srcset="images/content/games/img_1@2x.jpg 2x" alt=""></div>
+                                        <div class="fps-item__bar-container">
+                                            <div class="fps-item__bar fps-item__bar--green" style="width: 90%"></div>
+                                            <div class="fps-item__title">Tom Clancy's Rainbow Six Siege</div>
+                                            <div class="fps-item__value">214 <span>FPS</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="fps-item">
+                                        <div class="fps-item__image"><img src="images/content/games/img_2.jpg" srcset="images/content/games/img_2@2x.jpg 2x" alt=""></div>
+                                        <div class="fps-item__bar-container">
+                                            <div class="fps-item__bar fps-item__bar--green" style="width: 80%"></div>
+                                            <div class="fps-item__title">Doom Eternal (2020)</div>
+                                            <div class="fps-item__value">159 <span>FPS</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="fps-item">
+                                        <div class="fps-item__image"><img src="images/content/games/img_3.jpg" srcset="images/content/games/img_3@2x.jpg 2x" alt=""></div>
+                                        <div class="fps-item__bar-container">
+                                            <div class="fps-item__bar fps-item__bar--green" style="width: 50%"></div>
+                                            <div class="fps-item__title">World of Tanks</div>
+                                            <div class="fps-item__value">142 <span>FPS</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="fps-item">
+                                        <div class="fps-item__image"><img src="images/content/games/img_4.jpg" srcset="images/content/games/img_4@2x.jpg 2x" alt=""></div>
+                                        <div class="fps-item__bar-container">
+                                            <div class="fps-item__bar fps-item__bar--green" style="width: 30%"></div>
+                                            <div class="fps-item__title">Destiny 2</div>
+                                            <div class="fps-item__value">140 <span>FPS</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="fps-item">
+                                        <div class="fps-item__image"><img src="images/content/games/img_5.jpg" srcset="images/content/games/img_5@2x.jpg 2x" alt=""></div>
+                                        <div class="fps-item__bar-container">
+                                            <div class="fps-item__bar fps-item__bar--green" style="width: 10%"></div>
+                                            <div class="fps-item__title">Hitman III</div>
+                                            <div class="fps-item__value">95 <span>FPS</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="fps-item">
+                                        <div class="fps-item__image"><img src="images/content/games/img_5.jpg" srcset="images/content/games/img_5@2x.jpg 2x" alt=""></div>
+                                        <div class="fps-item__bar-container">
+                                            <div class="fps-item__bar fps-item__bar--green" style="width: 10%"></div>
+                                            <div class="fps-item__title">Hitman III</div>
+                                            <div class="fps-item__value">95 <span>FPS</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="fps-item">
+                                        <div class="fps-item__image"><img src="images/content/games/img_1.jpg" srcset="images/content/games/img_1@2x.jpg 2x" alt=""></div>
+                                        <div class="fps-item__bar-container">
+                                            <div class="fps-item__bar fps-item__bar--green" style="width: 90%"></div>
+                                            <div class="fps-item__title">Tom Clancy's Rainbow Six Siege</div>
+                                            <div class="fps-item__value">214 <span>FPS</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="fps-item">
+                                        <div class="fps-item__image"><img src="images/content/games/img_2.jpg" srcset="images/content/games/img_2@2x.jpg 2x" alt=""></div>
+                                        <div class="fps-item__bar-container">
+                                            <div class="fps-item__bar fps-item__bar--green" style="width: 80%"></div>
+                                            <div class="fps-item__title">Doom Eternal (2020)</div>
+                                            <div class="fps-item__value">159 <span>FPS</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="fps-item">
+                                        <div class="fps-item__image"><img src="images/content/games/img_3.jpg" srcset="images/content/games/img_3@2x.jpg 2x" alt=""></div>
+                                        <div class="fps-item__bar-container">
+                                            <div class="fps-item__bar fps-item__bar--green" style="width: 50%"></div>
+                                            <div class="fps-item__title">World of Tanks</div>
+                                            <div class="fps-item__value">142 <span>FPS</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="fps-item">
+                                        <div class="fps-item__image"><img src="images/content/games/img_4.jpg" srcset="images/content/games/img_4@2x.jpg 2x" alt=""></div>
+                                        <div class="fps-item__bar-container">
+                                            <div class="fps-item__bar fps-item__bar--green" style="width: 30%"></div>
+                                            <div class="fps-item__title">Destiny 2</div>
+                                            <div class="fps-item__value">140 <span>FPS</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="fps-item">
+                                        <div class="fps-item__image"><img src="images/content/games/img_5.jpg" srcset="images/content/games/img_5@2x.jpg 2x" alt=""></div>
+                                        <div class="fps-item__bar-container">
+                                            <div class="fps-item__bar fps-item__bar--green" style="width: 10%"></div>
+                                            <div class="fps-item__title">Hitman III</div>
+                                            <div class="fps-item__value">95 <span>FPS</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="fps-item">
+                                        <div class="fps-item__image"><img src="images/content/games/img_5.jpg" srcset="images/content/games/img_5@2x.jpg 2x" alt=""></div>
+                                        <div class="fps-item__bar-container">
+                                            <div class="fps-item__bar fps-item__bar--green" style="width: 10%"></div>
+                                            <div class="fps-item__title">Hitman III</div>
+                                            <div class="fps-item__value">95 <span>FPS</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
                 <section class="page__section">
@@ -142,8 +682,8 @@
                     <div class="conf-compare">
                         <div class="conf-compare__tabs">
                             <div class="conf-compare__tabs-menu">
-                                <button class="conf-compare__tabs-button is-active" type="button" data-target="1">Конфигурация</button>
-                                <button class="conf-compare__tabs-button" type="button" data-target="2">Улучшенная конфигурация</button>
+                                <button class="js-conf-compare conf-compare__tabs-button is-active" type="button" data-target="1">Конфигурация</button>
+                                <button class="js-conf-compare conf-compare__tabs-button" type="button" data-target="2">Улучшенная конфигурация</button>
                             </div>
 
                             <div class="conf-compare__tab is-active" data-target="1">
@@ -682,6 +1222,8 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/video.js"></script>
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/select2-addon.js"></script>
     <script src="js/main.js"></script>
 </body>
 

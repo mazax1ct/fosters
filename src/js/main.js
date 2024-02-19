@@ -23,6 +23,22 @@ var resize_scroll = function(e) {
 $(document).ready(function() {
   //запуск функции навешивания класса на шапку
   resize_scroll();
+
+  //кастомный селект
+  $('.js-select').each(function() {
+    var $p = $(this).closest('.select-wrapper');
+    $(this).select2({
+      minimumResultsForSearch: Infinity,
+      dropdownPosition: 'below',
+      dropdownParent: $p,
+    });
+	}).on("select2:open", function (e) {
+    var $p = $(this).closest('.select-wrapper');
+    $p.addClass('open');
+	}).on("select2:close", function (e) {
+    var $p = $(this).closest('.select-wrapper');
+    $p.removeClass('open');
+	});
 });
 
 //перезапуск функции навешивания класса на шапку при скролле и ресайзе
@@ -284,4 +300,49 @@ $(document).on('click', '.js-sorting-toggler', function () {
   }
 
   return false
+});
+
+//слайдер в конфигураторе
+if($('.js-config-thumbs').length) {
+  var configThumbs = new Swiper(".js-config-thumbs", {
+    spaceBetween: 20,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+}
+
+if($('.js-config-slider').length) {
+  var configSlider = new Swiper(".js-config-slider", {
+    spaceBetween: 20,
+    thumbs: {
+      swiper: configThumbs
+    },
+  });
+}
+
+//табы конфигураций
+$(document).on('click', '.js-conf-compare', function () {
+  $('.js-conf-compare').removeClass('is-active');
+  $(this).addClass('is-active');
+  $('.conf-compare__tab').removeClass('is-active');
+  $('.conf-compare__tab[data-target="'+ $(this).attr('data-target') +'"]').addClass('is-active');
+  return false;
+});
+
+//открытие блока производительности
+$(document).on('click', '.js-perf-opener', function () {
+  //$('.page').addClass('is-overflow');
+  $('.config').addClass('perf-open');
+  $('.perf').slideToggle();
+  return false;
+});
+
+//закрытие блока производительности
+$(document).on('click', '.js-perf-closer', function () {
+  $('.perf').slideToggle(function() {
+    //$('.page').removeClass('is-overflow');
+    $('.config').removeClass('perf-open');
+  });
+  return false;
 });

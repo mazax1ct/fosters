@@ -36,12 +36,12 @@
         &.is-active {
             color: var(--primary_color);
 
-            svg {
+            & > svg {
                 transform: translateY(-50%) rotate(180deg);
             }
         }
 
-        svg {
+        & > svg {
             height: 18px;
             left: auto;
             position: absolute;

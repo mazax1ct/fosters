@@ -2,6 +2,7 @@
     align-items: center;
     color: var(--secondary_color_dark);
     display: flex;
+    gap: 10px;
 
     input {
         position: absolute;
@@ -30,13 +31,8 @@
         border: 1px solid var(--primary_color);
         display: block;
         height: 20px;
-        margin-right: 10px;
+        margin-top: 3px;
         min-width: 20px;
         width: 20px;
-        /*@media(min-width: $fhd) {
-            height: 30px;
-            min-width: 30px;
-            width: 30px;
-        }*/
     }
 }

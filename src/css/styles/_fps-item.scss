@@ -16,10 +16,13 @@
         display: flex;
         gap: 20px;
         flex-grow: 1;
-        height: 40px;
+        height: 30px;
         justify-content: space-between;
         position: relative;
         z-index: 1;
+        @media(min-width: $hd) {
+            height: 40px;
+        }
     }
 
     &__bar {
@@ -41,11 +44,16 @@
         padding-bottom: 4px;
         position: relative;
         z-index: 1;
+        @media(max-width: $hd - 0.01px) {
+            font-size: 12px;
+            padding-bottom: 2px;
+        }
     }
 
     &__value {
         font-weight: 600;
         position: relative;
+        padding-right: 5px;
         text-transform: uppercase;
         white-space: nowrap;
         z-index: 1;
