@@ -1,0 +1,51 @@
+.detail-intro {
+    margin-bottom: 20px;
+    @media(min-width: $md) {
+        margin-bottom: 40px;
+    }
+
+    &__back-link {
+        @media(max-width: $md - 0.01px) {
+            margin-bottom: 20px;
+        }
+        @media(min-width: $md) {
+            padding-top: 20px;
+        }
+    }
+
+    h1 {
+        color: var(--primary_color);
+        font-size: 56px;
+        letter-spacing: -4px;
+        @media(min-width: $sm) {
+            font-size: 96px;
+        }
+        @media(min-width: $md) {
+            font-size: 120px;
+        }
+        @media(min-width: $hd) {
+            font-size: 144px;
+            letter-spacing: -8px;
+        }
+        @media(min-width: $lg) {
+            font-size: 172px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 220px;
+        }
+    }
+
+    &__text {
+        max-width: 540px;
+        @media(min-width: $md) {
+            font-size: 16px;
+        }
+        @media(min-width: $hd) {
+            font-size: 18px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 24px;
+            max-width: 800px;
+        }
+    }
+}

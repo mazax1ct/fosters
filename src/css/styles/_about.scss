@@ -1,20 +1,7 @@
 .about {
-    @media(min-width: $md) {
-        display: flex;
-        gap: var(--container_padding);
-    }
-
-    h2 {
-        @media(min-width: $md) {
-            margin-bottom: 0;
-            width: calc(100% / 4 - var(--container_padding) * 3 / 4);
-        }
-    }
-
     &__text-block {
         @media(min-width: $md) {
             padding-top: 5px;
-            width: calc(100% / 4 * 3 - var(--container_padding) * 3 / 4);
         }
         @media(min-width: $fhd) {
             padding-top: 10px;

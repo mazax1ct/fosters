@@ -25,21 +25,7 @@
         }
     }
 }
-/*.container {
-    .already {
-        left: 50%;
-        position: relative;
-        transform: translateX(-50%);
-        width: 100vw;
-        z-index: 1;
 
-        .swiper-slide {
-            @media(min-width: $fhd) {
-                width: 455px !important;
-            }
-        }
-    }
-}*/
 .already-item {
     color: var(--secondary_color_dark);
     display: block;

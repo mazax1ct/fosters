@@ -261,28 +261,30 @@ if($('.js-series').length) {
 
 //слайдер карточек готовых компов
 if($('.js-cards-slider').length) {
-  const cardsSlider = new Swiper('.js-cards-slider', {
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 10,
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 20
+  $('.js-cards-slider').each(function(index) {
+    var cardsSlider = new Swiper($(this)[0], {
+      loop: false,
+      slidesPerView: 1,
+      spaceBetween: 10,
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        1024: {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+          spaceBetween: 20
+        }
       },
-      1024: {
-        slidesPerView: 3,
-        slidesPerGroup: 3,
-        spaceBetween: 20
+      pagination: {
+        el: '.js-cards-slider-navigation[data-id="'+$(this).attr('data-id')+'"]',
+      },
+      navigation: {
+        nextEl: '.js-cards-slider-next[data-id="'+$(this).attr('data-id')+'"]',
+        prevEl: '.js-cards-slider-prev[data-id="'+$(this).attr('data-id')+'"]',
       }
-    },
-    pagination: {
-      el: '.js-cards-slider-navigation',
-    },
-    navigation: {
-      nextEl: '.js-cards-slider-next',
-      prevEl: '.js-cards-slider-prev',
-    }
+    });
   });
 }
 
@@ -332,7 +334,6 @@ $(document).on('click', '.js-conf-compare', function () {
 
 //открытие блока производительности
 $(document).on('click', '.js-perf-opener', function () {
-  //$('.page').addClass('is-overflow');
   $('.config').addClass('perf-open');
   $('.perf').slideToggle();
   return false;
@@ -341,8 +342,16 @@ $(document).on('click', '.js-perf-opener', function () {
 //закрытие блока производительности
 $(document).on('click', '.js-perf-closer', function () {
   $('.perf').slideToggle(function() {
-    //$('.page').removeClass('is-overflow');
     $('.config').removeClass('perf-open');
   });
+  return false;
+});
+
+//табы комплектов
+$(document).on('click', '.js-complects-tab', function () {
+  $('.js-complects-tab').removeClass('is-active');
+  $(this).addClass('is-active');
+  $('.complects__tab').removeClass('is-active');
+  $('.complects__tab[data-target="'+ $(this).attr('data-target') +'"]').addClass('is-active');
   return false;
 });

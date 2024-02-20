@@ -23,8 +23,9 @@
     <link rel="preload" href="fonts/Rawline/subset-Rawline-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/Wadik/subset-WadikBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="plugins_css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
 </head>
 
 <body class="page">
@@ -112,57 +113,67 @@
 
         <main>
             <div class="container">
-                <h1>Полезная информация</h1>
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Готовые компьютеры</a>
+                    </li>
+                    <li class="breadcrumbs__item">Project one</li>
+                </ul>
+
+                <div class="image-wide">
+                    <img src="images/content/img_wide.jpg" srcset="images/content/img_wide@2x.jpg 2x" alt="">
+                </div>
 
                 <section class="page__section">
-                    <div class="video-wide">
-                        <div class="js-video video video--wide">
-                            <a class="js-video__link video__link" href="https://www.youtube.com/watch?v=pOWbR8Lt2Fk" target="_blank">
-                                <img class="video__media" src="images/content/video_wide.jpg" srcset="images/content/video_wide@2x.jpg 2x" alt="" title="" />
-                                <button class="js-video__button video__button" type="button" aria-label="Запустить видео">
-                                    <svg class="video__svg" aria-hidden="true">
-                                        <use xlink:href="images/sprite.svg#play" />
-                                    </svg>
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="video-caption">
-                        <p>Мы гордимся тем, что имеем собственное производство, где мы контролируем каждый этап создания наших компьютеров, чтобы обеспечить высокое качество и надежность.</p>
-                    </div>
-                </section>
-
-                <section class="page__section">
-                    <p class="pre-title"><span>Тестирование</span></p>
-                    <h2>Тестирование</h2>
+                
+                    <p class="pre-title"><span>Гарантия и сервис</span></p>
+                    <h2>Обслуживание и&nbsp;поддержка</h2>
                     <div class="page__section-inner">
-                        <div class="page__section-text">
-                            <p>Вы получаете видеоотчет со всеми этапами сборки: от распаковки комплектующих и до финальной упаковки уже готового ПК</p>
+                        <div class="page__section-text page__section-text--mod_1">
+                            <p>
+                                При производстве компьютеров Fosters используются все современные методики, способные обеспечить наибольшую надежность ПК. Если работоспособность компьютера внезапно снизилась, мы проведем доскональную диагностику и обязательно
+                                поможем всё исправить. ПК от Fosters это также:
+                            </p>
                         </div>
                 
                         <div class="features">
                             <div class="feature">
-                                <p class="feature__title">Видео с комплектующими</p>
+                                <p class="feature__title">12 месяцев гарантии</p>
                                 <div class="feature__text">
-                                    <p>Присылаю вам видео, где показываю все комплектующие, что будут использоваться в вашем ПК. На этом этапе комплектующие запакованы, вы сможете оценить целостность упаковки и заводских пломб</p>
+                                    <p>Мы уверены в качестве каждого компьютера Fosters, поэтому предоставляем гарантию – 12&nbsp;месяцев.</p>
                                 </div>
                             </div>
                             <div class="feature">
-                                <p class="feature__title">Видео для оценки внешнего вида</p>
+                                <p class="feature__title">Техническая консультация специалиста</p>
                                 <div class="feature__text">
-                                    <p>После сборки ПК присылаю видео для оценки финального внешнего вида. Вы оцените, как выполнен кабель-менеджмент и полюбуетесь на свой ПК</p>
+                                    <p>Мы не оставим Вас с проблемами один на один. Наши технические специалисты готовы предоставить консультацию по телефону, либо через мессенджер.</p>
                                 </div>
                             </div>
                             <div class="feature">
-                                <p class="feature__title">Видео с тестами</p>
+                                <p class="feature__title">Полная диагностика, чистка компьютера</p>
                                 <div class="feature__text">
-                                    <p>Присылаю видео с тестами стабильности вашего ПК. Вы сможете оценить показатели по нагреву комплектующих и тесты FPS (AIDA64 + FurMark)</p>
+                                    <p>Необходимо регулярно проводить чистку компьютера, и наши специалисты с удовольствием проведут полную диагностику и обслуживание, предоставив вам подробный отчет.</p>
                                 </div>
                             </div>
                             <div class="feature">
-                                <p class="feature__title">Видео с финальной упаковкой</p>
+                                <p class="feature__title">Страховка пк при доставке</p>
                                 <div class="feature__text">
-                                    <p>Присылаю видео с финальной упаковкой вашего ПК перед передачей в доставку. У нас вы сможете оценить каждый этап сборки вашего ПК</p>
+                                    <p>Все риски при доставке берет на себя Fosters. В каждый наш компьютер встроена страховка. Если в процессе доставки возникают проблемы, мы немедленно отправим вам аналогичный компьютер.</p>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <p class="feature__title">Усиленная упаковка</p>
+                                <div class="feature__text">
+                                    <p>Все компьютеры отправляю в надежной упаковке с пенопластом внутри. Компьютеры упаковываются не только снаружи, но и внутри.</p>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <p class="feature__title">Помощь с сохранением и переносом данных</p>
+                                <div class="feature__text">
+                                    <p>Наши специалисты помогут перенести всю информацию на новый компьютер. При этом мы не имеем доступа к вашим данным, и все они остаются строго конфиденциальными.</p>
                                 </div>
                             </div>
                         </div>
@@ -171,137 +182,170 @@
                 </section>
 
                 <section class="page__section">
-                    <p class="pre-title"><span>О доставке</span></p>
-                    <h2>Наша доставка</h2>
-                    <div class="page__section-inner">
-                        <div class="features">
-                            <div class="feature">
-                                <p class="feature__title">Доставка в любой город</p>
-                                <div class="feature__text">
-                                    <p>Доставка по всей стране до двери или до ближайшего к вам пункта выдачи СДЭК</p>
+                    <div class="slider slider-container">
+                        <div class="js-slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/content/img_wide.jpg" srcset="images/content/img_wide@2x.jpg 2x" alt="">
                                 </div>
-                            </div>
-                            <div class="feature">
-                                <p class="feature__title">Надежная упаковка</p>
-                                <div class="feature__text">
-                                    <p>Все компьютеры отправляю в надежной упаковке с пенопластом внутри. Вес ПК в упаковке от 10 до 30 кг, зависит от габаритов ПК</p>
+                                <div class="swiper-slide">
+                                    <img src="images/content/img_wide.jpg" srcset="images/content/img_wide@2x.jpg 2x" alt="">
                                 </div>
-                            </div>
-                            <div class="feature">
-                                <p class="feature__title">Страховка груза</p>
-                                <div class="feature__text">
-                                    <p>Если при транспортировке случится поломка, мы заменим неисправные комплектующие и ваша гарантия при этом сохранится</p>
+                                <div class="swiper-slide">
+                                    <img src="images/content/img_wide.jpg" srcset="images/content/img_wide@2x.jpg 2x" alt="">
                                 </div>
                             </div>
                         </div>
-                        <div class="page__button-block">
-                            <a class="button button--w_385" href="#">
-                                <span>Подробнее</span>
+                
+                        <div class="slider-navigation">
+                            <button class="js-slider-prev swiper-button-prev" type="button" title="Назад">
                                 <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#button_arrow" />
+                                    <use xlink:href="images/sprite.svg#arrow_left" />
                                 </svg>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="page__section">
-                    <p class="pre-title"><span>О гарантии</span></p>
-                    <h2>Наша гарантия</h2>
-                    <div class="page__section-inner">
-                        <div class="page__section-text">
-                            <p>Даем фирменную гарантию на компьютеры, чтобы избавить клиентов от обращения в сервисные центры производителей. Решаем неисправности заменой компонентов на новые</p>
-                        </div>
-                        <div class="guaranty">
-                            <div class="guaranty__item">
-                                <span class="guaranty__item-num">1</span>
-                                <p>Фирменная гарантия до 3 лет</p>
-                            </div>
-                            <div class="guaranty__item">
-                                <span class="guaranty__item-num">2</span>
-                                <p>Каждый ПК перед доставкой проходит все этапы тестирования</p>
-                            </div>
-                            <div class="guaranty__item">
-                                <span class="guaranty__item-num">3</span>
-                                <p>Поддержка в течение гарантийного срока</p>
-                            </div>
-                            <div class="guaranty__item">
-                                <span class="guaranty__item-num">4</span>
-                                <p>Апгрейд компьютера с зачетом компонентов</p>
-                            </div>
-                            <div class="guaranty__item">
-                                <span class="guaranty__item-num">5</span>
-                                <p>Замена компонентов на новые без ремонта</p>
-                            </div>
-                            <div class="guaranty__item guaranty__item--background"></div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="page__section">
-                    <p class="pre-title"><span>Комплектация</span></p>
-                    <h2>Вместе с ПК вы получите</h2>
-                    <div class="page__section-inner">
-                        <div class="page__section-text">
-                            <p>Все комплектующие новые, с официальной гарантией. Вы получаете полный комплект вместе со своим ПК</p>
-                        </div>
+                            </button>
                 
-                        <div class="features">
-                            <div class="feature">
-                                <p class="feature__title">Чеки</p>
-                                <div class="feature__text">
-                                    <p>Чеки на все комплектующие, подтверждающие официальную гарантию. На видеокарты гарантия 2 года, на блоки питания от 3х лет, на процессоры 3 года, на оперативную память 10 лет и так далее</p>
-                                </div>
-                            </div>
-                            <div class="feature">
-                                <p class="feature__title">Коробки</p>
-                                <div class="feature__text">
-                                    <p>Коробки от всех комплектующих, что используются в вашей сборке</p>
-                                </div>
-                            </div>
-                            <div class="feature">
-                                <p class="feature__title">Документация</p>
-                                <div class="feature__text">
-                                    <p>Документация от всех комплектующих, что используются в вашей сборке</p>
-                                </div>
-                            </div>
-                            <div class="feature">
-                                <p class="feature__title">Кабели</p>
-                                <div class="feature__text">
-                                    <p>Кабель питания, кабели SATA, дополнительные крепления, Wi-Fi модуль (по вашему желанию)</p>
-                                </div>
-                            </div>
+                            <div class="js-slider-navigation swiper-pagination"></div>
+                
+                            <button class="js-slider-next swiper-button-next" type="button" title="Вперёд">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </section>
 
                 <section class="page__section">
-                    <p class="pre-title"><span>Об оплате</span></p>
-                    <h2>Способы оплаты</h2>
-                    <div class="page__section-inner">
-                        <div class="payment">
-                            <div class="payment__item">
-                                <span class="payment__item-num">01</span>
-                                <p>Наличный расчёт в офисе</p>
-                            </div>
-                            <div class="payment__item">
-                                <span class="payment__item-num">02</span>
-                                <p>Безналичный расчёт в офисе</p>
-                            </div>
-                            <div class="payment__item">
-                                <span class="payment__item-num">03</span>
-                                <p>Банковский перевод</p>
-                            </div>
-                            <div class="payment__item">
-                                <span class="payment__item-num">04</span>
-                                <p>Оплата по счёту для юридического лица</p>
-                            </div>
-                            <div class="payment__item">
-                                <span class="payment__item-num">05</span>
-                                <p>Кредит от банка Тинькофф<br> <small>Срок от 3х месяцев до 2х лет</small></p>
+                
+                    <p class="pre-title"><span>Наши распаковки</span></p>
+                    <h2>Видео-отзывы</h2>
+                
+                    <div class="video-reviews slider-container">
+                        <div class="js-video-reviews swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a class="video-review" href="#" target="_blank" rel="nofollow noreferrer">
+                                        <span class="video-review__title">Кирилл Савенков</span>
+                                        <span class="video-review__image">
+                                            <img src="images/content/video-reviews/img_1.jpg" srcset="images/content/video-reviews/img_1@2x.jpg 2x" alt="">
+                                            <button class="video-review__button" type="button" title="Смотреть">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#play" />
+                                                </svg>
+                                            </button>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="video-review" href="#" target="_blank" rel="nofollow noreferrer">
+                                        <span class="video-review__title">Кирилл Савенков</span>
+                                        <span class="video-review__image">
+                                            <img src="images/content/video-reviews/img_2.jpg" srcset="images/content/video-reviews/img_2@2x.jpg 2x" alt="">
+                                            <button class="video-review__button" type="button" title="Смотреть">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#play" />
+                                                </svg>
+                                            </button>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="video-review" href="#" target="_blank" rel="nofollow noreferrer">
+                                        <span class="video-review__title">Кирилл Савенков</span>
+                                        <span class="video-review__image">
+                                            <img src="images/content/video-reviews/img_3.jpg" srcset="images/content/video-reviews/img_3@2x.jpg 2x" alt="">
+                                            <button class="video-review__button" type="button" title="Смотреть">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#play" />
+                                                </svg>
+                                            </button>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="video-review" href="#" target="_blank" rel="nofollow noreferrer">
+                                        <span class="video-review__title">Кирилл Савенков</span>
+                                        <span class="video-review__image">
+                                            <img src="images/content/video-reviews/img_4.jpg" srcset="images/content/video-reviews/img_4@2x.jpg 2x" alt="">
+                                            <button class="video-review__button" type="button" title="Смотреть">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#play" />
+                                                </svg>
+                                            </button>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="video-review" href="#" target="_blank" rel="nofollow noreferrer">
+                                        <span class="video-review__title">Кирилл Савенков</span>
+                                        <span class="video-review__image">
+                                            <img src="images/content/video-reviews/img_1.jpg" srcset="images/content/video-reviews/img_1@2x.jpg 2x" alt="">
+                                            <button class="video-review__button" type="button" title="Смотреть">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#play" />
+                                                </svg>
+                                            </button>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="video-review" href="#" target="_blank" rel="nofollow noreferrer">
+                                        <span class="video-review__title">Кирилл Савенков</span>
+                                        <span class="video-review__image">
+                                            <img src="images/content/video-reviews/img_2.jpg" srcset="images/content/video-reviews/img_2@2x.jpg 2x" alt="">
+                                            <button class="video-review__button" type="button" title="Смотреть">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#play" />
+                                                </svg>
+                                            </button>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="video-review" href="#" target="_blank" rel="nofollow noreferrer">
+                                        <span class="video-review__title">Кирилл Савенков</span>
+                                        <span class="video-review__image">
+                                            <img src="images/content/video-reviews/img_3.jpg" srcset="images/content/video-reviews/img_3@2x.jpg 2x" alt="">
+                                            <button class="video-review__button" type="button" title="Смотреть">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#play" />
+                                                </svg>
+                                            </button>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="video-review" href="#" target="_blank" rel="nofollow noreferrer">
+                                        <span class="video-review__title">Кирилл Савенков</span>
+                                        <span class="video-review__image">
+                                            <img src="images/content/video-reviews/img_4.jpg" srcset="images/content/video-reviews/img_4@2x.jpg 2x" alt="">
+                                            <button class="video-review__button" type="button" title="Смотреть">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#play" />
+                                                </svg>
+                                            </button>
+                                        </span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
+                        <div class="slider-navigation">
+                            <button class="js-video-reviews-prev swiper-button-prev" type="button" title="Назад">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_left" />
+                                </svg>
+                            </button>
+                
+                            <div class="js-video-reviews-navigation swiper-pagination"></div>
+                
+                            <button class="js-video-reviews-next swiper-button-next" type="button" title="Вперёд">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
+                
                 </section>
 
                 <section class="page__section">
@@ -623,6 +667,8 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/video.js"></script>
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/select2-addon.js"></script>
     <script src="js/main.js"></script>
 </body>
 
