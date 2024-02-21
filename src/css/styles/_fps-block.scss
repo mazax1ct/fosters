@@ -1,0 +1,251 @@
+.fps-block {
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    &__image {
+        @media(max-width: $md - 0.01px) {
+            display: none;
+        }
+
+        img {
+            display: block;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    &__text-block {
+        @media(min-width: $md) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__text {
+        margin-bottom: 20px;
+        @media(min-width: $md) {
+            margin-bottom: 40px;
+        }
+        @media(min-width: $lg) {
+            font-size: 20px;
+        }
+    }
+
+    &__fps-list {
+        @media(min-width: $md) {
+            margin-top: auto;
+        }
+
+        .fps-item {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+                @media(min-width: $lg) {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+
+        .fps-item__image {
+            @media(min-width: $lg) {
+                height: 115px;
+                min-width: 115px;
+                width: 115px;
+            }
+
+            img {
+                @media(min-width: $lg) {
+                    height: 115px;
+                    min-width: 115px;
+                    width: 115px;
+                }
+            }
+        }
+
+        .fps-item__bar-container {
+            @media(min-width: $lg) {
+                font-size: 20px;
+                height: 50px;
+            }
+        }
+    }
+}
+
+.fps-slider {
+    .swiper-slide-next {
+        .fps-card {
+            @media(min-width: $hd) {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        & + .swiper-slide {
+            .fps-card {
+                @media(min-width: $hd) {
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+
+    .slider-navigation {
+        @media(min-width: $md) {
+            display: none;
+        }
+    }
+}
+
+.fps-card {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 455px;
+    padding: 1px;
+    @media(min-width: $hd) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    &__title {
+        border-bottom: 1px solid var(--primary_color);
+        color: var(--secondary_color);
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+    }
+
+    &__comp-title {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 1.1;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        @media(min-width: $fhd) {
+            font-size: 40px;
+        }
+    }
+
+    &__games-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 20px;
+        @media(min-width: $lg) {
+            justify-content: space-between;
+        }
+    }
+
+    &__game {
+        width: 79px;
+    }
+
+    &__game-image {
+        margin-bottom: 5px;
+        width: 80px;
+
+        img {
+            display: block;
+        }
+    }
+
+    &__game-fps {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+
+    &__game-title {
+        font-size: 12px;
+    }
+
+    &__price-block {}
+
+    &__price-container {
+        align-items: center;
+        border-bottom: 1px solid var(--secondary_color);
+        display: flex;
+        padding-bottom: 10px;
+    }
+
+    &__price-title {
+        width: 40%;
+        @media(min-width: $fhd) {
+            font-size: 22px;
+        }
+    }
+
+    &__price {
+        font-size: 16px;
+        font-weight: 700;
+        width: 60%;
+        @media(min-width: $sm) {
+            font-size: 18px;
+        }
+        @media(min-width: $hd) {
+            font-size: 20px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 24px;
+        }
+
+        span {
+            white-space: nowrap;
+        }
+    }
+
+    &__credit {
+        align-items: center;
+        display: flex;
+        gap: 4px;
+        padding-left: 40%;
+        @media(max-width: $sm - 0.01px) {
+            font-size: 12px;
+        }
+
+        a {
+            @include active-area;
+            align-items: center;
+            display: inline-flex;
+            gap: 8px;
+            position: relative;
+            text-decoration: none;
+
+            svg {
+                height: 16px;
+                min-width: 16px;
+                margin-top: 2px;
+                width: 16px;
+            }
+        }
+    }
+
+    &__buttons {
+        margin-top: 20px;
+        text-align: center;
+        @media(min-width: $hd) {
+            display: flex;
+            gap: 20px;
+        }
+
+        .button {
+            & + .button {
+                @media(max-width: $hd - 0.01px) {
+                    margin-top: 15px;
+                }
+            }
+            @media(min-width: $hd) {
+                font-size: 12px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            @media(min-width: $lg) {
+                font-size: 14px;
+            }
+            @media(min-width: $fhd) {
+                font-size: 15px;
+            }
+        }
+    }
+}

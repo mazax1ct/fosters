@@ -355,3 +355,51 @@ $(document).on('click', '.js-complects-tab', function () {
   $('.complects__tab[data-target="'+ $(this).attr('data-target') +'"]').addClass('is-active');
   return false;
 });
+
+//аккордеон компонентов
+$(document).on('click', '.js-component-toggler', function () {
+  if(!$(this).hasClass('is-active')){
+    $(this).closest('.components').find('.accordion__body').slideUp();
+    $(this).closest('.components').find('.js-component-toggler').removeClass('is-active');
+    $(this).closest('.components').find('.component-image').slideUp();
+
+    $(this).addClass('is-active');
+    $(this).closest('.accordion').find('.accordion__body').slideDown();
+    $(this).closest('.components').find('.component-image[data-target="'+ $(this).attr("data-target") +'"]').slideDown();
+  }else{
+    $(this).removeClass('is-active');
+    $(this).closest('.accordion').find('.accordion__body').slideUp();
+    $(this).closest('.components').find('.component-image').slideUp();
+  }
+
+  return false;
+});
+
+//слайдер fps карточек
+if($('.js-fps-slider').length) {
+  $('.js-fps-slider').each(function(index) {
+    var fpsCardsSlider = new Swiper($(this)[0], {
+      loop: false,
+      slidesPerView: 1,
+      spaceBetween: 10,
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        1024: {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+          spaceBetween: 20
+        }
+      },
+      pagination: {
+        el: '.js-fps-slider-navigation[data-id="'+$(this).attr('data-id')+'"]',
+      },
+      navigation: {
+        nextEl: '.js-fps-slider-next[data-id="'+$(this).attr('data-id')+'"]',
+        prevEl: '.js-fps-slider-prev[data-id="'+$(this).attr('data-id')+'"]',
+      }
+    });
+  });
+}

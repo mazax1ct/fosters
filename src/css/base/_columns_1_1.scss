@@ -1,0 +1,12 @@
+.columns_1_1 {
+    @media(min-width: $md) {
+        display: flex;
+        gap: var(--container_padding);
+    }
+
+    &__column_1 {
+        @media(min-width: $md) {
+            width: calc(100% / 2 - var(--container_padding) / 2);
+        }
+    }
+}
