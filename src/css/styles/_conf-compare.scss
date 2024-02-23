@@ -158,11 +158,8 @@
     }
 
     &__credit {
-        align-items: center;
-        display: flex;
-        gap: 4px;
-        justify-content: flex-end;
         padding-left: 40%;
+        text-align: right;
         @media(max-width: $sm - 0.01px) {
             font-size: 12px;
         }
