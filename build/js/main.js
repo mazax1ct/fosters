@@ -238,8 +238,8 @@ $(document).on('click', '.produce-item', function () {
 });
 
 //табы
-$(document).on('click', '.tabs-menu__button', function () {
-  $(this).closest('.tabs').find('.tabs-menu__button.is-active').removeClass('is-active');
+$(document).on('click', '.js-tabs-button', function () {
+  $(this).closest('.tabs').find('.js-tabs-button.is-active').removeClass('is-active');
   $(this).addClass('is-active');
 
   $(this).closest('.tabs').find('.tab.is-active').removeClass('is-active');
@@ -399,6 +399,53 @@ if($('.js-fps-slider').length) {
       navigation: {
         nextEl: '.js-fps-slider-next[data-id="'+$(this).attr('data-id')+'"]',
         prevEl: '.js-fps-slider-prev[data-id="'+$(this).attr('data-id')+'"]',
+      }
+    });
+  });
+}
+
+//слайдер карточек готовых компов
+if($('.js-recs-slider').length) {
+  $('.js-recs-slider').each(function(index) {
+    var recsSlider = new Swiper($(this)[0], {
+      loop: false,
+      slidesPerView: 1,
+      spaceBetween: 10,
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        1024: {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+          spaceBetween: 20
+        }
+      },
+      pagination: {
+        el: '.js-recs-slider-navigation[data-id="'+$(this).attr('data-id')+'"]',
+      },
+      navigation: {
+        nextEl: '.js-recs-slider-next[data-id="'+$(this).attr('data-id')+'"]',
+        prevEl: '.js-recs-slider-prev[data-id="'+$(this).attr('data-id')+'"]',
+      }
+    });
+  });
+}
+
+//слайдер fps графиков
+if($('.js-fps-slider-2').length) {
+  $('.js-fps-slider-2').each(function(index) {
+    var fpsCardsSlider2 = new Swiper($(this)[0], {
+      loop: false,
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: '.js-fps-slider-2-navigation[data-id="'+$(this).attr('data-id')+'"]',
+      },
+      navigation: {
+        nextEl: '.js-fps-slider-2-next[data-id="'+$(this).attr('data-id')+'"]',
+        prevEl: '.js-fps-slider-2-prev[data-id="'+$(this).attr('data-id')+'"]',
       }
     });
   });

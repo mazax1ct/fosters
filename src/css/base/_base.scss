@@ -212,6 +212,22 @@ h2 {
         letter-spacing: -4px;
         margin-bottom: 35px;
     }
+
+    &.long-word {
+        @media(max-width: $sm - 0.01px) {
+            font-size: 22px;
+        }
+    }
+}
+
+.h3,
+h3 {
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+    @media(min-width: $fhd) {
+        font-size: 24px;
+        letter-spacing: -2px;
+    }
 }
 
 p {
@@ -348,10 +364,8 @@ hr {
 }
 
 .image-wide {
-    @media(min-width: $hd) {
-        margin-left: calc(0.01px - var(--container_padding));
-        margin-right: calc(0.01px - var(--container_padding));
-    }
+    margin-left: calc(0.01px - var(--container_padding));
+    margin-right: calc(0.01px - var(--container_padding));
 
     img {
         display: block;
@@ -374,6 +388,10 @@ hr {
         margin-top: 2px;
         width: 16px;
     }
+}
+
+.color-green {
+    color: var(--primary_color);
 }
 
 .color-grey {

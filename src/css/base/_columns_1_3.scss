@@ -12,6 +12,7 @@
 
     &__column_3 {
         @media(min-width: $md) {
+            flex-grow: 1;
             width: calc(100% / 4 * 3 - var(--container_padding) * 3 / 4);
         }
     }

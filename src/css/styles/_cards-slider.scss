@@ -129,9 +129,6 @@
     }
 
     &__credit {
-        align-items: center;
-        display: flex;
-        gap: 4px;
         padding-left: 40%;
         @media(max-width: $sm - 0.01px) {
             font-size: 12px;

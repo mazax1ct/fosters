@@ -1,0 +1,200 @@
+.about-delivery {
+    @media(min-width: $md) {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__block {
+        @media(min-width: $md) {
+            width: calc(100% / 2 - 20px / 2);
+        }
+
+        &--image {
+            @media(max-width: $md - 0.01px) {
+                display: none;
+            }
+        }
+    }
+
+    &__image {
+        img {
+            @media(min-width: $md) {
+                max-width: 110%;
+                margin-left: -10%;
+                width: 110%;
+            }
+        }
+    }
+
+    &__top {
+        display: flex;
+        margin-bottom: 20px;
+        @media(min-width: $hd) {
+            margin-bottom: 40px;
+        }
+        @media(min-width: $fhd) {
+            margin-bottom: 100px;
+        }
+    }
+
+    &__top-block {
+        border-top: 1px solid var(--primary_color);
+        border-left: 1px solid var(--primary_color);
+        margin: 0;
+        padding: 10px;
+        width: 50%;
+        @media(min-width: $hd) {
+            padding: 20px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 24px;
+        }
+    }
+
+    &__list {
+        margin-bottom: 30px;
+        @media(min-width: $hd) {
+            margin-bottom: 60px;
+        }
+        @media(min-width: $fhd) {
+            margin-bottom: 100px;
+        }
+    }
+
+    &__list-title {
+        font-weight: 600;
+        @media(min-width: $fhd) {
+            font-size: 20px;
+        }
+    }
+
+    &__list-item {
+        align-items: center;
+        border-top: 1px solid var(--primary_color);
+        display: flex;
+        justify-content: space-between;
+        min-height: 40px;
+        margin: 0;
+        @media(min-width: $hd) {
+            font-size: 18px;
+            min-height: 50px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 24px;
+            min-height: 70px;
+        }
+
+        &:last-child {
+            border-bottom: 1px solid var(--primary_color);
+        }
+
+        & > span {
+            &:first-child {
+                align-items: center;
+                display: flex;
+                gap: 10px;
+
+                span {
+                    color: var(--primary_color);
+                }
+            }
+        }
+
+        a {
+            align-items: center;
+            color: var(--primary_color);
+            gap: 10px;
+            display: flex;
+            text-decoration: none;
+
+            svg {
+                height: 16px;
+                width: 16px;
+                @media(min-width: $hd) {
+                    height: 20px;
+                    width: 20px;
+                }
+                @media(min-width: $fhd) {
+                    height: 24px;
+                    width: 24px;
+                }
+            }
+        }
+    }
+
+    &__price-block {
+        @media(min-width: $md) {
+            width: calc(100% / 2);
+        }
+
+        .button {
+            margin-top: 30px;
+            width: 100%;
+        }
+    }
+
+    &__price-container {
+        align-items: center;
+        border-bottom: 1px solid var(--primary_color);
+        display: flex;
+        padding-bottom: 10px;
+    }
+
+    &__price-title {
+        width: 40%;
+        @media(min-width: $fhd) {
+            font-size: 22px;
+        }
+    }
+
+    &__price {
+        font-size: 16px;
+        font-weight: 700;
+        text-align: right;
+        width: 60%;
+        @media(min-width: $sm) {
+            font-size: 18px;
+        }
+        @media(min-width: $hd) {
+            font-size: 20px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 32px;
+        }
+
+        span {
+            white-space: nowrap;
+        }
+    }
+
+    &__credit {
+        text-align: right;
+        @media(max-width: $sm - 0.01px) {
+            font-size: 12px;
+        }
+
+        a {
+            @include active-area;
+            align-items: center;
+            display: inline-flex;
+            gap: 8px;
+            position: relative;
+            text-decoration: none;
+
+            svg {
+                height: 16px;
+                min-width: 16px;
+                margin-top: 2px;
+                width: 16px;
+            }
+        }
+    }
+
+    &__button {
+        margin-top: 30px;
+        width: 100%;
+        @media(min-width: $md) {
+            margin-top: auto;
+        }
+    }
+}

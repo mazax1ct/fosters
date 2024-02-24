@@ -94,13 +94,11 @@
 
 .video-wide {
     max-height: calc(100vh - 80px);
+    margin-left: calc(0.01px - var(--container_padding));
+    margin-right: calc(0.01px - var(--container_padding));
     overflow: hidden;
     position: relative;
     z-index: 1;
-    @media(min-width: $fhd) {
-        margin-left: calc(0.01px - var(--container_padding));
-        margin-right: calc(0.01px - var(--container_padding));
-    }
 
     .video {
         position: static;
