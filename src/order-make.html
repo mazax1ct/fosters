@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>FOSTERS PC</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts_preload.html
+
+    <link rel="stylesheet" href="plugins_css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body class="page">
+    <div class="page__content">
+        //= template/header_personal.html
+
+        <main>
+            <div class="container">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">Оформление заказа</li>
+                </ul>
+
+                <h1 class="color-green">Оформление заказа</h1>
+
+                <form class="order-make" action="">
+                    <div class="order-make__section">
+                        <div class="om-item">
+                            <a class="om-item__image" href="#">
+                                <img src="images/content/order-make/img_1.png" srcset="images/content/order-make/img_1@2x.png 2x" alt="">
+                            </a>
+                            <div class="om-item__info">
+                                <div class="om-item__info-block">
+                                    <p class="om-item__title">Ваш товар:</p>
+                                    <p class="om-item__val"><a href="#">Project EVO</a></p>
+                                </div>
+                                <div class="om-item__info-block">
+                                    <p class="om-item__title">Количество:</p>
+                                    <p class="om-item__val">1</p>
+                                </div>
+                                <div class="om-item__info-block">
+                                    <p class="om-item__title">Стоимость:</p>
+                                    <p class="om-item__val om-item__price">359 000 ₽</p>
+                                </div>
+                                <div class="om-item__info-block">
+                                    <p class="om-item__title">Гарантия:</p>
+                                    <p class="om-item__val">1 год</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-make__inner">
+                        <div class="order-make__section">
+                            <h3>Тип плательщика</h3>
+
+                            <div class="order-make__row order-make__row--mod_1">
+                                <div>
+                                    <label class="checkbox_2">
+                                        <input type="radio" name="type" value="fiz" checked>
+                                        <span class="checkbox_2__title-block">
+                                            <span class="checkbox_2__title">Частное лицо</span>
+                                            <span class="checkbox_2__icon"></span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="checkbox_2">
+                                        <input type="radio" name="type" value="ur">
+                                        <span class="checkbox_2__title-block">
+                                            <span class="checkbox_2__title">Юридическое лицо</span>
+                                            <span class="checkbox_2__icon"></span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-make__section">
+                            <h3>Город доставки</h3>
+
+                            <label class="form-group">
+                                <input id="city" class="order-make__city input" type="text" value="" name="city" placeholder="Выберите город*" autocomplete="off">
+                            </label>
+
+                            <h3>Способ доставки</h3>
+
+                            <div class="order-make__row order-make__row--mod_1">
+                                <div>
+                                    <label class="checkbox_2">
+                                        <input type="radio" name="delivery_type" value="1">
+                                        <span class="checkbox_2__title-block">
+                                            <span class="checkbox_2__title">Доставка <b>(800 ₽)</b></span>
+                                            <span class="checkbox_2__icon"></span>
+                                        </span>
+                                        <span class="checkbox_2__descr">Доставка нашим курьером</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="checkbox_2">
+                                        <input type="radio" name="delivery_type" value="2">
+                                        <span class="checkbox_2__title-block">
+                                            <span class="checkbox_2__title">Самовывоз <b>(0 ₽)</b></span>
+                                            <span class="checkbox_2__icon"></span>
+                                        </span>
+                                        <span class="checkbox_2__descr">Нижний&nbsp;Новгород, Совхозная&nbsp;11<br> Мы работаем без выходных, с&nbsp;11:00&nbsp;до&nbsp;20:00</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="checkbox_2">
+                                        <input type="radio" name="delivery_type" value="3">
+                                        <span class="checkbox_2__title-block">
+                                            <span class="checkbox_2__title">CDEK <b>(1000 ₽)</b></span>
+                                            <span class="checkbox_2__icon"></span>
+                                        </span>
+                                        <span class="checkbox_2__descr">Доставка ПК до двери или до ближайшего к вам пункта выдачи СДЭК</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="checkbox_2">
+                                        <input type="radio" name="delivery_type" value="4">
+                                        <span class="checkbox_2__title-block">
+                                            <span class="checkbox_2__title">Самокат <b>(500 ₽)</b></span>
+                                            <span class="checkbox_2__icon"></span>
+                                        </span>
+                                        <span class="checkbox_2__descr">Привезём на самокате! Кат-кат-кат!</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-make__section">
+                            <h3>Способы оплаты</h3>
+
+                            <div class="form-group">
+                                <label class="checkbox_2">
+                                    <input type="radio" name="pay" value="1">
+                                    <span class="checkbox_2__title-block">
+                                        <span class="checkbox_2__title">Оплата по счету юридического лица</span>
+                                        <span class="checkbox_2__icon"></span>
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="checkbox_2">
+                                    <input type="radio" name="pay" value="2">
+                                    <span class="checkbox_2__title-block">
+                                        <span class="checkbox_2__title">Банковская карта</span>
+                                        <span class="checkbox_2__icon"></span>
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="checkbox_2">
+                                    <input type="radio" name="pay" value="3">
+                                    <span class="checkbox_2__title-block">
+                                        <span class="checkbox_2__title">Наличный расчет в офисе</span>
+                                        <span class="checkbox_2__icon"></span>
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="checkbox_2">
+                                    <input type="radio" name="pay" value="4">
+                                    <span class="checkbox_2__title-block">
+                                        <span class="checkbox_2__title">Безналичный расчет в офисе</span>
+                                        <span class="checkbox_2__icon"></span>
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="checkbox_2">
+                                    <input type="radio" name="pay" value="5">
+                                    <span class="checkbox_2__title-block">
+                                        <span class="checkbox_2__title">Кредит (срок от 3х месяцев до 2х лет)</span>
+                                        <span class="checkbox_2__icon"></span>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="order-make__section">
+                            <h3>Контактные данные</h3>
+
+                            <label class="form-group">
+                                <input id="fio" class="input" type="text" value="" name="fio" placeholder="Фамилия Имя Отчество*" autocomplete="off">
+                            </label>
+
+                            <label class="form-group">
+                                <input id="phone" class="input" type="text" value="" name="phone" placeholder="Телефон*" autocomplete="off">
+                            </label>
+
+                            <label class="form-group">
+                                <input id="email" class="input" type="text" value="" name="email" placeholder="Email*" autocomplete="off">
+                            </label>
+
+                            <label class="form-group">
+                                <input id="address" class="input" type="text" value="" name="address" placeholder="Адрес*" autocomplete="off">
+                            </label>
+
+                            <div class="order-make__row order-make__row--mod_2">
+                                <div>
+                                    <label class="form-group">
+                                        <input id="podezd" class="input" type="text" value="" name="podezd" placeholder="Подъезд" autocomplete="off">
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="form-group">
+                                        <input id="etazh" class="input" type="text" value="" name="etazh" placeholder="Этаж" autocomplete="off">
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="form-group">
+                                        <input id="apt" class="input" type="text" value="" name="apt" placeholder="Квартира (офис)" autocomplete="off">
+                                    </label>
+                                </div>
+                            </div>
+
+                            <label class="form-group">
+                                <textarea id="comment" class="textarea" placeholder="Комментарий"></textarea>
+                            </label>
+                        </div>
+
+                        <button class="button" type="submit">
+                            <span>Оформить заказ</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#button_arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    //= template/footer.html
+
+    //= template/scripts.html
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>FOSTERS PC</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts_preload.html
+
+    <link rel="stylesheet" href="plugins_css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body class="page">
+    <div class="page__content">
+        //= template/header_personal.html
+
+        <main>
+            <div class="container">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Личный кабинет</a>
+                    </li>
+                    <li class="breadcrumbs__item">Настройки профиля</li>
+                </ul>
+
+                <h1 class="color-green">Личный кабинет</h1>
+
+                <div class="columns_1_3 personal">
+                    <div class="columns_1_3__column_1 personal__menu">
+                        //= template/personal-menu.html
+                    </div>
+
+                    <div class="columns_1_3__column_3">
+                        <h2>Ваши данные</h2>
+
+                        <form class="personal-form" action="">
+                            <div class="form-group">
+                                <label class="form-label" for="name">Имя:</label>
+                                <input id="name" class="input" type="text" value="" name="name" autocomplete="off">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="last_name">Фамилия:</label>
+                                <input id="last_name" class="input" type="text" value="" name="last_name" autocomplete="off">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="birth">Дата рождения:</label>
+                                <input id="birth" class="input" type="text" value="" name="birth" autocomplete="off">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="login">Логин:</label>
+                                <input id="login" class="input" type="text" value="" name="login" autocomplete="off" disabled>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="phone">Телефон:</label>
+                                <input id="phone" class="input" type="text" value="" name="phone" autocomplete="off">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email:</label>
+                                <input id="email" class="input" type="text" value="" name="email" autocomplete="off">
+                            </div>
+
+                            <button class="button" type="submit">
+                                <span>Сохранить</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#button_arrow"></use>
+                                </svg>
+                            </button>
+                        </form>
+
+                        <h2>Адрес доставки</h2>
+
+                        <form class="personal-form" action="">
+                            <div class="form-group">
+                                <label class="form-label" for="city">Город:</label>
+                                <input id="city" class="input" type="text" value="" name="city" autocomplete="off">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="street">Улица:</label>
+                                <input id="street" class="input" type="text" value="" name="street" autocomplete="off">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="apt">Офис/квартира:</label>
+                                <input id="apt" class="input" type="text" value="" name="apt" autocomplete="off">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="index">Индекс:</label>
+                                <input id="index" class="input" type="text" value="" name="index" autocomplete="off">
+                            </div>
+
+                            <button class="button" type="submit">
+                                <span>Сохранить</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#button_arrow"></use>
+                                </svg>
+                            </button>
+                        </form>
+
+                        <h2>Изменить пароль</h2>
+
+                        <form class="personal-form" action="">
+                            <div class="form-group">
+                                <label class="form-label" for="old_password">Старый пароль:</label>
+                                <input id="old_password" class="input" type="password" value="" name="old_password" autocomplete="off">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="password">Новый пароль:</label>
+                                <input id="new_password" class="input" type="password" value="" name="new_password" autocomplete="off">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="re_new_password">Подтверждение пароля:</label>
+                                <input id="re_new_password" class="input" type="password" value="" name="re_new_password" autocomplete="off">
+                            </div>
+
+                            <button class="button" type="submit">
+                                <span>Сохранить</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#button_arrow"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    //= template/footer.html
+
+    //= template/scripts.html
+</body>
+
+</html>

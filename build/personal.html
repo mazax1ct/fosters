@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>FOSTERS PC</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#34b7bc">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preload" href="fonts/Rawline/subset-Rawline-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Wadik/subset-WadikBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="plugins_css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body class="page">
+    <div class="page__content">
+        <header class="header compensate-for-scrollbar">
+            <div class="header__inner container">
+                <a class="header-logo" href="#" title="FOSTERS PC">
+                    <svg class="header-logo__icon" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#logo_icon" />
+                    </svg>
+                    <svg class="header-logo__text" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#logo_text" />
+                    </svg>
+                </a>
+        
+                <nav class="main-menu">
+                    <ul class="main-menu__list">
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">
+                                <span>Компания</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">
+                                <span>Компьютеры</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">
+                                <span>Конфигуратор</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">
+                                <span>Периферия</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">
+                                <span>Клиентам</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+        
+                    <h3>Личный кабинет</h3>
+        
+                    <ul class="main-menu__list">
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">
+                                <span>История заказов</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">
+                                <span>Мои компьютеры</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">
+                                <span>Моя корзина</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">
+                                <span>Сохраненные конфигурации</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">
+                                <span>Поддержка</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">
+                                <span>Настройки профиля</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">
+                                <span>Выйти из профиля</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+        
+                <div class="header__right-block">
+                    <button class="js-theme-toggler header__link" type="button" title="Переключить на тёмную тему">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#moon" />
+                        </svg>
+                    </button>
+                    <a class="header__link" href="personal.html" title="Личный кабинет">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#user" />
+                        </svg>
+                    </a>
+                    <a class="header__link" href="cart.html" title="Корзина">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#cart" />
+                        </svg>
+                    </a>
+                    <button class="js-main-menu-toggler header__link header__link--burger" type="button" title="Открыть меню">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#burger" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Личный кабинет</a>
+                    </li>
+                    <li class="breadcrumbs__item">Настройки профиля</li>
+                </ul>
+
+                <h1 class="color-green">Личный кабинет</h1>
+
+                <div class="columns_1_3 personal">
+                    <div class="columns_1_3__column_1 personal__menu">
+                        <ul class="personal-menu">
+                            <li class="personal-menu__item">
+                                <a class="personal-menu__link" href="#">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#file_lines" />
+                                    </svg>
+                                    История заказов
+                                </a>
+                            </li>
+                            <li class="personal-menu__item">
+                                <a class="personal-menu__link" href="#">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#computer" />
+                                    </svg>
+                                    Мои компьютеры
+                                </a>
+                            </li>
+                            <li class="personal-menu__item">
+                                <a class="personal-menu__link" href="#">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#cart" />
+                                    </svg>
+                                    Моя корзина
+                                </a>
+                            </li>
+                            <li class="personal-menu__item">
+                                <a class="personal-menu__link" href="#">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#file_check" />
+                                    </svg>
+                                    Сохраненные конфигурации
+                                </a>
+                            </li>
+                            <li class="personal-menu__item">
+                                <a class="personal-menu__link" href="#">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#square_question" />
+                                    </svg>
+                                    Поддержка
+                                </a>
+                            </li>
+                            <li class="personal-menu__item">
+                                <a class="personal-menu__link is-active" href="#">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#gear" />
+                                    </svg>
+                                    Настройки профиля
+                                </a>
+                            </li>
+                            <li class="personal-menu__item">
+                                <a class="personal-menu__link" href="#">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#logout" />
+                                    </svg>
+                                    Выйти из профиля
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="columns_1_3__column_3">
+                        <h2>Ваши данные</h2>
+
+                        <form class="personal-form" action="">
+                            <div class="form-group">
+                                <label class="form-label" for="name">Имя:</label>
+                                <input id="name" class="input" type="text" value="" name="name" autocomplete="off">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="last_name">Фамилия:</label>
+                                <input id="last_name" class="input" type="text" value="" name="last_name" autocomplete="off">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="birth">Дата рождения:</label>
+                                <input id="birth" class="input" type="text" value="" name="birth" autocomplete="off">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="login">Логин:</label>
+                                <input id="login" class="input" type="text" value="" name="login" autocomplete="off" disabled>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="phone">Телефон:</label>
+                                <input id="phone" class="input" type="text" value="" name="phone" autocomplete="off">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email:</label>
+                                <input id="email" class="input" type="text" value="" name="email" autocomplete="off">
+                            </div>
+
+                            <button class="button" type="submit">
+                                <span>Сохранить</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#button_arrow"></use>
+                                </svg>
+                            </button>
+                        </form>
+
+                        <h2>Адрес доставки</h2>
+
+                        <form class="personal-form" action="">
+                            <div class="form-group">
+                                <label class="form-label" for="city">Город:</label>
+                                <input id="city" class="input" type="text" value="" name="city" autocomplete="off">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="street">Улица:</label>
+                                <input id="street" class="input" type="text" value="" name="street" autocomplete="off">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="apt">Офис/квартира:</label>
+                                <input id="apt" class="input" type="text" value="" name="apt" autocomplete="off">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="index">Индекс:</label>
+                                <input id="index" class="input" type="text" value="" name="index" autocomplete="off">
+                            </div>
+
+                            <button class="button" type="submit">
+                                <span>Сохранить</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#button_arrow"></use>
+                                </svg>
+                            </button>
+                        </form>
+
+                        <h2>Изменить пароль</h2>
+
+                        <form class="personal-form" action="">
+                            <div class="form-group">
+                                <label class="form-label" for="old_password">Старый пароль:</label>
+                                <input id="old_password" class="input" type="password" value="" name="old_password" autocomplete="off">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="password">Новый пароль:</label>
+                                <input id="new_password" class="input" type="password" value="" name="new_password" autocomplete="off">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="re_new_password">Подтверждение пароля:</label>
+                                <input id="re_new_password" class="input" type="password" value="" name="re_new_password" autocomplete="off">
+                            </div>
+
+                            <button class="button" type="submit">
+                                <span>Сохранить</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#button_arrow"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__logo">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#logo" />
+                </svg>
+            </div>
+    
+            <div class="footer__menu">
+                <div class="footer__menu-section">
+                    <div class="footer__menu-title">
+                        Каталог товаров
+                        <button class="js-footer-menu-toggler" type="button">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#arrow_down" />
+                            </svg>
+                        </button>
+                    </div>
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Игровые компьютеры</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Готовые компьютеры</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Аксессуары</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__menu-section">
+                    <div class="footer__menu-title">
+                        Клиентам
+                        <button class="js-footer-menu-toggler" type="button">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#arrow_down" />
+                            </svg>
+                        </button>
+                    </div>
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Доставка</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Оплата</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Гарантия</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Сервис</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Акции</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__menu-section">
+                    <div class="footer__menu-title">
+                        О компании
+                        <button class="js-footer-menu-toggler" type="button">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#arrow_down" />
+                            </svg>
+                        </button>
+                    </div>
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Отзывы</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Договор оферты</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="#">Личный кабинет</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__menu-section">
+                    <div class="footer__menu-title">Социальные сети</div>
+                    <div class="socials">
+                        <a class="social-link" href="#" title="Мы Вконтакте" target="_blank" rel="nofollow noreferrer">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#vk" />
+                            </svg>
+                        </a>
+                        <a class="social-link" href="#" title="Наш Yotube" target="_blank" rel="nofollow noreferrer">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#yt" />
+                            </svg>
+                        </a>
+                        <a class="social-link" href="#" title="Наш WhatsApp" target="_blank" rel="nofollow noreferrer">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#wa" />
+                            </svg>
+                        </a>
+                        <a class="social-link" href="#" title="Наш Telegram" target="_blank" rel="nofollow noreferrer">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#tg" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer__bottom">
+                <p class="footer__copyright">2023 © Fosterspc. Все права защищены.</p>
+                <p class="footer__note">
+                    Fosters и логотип Fosters являются товарными знаками компании ООО "Форсайт Северо-Запад", зарегистрированными в России и других странах. Другие наименования и товарные знаки являются собственностью своих законных
+                    владельцев.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/select2-addon.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
