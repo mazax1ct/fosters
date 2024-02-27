@@ -27,18 +27,18 @@
             font-size: 144px;
             letter-spacing: -8px;
         }
-        @media(min-width: $lg) {
+        /*@media(min-width: $lg) {
             font-size: 172px;
-        }
+        }*/
         /*@media(min-width: $fhd) {
             font-size: 220px;
         }*/
     }
 
     &__text {
-        max-width: 540px;
         @media(min-width: $md) {
             font-size: 16px;
+            max-width: 540px;
         }
         @media(min-width: $hd) {
             font-size: 18px;

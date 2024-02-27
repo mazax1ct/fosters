@@ -12,6 +12,9 @@
                     margin-bottom: 0;
                     width: 50%;
                 }
+                @media(min-width: $hd) {
+                    padding-right: 15%;
+                }
             }
 
             .feedback__form {
