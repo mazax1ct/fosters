@@ -128,10 +128,10 @@
             &:nth-child(1),
             &:nth-child(2),
             &:nth-child(3) {
-                @media(min-width: $fhd) and (min-height: 900px) {
+                /*@media(min-width: $fhd) and (min-height: 900px) {
                     border-bottom: 1px solid var(--secondary_color);
                     padding-bottom: 10px;
-                }
+                }*/
             }
 
             &:nth-child(1),
@@ -140,7 +140,7 @@
                 z-index: 1;
 
                 &::after {
-                    @media(min-width: $fhd) and (min-height: 900px) {
+                    /*@media(min-width: $fhd) and (min-height: 900px) {
                         border-right: 1px solid var(--secondary_color);
                         content: '';
                         height: 102px;
@@ -149,7 +149,7 @@
                         right: -20px;
                         top: 0;
                         z-index: 1;
-                    }
+                    }*/
                 }
             }
 
@@ -157,9 +157,9 @@
             &:nth-child(5),
             &:nth-child(6) {
                 display: none;
-                @media(min-width: $fhd) and (min-height: 900px) {
+                /*@media(min-width: $fhd) and (min-height: 900px) {
                     display: flex;
-                }
+                }*/
             }
 
             .fps-item__image {
@@ -320,9 +320,9 @@
         @media(min-width: $lg) {
             font-size: 56px;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 72px;
-        }
+        }*/
     }
 
     &__inner {

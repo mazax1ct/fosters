@@ -26,13 +26,12 @@
         @media(min-width: $lg) {
             font-size: 20px;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 22px;
             padding-top: 20px;
             padding-bottom: 20px;
             padding-right: 48px;
-        }
-
+        }*/
         &.is-active {
             color: var(--primary_color);
 
@@ -53,26 +52,24 @@
                 height: 24px;
                 width: 24px;
             }
-            @media(min-width: $fhd) {
+            /*@media(min-width: $fhd) {
                 height: 40px;
                 width: 40px;
-            }
+            }*/
         }
     }
 
     &__body {
         display: none;
         padding-bottom: 15px;
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             padding-bottom: 20px;
-        }
-
+        }*/
         &--parent {
             padding-bottom: 0;
-            @media(min-width: $fhd) {
+            /*@media(min-width: $fhd) {
                 padding-bottom: 0;
-            }
-
+            }*/
             .accordion {
                 @media(min-width: $hd) {
                     width: calc(100% /4 * 3);
@@ -87,10 +84,10 @@
                 font-size: 80%;
 
                 svg {
-                    @media(min-width: $fhd) {
+                    /*@media(min-width: $fhd) {
                         height: 24px;
                         width: 24px;
-                    }
+                    }*/
                 }
             }
 

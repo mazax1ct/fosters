@@ -24,10 +24,9 @@
         @media(min-width: $hd) {
             font-size: 24px;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 40px;
-        }
-
+        }*/
         span {
             font-family: var(--secondary_font_family);
             font-size: 30px;
@@ -45,9 +44,9 @@
             @media(min-width: $lg) {
                 font-size: 64px;
             }
-            @media(min-width: $fhd) {
+            /*@media(min-width: $fhd) {
                 font-size: 100px;
-            }
+            }*/
         }
     }
 
@@ -61,8 +60,8 @@
         @media(min-width: $hd) {
             font-size: 20px;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 32px;
-        }
+        }*/
     }
 }

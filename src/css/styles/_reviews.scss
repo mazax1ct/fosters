@@ -22,9 +22,9 @@
     min-height: 220px;
     padding: 15px;
     text-decoration: none;
-    @media(min-width: $fhd) {
+    /*@media(min-width: $fhd) {
         min-height: 330px;
-    }
+    }*/
     @include hover {
         color: var(--text_color);
 
@@ -41,9 +41,9 @@
         @media(min-width: $hd) {
             font-size: 20px;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 24px;
-        }
+        }*/
     }
 
     &__text {
@@ -71,8 +71,8 @@
         @media(min-width: $hd) {
             font-size: 14px;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 16px;
-        }
+        }*/
     }
 }

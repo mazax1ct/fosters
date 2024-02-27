@@ -7,9 +7,9 @@
 
         &:not(:last-child) {
             margin-bottom: 40px;
-            @media(min-width: $fhd) {
+            /*@media(min-width: $fhd) {
                 margin-bottom: 100px;
-            }
+            }*/
         }
     }
 
@@ -84,9 +84,9 @@
 
     &__price-title {
         width: 40%;
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 22px;
-        }
+        }*/
     }
 
     &__price {
@@ -100,10 +100,9 @@
         @media(min-width: $hd) {
             font-size: 20px;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 24px;
-        }
-
+        }*/
         span {
             white-space: nowrap;
         }

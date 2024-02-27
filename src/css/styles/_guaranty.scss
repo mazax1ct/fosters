@@ -26,10 +26,9 @@
             font-size: 16px;
             gap: 10px;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 20px;
-        }
-
+        }*/
         &--background {
             background-image: url("../images/backgrounds/guaranty/back.jpg");
             background-color: var(--primary_color);
@@ -51,9 +50,9 @@
             font-size: 140px;
             margin-bottom: -6px;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 200px;
             margin-left: -0.2em;
-        }
+        }*/
     }
 }

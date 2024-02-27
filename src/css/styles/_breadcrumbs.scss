@@ -15,11 +15,10 @@
     @media(min-width: $lg) {
         font-size: 15px;
     }
-    @media(min-width: $fhd) {
+    /*@media(min-width: $fhd) {
         font-size: 20px;
         margin-bottom: 40px;
-    }
-
+    }*/
     &__item {
         &:not(:last-child) {
             &::after {

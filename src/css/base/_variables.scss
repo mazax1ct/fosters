@@ -26,9 +26,9 @@ $fhd: 1900px;
     @media(min-width: $hd) {
         --page_section_vertical_gap: 120px;
     }
-    @media(min-width: $fhd) {
+    /*@media(min-width: $fhd) {
         --page_section_vertical_gap: 200px;
-    }
+    }*/
 }
 
 .dark-theme {

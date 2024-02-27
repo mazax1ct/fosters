@@ -120,9 +120,9 @@
         line-height: 1.1;
         margin-bottom: 10px;
         text-transform: uppercase;
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 40px;
-        }
+        }*/
     }
 
     &__games-list {
@@ -171,9 +171,9 @@
 
     &__price-title {
         width: 40%;
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 22px;
-        }
+        }*/
     }
 
     &__price {
@@ -187,10 +187,9 @@
         @media(min-width: $hd) {
             font-size: 20px;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 24px;
-        }
-
+        }*/
         span {
             white-space: nowrap;
         }
@@ -242,9 +241,9 @@
             @media(min-width: $lg) {
                 font-size: 14px;
             }
-            @media(min-width: $fhd) {
+            /*@media(min-width: $fhd) {
                 font-size: 15px;
-            }
+            }*/
         }
     }
 }

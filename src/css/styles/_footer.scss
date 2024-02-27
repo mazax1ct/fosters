@@ -11,10 +11,12 @@
     &::before {
         border-top: 1px solid var(--secondary_color);
         content: '';
-        left: var(--container_padding);
+        left: 50%;
+        max-width: 1520px;
         position: absolute;
-        right: var(--container_padding);
+        transform: translateX(-50%);
         top: 0;
+        width: calc(100% - var(--container_padding) * 2);
         z-index: 1;
     }
 
@@ -32,10 +34,10 @@
             fill: currentColor;
             height: 45px;
             width: 295px;
-            @media(min-width: $fhd) {
+            /*@media(min-width: $fhd) {
                 height: 70px;
                 width: 458px;
-            }
+            }*/
         }
     }
 
@@ -45,9 +47,9 @@
             display: flex;
             margin-bottom: 50px;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             margin-bottom: 115px;
-        }
+        }*/
     }
 
     &__menu-section {
@@ -93,11 +95,10 @@
         @media(min-width: $lg) {
             font-size: 22px;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 28px;
             margin-bottom: 25px;
-        }
-
+        }*/
         &.is-active {
             svg {
                 transform: rotate(180deg);
@@ -151,22 +152,30 @@
             display: flex;
             justify-content: space-between;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 14px;
-        }
+        }*/
     }
 
     &__copyright {
+        font-size: 10px;
         @media(min-width: $hd) {
             margin-bottom: 0;
+        }
+        @media(min-width: $lg) {
+            font-size: 12px;
         }
     }
 
     &__note {
+        font-size: 10px;
         max-width: 770px;
-        @media(min-width: $fhd) {
-            max-width: 830px;
+        @media(min-width: $lg) {
+            font-size: 12px;
         }
+        /*@media(min-width: $fhd) {
+            max-width: 830px;
+        }*/
     }
 }
 
@@ -176,9 +185,9 @@
     @media(min-width: $lg) {
         gap: 30px;
     }
-    @media(min-width: $fhd) {
+    /*@media(min-width: $fhd) {
         gap: 40px;
-    }
+    }*/
     @media(max-width: $md - 0.01px) {
         padding-top: 15px;
     }
@@ -190,17 +199,16 @@
     height: 40px;
     justify-content: center;
     width: 40px;
-    @media(min-width: $fhd) {
+    /*@media(min-width: $fhd) {
         height: 50px;
         width: 50px;
-    }
-
+    }*/
     svg {
         height: 40px;
         width: 40px;
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             height: 50px;
             width: 50px;
-        }
+        }*/
     }
 }

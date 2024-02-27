@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>FOSTERS PC</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts_preload.html
+
+    <link rel="stylesheet" href="plugins_css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body class="page">
+    <div class="page__content">
+        //= template/header_personal.html
+
+        <main>
+            <div class="container">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Личный кабинет</a>
+                    </li>
+                    <li class="breadcrumbs__item">Мои компьютеры</li>
+                </ul>
+
+                <h1 class="color-green">Личный кабинет</h1>
+
+                <div class="columns_1_3 personal">
+                    <div class="columns_1_3__column_1 personal__menu">
+                        //= template/personal-menu.html
+                    </div>
+
+                    <div class="columns_1_3__column_3">
+                        <h2>Ваши компьютеры</h2>
+
+                        <div>
+                            <div class="o-item">
+                                <div class="o-item__image">
+                                    <img src="images/content/order-make/img_1.png" srcset="images/content/order-make/img_1@2x.png 2x" alt="">
+                                </div>
+                                <div class="o-item__block">
+                                    <p class="o-item__title">Ваш товар:</p>
+                                    <p class="o-item__val">Project EVO</p>
+                                </div>
+                                <div class="o-item__block">
+                                    <p class="o-item__title">Количество:</p>
+                                    <p class="o-item__val">1</p>
+                                </div>
+                                <div class="o-item__block">
+                                    <p class="o-item__title">Стоимость:</p>
+                                    <p class="o-item__val o-item__price">359 000 ₽</p>
+                                </div>
+                                <div class="o-item__block">
+                                    <p class="o-item__title">Гарантия:</p>
+                                    <p class="o-item__val o-item__price">1 год</p>
+                                </div>
+
+                                <div class="o-item__block">
+                                    <p class="o-item__title">Дата заказа:</p>
+                                    <p class="o-item__val o-item__price">28.10.2023</p>
+                                </div>
+
+                                <div class="o-item__block">
+                                    <p class="o-item__title">Дата доставки:</p>
+                                    <p class="o-item__val o-item__price">11.11.2023</p>
+                                </div>
+
+                                <div class="o-item__buttons">
+                                    <button class="button" type="submit">
+                                        <span>Повторить заказ</span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#button_arrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tests">
+                            <h2 class="long-word">Тесты производительности</h2>
+
+                            <div class="tabs">
+                                <div class="tabs-menu_3">
+                                    <button class="js-tabs-button tabs-menu_3__button is-active" type="button" data-target="1">Furmark</button>
+                                    <button class="js-tabs-button tabs-menu_3__button" type="button" data-target="2">Aida64</button>
+                                </div>
+
+                                <div class="tab is-active" data-target="1">
+                                    <div>
+                                        <div class="accordion">
+                                            <button class="js-accordion-toggler accordion__toggler" type="button">
+                                                <span>Показатель Fan</span>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#arrow_down" />
+                                                </svg>
+                                            </button>
+                                            <div class="accordion__body">
+                                                <img src="images/content/tests/img_1.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="accordion">
+                                            <button class="js-accordion-toggler accordion__toggler" type="button">
+                                                <span>Средний показатель FPS</span>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#arrow_down" />
+                                                </svg>
+                                            </button>
+                                            <div class="accordion__body">
+                                                <img src="images/content/tests/img_1.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="accordion">
+                                            <button class="js-accordion-toggler accordion__toggler" type="button">
+                                                <span>Температура видеокарты</span>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#arrow_down" />
+                                                </svg>
+                                            </button>
+                                            <div class="accordion__body">
+                                                <img src="images/content/tests/img_1.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab" data-target="2">
+                                    Другие параметры оценки
+                                </div>
+                            </div>
+
+                            <div class="tests__params">
+                                <div class="tests__params-block">
+                                    <p class="conf-compare__tab-title">Детали</p>
+                                    <div class="card__info">
+                                        <p>
+                                            <span>i5-13600K</span>
+                                            <span>Intel Core 3.5-5.1GHz14 ядер/20&nbsp;потоков</span>
+                                        </p>
+                                        <p>
+                                            <span>RTX 4070Ti</span>
+                                            <span>12GB GDDR6XNVIDIA GeForce</span>
+                                        </p>
+                                        <p>
+                                            <span>32GB RGB</span>
+                                            <span>DDR5 5200Mhz2 x 16Gb</span>
+                                        </p>
+                                        <p>
+                                            <span>500GB</span>
+                                            <span>SSD NVMe 4.0W/R: 5000/6900 Мб/с</span>
+                                        </p>
+                                        <p>
+                                            <span>Не выбрано</span>
+                                            <span>Без дополнительного NVME накопителя</span>
+                                        </p>
+                                        <p>
+                                            <span>1TB</span>
+                                            <span>SSD SATA 2'5W/R: 520/560 Мб/с</span>
+                                        </p>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="tests__params-block">
+                                    <p class="conf-compare__tab-title">Показатели FPS</p>
+                                    <div class="conf-compare__fps">
+                                        <div class="fps-item">
+                                            <div class="fps-item__image"><img src="images/content/games/img_1.jpg" srcset="images/content/games/img_1@2x.jpg 2x" alt=""></div>
+                                            <div class="fps-item__bar-container">
+                                                <div class="fps-item__bar fps-item__bar--green" style="width: 95%"></div>
+                                                <div class="fps-item__title">Tom Clancy's Rainbow Six Siege</div>
+                                                <div class="fps-item__value">256 <span>FPS</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="fps-item">
+                                            <div class="fps-item__image"><img src="images/content/games/img_2.jpg" srcset="images/content/games/img_2@2x.jpg 2x" alt=""></div>
+                                            <div class="fps-item__bar-container">
+                                                <div class="fps-item__bar fps-item__bar--green" style="width: 85%"></div>
+                                                <div class="fps-item__title">Doom Eternal (2020)</div>
+                                                <div class="fps-item__value">180 <span>FPS</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="fps-item">
+                                            <div class="fps-item__image"><img src="images/content/games/img_3.jpg" srcset="images/content/games/img_3@2x.jpg 2x" alt=""></div>
+                                            <div class="fps-item__bar-container">
+                                                <div class="fps-item__bar fps-item__bar--green" style="width: 55%"></div>
+                                                <div class="fps-item__title">World of Tanks</div>
+                                                <div class="fps-item__value">163 <span>FPS</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="fps-item">
+                                            <div class="fps-item__image"><img src="images/content/games/img_4.jpg" srcset="images/content/games/img_4@2x.jpg 2x" alt=""></div>
+                                            <div class="fps-item__bar-container">
+                                                <div class="fps-item__bar fps-item__bar--green" style="width: 35%"></div>
+                                                <div class="fps-item__title">Destiny 2</div>
+                                                <div class="fps-item__value">153 <span>FPS</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="fps-item">
+                                            <div class="fps-item__image"><img src="images/content/games/img_5.jpg" srcset="images/content/games/img_5@2x.jpg 2x" alt=""></div>
+                                            <div class="fps-item__bar-container">
+                                                <div class="fps-item__bar fps-item__bar--green" style="width: 15%"></div>
+                                                <div class="fps-item__title">Hitman III</div>
+                                                <div class="fps-item__value">105 <span>FPS</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slider slider-container">
+                                <div class="js-slider swiper" data-id="slider_1">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="images/content/img_wide.jpg" srcset="images/content/img_wide@2x.jpg 2x" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/content/img_wide.jpg" srcset="images/content/img_wide@2x.jpg 2x" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/content/img_wide.jpg" srcset="images/content/img_wide@2x.jpg 2x" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="slider-navigation">
+                                    <button class="js-slider-prev swiper-button-prev" type="button" title="Назад" data-id="slider_1">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#arrow_left" />
+                                        </svg>
+                                    </button>
+
+                                    <div class="js-slider-navigation swiper-pagination" data-id="slider_1"></div>
+
+                                    <button class="js-slider-next swiper-button-next" type="button" title="Вперёд" data-id="slider_1">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <h2>Связь с нами</h2>
+                            <div class="feedback__container">
+                                <div class="feedback__text">
+                                    <p>Нужна помощь в выборе?</p>
+                                    <p>Если вы не смогли определиться с выбором среди предложенных конфигураций или у вас есть специфические задачи, индивидуальные предпочтения, свяжитесь с нами!</p>
+                                </div>
+                                <div class="feedback__form">
+                                    <form action="">
+                                        <label class="form-group">
+                                            <input class="input input--underlined" type="text" value="" name="name" placeholder="Ваше имя" autocomplete="off">
+                                        </label>
+
+                                        <label class="form-group">
+                                            <input class="input input--underlined" type="text" value="" name="phone" placeholder="+7 999 999 99 99" autocomplete="off">
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="" value="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Нажимая на кнопку, вы даете согласие на обработку персональных данных<br> и соглашаетесь с <a href="#">политикой конфиденциальности</a></span>
+                                        </label>
+
+                                        <button class="button" type="submit" disabled>
+                                            <span>Связаться</span>
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#button_arrow" />
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    //= template/footer.html
+
+    //= template/scripts.html
+</body>
+
+</html>

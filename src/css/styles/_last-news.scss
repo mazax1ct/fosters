@@ -1,19 +1,18 @@
 .last-news {
     &:not(:last-child) {
         margin-bottom: 40px;
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             margin-bottom: 50px;
-        }
+        }*/
     }
     @media(min-width: $md) {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
-    @media(min-width: $fhd) {
+    /*@media(min-width: $fhd) {
         gap: 40px;
-    }
-
+    }*/
     &__text-block {
         margin-bottom: 10px;
     }
@@ -26,9 +25,9 @@
         @media(min-width: $hd) {
             font-size: 24px;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 40px;
-        }
+        }*/
     }
 
     &__date {
@@ -37,15 +36,15 @@
         @media(min-width: $hd) {
             font-size: 14px;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 18px;
-        }
+        }*/
     }
 
     &__preview-text {
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 24px;
-        }
+        }*/
     }
 
     &__image-block {

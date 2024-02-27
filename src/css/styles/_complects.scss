@@ -2,9 +2,9 @@
     &__nav {
         display: flex;
         gap: var(--container_padding);
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             gap: 80px;
-        }
+        }*/
     }
 
     &__nav-button {
@@ -35,9 +35,9 @@
         @media(min-width: $lg) {
             font-size: 16px;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 20px;
-        }
+        }*/
     }
 
     &__nav-button-title {
@@ -51,11 +51,11 @@
         @media(min-width: $lg) {
             font-size: 24px;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 32px;
             padding-left: 20px;
             padding-right: 20px;
-        }
+        }*/
     }
 
     &__tabs {}

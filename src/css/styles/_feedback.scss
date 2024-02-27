@@ -34,10 +34,9 @@
         @media(min-width: $hd) {
             font-size: 18px;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 24px;
-        }
-
+        }*/
         br {
             @media(max-width: $md - 0.01px) {
                 display: none;
@@ -59,10 +58,9 @@
                 margin-top: 15px;
                 margin-bottom: 30px;
             }
-            @media(min-width: $fhd) {
+            /*@media(min-width: $fhd) {
                 font-size: 14px;
-            }
-
+            }*/
             br {
                 @media(max-width: $sm - 0.01px) {
                     display: none;

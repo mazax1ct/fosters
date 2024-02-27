@@ -53,9 +53,9 @@
     @media(min-width: $hd) {
         font-size: 24px;
     }
-    @media(min-width: $fhd) {
+    /*@media(min-width: $fhd) {
         font-size: 32px;
-    }
+    }*/
     @include hover {
         img {
             transform: scale(1.02);

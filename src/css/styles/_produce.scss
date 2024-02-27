@@ -12,10 +12,9 @@
         gap: 20px;
         padding: 20px;
     }
-    @media(min-width: $fhd) {
+    /*@media(min-width: $fhd) {
         height: 140px;
-    }
-
+    }*/
     &.is-open {
         height: auto;
     }
@@ -40,9 +39,9 @@
         @media(min-width: $hd) {
             font-size: 24px;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 40px;
-        }
+        }*/
     }
 
     &__image {
@@ -58,8 +57,8 @@
         @media(min-width: $md) {
             width: calc(100% / 4 - var(--container_padding));
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 20px;
-        }
+        }*/
     }
 }

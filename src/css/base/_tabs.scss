@@ -5,11 +5,10 @@
     @media(min-width: $md) {
         gap: 20px;
     }
-    @media(min-width: $fhd) {
+    /*@media(min-width: $fhd) {
         gap: 50px;
         margin-bottom: 50px;
-    }
-
+    }*/
     &__button {
         align-items: center;
         border: 1px solid var(--primary_color);
@@ -29,12 +28,11 @@
         @media(min-width: $md) {
             width: 200px;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 24px;
             height: 70px;
             width: 300px;
-        }
-
+        }*/
         &:not(:last-child) {
             @media(max-width: $md - 0.01px) {
                 border-right: none;
@@ -75,6 +73,34 @@
         }
         @media(min-width: $hd) {
             font-size: 24px;
+        }
+    }
+}
+
+.tabs-menu_3 {
+    display: flex;
+    gap: var(--container_padding);
+    margin-bottom: 20px;
+    overflow-x: auto;
+
+    &__button {
+        @include button-reset;
+        border: 1px solid var(--primary_color);
+        color: var(--text_color);
+        font-weight: 600;
+        flex-grow: 1;
+        max-width: 480px;
+        min-height: 40px;
+        padding: 10px;
+        text-align: left;
+        @media(min-width: $hd) {
+            min-height: 60px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        &.is-active {
+            background-color: var(--primary_color);
         }
     }
 }

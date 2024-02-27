@@ -35,39 +35,198 @@
                 <h1>Корзина</h1>
 
                 <div class="cart-list">
-                    <div class="c-item">
-                        <a class="c-item__image" href="#">
+                    <div class="cart-item">
+                        <label class="checkbox cart-item__checkbox" title="Выбрать">
+                            <input type="checkbox">
+                            <span class="checkbox__icon"></span>
+                        </label>
+                        <a class="cart-item__image" href="#">
                             <img src="images/content/order-make/img_1.png" srcset="images/content/order-make/img_1@2x.png 2x" alt="">
                         </a>
-                        <div class="c-item__block">
-                            <p class="c-item__title">Ваш товар:</p>
-                            <p class="c-item__val"><a href="#">Project EVO</a></p>
+                        <div class="cart-item__block">
+                            <p class="cart-item__title">Ваш товар:</p>
+                            <p class="cart-item__val"><a href="#">Project FORGE</a></p>
                         </div>
-                        <div class="c-item__block">
-                            <p class="c-item__title">Стоимость:</p>
-                            <p class="c-item__val c-item__price">359 000 ₽</p>
+                        <div class="cart-item__block">
+                            <p class="cart-item__title">Количество:</p>
+                            <div class="qnt">
+                                <button class="qnt__button" type="button" title="Уменьшить">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#minus" />
+                                    </svg>
+                                </button>
+                                <input class="qnt__input" type="text" value="1">
+                                <button class="qnt__button" type="button" title="Увеличить">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#plus" />
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
-                        <div class="c-item__block">
-                            <p class="c-item__title">Гарантия:</p>
-                            <p class="c-item__val c-item__price">1 год</p>
+                        <div class="cart-item__block">
+                            <p class="cart-item__title">Стоимость:</p>
+                            <p class="cart-item__val cart-item__price">359 000 ₽</p>
                         </div>
-                        <div class="c-item__buttons">
-                            <button class="button button--bordered" type="submit">
+                        <div class="cart-item__block">
+                            <p class="cart-item__title">Гарантия:</p>
+                            <p class="cart-item__val cart-item__price">1 год</p>
+                        </div>
+                        <div class="cart-item__buttons">
+                            <p class="cart-item__title">&nbsp;</p>
+                            <button class="cart-item__delete" type="button" title="Удалить">
                                 <span>Удалить</span>
-                                <svg aria-hidden="true">
+                                <svg class="cart-item__button-icon" aria-hidden="true">
                                     <use xlink:href="images/sprite.svg#button_arrow"></use>
+                                </svg>
+                                <svg class="cart-item__delete-icon" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#trash"></use>
                                 </svg>
                             </button>
 
-                            <button class="button" type="submit">
-                                <span>Оформить заказ</span>
+                            <a class="button" href="#">
+                                <span>Перейти к товару</span>
                                 <svg aria-hidden="true">
                                     <use xlink:href="images/sprite.svg#button_arrow"></use>
                                 </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <label class="checkbox cart-item__checkbox" title="Выбрать">
+                            <input type="checkbox">
+                            <span class="checkbox__icon"></span>
+                        </label>
+                        <a class="cart-item__image" href="#">
+                            <img src="images/content/order-make/img_1.png" srcset="images/content/order-make/img_1@2x.png 2x" alt="">
+                        </a>
+                        <div class="cart-item__block">
+                            <p class="cart-item__title">Ваш товар:</p>
+                            <p class="cart-item__val"><a href="#">Project FORGE</a></p>
+                        </div>
+                        <div class="cart-item__block">
+                            <p class="cart-item__title">Количество:</p>
+                            <div class="qnt">
+                                <button class="qnt__button" type="button" title="Уменьшить">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#minus" />
+                                    </svg>
+                                </button>
+                                <input class="qnt__input" type="text" value="1">
+                                <button class="qnt__button" type="button" title="Увеличить">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#plus" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cart-item__block">
+                            <p class="cart-item__title">Стоимость:</p>
+                            <p class="cart-item__val cart-item__price">359 000 ₽</p>
+                        </div>
+                        <div class="cart-item__block">
+                            <p class="cart-item__title">Гарантия:</p>
+                            <p class="cart-item__val cart-item__price">1 год</p>
+                        </div>
+                        <div class="cart-item__buttons">
+                            <p class="cart-item__title">&nbsp;</p>
+                            <button class="cart-item__delete" type="button" title="Удалить">
+                                <span>Удалить</span>
+                                <svg class="cart-item__button-icon" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#button_arrow"></use>
+                                </svg>
+                                <svg class="cart-item__delete-icon" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#trash"></use>
+                                </svg>
                             </button>
+
+                            <a class="button" href="#">
+                                <span>Перейти к товару</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#button_arrow"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <label class="checkbox cart-item__checkbox" title="Выбрать">
+                            <input type="checkbox">
+                            <span class="checkbox__icon"></span>
+                        </label>
+                        <a class="cart-item__image" href="#">
+                            <img src="images/content/order-make/img_1.png" srcset="images/content/order-make/img_1@2x.png 2x" alt="">
+                        </a>
+                        <div class="cart-item__block">
+                            <p class="cart-item__title">Ваш товар:</p>
+                            <p class="cart-item__val"><a href="#">Project FORGE</a></p>
+                        </div>
+                        <div class="cart-item__block">
+                            <p class="cart-item__title">Количество:</p>
+                            <div class="qnt">
+                                <button class="qnt__button" type="button" title="Уменьшить">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#minus" />
+                                    </svg>
+                                </button>
+                                <input class="qnt__input" type="text" value="1">
+                                <button class="qnt__button" type="button" title="Увеличить">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#plus" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cart-item__block">
+                            <p class="cart-item__title">Стоимость:</p>
+                            <p class="cart-item__val cart-item__price">359 000 ₽</p>
+                        </div>
+                        <div class="cart-item__block">
+                            <p class="cart-item__title">Гарантия:</p>
+                            <p class="cart-item__val cart-item__price">1 год</p>
+                        </div>
+                        <div class="cart-item__buttons">
+                            <p class="cart-item__title">&nbsp;</p>
+                            <button class="cart-item__delete" type="button" title="Удалить">
+                                <span>Удалить</span>
+                                <svg class="cart-item__button-icon" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#button_arrow"></use>
+                                </svg>
+                                <svg class="cart-item__delete-icon" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#trash"></use>
+                                </svg>
+                            </button>
+
+                            <a class="button" href="#">
+                                <span>Перейти к товару</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#button_arrow"></use>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                <div class="cart-results">
+                    <p class="cart-results__price-container">
+                        <span class="cart-results__price-title">К оплате:</span>
+                        <span class="cart-results__price"><span>от 112 700 ₽</span></span>
+                    </p>
+                    <p class="cart-results__credit">
+                        <a href="#">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#question"></use>
+                            </svg>
+                            Доступно в кредит
+                        </a>
+                    </p>
+
+                    <a class="button" href="#">
+                        <span>Оформить заказ</span>
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#button_arrow"></use>
+                        </svg>
+                    </a>
+                </div>
+
             </div>
         </main>
     </div>

@@ -4,9 +4,9 @@
     font-size: 16px;
     line-height: 1;
     margin-bottom: 10px;
-    @media(min-width: $fhd) {
+    /*@media(min-width: $fhd) {
         font-size: 24px;
-    }
+    }*/
 }
 
 .disabled {
@@ -33,10 +33,9 @@
     @media(min-width: $hd) {
         font-size: 20px;
     }
-    @media(min-width: $fhd) {
+    /*@media(min-width: $fhd) {
         font-size: 28px;
-    }
-
+    }*/
     &::-webkit-input-placeholder {
         color: var(--secondary_color_dark);
         opacity: 1;
@@ -71,10 +70,10 @@
     &:not(.input--underlined) {
         padding-left: 20px;
         padding-right: 20px;
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             padding-left: 25px;
             padding-right: 25px;
-        }
+        }*/
     }
 
     &--underlined {
@@ -103,9 +102,9 @@
     @media(min-width: $hd) {
         height: 60px;
     }
-    @media(min-width: $fhd) {
+    /*@media(min-width: $fhd) {
         height: 80px;
-    }
+    }*/
 }
 
 .textarea {

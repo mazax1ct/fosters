@@ -54,12 +54,11 @@
         transition: background-color 0.3s, border-color 0.3s, color 0.3s;
         width: 40px;
         z-index: 1;
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             height: 50px;
             min-width: 50px;
             width: 50px;
-        }
-
+        }*/
         &::after {
             display: none;
         }
@@ -72,10 +71,10 @@
         svg {
             height: 20px;
             width: 20px;
-            @media(min-width: $fhd) {
+            /*@media(min-width: $fhd) {
                 height: 30px;
                 width: 30px;
-            }
+            }*/
         }
 
         &.swiper-button-lock {
@@ -106,13 +105,12 @@
                 margin-right: 5px;
                 width: 10px;
             }
-            @media(min-width: $fhd) {
+            /*@media(min-width: $fhd) {
                 height: 20px;
                 margin-left: 10px;
                 margin-right: 10px;
                 width: 20px;
-            }
-
+            }*/
             &.swiper-pagination-bullet-active {
                 background-color: var(--primary_color);
             }

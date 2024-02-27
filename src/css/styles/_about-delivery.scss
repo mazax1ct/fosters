@@ -32,9 +32,9 @@
         @media(min-width: $hd) {
             margin-bottom: 40px;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             margin-bottom: 100px;
-        }
+        }*/
     }
 
     &__top-block {
@@ -46,9 +46,9 @@
         @media(min-width: $hd) {
             padding: 20px;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 24px;
-        }
+        }*/
     }
 
     &__list {
@@ -56,16 +56,16 @@
         @media(min-width: $hd) {
             margin-bottom: 60px;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             margin-bottom: 100px;
-        }
+        }*/
     }
 
     &__list-title {
         font-weight: 600;
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 20px;
-        }
+        }*/
     }
 
     &__list-item {
@@ -79,11 +79,10 @@
             font-size: 18px;
             min-height: 50px;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 24px;
             min-height: 70px;
-        }
-
+        }*/
         &:last-child {
             border-bottom: 1px solid var(--primary_color);
         }
@@ -114,10 +113,10 @@
                     height: 20px;
                     width: 20px;
                 }
-                @media(min-width: $fhd) {
+                /*@media(min-width: $fhd) {
                     height: 24px;
                     width: 24px;
-                }
+                }*/
             }
         }
     }
@@ -142,9 +141,9 @@
 
     &__price-title {
         width: 40%;
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 22px;
-        }
+        }*/
     }
 
     &__price {
@@ -158,10 +157,9 @@
         @media(min-width: $hd) {
             font-size: 20px;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 32px;
-        }
-
+        }*/
         span {
             white-space: nowrap;
         }

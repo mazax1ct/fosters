@@ -5,11 +5,11 @@
             padding-left: calc(100% / 4 - var(--container_padding) * 3 / 4 + var(--container_padding));
             padding-right: calc(100% / 4 - var(--container_padding) * 3 / 4 + var(--container_padding));
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 20px;
             font-weight: 600;
             margin-bottom: 30px;
-        }
+        }*/
     }
 
     &__inner {
@@ -57,9 +57,9 @@
             height: 600px;
             padding-left: 15%;
         }
-        @media(min-width:$fhd) {
+        /*@media(min-width:$fhd) {
             height: 730px;
-        }
+        }*/
     }
 
     &__info-text {
@@ -68,9 +68,9 @@
             border-left: 1px solid #fff;
             padding-left: 20px;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             margin-bottom: 60px;
-        }
+        }*/
     }
 
     &__info-title {
@@ -82,10 +82,10 @@
         @media(min-width: $hd) {
             font-size: 18px;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 24px;
             margin-bottom: 30px;
-        }
+        }*/
     }
 
     &__info-item {
@@ -115,10 +115,9 @@
         @media(min-width: $sm) {
             margin-left: 20px;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             min-height: 55px;
-        }
-
+        }*/
         &:not(:last-child) {
             margin-bottom: 10px;
         }

@@ -1,8 +1,8 @@
 .set-title {
     font-weight: 600;
-    @media(min-width: $fhd) {
+    /*@media(min-width: $fhd) {
         font-size: 22px;
-    }
+    }*/
 }
 
 .set {
@@ -22,10 +22,9 @@
     @media(min-width: $lg) {
         gap: 48px 20px;
     }
-    @media(min-width: $fhd) {
+    /*@media(min-width: $fhd) {
         gap: 100px 20px;
-    }
-
+    }*/
     &__item {
         border-top: 1px solid var(--primary_color);
         padding-top: 5px;
@@ -51,8 +50,8 @@
         @media(min-width: $lg) {
             font-size: 32px;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 46px;
-        }
+        }*/
     }
 }

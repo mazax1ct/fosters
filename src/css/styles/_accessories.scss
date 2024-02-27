@@ -48,10 +48,9 @@
     @media(min-width: $lg) {
         min-height: 480px;
     }
-    @media(min-width: $fhd) {
+    /*@media(min-width: $fhd) {
         min-height: 560px;
-    }
-
+    }*/
     &__title {
         bottom: 10px;
         font-size: 15px;
@@ -72,9 +71,9 @@
         @media(min-width: $lg) {
             font-size: 32px;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 40px;
-        }
+        }*/
     }
 
     &__arrow {

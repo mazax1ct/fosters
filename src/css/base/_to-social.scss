@@ -6,9 +6,9 @@
     min-height: 40px;
     padding: 10px;
     text-decoration: none;
-    @media(min-width: $fhd) {
+    /*@media(min-width: $fhd) {
         padding: 20px;
-    }
+    }*/
     @include hover {
         color: var(--text_color);
 
@@ -23,9 +23,9 @@
         @media(min-width: $hd) {
             margin-bottom: 20px;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             margin-bottom: 30px;
-        }
+        }*/
     }
 
     &__title {
@@ -39,10 +39,10 @@
         @media(min-width: $hd) {
             font-size: 20px;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             font-size: 24px;
             gap: 20px;
-        }
+        }*/
     }
 
     &__icon {
@@ -57,10 +57,10 @@
             height: 48px;
             width: 48px;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             height: 64px;
             width: 64px;
-        }
+        }*/
     }
 
     &__button {
@@ -69,8 +69,8 @@
         @media(max-width: $sm - 0.01px) {
             display: none;
         }
-        @media(min-width: $fhd) {
+        /*@media(min-width: $fhd) {
             max-width: 380px;
-        }
+        }*/
     }
 }

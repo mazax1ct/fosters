@@ -85,17 +85,19 @@ $(document).on('click', '.js-accordion-toggler', function () {
 
 //обычный слайдер
 if($('.js-slider').length) {
-  const slider = new Swiper('.js-slider', {
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 10,
-    pagination: {
-      el: '.js-slider-navigation',
-    },
-    navigation: {
-      nextEl: '.js-slider-next',
-      prevEl: '.js-slider-prev',
-    }
+  $('.js-slider').each(function(index) {
+    var slider = new Swiper($(this)[0], {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: '.js-slider-navigation[data-id="'+$(this).attr('data-id')+'"]',
+      },
+      navigation: {
+        nextEl: '.js-slider-next[data-id="'+$(this).attr('data-id')+'"]',
+        prevEl: '.js-slider-prev[data-id="'+$(this).attr('data-id')+'"]',
+      }
+    });
   });
 }
 
