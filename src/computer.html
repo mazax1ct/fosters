@@ -27,51 +27,64 @@
             <div class="container">
                 <ul class="breadcrumbs">
                     <li class="breadcrumbs__item">
-                        <a class="breadcrumbs__link" href="#">Главная</a>
+                        <a class="breadcrumbs__link" href="main.html">Главная</a>
                     </li>
                     <li class="breadcrumbs__item">
-                        <a class="breadcrumbs__link" href="#">Готовые компьютеры</a>
+                        <a class="breadcrumbs__link" href="series.html">Компьютеры</a>
                     </li>
                     <li class="breadcrumbs__item">Project one</li>
                 </ul>
 
                 <section class="page__section">
-                    <div class="columns_1_3 detail-intro">
-                        <div class="columns_1_3__column_1 detail-intro__back-link">
-                            <p>
-                                <a class="back-link" href="#">
-                                    <svg aria-hidden="true">
-                                        <use xlink:href="images/sprite.svg#arrow_left" />
+                    <h1>Project ONE</h1>
+
+                    <div class="video-wide">
+                        <div class="js-video video video--wide video--enabled">
+                            <a class="js-video__link video__link" href="https://www.youtube.com/watch?v=pOWbR8Lt2Fk" target="_blank">
+                                <img class="video__media" src="images/content/video_wide.jpg" srcset="images/content/video_wide@2x.jpg 2x" alt="" title="">
+                                <button class="js-video__button video__button" type="button" aria-label="Запустить видео">
+                                    <svg class="video__svg" aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#play"></use>
                                     </svg>
-                                    Вернуться на страницу серий
-                                </a>
-                            </p>
-                        </div>
-                        <div class="columns_1_3__column_3">
-                            <h1>Project one</h1>
-                            <div class="detail-intro__text">
-                                <p>Представляем вашему вниманию хит продаж - Project ONE. Компактный и доступный компьютер, который станет идеальным выбором для широкого круга пользователей.</p>
-                                <p>Базовая цена от 214&nbsp;800&nbsp;₽</p>
-                            </div>
+                                </button>
+                            </a>
                         </div>
                     </div>
 
-                    <div class="image-wide">
-                        <img src="images/content/img_wide.jpg" srcset="images/content/img_wide@2x.jpg 2x" alt="">
+                    <div class="video-caption">
+                        <p>Наш компьютер из серии - Project ONE.</p>
+                        <p class="color-grey">Рассчитан на популярные игры с высокими или средне высокими настройками графики на разрешении FullHD. Компактен, имеет размеры: 202 x 266 x 295.2 мм.</p>
                     </div>
                 </section>
 
-                //= template/configs-variants.html
+                //= template/set.html
 
-                //= template/details.html
+                //= template/about-delivery.html
 
-                //= template/features.html
+                <section class="page__section">
+                    <p class="pre-title"><span>Ознакомление с Programing S</span></p>
+                    <h2>Видео-рассказ</h2>
 
-                //= template/components.html
+                    <div class="video-wide">
+                        <div class="js-video video video--wide video--enabled">
+                            <a class="js-video__link video__link" href="https://www.youtube.com/watch?v=pOWbR8Lt2Fk" target="_blank">
+                                <img class="video__media" src="images/content/video_wide_2.jpg" srcset="images/content/video_wide_2@2x.jpg 2x" alt="" title="">
+                                <button class="js-video__button video__button" type="button" aria-label="Запустить видео">
+                                    <svg class="video__svg" aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#play"></use>
+                                    </svg>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </section>
 
-                //= template/fps.html
 
-                //= template/service.html
+                //= template/fps-slider.html
+
+                //= template/config_2.html
+
+                //= template/recs.html
 
                 //= template/single-slider.html
 

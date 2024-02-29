@@ -91,6 +91,7 @@ if($('.js-slider').length) {
       slidesPerView: 1,
       spaceBetween: 10,
       pagination: {
+        clickable: true,
         el: '.js-slider-navigation[data-id="'+$(this).attr('data-id')+'"]',
       },
       navigation: {
@@ -98,40 +99,6 @@ if($('.js-slider').length) {
         prevEl: '.js-slider-prev[data-id="'+$(this).attr('data-id')+'"]',
       }
     });
-  });
-}
-
-//слайдер готовых проектов
-if($('.js-already').length) {
-  const alreadySlider = new Swiper('.js-already', {
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 10,
-    centeredSlides: true,
-    breakpoints: {
-      480: {
-        slidesPerView: 2,
-        spaceBetween: 10
-      },
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 10
-      },
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 20
-      },
-      1200: {
-        slidesPerView: 4
-      },
-    },
-    pagination: {
-      el: '.js-already-navigation',
-    },
-    navigation: {
-      nextEl: '.js-already-next',
-      prevEl: '.js-already-prev',
-    }
   });
 }
 
@@ -143,6 +110,7 @@ if($('.js-accessories').length) {
       slidesPerView: 1,
       spaceBetween: 10,
       pagination: {
+        clickable: true,
         el: '.js-accessories-navigation',
       },
       navigation: {
@@ -178,6 +146,7 @@ if($('.js-video-reviews').length) {
       },
     },
     pagination: {
+      clickable: true,
       el: '.js-video-reviews-navigation',
     },
     navigation: {
@@ -212,6 +181,7 @@ if($('.js-reviews').length) {
       },
     },
     pagination: {
+      clickable: true,
       el: '.js-reviews-navigation',
     },
     navigation: {
@@ -251,13 +221,16 @@ $(document).on('click', '.js-tabs-button', function () {
 
 //слайдер изображений серии
 if($('.js-series').length) {
-  const seriesSlider = new Swiper('.js-series', {
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 10,
-    pagination: {
-      el: '.js-series-navigation',
-    }
+  $('.js-series').each(function(index) {
+    var seriesImagesSlider = new Swiper($(this)[0], {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        clickable: true,
+        el: '.js-series-navigation[data-id="'+$(this).attr('data-id')+'"]',
+      }
+    });
   });
 }
 
@@ -280,6 +253,7 @@ if($('.js-cards-slider').length) {
         }
       },
       pagination: {
+        clickable: true,
         el: '.js-cards-slider-navigation[data-id="'+$(this).attr('data-id')+'"]',
       },
       navigation: {
@@ -396,6 +370,7 @@ if($('.js-fps-slider').length) {
         }
       },
       pagination: {
+        clickable: true,
         el: '.js-fps-slider-navigation[data-id="'+$(this).attr('data-id')+'"]',
       },
       navigation: {
@@ -425,6 +400,7 @@ if($('.js-recs-slider').length) {
         }
       },
       pagination: {
+        clickable: true,
         el: '.js-recs-slider-navigation[data-id="'+$(this).attr('data-id')+'"]',
       },
       navigation: {
@@ -443,6 +419,7 @@ if($('.js-fps-slider-2').length) {
       slidesPerView: 1,
       spaceBetween: 10,
       pagination: {
+        clickable: true,
         el: '.js-fps-slider-2-navigation[data-id="'+$(this).attr('data-id')+'"]',
       },
       navigation: {
@@ -452,3 +429,33 @@ if($('.js-fps-slider-2').length) {
     });
   });
 }
+
+const seriesSlider = new Swiper('.js-series-slider', {
+    effect: 'coverflow',
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    loop: true,
+    loopAdditionalSlides: 1,
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 250,
+        modifier: 3,
+        initialSlide: 4,
+        slideShadows: false
+    },
+    breakpoints: {
+        1500: {
+            coverflowEffect: {
+                modifier: 5,
+                depth: 125
+            },
+        },
+        /*1900: {
+            coverflowEffect: {
+                modifier: 5,
+                depth: 125
+            },
+        }*/
+    }
+});

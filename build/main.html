@@ -52,12 +52,35 @@
                             </a>
                         </li>
                         <li class="main-menu__item">
-                            <a class="main-menu__link" href="#">
+                            <a class="main-menu__link" href="computers.html">
                                 <span>Компьютеры</span>
                                 <svg aria-hidden="true">
                                     <use xlink:href="images/sprite.svg#arrow_right" />
                                 </svg>
                             </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu__item">
+                                    <a class="sub-menu__link" href="series.html">project alisio</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a class="sub-menu__link" href="series.html">project duo face</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a class="sub-menu__link" href="series.html">project evo</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a class="sub-menu__link" href="series.html">project forge</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a class="sub-menu__link" href="series.html">project mod</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a class="sub-menu__link" href="series.html">project one</a>
+                                </li>
+                                <li class="sub-menu__item">
+                                    <a class="sub-menu__link" href="series.html">project one max</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="main-menu__item">
                             <a class="main-menu__link" href="#">
@@ -117,7 +140,7 @@
                     <h1 class="intro-title">Наши компьютеры - воплощение идеальных решений<br><span>Fosters pc</span></h1>
 
                     <div class="main-banner slider slider-container">
-                        <div class="js-slider swiper">
+                        <div class="js-slider swiper" data-id="main_banner">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <a class="slider__link" href="#">
@@ -133,43 +156,19 @@
                         </div>
                     
                         <div class="slider-navigation">
-                            <button class="js-slider-prev swiper-button-prev" type="button" title="Назад">
+                            <button class="js-slider-prev swiper-button-prev" type="button" title="Назад" data-id="main_banner">
                                 <svg aria-hidden="true">
                                     <use xlink:href="images/sprite.svg#arrow_left" />
                                 </svg>
                             </button>
                     
-                            <div class="js-slider-navigation swiper-pagination"></div>
+                            <div class="js-slider-navigation swiper-pagination" data-id="main_banner"></div>
                     
-                            <button class="js-slider-next swiper-button-next" type="button" title="Вперёд">
+                            <button class="js-slider-next swiper-button-next" type="button" title="Вперёд" data-id="main_banner">
                                 <svg aria-hidden="true">
                                     <use xlink:href="images/sprite.svg#arrow_right" />
                                 </svg>
                             </button>
-                        </div>
-                    </div>
-
-                    <div class="to-catalog">
-                        <a class="button button--w_385" href="#">
-                            <span>Перейти в каталог</span>
-                            <svg aria-hidden="true">
-                                <use xlink:href="images/sprite.svg#button_arrow"></use>
-                            </svg>
-                        </a>
-                    </div>
-                </section>
-
-                <section class="page__section">
-                    <div class="intro">
-                        <p class="intro__title"><span>3000</span> компьютеров продано нашим&nbsp;клиентам</p>
-                        <div class="intro__text">
-                            <p>Создавая компьютеры, мы в первую очередь думаем о&nbsp;людях, которые будут пользоваться им ежедневно и с удовольствием</p>
-                        </div>
-                    </div>
-                
-                    <div class="marquee">
-                        <div class="marquee__inner" data-text="вольфрам в Челябинск • золото в Москву • никель в Челябинск • золото в Москву •">
-                            вольфрам в Челябинск • золото в Москву • никель в Челябинск • золото в Москву •
                         </div>
                     </div>
                 </section>
@@ -182,12 +181,14 @@
                         </div>
                 
                         <div class="columns_1_3__column_3 about__text-block">
-                            <div class="about__accent-text">
-                                <p>Наша компания - опытный и надежный поставщик компьютеров, с более чем 6-летним опытом работы в этой области</p>
+                            <div class="about__accent-text" style="width: 90%">
+                                <p><span style="font-size: 300%">3000</span> компьютеров продано нашим&nbsp;клиентам.</p>
+                                <p>Наша компания - опытный и надежный поставщик компьютеров, с&nbsp;более чем 6-летним опытом работы в этой области.</p>
                             </div>
                             <div class="about__text">
                                 <p>Мы гордимся тем, что имеем собственное производство, где мы контролируем каждый этап создания наших компьютеров, чтобы обеспечить высокое качество и надежность.</p>
                                 <p>Мы стремимся предложить только лучшее - высокое качество, надежность, удобство доставки и профессиональное обслуживание.</p>
+                                <p>Создавая компьютеры, мы в первую очередь думаем о&nbsp;людях, которые будут пользоваться им ежедневно и с удовольствием.</p>
                             </div>
                             <div class="about__nums">
                                 <div class="about__nums-item">
@@ -202,120 +203,167 @@
                             </div>
                         </div>
                     </div>
-                </section>
-
-                <section class="page__section">
-                    <p class="pre-title"><span>Игровые компьютеры</span></p>
-                    <h2>Готовые компьютеры</h2>
                 
-                    <div class="already slider-container">
-                        <div class="js-already swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <a class="already-item" href="#">
-                                        <span class="already-item__image"><img src="images/content/already/img_1.jpg" srcset="images/content/already/img_1@2x.jpg 2x" alt=""></span>
-                                        <span class="already-item__text">
-                                            <span class="already-item__title">project <span>one</span></span>
-                                            <span class="already-item__price">253 900 ₽</span>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="already-item" href="#">
-                                        <span class="already-item__image"><img src="images/content/already/img_2.jpg" srcset="images/content/already/img_2@2x.jpg 2x" alt=""></span>
-                                        <span class="already-item__text">
-                                            <span class="already-item__title">project <span>air</span></span>
-                                            <span class="already-item__price">253 900 ₽</span>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="already-item" href="#">
-                                        <span class="already-item__image"><img src="images/content/already/img_3.jpg" srcset="images/content/already/img_3@2x.jpg 2x" alt=""></span>
-                                        <span class="already-item__text">
-                                            <span class="already-item__title">project <span>evo</span></span>
-                                            <span class="already-item__price">253 900 ₽</span>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="already-item" href="#">
-                                        <span class="already-item__image"><img src="images/content/already/img_1.jpg" srcset="images/content/already/img_1@2x.jpg 2x" alt=""></span>
-                                        <span class="already-item__text">
-                                            <span class="already-item__title">project <span>one</span></span>
-                                            <span class="already-item__price">253 900 ₽</span>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="already-item" href="#">
-                                        <span class="already-item__image"><img src="images/content/already/img_2.jpg" srcset="images/content/already/img_2@2x.jpg 2x" alt=""></span>
-                                        <span class="already-item__text">
-                                            <span class="already-item__title">project <span>air</span></span>
-                                            <span class="already-item__price">253 900 ₽</span>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="already-item" href="#">
-                                        <span class="already-item__image"><img src="images/content/already/img_3.jpg" srcset="images/content/already/img_3@2x.jpg 2x" alt=""></span>
-                                        <span class="already-item__text">
-                                            <span class="already-item__title">project <span>evo</span></span>
-                                            <span class="already-item__price">253 900 ₽</span>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                
-                        <div class="slider-navigation">
-                            <button class="js-already-prev swiper-button-prev" type="button" title="Назад">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#arrow_left" />
-                                </svg>
-                            </button>
-                
-                            <div class="js-already-navigation swiper-pagination"></div>
-                
-                            <button class="js-already-next swiper-button-next" type="button" title="Вперёд">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#arrow_right" />
-                                </svg>
-                            </button>
+                    <div class="marquee">
+                        <div class="marquee__inner" data-text="вольфрам в Челябинск • золото в Москву • никель в Челябинск • золото в Москву •">
+                            вольфрам в Челябинск • золото в Москву • никель в Челябинск • золото в Москву •
                         </div>
                     </div>
                 </section>
 
                 <section class="page__section">
-                    <p class="pre-title"><span>Собери свой компьютер</span></p>
-                    <h2>Конфигуратор</h2>
+                    <p class="pre-title"><span>Игровые компьютеры</span></p>
                 
-                    <div class="config-links">
-                        <div class="config-links__image">
+                    <h2>Серии компьютеров</h2>
+                
+                    <div class="js-series-slider series-slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a class="series-slide" href="javascript:void(0)">
+                                    <span class="series-slide__image">
+                                        <img src="images/content/series/alisio_s.png" srcset="images/content/series/alisio_b.png 2x" alt="">
+                                    </span>
+                                    <span class="series-slide__text-block">
+                                        <span class="series-slide__title-block">
+                                            <span class="series-slide__title">project <span>alisio</span></span>
+                                            <span class="series-slide__price">253 900 ₽</span>
+                                        </span>
+                                        <span class="series-slide__text">
+                                            Современные игровые компьютеры с процессорами Intel Core и видеокартами NVIDIA GeForce RTX предлагают идеальное сочетание производительности и стоимости. Максимум эффективности без лишнего.
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="series-slide" href="javascript:void(0)">
+                                    <span class="series-slide__image">
+                                        <img src="images/content/series/duoface_s.png" srcset="images/content/series/duoface_b.png 2x" alt="">
+                                    </span>
+                                    <span class="series-slide__text-block">
+                                        <span class="series-slide__title-block">
+                                            <span class="series-slide__title">project <span>duo face</span></span>
+                                            <span class="series-slide__price">253 900 ₽</span>
+                                        </span>
+                                        <span class="series-slide__text">
+                                            Современные игровые компьютеры с процессорами Intel Core и видеокартами NVIDIA GeForce RTX предлагают идеальное сочетание производительности и стоимости. Максимум эффективности без лишнего.
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="series-slide" href="javascript:void(0)">
+                                    <span class="series-slide__image">
+                                        <img src="images/content/series/evo_s.png" srcset="images/content/series/evo_b.png 2x" alt="">
+                                    </span>
+                                    <span class="series-slide__text-block">
+                                        <span class="series-slide__title-block">
+                                            <span class="series-slide__title">project <span>evo</span></span>
+                                            <span class="series-slide__price">253 900 ₽</span>
+                                        </span>
+                                        <span class="series-slide__text">
+                                            Современные игровые компьютеры с процессорами Intel Core и видеокартами NVIDIA GeForce RTX предлагают идеальное сочетание производительности и стоимости. Максимум эффективности без лишнего.
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="series-slide" href="javascript:void(0)">
+                                    <span class="series-slide__image">
+                                        <img src="images/content/series/forge_s.png" srcset="images/content/series/forge_b.png 2x" alt="">
+                                    </span>
+                                    <span class="series-slide__text-block">
+                                        <span class="series-slide__title-block">
+                                            <span class="series-slide__title">project <span>forge</span></span>
+                                            <span class="series-slide__price">253 900 ₽</span>
+                                        </span>
+                                        <span class="series-slide__text">
+                                            Современные игровые компьютеры с процессорами Intel Core и видеокартами NVIDIA GeForce RTX предлагают идеальное сочетание производительности и стоимости. Максимум эффективности без лишнего.
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="series-slide" href="javascript:void(0)">
+                                    <span class="series-slide__image">
+                                        <img src="images/content/series/mod_s.png" srcset="images/content/series/mod_b.png 2x" alt="">
+                                    </span>
+                                    <span class="series-slide__text-block">
+                                        <span class="series-slide__title-block">
+                                            <span class="series-slide__title">project <span>mod</span></span>
+                                            <span class="series-slide__price">253 900 ₽</span>
+                                        </span>
+                                        <span class="series-slide__text">
+                                            Современные игровые компьютеры с процессорами Intel Core и видеокартами NVIDIA GeForce RTX предлагают идеальное сочетание производительности и стоимости. Максимум эффективности без лишнего.
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="series-slide" href="javascript:void(0)">
+                                    <span class="series-slide__image">
+                                        <img src="images/content/series/one_s.png" srcset="images/content/series/one_b.png 2x" alt="">
+                                    </span>
+                                    <span class="series-slide__text-block">
+                                        <span class="series-slide__title-block">
+                                            <span class="series-slide__title">project <span>one</span></span>
+                                            <span class="series-slide__price">253 900 ₽</span>
+                                        </span>
+                                        <span class="series-slide__text">
+                                            Современные игровые компьютеры с процессорами Intel Core и видеокартами NVIDIA GeForce RTX предлагают идеальное сочетание производительности и стоимости. Максимум эффективности без лишнего.
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="series-slide" href="javascript:void(0)">
+                                    <span class="series-slide__image">
+                                        <img src="images/content/series/one_max_s.png" srcset="images/content/series/one_max_b.png 2x" alt="">
+                                    </span>
+                                    <span class="series-slide__text-block">
+                                        <span class="series-slide__title-block">
+                                            <span class="series-slide__title">project <span>one max</span></span>
+                                            <span class="series-slide__price">253 900 ₽</span>
+                                        </span>
+                                        <span class="series-slide__text">
+                                            Современные игровые компьютеры с процессорами Intel Core и видеокартами NVIDIA GeForce RTX предлагают идеальное сочетание производительности и стоимости. Максимум эффективности без лишнего.
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="page__section">
+                    <p class="pre-title"><span>Выбери свой компьютер</span></p>
+                    <h2>Подбор по параметрам</h2>
+                
+                    <div class="catalog-links">
+                        <div class="catalog-links__image">
                             <img src="images/content/config-links/img_1.png" srcset="images/content/config-links/img_1@2x.png 2x" alt="">
                         </div>
-                        <div class="config-links__links-block">
-                            <p class="config-links__title">Cоздай свой идеальный компьютер</p>
+                        <div class="catalog-links__links-block">
+                            <p class="catalog-links__title">Выбери свой идеальный компьютер</p>
                 
-                            <div class="config-links__links">
-                                <div class="config-links__block">
-                                    <p class="config-links__block-title">Разрешение монитора:</p>
-                                    <a class="config-links__link" href="#">FullHD (1920x1080)</a>
-                                    <a class="config-links__link" href="#">2K (2560х1440)</a>
-                                    <a class="config-links__link" href="#">4K (3840х2160)</a>
+                            <div class="catalog-links__links">
+                                <div class="catalog-links__block">
+                                    <p class="catalog-links__block-title">Разрешение монитора:</p>
+                                    <a class="catalog-links__link" href="#">FullHD (1920x1080)</a>
+                                    <a class="catalog-links__link" href="#">2K (2560х1440)</a>
+                                    <a class="catalog-links__link" href="#">4K (3840х2160)</a>
                                 </div>
                 
-                                <div class="config-links__block">
-                                    <p class="config-links__block-title">По цене:</p>
-                                    <a class="config-links__link" href="#">до 80 000</a>
-                                    <a class="config-links__link" href="#">до 100 000</a>
-                                    <a class="config-links__link" href="#">до 140 000</a>
-                                    <a class="config-links__link" href="#">до 180 000</a>
-                                    <a class="config-links__link" href="#">до 250 000</a>
+                                <div class="catalog-links__block">
+                                    <p class="catalog-links__block-title">По цене:</p>
+                                    <a class="catalog-links__link" href="#">до 80 000</a>
+                                    <a class="catalog-links__link" href="#">до 100 000</a>
+                                    <a class="catalog-links__link" href="#">до 140 000</a>
+                                    <a class="catalog-links__link" href="#">до 180 000</a>
+                                    <a class="catalog-links__link" href="#">до 250 000</a>
                                 </div>
                 
-                                <a class="config-links__button button button--w_385" href="#">
-                                    <span>Сконфигурировать</span>
+                                <a class="catalog-links__button button button--w_385" href="#">
+                                    <span>В каталог</span>
                                     <svg aria-hidden="true">
                                         <use xlink:href="images/sprite.svg#button_arrow"></use>
                                     </svg>

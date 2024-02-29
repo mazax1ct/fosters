@@ -1,4 +1,8 @@
 .series {
+    &:not(:last-child) {
+        margin-bottom: var(--page_section_vertical_gap);
+    }
+
     .product-intro {
         margin-bottom: 0;
     }

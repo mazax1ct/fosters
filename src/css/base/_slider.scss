@@ -119,10 +119,13 @@
 }
 
 .main-banner {
-    margin-bottom: 20px;
     @media(min-width: $hd) {
         position: relative;
         z-index: 1;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
     }
 
     .slider-navigation {

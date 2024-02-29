@@ -1,0 +1,116 @@
+.series-slider {
+    margin-left: calc(0.01px - var(--container_padding));
+    margin-right: calc(0.01px - var(--container_padding));
+
+    .swiper-slide {
+        overflow: hidden;
+        max-width: 450px;
+        width: 90%;
+        @media(min-width: $sm) {
+            max-width: 550px;
+        }
+        @media(min-width: $hd) {
+            max-width: 700px;
+        }
+
+        img {
+            @media(min-width: $lg) {
+                opacity: 0.3;
+            }
+        }
+    }
+
+    .swiper-slide-next,
+    .swiper-slide-prev {
+        img {
+            @media(min-width: $lg) {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .swiper-slide-active {
+        img {
+            opacity: 1;
+            filter: grayscale(0);
+            @media(min-width: $lg) {
+                opacity: 1;
+            }
+        }
+        @include hover {
+            color: var(--text_color);
+
+            img {
+                transform: scale(1.02);
+                filter: grayscale(0);
+            }
+        }
+
+        .series-slide__text-block {
+            opacity: 1;
+        }
+    }
+}
+
+.series-slide {
+    color: var(--text_color);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-decoration: none;
+    @include hover {
+        color: var(--text_color);
+    }
+
+    &__image {
+        display: block;
+        margin-bottom: 10px;
+        overflow: hidden;
+
+        img {
+            display: block;
+            filter: grayscale(1);
+            opacity: 0.8;
+            transition: transform 0.3s, filter 0.3s, opacity 0.3s;
+            transform: scale(1);
+            width: 100%;
+        }
+    }
+
+    &__text-block {
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    &__title-block {
+        align-items: baseline;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    &__title {
+        font-family: var(--secondary_font_family);
+        font-size: 24px;
+        line-height: 1;
+        /*@media(min-width: $fhd) {
+            font-size: 30px;
+        }*/
+        span {
+            color: var(--primary_color);
+            white-space: nowrap;
+        }
+    }
+
+    &__price {
+        font-size: 16px;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+
+    &__text {
+        display: block;
+    }
+}

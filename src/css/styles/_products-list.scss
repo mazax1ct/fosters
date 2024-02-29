@@ -1,0 +1,22 @@
+.products-list {
+    @media(min-width: $sm) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    @media(min-width: $md) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px 20px;
+    }
+
+    .card {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media(max-width: $sm - 0.01px) {
+        .card {
+            margin-bottom: 40px;
+        }
+    }
+}
