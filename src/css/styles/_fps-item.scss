@@ -11,6 +11,10 @@
         }
     }
 
+    &__bar-containers {
+        flex-grow: 1;
+    }
+
     &__bar-container {
         align-items: center;
         display: flex;
@@ -22,6 +26,23 @@
         z-index: 1;
         @media(min-width: $hd) {
             height: 40px;
+        }
+
+        &--small {
+            height: 24px;
+            @media(min-width: $hd) {
+                height: 24px;
+            }
+
+            .fps-item__title {
+                font-size: 10px;
+                @media(min-width: $sm) {
+                    font-size: 12px;
+                }
+                @media(min-width: $hd) {
+                    font-size: 14px;
+                }
+            }
         }
     }
 

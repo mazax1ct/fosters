@@ -45,6 +45,7 @@
         </div>
         <div class="config__config">
             <p class="config__title">Комплектующие</p>
+
             <div>
                 <div class="accordion set-item">
                     <button class="js-accordion-toggler accordion__toggler" type="button">
@@ -337,62 +338,35 @@
         </div>
     </div>
 
-    <div class="js-perf-opener perf-opener" title="Показать производительность сборки">
-        <div class="container">
-            <p class="perf-opener__title">Показатели FPS</p>
-            <div class="perf-opener__fps">
-                <div class="fps-item">
-                    <div class="fps-item__image"><img src="images/content/games/img_1.jpg" srcset="images/content/games/img_1@2x.jpg 2x" alt=""></div>
-                    <div class="fps-item__bar-container">
-                        <div class="fps-item__bar fps-item__bar--green" style="width: 90%"></div>
-                        <div class="fps-item__title">Tom Clancy's Rainbow Six Siege</div>
-                        <div class="fps-item__value">214 <span>FPS</span></div>
-                    </div>
+    <div class="config-bar">
+        <div class="config-bar__inner container">
+            <div class="config-bar__prices">
+                <div class="config-bar__price-block">
+                    <p class="config-bar__price-title">Стоимость базовой сборки</p>
+                    <p class="config-bar__price">112 000 ₽</p>
                 </div>
-                <div class="fps-item">
-                    <div class="fps-item__image"><img src="images/content/games/img_2.jpg" srcset="images/content/games/img_2@2x.jpg 2x" alt=""></div>
-                    <div class="fps-item__bar-container">
-                        <div class="fps-item__bar fps-item__bar--green" style="width: 80%"></div>
-                        <div class="fps-item__title">Doom Eternal (2020)</div>
-                        <div class="fps-item__value">159 <span>FPS</span></div>
-                    </div>
-                </div>
-                <div class="fps-item">
-                    <div class="fps-item__image"><img src="images/content/games/img_3.jpg" srcset="images/content/games/img_3@2x.jpg 2x" alt=""></div>
-                    <div class="fps-item__bar-container">
-                        <div class="fps-item__bar fps-item__bar--green" style="width: 50%"></div>
-                        <div class="fps-item__title">World of Tanks</div>
-                        <div class="fps-item__value">142 <span>FPS</span></div>
-                    </div>
-                </div>
-                <div class="fps-item">
-                    <div class="fps-item__image"><img src="images/content/games/img_4.jpg" srcset="images/content/games/img_4@2x.jpg 2x" alt=""></div>
-                    <div class="fps-item__bar-container">
-                        <div class="fps-item__bar fps-item__bar--green" style="width: 30%"></div>
-                        <div class="fps-item__title">Destiny 2</div>
-                        <div class="fps-item__value">140 <span>FPS</span></div>
-                    </div>
-                </div>
-                <div class="fps-item">
-                    <div class="fps-item__image"><img src="images/content/games/img_5.jpg" srcset="images/content/games/img_5@2x.jpg 2x" alt=""></div>
-                    <div class="fps-item__bar-container">
-                        <div class="fps-item__bar fps-item__bar--green" style="width: 10%"></div>
-                        <div class="fps-item__title">Hitman III</div>
-                        <div class="fps-item__value">95 <span>FPS</span></div>
-                    </div>
-                </div>
-                <div class="fps-item">
-                    <div class="fps-item__image"><img src="images/content/games/img_5.jpg" srcset="images/content/games/img_5@2x.jpg 2x" alt=""></div>
-                    <div class="fps-item__bar-container">
-                        <div class="fps-item__bar fps-item__bar--green" style="width: 10%"></div>
-                        <div class="fps-item__title">Hitman III</div>
-                        <div class="fps-item__value">95 <span>FPS</span></div>
-                    </div>
+
+                <div class="config-bar__price-block">
+                    <p class="config-bar__price-title">Стоимость улучшенной сборки</p>
+                    <p class="config-bar__price color-green">124 000 ₽</p>
                 </div>
             </div>
-            <svg class="perf-opener__icon" aria-hidden="true">
-                <use xlink:href="images/sprite.svg#config_arrow" />
-            </svg>
+
+            <div class="config-bar__buttons">
+                <a class="config-bar__buy-button button" href="#">
+                    <span>Добавить в корзину</span>
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#button_arrow"></use>
+                    </svg>
+                </a>
+
+                <button class="js-perf-opener config-bar__perf-opener" type="button" title="Показать производительность сборки">
+                    <span>Показать графики производительности</span>
+                    <svg class="perf-opener__icon" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#config_arrow" />
+                    </svg>
+                </button>
+            </div>
         </div>
     </div>
 
@@ -441,98 +415,152 @@
 
                     <div class="fps-item">
                         <div class="fps-item__image"><img src="images/content/games/img_1.jpg" srcset="images/content/games/img_1@2x.jpg 2x" alt=""></div>
-                        <div class="fps-item__bar-container">
-                            <div class="fps-item__bar fps-item__bar--green" style="width: 90%"></div>
-                            <div class="fps-item__title">Tom Clancy's Rainbow Six Siege</div>
-                            <div class="fps-item__value">214 <span>FPS</span></div>
+                        <div class="fps-item__bar-containers">
+                            <div class="fps-item__bar-container fps-item__bar-container--small">
+                                <div class="fps-item__bar fps-item__bar--green" style="width: 90%"></div>
+                                <div class="fps-item__title"></div>
+                                <div class="fps-item__value">214 <span>FPS</span></div>
+                            </div>
+                            <div class="fps-item__bar-container fps-item__bar-container--small">
+                                <div class="fps-item__bar" style="width: 85%"></div>
+                                <div class="fps-item__title">Tom Clancy's Rainbow Six Siege</div>
+                                <div class="fps-item__value">201 <span>FPS</span></div>
+                            </div>
                         </div>
                     </div>
                     <div class="fps-item">
                         <div class="fps-item__image"><img src="images/content/games/img_2.jpg" srcset="images/content/games/img_2@2x.jpg 2x" alt=""></div>
-                        <div class="fps-item__bar-container">
-                            <div class="fps-item__bar fps-item__bar--green" style="width: 80%"></div>
-                            <div class="fps-item__title">Doom Eternal (2020)</div>
-                            <div class="fps-item__value">159 <span>FPS</span></div>
+                        <div class="fps-item__bar-containers">
+                            <div class="fps-item__bar-container fps-item__bar-container--small">
+                                <div class="fps-item__bar fps-item__bar--green" style="width: 80%"></div>
+                                <div class="fps-item__title"></div>
+                                <div class="fps-item__value">159 <span>FPS</span></div>
+                            </div>
+                            <div class="fps-item__bar-container fps-item__bar-container--small">
+                                <div class="fps-item__bar" style="width: 75%"></div>
+                                <div class="fps-item__title">Doom Eternal (2020)</div>
+                                <div class="fps-item__value">151 <span>FPS</span></div>
+                            </div>
                         </div>
                     </div>
                     <div class="fps-item">
                         <div class="fps-item__image"><img src="images/content/games/img_3.jpg" srcset="images/content/games/img_3@2x.jpg 2x" alt=""></div>
-                        <div class="fps-item__bar-container">
-                            <div class="fps-item__bar fps-item__bar--green" style="width: 50%"></div>
-                            <div class="fps-item__title">World of Tanks</div>
-                            <div class="fps-item__value">142 <span>FPS</span></div>
+                        <div class="fps-item__bar-containers">
+                            <div class="fps-item__bar-container fps-item__bar-container--small">
+                                <div class="fps-item__bar fps-item__bar--green" style="width: 50%"></div>
+                                <div class="fps-item__title"></div>
+                                <div class="fps-item__value">142 <span>FPS</span></div>
+                            </div>
+                            <div class="fps-item__bar-container fps-item__bar-container--small">
+                                <div class="fps-item__bar" style="width: 45%"></div>
+                                <div class="fps-item__title">World of Tanks</div>
+                                <div class="fps-item__value">134 <span>FPS</span></div>
+                            </div>
                         </div>
                     </div>
                     <div class="fps-item">
                         <div class="fps-item__image"><img src="images/content/games/img_4.jpg" srcset="images/content/games/img_4@2x.jpg 2x" alt=""></div>
-                        <div class="fps-item__bar-container">
-                            <div class="fps-item__bar fps-item__bar--green" style="width: 30%"></div>
-                            <div class="fps-item__title">Destiny 2</div>
-                            <div class="fps-item__value">140 <span>FPS</span></div>
+                        <div class="fps-item__bar-containers">
+                            <div class="fps-item__bar-container fps-item__bar-container--small">
+                                <div class="fps-item__bar fps-item__bar--green" style="width: 30%"></div>
+                                <div class="fps-item__title"></div>
+                                <div class="fps-item__value">140 <span>FPS</span></div>
+                            </div>
+                            <div class="fps-item__bar-container fps-item__bar-container--small">
+                                <div class="fps-item__bar" style="width: 21%"></div>
+                                <div class="fps-item__title">Destiny 2</div>
+                                <div class="fps-item__value">120 <span>FPS</span></div>
+                            </div>
                         </div>
                     </div>
                     <div class="fps-item">
                         <div class="fps-item__image"><img src="images/content/games/img_5.jpg" srcset="images/content/games/img_5@2x.jpg 2x" alt=""></div>
-                        <div class="fps-item__bar-container">
-                            <div class="fps-item__bar fps-item__bar--green" style="width: 10%"></div>
-                            <div class="fps-item__title">Hitman III</div>
-                            <div class="fps-item__value">95 <span>FPS</span></div>
-                        </div>
-                    </div>
-                    <div class="fps-item">
-                        <div class="fps-item__image"><img src="images/content/games/img_5.jpg" srcset="images/content/games/img_5@2x.jpg 2x" alt=""></div>
-                        <div class="fps-item__bar-container">
-                            <div class="fps-item__bar fps-item__bar--green" style="width: 10%"></div>
-                            <div class="fps-item__title">Hitman III</div>
-                            <div class="fps-item__value">95 <span>FPS</span></div>
+                        <div class="fps-item__bar-containers">
+                            <div class="fps-item__bar-container fps-item__bar-container--small">
+                                <div class="fps-item__bar fps-item__bar--green" style="width: 10%"></div>
+                                <div class="fps-item__title"></div>
+                                <div class="fps-item__value">95 <span>FPS</span></div>
+                            </div>
+                            <div class="fps-item__bar-container fps-item__bar-container--small">
+                                <div class="fps-item__bar" style="width: 6%"></div>
+                                <div class="fps-item__title">Hitman III</div>
+                                <div class="fps-item__value">75 <span>FPS</span></div>
+                            </div>
                         </div>
                     </div>
                     <div class="fps-item">
                         <div class="fps-item__image"><img src="images/content/games/img_1.jpg" srcset="images/content/games/img_1@2x.jpg 2x" alt=""></div>
-                        <div class="fps-item__bar-container">
-                            <div class="fps-item__bar fps-item__bar--green" style="width: 90%"></div>
-                            <div class="fps-item__title">Tom Clancy's Rainbow Six Siege</div>
-                            <div class="fps-item__value">214 <span>FPS</span></div>
+                        <div class="fps-item__bar-containers">
+                            <div class="fps-item__bar-container fps-item__bar-container--small">
+                                <div class="fps-item__bar fps-item__bar--green" style="width: 90%"></div>
+                                <div class="fps-item__title"></div>
+                                <div class="fps-item__value">214 <span>FPS</span></div>
+                            </div>
+                            <div class="fps-item__bar-container fps-item__bar-container--small">
+                                <div class="fps-item__bar" style="width: 85%"></div>
+                                <div class="fps-item__title">Tom Clancy's Rainbow Six Siege</div>
+                                <div class="fps-item__value">201 <span>FPS</span></div>
+                            </div>
                         </div>
                     </div>
                     <div class="fps-item">
                         <div class="fps-item__image"><img src="images/content/games/img_2.jpg" srcset="images/content/games/img_2@2x.jpg 2x" alt=""></div>
-                        <div class="fps-item__bar-container">
-                            <div class="fps-item__bar fps-item__bar--green" style="width: 80%"></div>
-                            <div class="fps-item__title">Doom Eternal (2020)</div>
-                            <div class="fps-item__value">159 <span>FPS</span></div>
+                        <div class="fps-item__bar-containers">
+                            <div class="fps-item__bar-container fps-item__bar-container--small">
+                                <div class="fps-item__bar fps-item__bar--green" style="width: 80%"></div>
+                                <div class="fps-item__title"></div>
+                                <div class="fps-item__value">159 <span>FPS</span></div>
+                            </div>
+                            <div class="fps-item__bar-container fps-item__bar-container--small">
+                                <div class="fps-item__bar" style="width: 75%"></div>
+                                <div class="fps-item__title">Doom Eternal (2020)</div>
+                                <div class="fps-item__value">151 <span>FPS</span></div>
+                            </div>
                         </div>
                     </div>
                     <div class="fps-item">
                         <div class="fps-item__image"><img src="images/content/games/img_3.jpg" srcset="images/content/games/img_3@2x.jpg 2x" alt=""></div>
-                        <div class="fps-item__bar-container">
-                            <div class="fps-item__bar fps-item__bar--green" style="width: 50%"></div>
-                            <div class="fps-item__title">World of Tanks</div>
-                            <div class="fps-item__value">142 <span>FPS</span></div>
+                        <div class="fps-item__bar-containers">
+                            <div class="fps-item__bar-container fps-item__bar-container--small">
+                                <div class="fps-item__bar fps-item__bar--green" style="width: 50%"></div>
+                                <div class="fps-item__title"></div>
+                                <div class="fps-item__value">142 <span>FPS</span></div>
+                            </div>
+                            <div class="fps-item__bar-container fps-item__bar-container--small">
+                                <div class="fps-item__bar" style="width: 45%"></div>
+                                <div class="fps-item__title">World of Tanks</div>
+                                <div class="fps-item__value">134 <span>FPS</span></div>
+                            </div>
                         </div>
                     </div>
                     <div class="fps-item">
                         <div class="fps-item__image"><img src="images/content/games/img_4.jpg" srcset="images/content/games/img_4@2x.jpg 2x" alt=""></div>
-                        <div class="fps-item__bar-container">
-                            <div class="fps-item__bar fps-item__bar--green" style="width: 30%"></div>
-                            <div class="fps-item__title">Destiny 2</div>
-                            <div class="fps-item__value">140 <span>FPS</span></div>
+                        <div class="fps-item__bar-containers">
+                            <div class="fps-item__bar-container fps-item__bar-container--small">
+                                <div class="fps-item__bar fps-item__bar--green" style="width: 30%"></div>
+                                <div class="fps-item__title"></div>
+                                <div class="fps-item__value">140 <span>FPS</span></div>
+                            </div>
+                            <div class="fps-item__bar-container fps-item__bar-container--small">
+                                <div class="fps-item__bar" style="width: 21%"></div>
+                                <div class="fps-item__title">Destiny 2</div>
+                                <div class="fps-item__value">120 <span>FPS</span></div>
+                            </div>
                         </div>
                     </div>
                     <div class="fps-item">
                         <div class="fps-item__image"><img src="images/content/games/img_5.jpg" srcset="images/content/games/img_5@2x.jpg 2x" alt=""></div>
-                        <div class="fps-item__bar-container">
-                            <div class="fps-item__bar fps-item__bar--green" style="width: 10%"></div>
-                            <div class="fps-item__title">Hitman III</div>
-                            <div class="fps-item__value">95 <span>FPS</span></div>
-                        </div>
-                    </div>
-                    <div class="fps-item">
-                        <div class="fps-item__image"><img src="images/content/games/img_5.jpg" srcset="images/content/games/img_5@2x.jpg 2x" alt=""></div>
-                        <div class="fps-item__bar-container">
-                            <div class="fps-item__bar fps-item__bar--green" style="width: 10%"></div>
-                            <div class="fps-item__title">Hitman III</div>
-                            <div class="fps-item__value">95 <span>FPS</span></div>
+                        <div class="fps-item__bar-containers">
+                            <div class="fps-item__bar-container fps-item__bar-container--small">
+                                <div class="fps-item__bar fps-item__bar--green" style="width: 10%"></div>
+                                <div class="fps-item__title"></div>
+                                <div class="fps-item__value">95 <span>FPS</span></div>
+                            </div>
+                            <div class="fps-item__bar-container fps-item__bar-container--small">
+                                <div class="fps-item__bar" style="width: 6%"></div>
+                                <div class="fps-item__title">Hitman III</div>
+                                <div class="fps-item__value">75 <span>FPS</span></div>
+                            </div>
                         </div>
                     </div>
                 </div>

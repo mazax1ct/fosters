@@ -450,12 +450,6 @@ const seriesSlider = new Swiper('.js-series-slider', {
                 modifier: 5,
                 depth: 125
             },
-        },
-        /*1900: {
-            coverflowEffect: {
-                modifier: 5,
-                depth: 125
-            },
-        }*/
+        }
     }
 });
