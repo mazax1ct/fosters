@@ -33,7 +33,7 @@
     <div class="page__content">
         <header class="header compensate-for-scrollbar">
             <div class="header__inner container">
-                <a class="header-logo" href="#" title="FOSTERS PC">
+                <a class="header-logo" href="main.html" title="FOSTERS PC">
                     <svg class="header-logo__icon" aria-hidden="true">
                         <use xlink:href="images/sprite.svg#logo_icon" />
                     </svg>
@@ -59,29 +59,52 @@
                                     <use xlink:href="images/sprite.svg#arrow_right" />
                                 </svg>
                             </a>
-                            <ul class="sub-menu">
-                                <li class="sub-menu__item">
-                                    <a class="sub-menu__link" href="series.html">project alisio</a>
-                                </li>
-                                <li class="sub-menu__item">
-                                    <a class="sub-menu__link" href="series.html">project duo face</a>
-                                </li>
-                                <li class="sub-menu__item">
-                                    <a class="sub-menu__link" href="series.html">project evo</a>
-                                </li>
-                                <li class="sub-menu__item">
-                                    <a class="sub-menu__link" href="series.html">project forge</a>
-                                </li>
-                                <li class="sub-menu__item">
-                                    <a class="sub-menu__link" href="series.html">project mod</a>
-                                </li>
-                                <li class="sub-menu__item">
-                                    <a class="sub-menu__link" href="series.html">project one</a>
-                                </li>
-                                <li class="sub-menu__item">
-                                    <a class="sub-menu__link" href="series.html">project one max</a>
-                                </li>
-                            </ul>
+                            <div class="sub-menu">
+                                <ul class="sub-menu__list">
+                                    <li class="sub-menu__item">
+                                        <a class="sub-menu__link" href="series.html">
+                                            <img src="images/content/series/alisio_xs.png" alt="">
+                                            project alisio
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a class="sub-menu__link" href="series.html">
+                                            <img src="images/content/series/duoface_xs.png" alt="">
+                                            project duo face
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a class="sub-menu__link" href="series.html">
+                                            <img src="images/content/series/evo_xs.png" alt="">
+                                            project evo
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a class="sub-menu__link" href="series.html">
+                                            <img src="images/content/series/forge_xs.png" alt="">
+                                            project forge
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a class="sub-menu__link" href="series.html">
+                                            <img src="images/content/series/mod_xs.png" alt="">
+                                            project mod
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a class="sub-menu__link" href="series.html">
+                                            <img src="images/content/series/one_xs.png" alt="">
+                                            project one
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a class="sub-menu__link" href="series.html">
+                                            <img src="images/content/series/one_max_xs.png" alt="">
+                                            project one max
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="main-menu__item">
                             <a class="main-menu__link" href="#">
@@ -152,56 +175,79 @@
                 </ul>
 
                 <section class="page__section config">
-                    <h1>Project ONE</h1>
+                    <h1>Конфигуратор</h1>
                 
-                    <div class="config__inner">
+                    <p class="config__title">Выберите серию:</p>
+                
+                    <div class="config__series">
+                        <label class="config__series-item">
+                            <input type="radio" name="config_series" value="alisio">
+                            <span class="config__series-item-inner">
+                                <span class="config__series-icon"></span>
+                                <img src="images/content/series/alisio_xs.png" alt="">
+                                <span class="config__series-title">project alisio</span>
+                            </span>
+                        </label>
+                        <label class="config__series-item">
+                            <input type="radio" name="config_series" value="duo_face">
+                            <span class="config__series-item-inner">
+                                <span class="config__series-icon"></span>
+                                <img src="images/content/series/duoface_xs.png" alt="">
+                                <span class="config__series-title">project duo face</span>
+                            </span>
+                        </label>
+                        <label class="config__series-item">
+                            <input type="radio" name="config_series" value="evo">
+                            <span class="config__series-item-inner">
+                                <span class="config__series-icon"></span>
+                                <img src="images/content/series/evo_xs.png" alt="">
+                                <span class="config__series-title">project evo</span>
+                            </span>
+                        </label>
+                        <label class="config__series-item">
+                            <input type="radio" name="config_series" value="forge">
+                            <span class="config__series-item-inner">
+                                <span class="config__series-icon"></span>
+                                <img src="images/content/series/forge_xs.png" alt="">
+                                <span class="config__series-title">project forge</span>
+                            </span>
+                        </label>
+                        <label class="config__series-item">
+                            <input type="radio" name="config_series" value="mod">
+                            <span class="config__series-item-inner">
+                                <span class="config__series-icon"></span>
+                                <img src="images/content/series/mod_xs.png" alt="">
+                                <span class="config__series-title">project mod</span>
+                            </span>
+                        </label>
+                        <label class="config__series-item">
+                            <input type="radio" name="config_series" value="one">
+                            <span class="config__series-item-inner">
+                                <span class="config__series-icon"></span>
+                                <img src="images/content/series/one_xs.png" alt="">
+                                <span class="config__series-title">project one</span>
+                            </span>
+                        </label>
+                        <label class="config__series-item">
+                            <input type="radio" name="config_series" value="one_max">
+                            <span class="config__series-item-inner">
+                                <span class="config__series-icon"></span>
+                                <img src="images/content/series/one_max_xs.png" alt="">
+                                <span class="config__series-title">project one max</span>
+                            </span>
+                        </label>
+                    </div>
+                
+                    <div class="config__columns">
                         <div class="config__image-block">
-                            <div class="js-config-slider swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img src="images/content/config/img_1.jpg" srcset="images/content/config/img_1@2x.jpg 2x" alt="">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="images/content/config/img_1.jpg" srcset="images/content/config/img_1@2x.jpg 2x" alt="">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="images/content/config/img_1.jpg" srcset="images/content/config/img_1@2x.jpg 2x" alt="">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="images/content/config/img_1.jpg" srcset="images/content/config/img_1@2x.jpg 2x" alt="">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="images/content/config/img_1.jpg" srcset="images/content/config/img_1@2x.jpg 2x" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                
-                            <div thumbsSlider="" class="js-config-thumbs swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img src="images/content/config/img_2.jpg" srcset="images/content/config/img_2@2x.jpg 2x" alt="">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="images/content/config/img_2.jpg" srcset="images/content/config/img_2@2x.jpg 2x" alt="">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="images/content/config/img_2.jpg" srcset="images/content/config/img_2@2x.jpg 2x" alt="">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="images/content/config/img_2.jpg" srcset="images/content/config/img_2@2x.jpg 2x" alt="">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="images/content/config/img_2.jpg" srcset="images/content/config/img_2@2x.jpg 2x" alt="">
-                                    </div>
-                                </div>
-                            </div>
+                            <img class="js-config-image" src="images/content/config/config.png" alt="">
                         </div>
                         <div class="config__config">
                             <p class="config__title">Комплектующие</p>
                 
-                            <div>
+                            <div class="js-config-components">
                                 <div class="accordion set-item">
-                                    <button class="js-accordion-toggler accordion__toggler" type="button">
+                                    <button class="js-config-component-toggler accordion__toggler" type="button" data-image="images/content/config/cpu.png">
                                         <span>
                                             <svg aria-hidden="true">
                                                 <use xlink:href="images/sprite.svg#gpu" />
@@ -242,7 +288,7 @@
                                     </div>
                                 </div>
                                 <div class="accordion set-item">
-                                    <button class="js-accordion-toggler accordion__toggler" type="button">
+                                    <button class="js-config-component-toggler accordion__toggler" type="button" data-image="images/content/config/gpu.png">
                                         <span>
                                             <svg aria-hidden="true">
                                                 <use xlink:href="images/sprite.svg#cpu" />
@@ -283,7 +329,7 @@
                                     </div>
                                 </div>
                                 <div class="accordion set-item">
-                                    <button class="js-accordion-toggler accordion__toggler" type="button">
+                                    <button class="js-config-component-toggler accordion__toggler" type="button" data-image="images/content/config/mb.png">
                                         <span>
                                             <svg aria-hidden="true">
                                                 <use xlink:href="images/sprite.svg#mb" />
@@ -324,7 +370,7 @@
                                     </div>
                                 </div>
                                 <div class="accordion set-item">
-                                    <button class="js-accordion-toggler accordion__toggler" type="button">
+                                    <button class="js-config-component-toggler accordion__toggler" type="button" data-image="images/content/config/ram.png">
                                         <span>
                                             <svg aria-hidden="true">
                                                 <use xlink:href="images/sprite.svg#ram" />
@@ -365,7 +411,7 @@
                                     </div>
                                 </div>
                                 <div class="accordion set-item">
-                                    <button class="js-accordion-toggler accordion__toggler" type="button">
+                                    <button class="js-config-component-toggler accordion__toggler" type="button" data-image="images/content/config/ssd.png">
                                         <span>
                                             <svg aria-hidden="true">
                                                 <use xlink:href="images/sprite.svg#ssd" />
@@ -406,7 +452,7 @@
                                     </div>
                                 </div>
                                 <div class="accordion set-item">
-                                    <button class="js-accordion-toggler accordion__toggler" type="button">
+                                    <button class="js-config-component-toggler accordion__toggler" type="button" data-image="images/content/config/power.png">
                                         <span>
                                             <svg aria-hidden="true">
                                                 <use xlink:href="images/sprite.svg#power" />
@@ -447,7 +493,7 @@
                                     </div>
                                 </div>
                                 <div class="accordion set-item">
-                                    <button class="js-accordion-toggler accordion__toggler" type="button">
+                                    <button class="js-config-component-toggler accordion__toggler" type="button" data-image="images/content/config/air.png">
                                         <span>
                                             <svg aria-hidden="true">
                                                 <use xlink:href="images/sprite.svg#air" />
@@ -486,6 +532,43 @@
                                             </label>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="conf-compare">
+                        <div class="conf-compare__tabs">
+                            <div class="conf-compare__tabs-menu">
+                                <button class="js-conf-compare conf-compare__tabs-button is-active" type="button" data-target="1">Конфигурация</button>
+                                <button class="js-conf-compare conf-compare__tabs-button" type="button" data-target="2">Улучшенная конфигурация</button>
+                            </div>
+                
+                            <div class="conf-compare__tab is-active" data-target="1">
+                                <p class="conf-compare__tab-title">Конфигурация</p>
+                
+                                <div class="conf-compare__params">
+                                    <p><span>Видеокарта</span> <span>GTX 1650 на 4GB</span></p>
+                                    <p><span>Процессор</span> <span>Intel i3-10100F</span></p>
+                                    <p><span>Материнская плата</span> <span>MSI PRO H410M</span></p>
+                                    <p><span>Оперативная память</span> <span>ADATA XPG на 16GB</span></p>
+                                    <p><span>SSD накопитель</span> <span>Colorful SL500 на 1TB</span></p>
+                                    <p><span>Блок питания</span> <span>Deepcool на 600W</span></p>
+                                    <p><span>Охлаждение</span> <span>PCCooler EX400S</span></p>
+                                </div>
+                            </div>
+                
+                            <div class="conf-compare__tab" data-target="2">
+                                <p class="conf-compare__tab-title">Улучшенная конфигурация</p>
+                
+                                <div class="conf-compare__params">
+                                    <p><span>Видеокарта</span> <span>GTX 1650 на 4GB</span></p>
+                                    <p><span>Процессор</span> <span><span>+800 ₽</span> Intel i3-10100F</span></p>
+                                    <p><span>Материнская плата</span> <span>MSI PRO H410M</span></p>
+                                    <p><span>Оперативная память</span> <span>ADATA XPG на 16GB</span></p>
+                                    <p><span>SSD накопитель</span> <span><span>+800 ₽</span> Colorful SL500 на 1TB</span></p>
+                                    <p><span>Блок питания</span> <span>Deepcool на 600W</span></p>
+                                    <p><span>Охлаждение</span> <span><span>+800 ₽</span> PCCooler EX400S</span></p>
                                 </div>
                             </div>
                         </div>
@@ -716,46 +799,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="page__section">
-
-                    <div class="conf-compare">
-                        <div class="conf-compare__tabs">
-                            <div class="conf-compare__tabs-menu">
-                                <button class="js-conf-compare conf-compare__tabs-button is-active" type="button" data-target="1">Конфигурация</button>
-                                <button class="js-conf-compare conf-compare__tabs-button" type="button" data-target="2">Улучшенная конфигурация</button>
-                            </div>
-
-                            <div class="conf-compare__tab is-active" data-target="1">
-                                <p class="conf-compare__tab-title">Конфигурация</p>
-
-                                <div class="conf-compare__params">
-                                    <p><span>Видеокарта</span> <span>GTX 1650 на 4GB</span></p>
-                                    <p><span>Процессор</span> <span>Intel i3-10100F</span></p>
-                                    <p><span>Материнская плата</span> <span>MSI PRO H410M</span></p>
-                                    <p><span>Оперативная память</span> <span>ADATA XPG на 16GB</span></p>
-                                    <p><span>SSD накопитель</span> <span>Colorful SL500 на 1TB</span></p>
-                                    <p><span>Блок питания</span> <span>Deepcool на 600W</span></p>
-                                    <p><span>Охлаждение</span> <span>PCCooler EX400S</span></p>
-                                </div>
-                            </div>
-
-                            <div class="conf-compare__tab" data-target="2">
-                                <p class="conf-compare__tab-title">Улучшенная конфигурация</p>
-
-                                <div class="conf-compare__params">
-                                    <p><span>Видеокарта</span> <span>GTX 1650 на 4GB</span></p>
-                                    <p><span>Процессор</span> <span><span>+800 ₽</span> Intel i3-10100F</span></p>
-                                    <p><span>Материнская плата</span> <span>MSI PRO H410M</span></p>
-                                    <p><span>Оперативная память</span> <span>ADATA XPG на 16GB</span></p>
-                                    <p><span>SSD накопитель</span> <span><span>+800 ₽</span> Colorful SL500 на 1TB</span></p>
-                                    <p><span>Блок питания</span> <span>Deepcool на 600W</span></p>
-                                    <p><span>Охлаждение</span> <span><span>+800 ₽</span> PCCooler EX400S</span></p>
                                 </div>
                             </div>
                         </div>

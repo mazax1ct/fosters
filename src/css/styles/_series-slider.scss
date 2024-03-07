@@ -2,6 +2,10 @@
     margin-left: calc(0.01px - var(--container_padding));
     margin-right: calc(0.01px - var(--container_padding));
 
+    .swiper {
+        perspective: 1115px;
+    }
+
     .swiper-slide {
         overflow: hidden;
         max-width: 450px;
@@ -12,30 +16,29 @@
         @media(min-width: $hd) {
             max-width: 700px;
         }
-
-        img {
+        /*img {
             @media(min-width: $lg) {
                 opacity: 0.3;
             }
-        }
+        }*/
     }
 
     .swiper-slide-next,
     .swiper-slide-prev {
-        img {
+        /*img {
             @media(min-width: $lg) {
                 opacity: 0.8;
             }
-        }
+        }*/
     }
 
     .swiper-slide-active {
         img {
-            opacity: 1;
+            //opacity: 1;
             filter: grayscale(0);
-            @media(min-width: $lg) {
+            /*@media(min-width: $lg) {
                 opacity: 1;
-            }
+            }*/
         }
         @include hover {
             color: var(--text_color);
@@ -49,6 +52,25 @@
         .series-slide__text-block {
             opacity: 1;
         }
+    }
+
+    .slider-navigation {
+        height: 0;
+        left: 0;
+        margin-top: 0;
+        position: absolute;
+        padding-left: var(--container_padding);
+        padding-right: var(--container_padding);
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        z-index: 1;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        background-color: var(--primary_color);
+        border-color: var(--primary_color);
     }
 }
 
@@ -71,7 +93,7 @@
         img {
             display: block;
             filter: grayscale(1);
-            opacity: 0.8;
+            //opacity: 0.8;
             transition: transform 0.3s, filter 0.3s, opacity 0.3s;
             transform: scale(1);
             width: 100%;

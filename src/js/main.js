@@ -280,25 +280,6 @@ $(document).on('click', '.js-sorting-toggler', function () {
   return false
 });
 
-//слайдер в конфигураторе
-if($('.js-config-thumbs').length) {
-  var configThumbs = new Swiper(".js-config-thumbs", {
-    spaceBetween: 20,
-    slidesPerView: 4,
-    freeMode: true,
-    watchSlidesProgress: true,
-  });
-}
-
-if($('.js-config-slider').length) {
-  var configSlider = new Swiper(".js-config-slider", {
-    spaceBetween: 20,
-    thumbs: {
-      swiper: configThumbs
-    },
-  });
-}
-
 //табы конфигураций
 $(document).on('click', '.js-conf-compare', function () {
   $('.js-conf-compare').removeClass('is-active');
@@ -448,8 +429,36 @@ const seriesSlider = new Swiper('.js-series-slider', {
         1500: {
             coverflowEffect: {
                 modifier: 5,
-                depth: 125
+                depth: 190
             },
         }
+    },
+    navigation: {
+      nextEl: '.js-series-slider-next',
+      prevEl: '.js-series-slider-prev',
     }
+});
+
+//аккордеон компонентов в конфиге
+$(document).on('click', '.js-config-component-toggler', function () {
+  if(!$(this).hasClass('is-active')){
+    $(this).closest('.js-config-components').find('.accordion__body').slideUp();
+    $(this).closest('.js-config-components').find('.js-config-component-toggler').removeClass('is-active');
+
+    $(this).addClass('is-active');
+    $(this).closest('.accordion').find('.accordion__body').slideDown();
+
+    $('.js-config-image').attr('src', $(this).attr('data-image'));
+  }else{
+    $(this).removeClass('is-active');
+    $(this).closest('.accordion').find('.accordion__body').slideUp();
+  }
+
+  return false;
+});
+
+//поповер фпс на карточках конфигураций
+$(document).on('click', '.js-card-fps-opener', function () {
+  $(this).closest('.card').find('.card__fps-block').toggle();
+  return false;
 });

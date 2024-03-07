@@ -120,6 +120,8 @@
 
 .main-banner {
     @media(min-width: $hd) {
+        margin-left: 0;
+        margin-right: 0;
         position: relative;
         z-index: 1;
     }
@@ -128,36 +130,176 @@
         margin-bottom: 20px;
     }
 
+    .swiper-slide {
+        display: flex;
+        height: auto;
+    }
+
     .slider-navigation {
-        @media(min-width: $hd) {
-            left: 0;
-            margin-top: 0;
-            position: absolute;
+        bottom: var(--container_padding);
+        left: 0;
+        margin-top: 0;
+        position: absolute;
+        padding-left: var(--container_padding);
+        padding-right: var(--container_padding);
+        top: auto;
+        width: 100%;
+        z-index: 1;
+        @media(min-width: $md) {
+            bottom: auto;
+            height: 0;
             top: 50%;
             transform: translateY(-50%);
-            width: 100%;
-            z-index: 1;
         }
 
         .swiper-button-next,
         .swiper-button-prev {
-            @media(min-width: $hd) {
-                color: #fff;
-                border-color: #fff;
+            color: #fff;
+            border-color: #fff;
+            @media(max-width: $md - 0.01px) {
+                display: none;
             }
             @include hover {
-                @media(min-width: $hd) {
-                    background-color: #fff;
-                    border-color: #fff;
-                    color: var(--primary_color);
-                }
+                background-color: #fff;
+                border-color: #fff;
+                color: var(--primary_color);
             }
         }
     }
 
     .swiper-pagination {
-        @media(min-width: $hd) {
+        @media(min-width: $md) {
             display: none;
+        }
+    }
+
+    &__slide {
+        background-position: 50% 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        height: 100%;
+        overflow: hidden;
+        min-height: 600px;
+        position: relative;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        text-decoration: none;
+        width: 100%;
+        z-index: 1;
+        @media(min-width: $hd) {
+            min-height: 700px;
+        }
+        @media(min-width: $lg) {
+            min-height: 800px;
+        }
+
+        &--shade {
+            &::after {
+                background-color: rgba(0,0,0,0.5);
+                bottom: 0;
+                content: '';
+                left: 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+                z-index: 1;
+            }
+        }
+    }
+    /*&__slide-back {
+        background-position: 50% 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    &__slide-inner {
+        position: relative;
+        width: 100%;
+        z-index: 1;
+
+        & > div {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }*/
+    &__banner {
+        margin: auto;
+        position: relative;
+        z-index: 2;
+        @media(min-width: $md) {
+            width: calc(100% - var(--container_padding) * 4 - 40px);
+        }
+    }
+
+    &__content {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: var(--container_padding);
+        @media(max-width: $sm - 0.01px) {
+            text-align: center;
+        }
+        @media(min-width: $sm) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &__title {
+        color: var(--primary_color);
+        font-family: var(--secondary_font_family);
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 0;
+        @media(max-width: $hd - 0.01px) {
+            font-size: 32px;
+        }
+        @media(min-width: $sm) {
+            align-self: end;
+        }
+        @media(min-width: $hd) {
+            font-size: 48px;
+        }
+    }
+
+    &__image {
+        @media(min-width: $sm) {
+            grid-row: span 2;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &__text {
+        color: #fff;
+        @media(min-width: $sm) {
+            align-self: start;
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        p {
+            &:not(:last-child) {
+                margin-bottom: var(--container_padding);
+            }
+        }
+    }
+}
+
+a.main-banner__slide {
+    @include hover {
+        .button {
+            background-color: var(--primary_color);
+            color: #fff;
         }
     }
 }

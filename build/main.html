@@ -28,11 +28,11 @@
 
 </head>
 
-<body class="page">
+<body class="page page--main">
     <div class="page__content">
         <header class="header compensate-for-scrollbar">
             <div class="header__inner container">
-                <a class="header-logo" href="#" title="FOSTERS PC">
+                <a class="header-logo" href="main.html" title="FOSTERS PC">
                     <svg class="header-logo__icon" aria-hidden="true">
                         <use xlink:href="images/sprite.svg#logo_icon" />
                     </svg>
@@ -58,29 +58,52 @@
                                     <use xlink:href="images/sprite.svg#arrow_right" />
                                 </svg>
                             </a>
-                            <ul class="sub-menu">
-                                <li class="sub-menu__item">
-                                    <a class="sub-menu__link" href="series.html">project alisio</a>
-                                </li>
-                                <li class="sub-menu__item">
-                                    <a class="sub-menu__link" href="series.html">project duo face</a>
-                                </li>
-                                <li class="sub-menu__item">
-                                    <a class="sub-menu__link" href="series.html">project evo</a>
-                                </li>
-                                <li class="sub-menu__item">
-                                    <a class="sub-menu__link" href="series.html">project forge</a>
-                                </li>
-                                <li class="sub-menu__item">
-                                    <a class="sub-menu__link" href="series.html">project mod</a>
-                                </li>
-                                <li class="sub-menu__item">
-                                    <a class="sub-menu__link" href="series.html">project one</a>
-                                </li>
-                                <li class="sub-menu__item">
-                                    <a class="sub-menu__link" href="series.html">project one max</a>
-                                </li>
-                            </ul>
+                            <div class="sub-menu">
+                                <ul class="sub-menu__list">
+                                    <li class="sub-menu__item">
+                                        <a class="sub-menu__link" href="series.html">
+                                            <img src="images/content/series/alisio_xs.png" alt="">
+                                            project alisio
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a class="sub-menu__link" href="series.html">
+                                            <img src="images/content/series/duoface_xs.png" alt="">
+                                            project duo face
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a class="sub-menu__link" href="series.html">
+                                            <img src="images/content/series/evo_xs.png" alt="">
+                                            project evo
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a class="sub-menu__link" href="series.html">
+                                            <img src="images/content/series/forge_xs.png" alt="">
+                                            project forge
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a class="sub-menu__link" href="series.html">
+                                            <img src="images/content/series/mod_xs.png" alt="">
+                                            project mod
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a class="sub-menu__link" href="series.html">
+                                            <img src="images/content/series/one_xs.png" alt="">
+                                            project one
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu__item">
+                                        <a class="sub-menu__link" href="series.html">
+                                            <img src="images/content/series/one_max_xs.png" alt="">
+                                            project one max
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="main-menu__item">
                             <a class="main-menu__link" href="#">
@@ -135,43 +158,83 @@
         </header>
 
         <main>
-            <div class="container">
-                <section class="page__section page__section--mod_1">
-                    <h1 class="intro-title">Наши компьютеры - воплощение идеальных решений<br><span>Fosters pc</span></h1>
+            <section class="page__section">
+                <!--<h1 class="intro-title">Наши компьютеры - воплощение идеальных решений<br><span>Fosters pc</span></h1>-->
 
-                    <div class="main-banner slider slider-container">
-                        <div class="js-slider swiper" data-id="main_banner">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <a class="slider__link" href="#">
-                                        <img src="images/content/img_wide.jpg" srcset="images/content/img_wide@2x.jpg 2x" alt="">
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="slider__link" href="#">
-                                        <img src="images/content/img_wide.jpg" srcset="images/content/img_wide@2x.jpg 2x" alt="">
-                                    </a>
+                <div class="main-banner slider slider-container">
+                    <div class="js-slider swiper" data-id="main_banner">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="main-banner__slide main-banner__slide--shade" style="background-image: url(images/content/img_wide.jpg)">
+                                    <div class="main-banner__banner container">
+                                        <div class="main-banner__content">
+                                            <h1 class="main-banner__title">Заголовок слайда для привлечения внимания</h1>
+                                            <div class="main-banner__image">
+                                                <picture>
+                                                    <source srcset="images/content/series/alisio_b.png" media="(min-width: 1200px)">
+                                                    <img src="images/content/series/alisio_s.png" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="main-banner__text">
+                                                <p>
+                                                    При покупке игрового компьютера на базе корпуса, блока питания и системы охлаждения от Cooler Master и получи игровой набор Cooler Master MS110 в подарок. Прежде чем перейти к выбору комплектующих игрового
+                                                    компьютера, мы предлагаем выбрать конфигуратор по таким параметрам как ФОРМ‑ФАКТОР или ПРОИЗВОДИТЕЛЬНОСТЬ в играх.
+                                                </p>
+                                                <p>
+                                                    <span class="button">Купить</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    
-                        <div class="slider-navigation">
-                            <button class="js-slider-prev swiper-button-prev" type="button" title="Назад" data-id="main_banner">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#arrow_left" />
-                                </svg>
-                            </button>
-                    
-                            <div class="js-slider-navigation swiper-pagination" data-id="main_banner"></div>
-                    
-                            <button class="js-slider-next swiper-button-next" type="button" title="Вперёд" data-id="main_banner">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#arrow_right" />
-                                </svg>
-                            </button>
+                
+                            <div class="swiper-slide">
+                                <a class="main-banner__slide main-banner__slide--shade" style="background-image: url(images/content/video_wide_2.jpg)" href="#">
+                                    <div class="main-banner__banner container">
+                                        <div class="main-banner__content">
+                                            <p class="main-banner__title">Более длинный заголовок слайда для привлечения внимания и проверки всего на свете</p>
+                                            <div class="main-banner__image">
+                                                <picture>
+                                                    <source srcset="images/content/series/forge_b.png" media="(min-width: 1200px)">
+                                                    <img src="images/content/series/forge_s.png" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="main-banner__text">
+                                                <p>
+                                                    При покупке игрового компьютера на базе корпуса, блока питания и системы охлаждения от Cooler Master и получи игровой набор Cooler Master MS110 в подарок. Прежде чем перейти к выбору комплектующих игрового
+                                                    компьютера, мы предлагаем выбрать конфигуратор по таким параметрам как ФОРМ‑ФАКТОР или ПРОИЗВОДИТЕЛЬНОСТЬ в играх.
+                                                </p>
+                                                <p>
+                                                    <span class="button">Купить</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </section>
+                
+                    <div class="slider-navigation">
+                        <button class="js-slider-prev swiper-button-prev" type="button" title="Назад" data-id="main_banner">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#arrow_left" />
+                            </svg>
+                        </button>
+                
+                        <div class="js-slider-navigation swiper-pagination" data-id="main_banner"></div>
+                
+                        <button class="js-slider-next swiper-button-next" type="button" title="Вперёд" data-id="main_banner">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#arrow_right" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <div class="container">
 
                 <section class="page__section">
                     <p class="pre-title"><span>О нашей компании</span></p>
@@ -216,122 +279,138 @@
                 
                     <h2>Серии компьютеров</h2>
                 
-                    <div class="js-series-slider series-slider swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <a class="series-slide" href="javascript:void(0)">
-                                    <span class="series-slide__image">
-                                        <img src="images/content/series/alisio_s.png" srcset="images/content/series/alisio_b.png 2x" alt="">
-                                    </span>
-                                    <span class="series-slide__text-block">
-                                        <span class="series-slide__title-block">
-                                            <span class="series-slide__title">project <span>alisio</span></span>
-                                            <span class="series-slide__price">253 900 ₽</span>
+                    <div class="series-slider slider-container">
+                        <div class="js-series-slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a class="series-slide" href="javascript:void(0)">
+                                        <span class="series-slide__image">
+                                            <img src="images/content/series/alisio_s.png" srcset="images/content/series/alisio_b.png 2x" alt="">
                                         </span>
-                                        <span class="series-slide__text">
-                                            Современные игровые компьютеры с процессорами Intel Core и видеокартами NVIDIA GeForce RTX предлагают идеальное сочетание производительности и стоимости. Максимум эффективности без лишнего.
+                                        <span class="series-slide__text-block">
+                                            <span class="series-slide__title-block">
+                                                <span class="series-slide__title">project <span>alisio</span></span>
+                                                <span class="series-slide__price">253 900 ₽</span>
+                                            </span>
+                                            <span class="series-slide__text">
+                                                Современные игровые компьютеры с процессорами Intel Core и видеокартами NVIDIA GeForce RTX предлагают идеальное сочетание производительности и стоимости. Максимум эффективности без лишнего.
+                                            </span>
                                         </span>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a class="series-slide" href="javascript:void(0)">
-                                    <span class="series-slide__image">
-                                        <img src="images/content/series/duoface_s.png" srcset="images/content/series/duoface_b.png 2x" alt="">
-                                    </span>
-                                    <span class="series-slide__text-block">
-                                        <span class="series-slide__title-block">
-                                            <span class="series-slide__title">project <span>duo face</span></span>
-                                            <span class="series-slide__price">253 900 ₽</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="series-slide" href="javascript:void(0)">
+                                        <span class="series-slide__image">
+                                            <img src="images/content/series/duoface_s.png" srcset="images/content/series/duoface_b.png 2x" alt="">
                                         </span>
-                                        <span class="series-slide__text">
-                                            Современные игровые компьютеры с процессорами Intel Core и видеокартами NVIDIA GeForce RTX предлагают идеальное сочетание производительности и стоимости. Максимум эффективности без лишнего.
+                                        <span class="series-slide__text-block">
+                                            <span class="series-slide__title-block">
+                                                <span class="series-slide__title">project <span>duo face</span></span>
+                                                <span class="series-slide__price">253 900 ₽</span>
+                                            </span>
+                                            <span class="series-slide__text">
+                                                Современные игровые компьютеры с процессорами Intel Core и видеокартами NVIDIA GeForce RTX предлагают идеальное сочетание производительности и стоимости. Максимум эффективности без лишнего.
+                                            </span>
                                         </span>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a class="series-slide" href="javascript:void(0)">
-                                    <span class="series-slide__image">
-                                        <img src="images/content/series/evo_s.png" srcset="images/content/series/evo_b.png 2x" alt="">
-                                    </span>
-                                    <span class="series-slide__text-block">
-                                        <span class="series-slide__title-block">
-                                            <span class="series-slide__title">project <span>evo</span></span>
-                                            <span class="series-slide__price">253 900 ₽</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="series-slide" href="javascript:void(0)">
+                                        <span class="series-slide__image">
+                                            <img src="images/content/series/evo_s.png" srcset="images/content/series/evo_b.png 2x" alt="">
                                         </span>
-                                        <span class="series-slide__text">
-                                            Современные игровые компьютеры с процессорами Intel Core и видеокартами NVIDIA GeForce RTX предлагают идеальное сочетание производительности и стоимости. Максимум эффективности без лишнего.
+                                        <span class="series-slide__text-block">
+                                            <span class="series-slide__title-block">
+                                                <span class="series-slide__title">project <span>evo</span></span>
+                                                <span class="series-slide__price">253 900 ₽</span>
+                                            </span>
+                                            <span class="series-slide__text">
+                                                Современные игровые компьютеры с процессорами Intel Core и видеокартами NVIDIA GeForce RTX предлагают идеальное сочетание производительности и стоимости. Максимум эффективности без лишнего.
+                                            </span>
                                         </span>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a class="series-slide" href="javascript:void(0)">
-                                    <span class="series-slide__image">
-                                        <img src="images/content/series/forge_s.png" srcset="images/content/series/forge_b.png 2x" alt="">
-                                    </span>
-                                    <span class="series-slide__text-block">
-                                        <span class="series-slide__title-block">
-                                            <span class="series-slide__title">project <span>forge</span></span>
-                                            <span class="series-slide__price">253 900 ₽</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="series-slide" href="javascript:void(0)">
+                                        <span class="series-slide__image">
+                                            <img src="images/content/series/forge_s.png" srcset="images/content/series/forge_b.png 2x" alt="">
                                         </span>
-                                        <span class="series-slide__text">
-                                            Современные игровые компьютеры с процессорами Intel Core и видеокартами NVIDIA GeForce RTX предлагают идеальное сочетание производительности и стоимости. Максимум эффективности без лишнего.
+                                        <span class="series-slide__text-block">
+                                            <span class="series-slide__title-block">
+                                                <span class="series-slide__title">project <span>forge</span></span>
+                                                <span class="series-slide__price">253 900 ₽</span>
+                                            </span>
+                                            <span class="series-slide__text">
+                                                Современные игровые компьютеры с процессорами Intel Core и видеокартами NVIDIA GeForce RTX предлагают идеальное сочетание производительности и стоимости. Максимум эффективности без лишнего.
+                                            </span>
                                         </span>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a class="series-slide" href="javascript:void(0)">
-                                    <span class="series-slide__image">
-                                        <img src="images/content/series/mod_s.png" srcset="images/content/series/mod_b.png 2x" alt="">
-                                    </span>
-                                    <span class="series-slide__text-block">
-                                        <span class="series-slide__title-block">
-                                            <span class="series-slide__title">project <span>mod</span></span>
-                                            <span class="series-slide__price">253 900 ₽</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="series-slide" href="javascript:void(0)">
+                                        <span class="series-slide__image">
+                                            <img src="images/content/series/mod_s.png" srcset="images/content/series/mod_b.png 2x" alt="">
                                         </span>
-                                        <span class="series-slide__text">
-                                            Современные игровые компьютеры с процессорами Intel Core и видеокартами NVIDIA GeForce RTX предлагают идеальное сочетание производительности и стоимости. Максимум эффективности без лишнего.
+                                        <span class="series-slide__text-block">
+                                            <span class="series-slide__title-block">
+                                                <span class="series-slide__title">project <span>mod</span></span>
+                                                <span class="series-slide__price">253 900 ₽</span>
+                                            </span>
+                                            <span class="series-slide__text">
+                                                Современные игровые компьютеры с процессорами Intel Core и видеокартами NVIDIA GeForce RTX предлагают идеальное сочетание производительности и стоимости. Максимум эффективности без лишнего.
+                                            </span>
                                         </span>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a class="series-slide" href="javascript:void(0)">
-                                    <span class="series-slide__image">
-                                        <img src="images/content/series/one_s.png" srcset="images/content/series/one_b.png 2x" alt="">
-                                    </span>
-                                    <span class="series-slide__text-block">
-                                        <span class="series-slide__title-block">
-                                            <span class="series-slide__title">project <span>one</span></span>
-                                            <span class="series-slide__price">253 900 ₽</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="series-slide" href="javascript:void(0)">
+                                        <span class="series-slide__image">
+                                            <img src="images/content/series/one_s.png" srcset="images/content/series/one_b.png 2x" alt="">
                                         </span>
-                                        <span class="series-slide__text">
-                                            Современные игровые компьютеры с процессорами Intel Core и видеокартами NVIDIA GeForce RTX предлагают идеальное сочетание производительности и стоимости. Максимум эффективности без лишнего.
+                                        <span class="series-slide__text-block">
+                                            <span class="series-slide__title-block">
+                                                <span class="series-slide__title">project <span>one</span></span>
+                                                <span class="series-slide__price">253 900 ₽</span>
+                                            </span>
+                                            <span class="series-slide__text">
+                                                Современные игровые компьютеры с процессорами Intel Core и видеокартами NVIDIA GeForce RTX предлагают идеальное сочетание производительности и стоимости. Максимум эффективности без лишнего.
+                                            </span>
                                         </span>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a class="series-slide" href="javascript:void(0)">
-                                    <span class="series-slide__image">
-                                        <img src="images/content/series/one_max_s.png" srcset="images/content/series/one_max_b.png 2x" alt="">
-                                    </span>
-                                    <span class="series-slide__text-block">
-                                        <span class="series-slide__title-block">
-                                            <span class="series-slide__title">project <span>one max</span></span>
-                                            <span class="series-slide__price">253 900 ₽</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="series-slide" href="javascript:void(0)">
+                                        <span class="series-slide__image">
+                                            <img src="images/content/series/one_max_s.png" srcset="images/content/series/one_max_b.png 2x" alt="">
                                         </span>
-                                        <span class="series-slide__text">
-                                            Современные игровые компьютеры с процессорами Intel Core и видеокартами NVIDIA GeForce RTX предлагают идеальное сочетание производительности и стоимости. Максимум эффективности без лишнего.
+                                        <span class="series-slide__text-block">
+                                            <span class="series-slide__title-block">
+                                                <span class="series-slide__title">project <span>one max</span></span>
+                                                <span class="series-slide__price">253 900 ₽</span>
+                                            </span>
+                                            <span class="series-slide__text">
+                                                Современные игровые компьютеры с процессорами Intel Core и видеокартами NVIDIA GeForce RTX предлагают идеальное сочетание производительности и стоимости. Максимум эффективности без лишнего.
+                                            </span>
                                         </span>
-                                    </span>
-                                </a>
+                                    </a>
+                                </div>
                             </div>
                         </div>
+                        <div class="slider-navigation">
+                            <button class="js-series-slider-prev swiper-button-prev" type="button" title="Назад">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_left" />
+                                </svg>
+                            </button>
+                
+                            <button class="js-series-slider-next swiper-button-next" type="button" title="Вперёд">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
+                
                 </section>
 
                 <section class="page__section">
@@ -780,78 +859,7 @@
                 
                 </section>
 
-                <section class="page__section">
-                    <p class="pre-title"><span>Кастомные компьютеры в столе</span></p>
-                    <h2>ПК в столе</h2>
-                
-                    <div class="table-pc">
-                        <div class="table-pc__text">
-                            <p>Такой ПК занимает минимум места и при этом вызывает вау эффект намного больше, чем любой классический вариант компьютера.</p>
-                            <p>Наши столы спроектированы таким образом, что у вас будет возможность собрать максимально производительный ПК.</p>
-                            <p>Читать <a class="color-green" href="computer.html">подробнее...</a></p>
-                        </div>
-                
-                        <a class="table-pc__inner" href="computer.html">
-                            <img class="table-pc__image" src="images/content/table-pc/img_desk.jpg" srcset="images/content/table-pc/img_desk@2x.jpg 2x" alt="">
-                
-                            <div class="table-pc__info-block">
-                                <div class="table-pc__info-text">
-                                    <p class="table-pc__info-title">Установим любые комплектующие</p>
-                
-                                    <div class="table-pc__info-item">
-                                        <span>Любые материнские платы</span>
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#arrow_right" />
-                                        </svg>
-                                    </div>
-                
-                                    <div class="table-pc__info-item">
-                                        <span>Любые видеокарты</span>
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#arrow_right" />
-                                        </svg>
-                                    </div>
-                
-                                    <div class="table-pc__info-item">
-                                        <span>2 любых радиатора</span>
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#arrow_right" />
-                                        </svg>
-                                    </div>
-                
-                                    <div class="table-pc__info-item">
-                                        <span>2 любые колбы для жикости</span>
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#arrow_right" />
-                                        </svg>
-                                    </div>
-                
-                                    <div class="table-pc__info-item">
-                                        <span>2 посадочных места под HDD</span>
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#arrow_right" />
-                                        </svg>
-                                    </div>
-                
-                                    <div class="table-pc__info-item">
-                                        <span>4 посадочных места под SSD</span>
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#arrow_right" />
-                                        </svg>
-                                    </div>
-                                </div>
-                
-                                <div class="table-pc__features">
-                                    <div class="table-pc__feature">7 см закаленное стекло</div>
-                
-                                    <div class="table-pc__feature">Кабель питания, для монитора<br> и для ПК всего один</div>
-                
-                                    <div class="table-pc__feature">Верхняя часть столешницы<br> герметична</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </section>
+                <!--//= template/table-pc.html-->
 
                 <section class="page__section">
                     <p class="pre-title"><span>Собственное производство</span></p>

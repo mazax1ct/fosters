@@ -34,6 +34,14 @@ html {
         overflow: hidden;
     }
 
+    &--main {
+        .page__content {
+            @media(min-width: $hd) {
+                padding-top: 80px;
+            }
+        }
+    }
+
     &__content {
         flex: 1 0 auto;
         padding-top: 75px;
