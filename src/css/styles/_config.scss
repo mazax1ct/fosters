@@ -105,6 +105,12 @@
     }
 
     &__columns {
+        &:not(:last-child) {
+            margin-bottom: 40px;
+            @media(min-width: $hd) {
+                margin-bottom: 80px;
+            }
+        }
         @media(min-width: $md) {
             display: flex;
             gap: var(--container_padding);
@@ -139,6 +145,27 @@
         margin-bottom: 15px;
         @media(min-width: $sm) {
             font-size: 32px;
+        }
+    }
+
+    &__fps-block {
+        display: flex;
+        gap: var(--container_padding);
+        @media(max-width: $sm - 0.01px) {
+            flex-direction: column;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 40px;
+            @media(min-width: $hd) {
+                margin-bottom: 80px;
+            }
+        }
+
+        .fps-item {
+            @media(min-width: $sm) {
+                width: calc(100% / 3 - var(--container_padding) * 2 / 3);
+            }
         }
     }
 }

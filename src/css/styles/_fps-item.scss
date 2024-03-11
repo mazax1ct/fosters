@@ -13,6 +13,7 @@
 
     &__bar-containers {
         flex-grow: 1;
+        width: calc(100% - 60px);
     }
 
     &__bar-container {
@@ -64,6 +65,9 @@
         padding-left: 10px;
         padding-bottom: 4px;
         position: relative;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         z-index: 1;
         @media(max-width: $hd - 0.01px) {
             font-size: 12px;
@@ -100,6 +104,12 @@
         @media(min-width: $sm) {
             min-width: 115px;
             width: 115px;
+        }
+    }
+
+    .fps-item__bar-containers {
+        @media(min-width: $sm) {
+            width: calc(100% - 115px);
         }
     }
 
