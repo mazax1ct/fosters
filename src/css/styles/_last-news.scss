@@ -10,6 +10,34 @@
         grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
+
+    &--reverse {
+        .last-news__image-block {
+            @media(min-width: $md) {
+                grid-column: 1;
+                grid-row: span 2;
+            }
+        }
+
+        .last-news__button-block,
+        .last-news__text-block {
+            @media(min-width: $md) {
+                grid-column: 2;
+            }
+        }
+
+        .last-news__text-block {
+            @media(min-width: $md) {
+                grid-row: 1;
+            }
+        }
+
+        .last-news__button-block {
+            @media(min-width: $md) {
+                grid-row: 2;
+            }
+        }
+    }
     /*@media(min-width: $fhd) {
         gap: 40px;
     }*/
@@ -52,6 +80,10 @@
         @media(min-width: $md) {
             grid-row: span 2;
             margin-bottom: 0;
+        }
+
+        img {
+            display: block;
         }
     }
 

@@ -381,6 +381,10 @@ hr {
     margin-left: calc(0.01px - var(--container_padding));
     margin-right: calc(0.01px - var(--container_padding));
 
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
     img {
         display: block;
         max-height: calc(100vh - 80px);
@@ -388,6 +392,14 @@ hr {
         object-position: center;
         object-fit: cover;
         width: 100%;
+    }
+}
+
+.reading-block {
+    max-width: 800px;
+
+    &:not(:last-child) {
+        margin-bottom: 40px;
     }
 }
 

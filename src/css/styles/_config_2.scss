@@ -6,12 +6,15 @@
             display: flex;
             flex-wrap: wrap;
             gap: 30px 10px;
-            margin-bottom: 40px;
             @media(min-width: $md) {
                 gap: 50px 20px;
             }
-            @media(min-width: $hd) {
-                margin-bottom: 80px;
+
+            &:not(:last-child) {
+                margin-bottom: 40px;
+                @media(min-width: $hd) {
+                    margin-bottom: 80px;
+                }
             }
 
             .config_2__block {
@@ -63,6 +66,13 @@
             @media(min-width: $sm) {
                 display: flex;
                 gap: 20px;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 40px;
+                @media(min-width: $hd) {
+                    margin-bottom: 80px;
+                }
             }
 
             .config_2__block {
@@ -136,31 +146,38 @@
     }
 
     &__price-block {
-        margin-top: 40px;
-        @media(min-width: $lg) {
+        margin-top: auto;
+        /*@media(min-width: $lg) {
             width: calc(100% / 2 - 20px / 2);
-        }
+        }*/
     }
 
     &__price-container {
         align-items: center;
         border-bottom: 1px solid var(--primary_color);
         display: flex;
+        justify-content: space-between;
+        gap: var(--container_padding);
+        min-height: 48px;
         padding-bottom: 10px;
     }
 
     &__price-title {
-        width: 40%;
-        /*@media(min-width: $fhd) {
-            font-size: 22px;
-        }*/
+        @media(min-width: $md) and (max-width: $hd - 0.01px) {
+            font-size: 12px;
+        }
+        @media(min-width: $hd) {
+            font-size: 14px;
+        }
     }
 
     &__price {
         font-size: 24px;
         font-weight: 700;
         text-align: right;
-        width: 60%;
+        @media(min-width: $md) and (max-width: $hd - 0.01px) {
+            font-size: 20px;
+        }
 
         span {
             white-space: nowrap;
@@ -188,6 +205,12 @@
                 margin-top: 2px;
                 width: 16px;
             }
+        }
+    }
+
+    &__button-block {
+        @media(min-width: $sm) {
+            margin-top: 39px;
         }
     }
 
