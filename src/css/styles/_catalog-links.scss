@@ -26,19 +26,19 @@
     &__title {
         font-family: var(--secondary_font_family);
         font-size: 13px;
+        font-weight: 600;
         line-height: 1.3;
-        letter-spacing: -0.5px;
         margin-bottom: 15px;
         padding-left: 40px;
+        text-transform: uppercase;
         @media(min-width: $md) {
             font-size: 16px;
         }
         @media(min-width: $hd) {
-            font-size: 24px;
+            font-size: 30px;
         }
         /*@media(min-width: $fhd) {
             font-size: 32px;
-            letter-spacing: -2px;
             margin-bottom: 40px;
         }*/
     }
@@ -77,14 +77,15 @@
     }
 
     &__block-title {
+        font-family: var(--secondary_font_family);
         font-size: 15px;
-        font-weight: 700;
+        font-weight: 500;
         margin-bottom: 10px;
         @media(min-width: $md) {
             font-size: 18px;
         }
         @media(min-width: $hd) {
-            font-size: 24px;
+            font-size: 20px;
         }
         /*@media(min-width: $fhd) {
             font-size: 32px;

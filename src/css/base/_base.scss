@@ -18,7 +18,7 @@ html {
     flex-direction: column;
     font-size: 14px;
     font-family: var(--primary_font_family);
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.5;
     overflow-x: hidden;
     @media(min-width: $hd) {
@@ -85,8 +85,8 @@ html {
         &--mod_1 {
             font-family: var(--secondary_font_family);
             font-size: 13px;
+            font-weight: 500;
             line-height: 1.3;
-            letter-spacing: -0.5px;
             @media(min-width: $md) {
                 font-size: 16px;
             }
@@ -164,15 +164,15 @@ h2,
 h3 {
     color: var(--title_color);
     font-family: var(--secondary_font_family);
-    font-weight: 700;
+    font-weight: 600;
     margin-top: 0;
+    text-transform: uppercase;
 }
 
 .h1,
 h1 {
     font-size: 32px;
     line-height: 1;
-    letter-spacing: -4px;
     margin-bottom: 30px;
     @media(min-width: $sm) {
         font-size: 40px;
@@ -199,7 +199,6 @@ h1 {
 h2 {
     font-size: 28px;
     line-height: 1;
-    letter-spacing: -2px;
     margin-bottom: 15px;
     @media(min-width: $sm) {
         font-size: 32px;
@@ -241,7 +240,6 @@ h3 {
     margin-bottom: 0.5em;
     @media(min-width: $hd) {
         font-size: 24px;
-        letter-spacing: -1px;
     }
 }
 
@@ -259,17 +257,18 @@ p {
     align-items: flex-end;
     color: var(--pre_title_color);
     display: flex;
+    font-family: var(--secondary_font_family);
     font-size: 10px;
     gap: var(--gap);
     line-height: 1;
     margin-bottom: 5px;
+    text-transform: uppercase;
     @media(min-width: $md) {
         --gap: 20px;
         font-size: 10px;
     }
     @media(min-width: $hd) {
         font-size: 14px;
-        letter-spacing: -0.5px;
     }
 
     span {
@@ -278,13 +277,13 @@ p {
         padding: 5px;
         min-width: 27.8%;
         @media(min-width: $md) {
-            padding: 5px 10px;
+            padding: 6px 10px 4px;
             min-width: calc(25% - var(--gap) * 3 / 4);
             width: calc(25% - var(--gap) * 3 / 4);
         }
         @media(min-width: $hd) {
             min-height: 30px;
-            padding: 7px 10px;
+            padding: 9px 10px 7px;
         }
     }
 

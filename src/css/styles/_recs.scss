@@ -43,11 +43,13 @@
 .recs-item {
     color: #fff;
     display: block;
+    font-family: var(--secondary_font_family);
     font-size: 18px;
     font-weight: 600;
     overflow: hidden;
     position: relative;
     text-decoration: none;
+    text-transform: uppercase;
     z-index: 1;
     @media(min-width: $hd) {
         font-size: 24px;

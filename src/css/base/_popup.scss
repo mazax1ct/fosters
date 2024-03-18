@@ -1,0 +1,39 @@
+.popup {
+    background-color: #fff;
+    display: none;
+    width: 100%;
+    @media(min-width: $sm) {
+        padding: 60px;
+        max-width: 600px;
+    }
+    @media(min-width: $hd) {
+        max-width: 1000px;
+    }
+
+    &__title {
+        font-family: var(--secondary_font_family);
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 1;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        @media(min-width: $sm) {
+            font-size: 32px;
+        }
+    }
+
+    &.fancybox-content {
+        max-width: 400px;
+        padding: 40px 24px;
+        @media(min-width: $sm) {
+            padding: 60px;
+            max-width: 600px;
+        }
+        @media(min-width: $md) {
+            max-width: 800px;
+        }
+        @media(min-width: $hd) {
+            max-width: 1000px;
+        }
+    }
+}

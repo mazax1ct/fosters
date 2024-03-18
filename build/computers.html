@@ -20,10 +20,17 @@
     <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="preload" href="fonts/Rawline/subset-Rawline-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/Wadik/subset-WadikBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <!--<link rel="preload" href="fonts/Rawline/subset-Rawline-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Wadik/subset-WadikBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">-->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&family=Tektur:wght@400..900&display=swap"
+      rel="stylesheet">
 
     <link rel="stylesheet" href="plugins_css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="plugins_css/jquery.fancybox.css" />
     <link rel="stylesheet" href="css/style.css" />
 
 </head>
@@ -59,50 +66,122 @@
                                 </svg>
                             </a>
                             <div class="sub-menu">
-                                <ul class="sub-menu__list">
-                                    <li class="sub-menu__item">
-                                        <a class="sub-menu__link" href="series.html">
-                                            <img src="images/content/series/alisio_xs.png" alt="">
-                                            project alisio
-                                        </a>
-                                    </li>
-                                    <li class="sub-menu__item">
-                                        <a class="sub-menu__link" href="series.html">
+                                <div class="sub-menu__grid">
+                                    <div class="sub-menu__left">
+                                        <a class="sub-menu__link2" href="#">
+                                            <span class="sub-menu__link2-title">Готовые компьютеры</span>
                                             <img src="images/content/series/duoface_xs.png" alt="">
-                                            project duo face
+                                            <span class="sub-menu__link2-text">Готовые к отгрузке в день<br> заказа</span>
                                         </a>
-                                    </li>
-                                    <li class="sub-menu__item">
-                                        <a class="sub-menu__link" href="series.html">
-                                            <img src="images/content/series/evo_xs.png" alt="">
-                                            project evo
+        
+                                        <a class="sub-menu__link2" href="#">
+                                            <span class="sub-menu__link2-title">Конфигуратор</span>
+                                            <img src="images/content/series/config_xs.png" alt="">
+                                            <span class="sub-menu__link2-text">Гибкий подбор с полной<br> совместимостью всех<br> комплектующих</span>
                                         </a>
-                                    </li>
-                                    <li class="sub-menu__item">
-                                        <a class="sub-menu__link" href="series.html">
-                                            <img src="images/content/series/forge_xs.png" alt="">
-                                            project forge
-                                        </a>
-                                    </li>
-                                    <li class="sub-menu__item">
-                                        <a class="sub-menu__link" href="series.html">
-                                            <img src="images/content/series/mod_xs.png" alt="">
-                                            project mod
-                                        </a>
-                                    </li>
-                                    <li class="sub-menu__item">
-                                        <a class="sub-menu__link" href="series.html">
-                                            <img src="images/content/series/one_xs.png" alt="">
-                                            project one
-                                        </a>
-                                    </li>
-                                    <li class="sub-menu__item">
-                                        <a class="sub-menu__link" href="series.html">
-                                            <img src="images/content/series/one_max_xs.png" alt="">
-                                            project one max
-                                        </a>
-                                    </li>
-                                </ul>
+                                    </div>
+        
+                                    <div class="sub-menu__right">
+                                        <div class="sub-menu__title-block">
+                                            <p>По сериям:</p>
+                                            <a href="#">
+                                                все серии
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#arrow_right"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <ul class="sub-menu__list">
+                                            <li class="sub-menu__item">
+                                                <a class="sub-menu__link" href="series.html">
+                                                    <span class="sub-menu__link-title">project alisio</span>
+                                                    <img src="images/content/series/alisio_xs.png" alt="">
+                                                    <span class="sub-menu__link-text">Оптимальное соотношение<br> цены и качества</span>
+                                                    <span class="sub-menu__link-price">от 112 700 ₽</span>
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a class="sub-menu__link" href="series.html">
+                                                    <span class="sub-menu__link-title">project duo face</span>
+                                                    <img src="images/content/series/duoface_xs.png" alt="">
+                                                    <span class="sub-menu__link-text">Оптимальное соотношение<br> цены и качества</span>
+                                                    <span class="sub-menu__link-price">от 112 700 ₽</span>
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a class="sub-menu__link" href="series.html">
+                                                    <span class="sub-menu__link-title">project evo</span>
+                                                    <img src="images/content/series/evo_xs.png" alt="">
+                                                    <span class="sub-menu__link-text">Оптимальное соотношение<br> цены и качества</span>
+                                                    <span class="sub-menu__link-price">от 112 700 ₽</span>
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a class="sub-menu__link" href="series.html">
+                                                    <span class="sub-menu__link-title">project forge</span>
+                                                    <img src="images/content/series/forge_xs.png" alt="">
+                                                    <span class="sub-menu__link-text">Оптимальное соотношение<br> цены и качества</span>
+                                                    <span class="sub-menu__link-price">от 112 700 ₽</span>
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a class="sub-menu__link" href="series.html">
+                                                    <span class="sub-menu__link-title">project mod</span>
+                                                    <img src="images/content/series/mod_xs.png" alt="">
+                                                    <span class="sub-menu__link-text">Оптимальное соотношение<br> цены и качества</span>
+                                                    <span class="sub-menu__link-price">от 112 700 ₽</span>
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a class="sub-menu__link" href="series.html">
+                                                    <span class="sub-menu__link-title">project one</span>
+                                                    <img src="images/content/series/one_xs.png" alt="">
+                                                    <span class="sub-menu__link-text">Оптимальное соотношение<br> цены и качества</span>
+                                                    <span class="sub-menu__link-price">от 112 700 ₽</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+        
+                                        <div class="sub-menu__columns">
+                                            <div class="sub-menu__column">
+                                                <div class="sub-menu__title-block">
+                                                    <p>По цене:</p>
+                                                </div>
+                                                <div class="sub-menu__columns">
+                                                    <div class="sub-menu__column">
+                                                        <img src="images/content/series/one_xs__.png" alt="">
+                                                    </div>
+                                                    <div class="sub-menu__column">
+                                                        <div class="catalog-links__block">
+                                                            <a class="catalog-links__link" href="computers.html">до 80 000</a>
+                                                            <a class="catalog-links__link" href="computers.html">до 100 000</a>
+                                                            <a class="catalog-links__link" href="computers.html">до 140 000</a>
+                                                            <a class="catalog-links__link" href="computers.html">до 180 000</a>
+                                                            <a class="catalog-links__link" href="computers.html">до 250 000</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sub-menu__column">
+                                                <div class="sub-menu__title-block">
+                                                    <p>По разрешению:</p>
+                                                </div>
+                                                <div class="sub-menu__columns">
+                                                    <div class="sub-menu__column">
+                                                        <img src="images/content/series/mod_xs__.png" alt="">
+                                                    </div>
+                                                    <div class="sub-menu__column">
+                                                        <div class="catalog-links__block">
+                                                            <a class="catalog-links__link" href="computers.html">FullHD (1920x1080)</a>
+                                                            <a class="catalog-links__link" href="computers.html">2K (2560х1440)</a>
+                                                            <a class="catalog-links__link" href="computers.html">4K (3840х2160)</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </li>
                         <li class="main-menu__item">
@@ -169,828 +248,1307 @@
                     <li class="breadcrumbs__item">Все компьютеры</li>
                 </ul>
 
+                <h1>Готовые компьютеры</h1>
+
                 <section class="page__section">
-                    <div class="filter">
-                        <div class="sorting">
-                            <button class="js-sorting-toggler sorting__toggler" type="button">
-                                Цена
+
+                    <div class="catalog-section">
+                        <div class="catalog-section__filter">
+                            <button class="js-filter-opener filter-opener button" type="button">
+                                <span>ОТКРЫТЬ ФИЛЬТР</span>
                                 <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#arrow_down" />
+                                    <use xlink:href="images/sprite.svg#filter" />
                                 </svg>
                             </button>
-                            <div class="sorting__dropdown">
-                                <div class="sorting__list">
-                                    <label class="checkbox">
-                                        <input type="checkbox" name="" value="">
-                                        <span class="checkbox__icon"></span>
-                                        <span class="checkbox__text">30 000 - 40 000 ₽ <span>(245)</span></span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input type="checkbox" name="" value="">
-                                        <span class="checkbox__icon"></span>
-                                        <span class="checkbox__text">40 001 - 50 000 ₽ <span>(15)</span></span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input type="checkbox" name="" value="">
-                                        <span class="checkbox__icon"></span>
-                                        <span class="checkbox__text">50 001 - 60 000 ₽ <span>(65)</span></span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input type="checkbox" name="" value="">
-                                        <span class="checkbox__icon"></span>
-                                        <span class="checkbox__text">60 001 - 70 000 ₽ <span>(675)</span></span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input type="checkbox" name="" value="">
-                                        <span class="checkbox__icon"></span>
-                                        <span class="checkbox__text">70 001 - 80 000 ₽ <span>(837)</span></span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input type="checkbox" name="" value="">
-                                        <span class="checkbox__icon"></span>
-                                        <span class="checkbox__text">80 001 - 90 000 ₽ <span>(3)</span></span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input type="checkbox" name="" value="">
-                                        <span class="checkbox__icon"></span>
-                                        <span class="checkbox__text">90 001 - 100 000 ₽ <span>(283)</span></span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input type="checkbox" name="" value="">
-                                        <span class="checkbox__icon"></span>
-                                        <span class="checkbox__text">100 001 - 110 000 ₽ <span>(377)</span></span>
-                                    </label>
+                            
+                            <div class="filter">
+                                <div class="filter__title-block">
+                                    <p class="filter__title">ФИЛЬТР:</p>
+                            
+                                    <button class="js-filter-closer filter__closer" type="button" title="Закрыть фильтр">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#close" />
+                                        </svg>
+                                    </button>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="sorting">
-                            <button class="js-sorting-toggler sorting__toggler" type="button">
-                                Разрешение монитора
-                                <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#arrow_down" />
-                                </svg>
-                            </button>
-                            <div class="sorting__dropdown">
-                                <div class="sorting__list">
-                                    <label class="checkbox">
-                                        <input type="checkbox" name="" value="">
-                                        <span class="checkbox__icon"></span>
-                                        <span class="checkbox__text">1680 х 1050 <span>(245)</span></span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input type="checkbox" name="" value="">
-                                        <span class="checkbox__icon"></span>
-                                        <span class="checkbox__text">1920 х 1080 <span>(15)</span></span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input type="checkbox" name="" value="">
-                                        <span class="checkbox__icon"></span>
-                                        <span class="checkbox__text">2560 х 1440 <span>(65)</span></span>
-                                    </label>
-                                    <label class="checkbox">
-                                        <input type="checkbox" name="" value="">
-                                        <span class="checkbox__icon"></span>
-                                        <span class="checkbox__text">3440 х 1440 и выше <span>(675)</span></span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="products-list">
-                        <div class="card">
-                            <div class="card__image">
-                                <img src="images/content/computers/img_1.png" srcset="images/content/computers/img_1@2x.png 2x" alt="">
-                            </div>
-                            <div class="card__title-block">
-                                <p class="card__title">Project alisio</p>
-                                <button class="js-card-fps-opener card__fps-button" type="button" title="Посмотреть графики FPS">
-                                    <svg aria-hidden="true">
-                                        <use xlink:href="images/sprite.svg#gear" />
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="card__inner">
-                                <p class="card__info-title">Детали</p>
-                                <div class="card__info">
-                                    <p>
-                                        <span>i5-13600K</span>
-                                        <span>Intel Core 3.5-5.1GHz14 ядер/20&nbsp;потоков</span>
-                                    </p>
-                                    <p>
-                                        <span>RTX 4070Ti</span>
-                                        <span>12GB GDDR6XNVIDIA GeForce</span>
-                                    </p>
-                                    <p>
-                                        <span>32GB RGB</span>
-                                        <span>DDR5 5200Mhz2 x 16Gb</span>
-                                    </p>
-                                    <p>
-                                        <span>500GB</span>
-                                        <span>SSD NVMe 4.0W/R: 5000/6900 Мб/с</span>
-                                    </p>
-                                    <p>
-                                        <span>Не выбрано</span>
-                                        <span>Без дополнительного NVME накопителя</span>
-                                    </p>
-                                    <p>
-                                        <span>1TB</span>
-                                        <span>SSD SATA 2'5W/R: 520/560 Мб/с</span>
-                                    </p>
-                                </div>
-                                <div class="card__price-block">
-                                    <p class="card__price-container">
-                                        <span class="card__price-title">Цена</span>
-                                        <span class="card__price"><span>от 112 700 ₽</span></span>
-                                    </p>
-                                    <p class="card__credit">
-                                        <a href="#">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="images/sprite.svg#question"></use>
+                            
+                                <div class="filter__section">
+                                    <div class="filter__section-title">
+                                        <p class="filter__title">Цена:</p>
+                                        <button class="js-filter-section-toggler filter__toggler is-active" type="button" title="Показать раздел фильтра">
+                                            <svg class="header-logo__text" aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#arrow_down" />
                                             </svg>
-                                            Доступно в кредит
-                                        </a>
-                                    </p>
+                                        </button>
+                                    </div>
+                                    <div class="filter__section-inner is-open" style="display: block">
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="" value="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">30 000 - 40 000 ₽ <span>(245)</span></span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="" value="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">40 001 - 50 000 ₽ <span>(15)</span></span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="" value="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">50 001 - 60 000 ₽ <span>(65)</span></span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="" value="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">60 001 - 70 000 ₽ <span>(675)</span></span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="" value="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">70 001 - 80 000 ₽ <span>(837)</span></span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="" value="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">80 001 - 90 000 ₽ <span>(3)</span></span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="" value="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">90 001 - 100 000 ₽ <span>(283)</span></span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="" value="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">100 001 - 110 000 ₽ <span>(377)</span></span>
+                                        </label>
+                                    </div>
                                 </div>
-                                <div class="card__buttons">
-                                    <a class="button button--w_385" href="#">
-                                        <span>Добавить в корзину</span>
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#button_arrow"></use>
-                                        </svg>
-                                    </a>
-                                    <a class="button button--bordered button--w_385" href="config.html">
-                                        <span>Сконфигурировать</span>
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#button_arrow"></use>
-                                        </svg>
-                                    </a>
+                                <div class="filter__section">
+                                    <div class="filter__section-title">
+                                        <p class="filter__title">Разрешение:</p>
+                                        <button class="js-filter-section-toggler filter__toggler" type="button" title="Показать раздел фильтра">
+                                            <svg class="header-logo__text" aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#arrow_down" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="filter__section-inner">
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="" value="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">1680 х 1050 <span>(245)</span></span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="" value="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">1920 х 1080 <span>(15)</span></span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="" value="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">2560 х 1440 <span>(65)</span></span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="" value="">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">3440 х 1440 и выше <span>(675)</span></span>
+                                        </label>
+                                    </div>
                                 </div>
-
-                                <div class="card__fps-block">
-                                    <div class="fps-item">
-                                        <div class="fps-item__image"><img src="images/content/games/img_1.jpg" srcset="images/content/games/img_1@2x.jpg 2x" alt=""></div>
-                                        <div class="fps-item__bar-containers">
-                                            <div class="fps-item__bar-container fps-item__bar-container--small">
-                                                <div class="fps-item__bar fps-item__bar--green" style="width: 90%"></div>
-                                                <div class="fps-item__title">Tom Clancy's Rainbow Six Siege</div>
-                                                <div class="fps-item__value">214 <span>FPS</span></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="fps-item">
-                                        <div class="fps-item__image"><img src="images/content/games/img_2.jpg" srcset="images/content/games/img_2@2x.jpg 2x" alt=""></div>
-                                        <div class="fps-item__bar-containers">
-                                            <div class="fps-item__bar-container fps-item__bar-container--small">
-                                                <div class="fps-item__bar fps-item__bar--green" style="width: 80%"></div>
-                                                <div class="fps-item__title">Doom Eternal (2020)</div>
-                                                <div class="fps-item__value">159 <span>FPS</span></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="fps-item">
-                                        <div class="fps-item__image"><img src="images/content/games/img_3.jpg" srcset="images/content/games/img_3@2x.jpg 2x" alt=""></div>
-                                        <div class="fps-item__bar-containers">
-                                            <div class="fps-item__bar-container fps-item__bar-container--small">
-                                                <div class="fps-item__bar fps-item__bar--green" style="width: 50%"></div>
-                                                <div class="fps-item__title">World of Tanks</div>
-                                                <div class="fps-item__value">142 <span>FPS</span></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="fps-item">
-                                        <div class="fps-item__image"><img src="images/content/games/img_4.jpg" srcset="images/content/games/img_4@2x.jpg 2x" alt=""></div>
-                                        <div class="fps-item__bar-containers">
-                                            <div class="fps-item__bar-container fps-item__bar-container--small">
-                                                <div class="fps-item__bar fps-item__bar--green" style="width: 30%"></div>
-                                                <div class="fps-item__title">Destiny 2</div>
-                                                <div class="fps-item__value">140 <span>FPS</span></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="fps-item">
-                                        <div class="fps-item__image"><img src="images/content/games/img_5.jpg" srcset="images/content/games/img_5@2x.jpg 2x" alt=""></div>
-                                        <div class="fps-item__bar-containers">
-                                            <div class="fps-item__bar-container fps-item__bar-container--small">
-                                                <div class="fps-item__bar fps-item__bar--green" style="width: 10%"></div>
-                                                <div class="fps-item__title">Hitman III</div>
-                                                <div class="fps-item__value">95 <span>FPS</span></div>
-                                            </div>
-                                        </div>
-                                    </div>
+                            
+                                <div class="filter__buttons">
+                                    <button class="button button--bordered" type="reset">СБРОСИТЬ</button>
+                                    <button class="button" type="submit">ПРИМЕНИТЬ</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card__image">
-                                <img src="images/content/computers/img_1.png" srcset="images/content/computers/img_1@2x.png 2x" alt="">
-                            </div>
-                            <div class="card__title-block">
-                                <p class="card__title">Project alisio</p>
-                                <button class="js-card-fps-opener card__fps-button" type="button" title="Посмотреть графики FPS">
-                                    <svg aria-hidden="true">
-                                        <use xlink:href="images/sprite.svg#gear" />
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="card__inner">
-                                <p class="card__info-title">Детали</p>
-                                <div class="card__info">
-                                    <p>
-                                        <span>i5-13600K</span>
-                                        <span>Intel Core 3.5-5.1GHz14 ядер/20&nbsp;потоков</span>
-                                    </p>
-                                    <p>
-                                        <span>RTX 4070Ti</span>
-                                        <span>12GB GDDR6XNVIDIA GeForce</span>
-                                    </p>
-                                    <p>
-                                        <span>32GB RGB</span>
-                                        <span>DDR5 5200Mhz2 x 16Gb</span>
-                                    </p>
-                                    <p>
-                                        <span>500GB</span>
-                                        <span>SSD NVMe 4.0W/R: 5000/6900 Мб/с</span>
-                                    </p>
-                                    <p>
-                                        <span>Не выбрано</span>
-                                        <span>Без дополнительного NVME накопителя</span>
-                                    </p>
-                                    <p>
-                                        <span>1TB</span>
-                                        <span>SSD SATA 2'5W/R: 520/560 Мб/с</span>
-                                    </p>
-                                </div>
-                                <div class="card__price-block">
-                                    <p class="card__price-container">
-                                        <span class="card__price-title">Цена</span>
-                                        <span class="card__price"><span>от 112 700 ₽</span></span>
-                                    </p>
-                                    <p class="card__credit">
-                                        <a href="#">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="images/sprite.svg#question"></use>
-                                            </svg>
-                                            Доступно в кредит
+                        <div class="catalog-section__products">
+                            <div class="products-list">
+                                <div class="card">
+                                    <div class="card__image">
+                                        <a href="computer.html">
+                                            <img src="images/content/series/alisio_xs.png" srcset="images/content/series/alisio_s.png 2x" alt="">
                                         </a>
-                                    </p>
-                                </div>
-                                <div class="card__buttons">
-                                    <a class="button button--w_385" href="#">
-                                        <span>Добавить в корзину</span>
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#button_arrow"></use>
-                                        </svg>
-                                    </a>
-                                    <a class="button button--bordered button--w_385" href="config.html">
-                                        <span>Сконфигурировать</span>
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#button_arrow"></use>
-                                        </svg>
-                                    </a>
-                                </div>
+                                    </div>
 
-                                <div class="card__fps-block">
-                                    <div class="fps-item">
-                                        <div class="fps-item__image"><img src="images/content/games/img_1.jpg" srcset="images/content/games/img_1@2x.jpg 2x" alt=""></div>
-                                        <div class="fps-item__bar-containers">
-                                            <div class="fps-item__bar-container fps-item__bar-container--small">
-                                                <div class="fps-item__bar fps-item__bar--green" style="width: 90%"></div>
-                                                <div class="fps-item__title">Tom Clancy's Rainbow Six Siege</div>
-                                                <div class="fps-item__value">214 <span>FPS</span></div>
+                                    <div class="card__title-block">
+                                        <p class="card__title"><a href="computer.html">Project alisio</a></p>
+                                        <button class="js-card-fps-opener card__fps-button" type="button" title="Посмотреть графики FPS">FPS</button>
+                                    </div>
+
+                                    <div class="card__inner">
+                                        <div class="card__inner-top">
+                                            <div class="card__price-block">
+                                                <span class="card__price"><span>от 112 700 ₽</span></span>
+                                                <p class="card__credit">
+                                                    <a href="#">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#question"></use>
+                                                        </svg>
+                                                        Доступно в кредит
+                                                    </a>
+                                                </p>
+                                            </div>
+
+                                            <div class="card__buttons">
+                                                <a class="button button--w_385" href="#">
+                                                    <span>В корзину</span>
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#button_arrow"></use>
+                                                    </svg>
+                                                </a>
+                                                <a class="button button--bordered button--w_385" href="computer.html">
+                                                    <span>Улучшить</span>
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#button_arrow"></use>
+                                                    </svg>
+                                                </a>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="fps-item">
-                                        <div class="fps-item__image"><img src="images/content/games/img_2.jpg" srcset="images/content/games/img_2@2x.jpg 2x" alt=""></div>
-                                        <div class="fps-item__bar-containers">
-                                            <div class="fps-item__bar-container fps-item__bar-container--small">
-                                                <div class="fps-item__bar fps-item__bar--green" style="width: 80%"></div>
-                                                <div class="fps-item__title">Doom Eternal (2020)</div>
-                                                <div class="fps-item__value">159 <span>FPS</span></div>
+
+                                        <div class="card__info">
+                                            <p title="Процессор">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#cpu"></use>
+                                                </svg>
+                                                <span>i5-13600K</span>
+                                            </p>
+                                            <p title="Видеокарта">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#gpu"></use>
+                                                </svg>
+                                                <span>RTX 4070Ti</span>
+                                            </p>
+                                            <p title="Оперативная память">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#ram"></use>
+                                                </svg>
+                                                <span>32GB RGB</span>
+                                            </p>
+                                            <p title="SSD накопитель">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#ssd"></use>
+                                                </svg>
+                                                <span>500GB</span>
+                                            </p>
+                                            <p title="Материнская плата">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#mb"></use>
+                                                </svg>
+                                                <span>AsRock B450</span>
+                                            </p>
+                                            <p title="Охлаждение">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#air"></use>
+                                                </svg>
+                                                <span>Zalman CNPS9X</span>
+                                            </p>
+                                        </div>
+
+                                        <button class="card__spec-button button button--bordered" type="button" data-fancybox="spec_1" data-src="#spec_popup">Полная спецификация</button>
+
+                                        <div id="spec_popup" class="popup">
+                                            <p class="popup__title">Комплектующие</p>
+
+                                            <div class="speka">
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#cpu"></use>
+                                                        </svg>
+                                                        Процессор
+                                                    </span>
+                                                    <span>Intel® Core™ i5-12400(F) [до 4.4GHz, 6 ядер]</span>
+                                                </div>
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#gpu"></use>
+                                                        </svg>
+                                                        Видеокарта
+                                                    </span>
+                                                    <span>Palit GeForce RTX 4060 Dual [8GB, 3072 CUDA]</span>
+                                                </div>
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#ram"></use>
+                                                        </svg>
+                                                        Оперативная память
+                                                    </span>
+                                                    <span>16GB Kingston Fury Beast RGB [DDR4, 3600MHz, 2x8GB]</span>
+                                                </div>
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#ssd"></use>
+                                                        </svg>
+                                                        SSD накопитель
+                                                    </span>
+                                                    <span>500GB ADATA LEGEND 800 [3500MB/s, Gen4]</span>
+                                                </div>
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#mb"></use>
+                                                        </svg>
+                                                        Материнская плата
+                                                    </span>
+                                                    <span>GIGABYTE B760M DS3H AX [DDR4, Wi-Fi]</span>
+                                                </div>
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#air"></use>
+                                                        </svg>
+                                                        Охлаждение
+                                                    </span>
+                                                    <span>ID-Cooling SE-224-XTS ARGB Black</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="fps-item">
-                                        <div class="fps-item__image"><img src="images/content/games/img_3.jpg" srcset="images/content/games/img_3@2x.jpg 2x" alt=""></div>
-                                        <div class="fps-item__bar-containers">
-                                            <div class="fps-item__bar-container fps-item__bar-container--small">
-                                                <div class="fps-item__bar fps-item__bar--green" style="width: 50%"></div>
-                                                <div class="fps-item__title">World of Tanks</div>
-                                                <div class="fps-item__value">142 <span>FPS</span></div>
+
+                                        <div class="card__fps-block">
+                                            <div class="fps-item">
+                                                <div class="fps-item__image"><img src="images/content/games/img_1.jpg" srcset="images/content/games/img_1@2x.jpg 2x" alt=""></div>
+                                                <div class="fps-item__bar-containers">
+                                                    <div class="fps-item__bar-container fps-item__bar-container--small">
+                                                        <div class="fps-item__bar fps-item__bar--green" style="width: 90%"></div>
+                                                        <div class="fps-item__title">Tom Clancy's Rainbow Six Siege</div>
+                                                        <div class="fps-item__value">214 <span>FPS</span></div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="fps-item">
-                                        <div class="fps-item__image"><img src="images/content/games/img_4.jpg" srcset="images/content/games/img_4@2x.jpg 2x" alt=""></div>
-                                        <div class="fps-item__bar-containers">
-                                            <div class="fps-item__bar-container fps-item__bar-container--small">
-                                                <div class="fps-item__bar fps-item__bar--green" style="width: 30%"></div>
-                                                <div class="fps-item__title">Destiny 2</div>
-                                                <div class="fps-item__value">140 <span>FPS</span></div>
+                                            <div class="fps-item">
+                                                <div class="fps-item__image"><img src="images/content/games/img_2.jpg" srcset="images/content/games/img_2@2x.jpg 2x" alt=""></div>
+                                                <div class="fps-item__bar-containers">
+                                                    <div class="fps-item__bar-container fps-item__bar-container--small">
+                                                        <div class="fps-item__bar fps-item__bar--green" style="width: 80%"></div>
+                                                        <div class="fps-item__title">Doom Eternal (2020)</div>
+                                                        <div class="fps-item__value">159 <span>FPS</span></div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="fps-item">
-                                        <div class="fps-item__image"><img src="images/content/games/img_5.jpg" srcset="images/content/games/img_5@2x.jpg 2x" alt=""></div>
-                                        <div class="fps-item__bar-containers">
-                                            <div class="fps-item__bar-container fps-item__bar-container--small">
-                                                <div class="fps-item__bar fps-item__bar--green" style="width: 10%"></div>
-                                                <div class="fps-item__title">Hitman III</div>
-                                                <div class="fps-item__value">95 <span>FPS</span></div>
+                                            <div class="fps-item">
+                                                <div class="fps-item__image"><img src="images/content/games/img_3.jpg" srcset="images/content/games/img_3@2x.jpg 2x" alt=""></div>
+                                                <div class="fps-item__bar-containers">
+                                                    <div class="fps-item__bar-container fps-item__bar-container--small">
+                                                        <div class="fps-item__bar fps-item__bar--green" style="width: 50%"></div>
+                                                        <div class="fps-item__title">World of Tanks</div>
+                                                        <div class="fps-item__value">142 <span>FPS</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="fps-item">
+                                                <div class="fps-item__image"><img src="images/content/games/img_4.jpg" srcset="images/content/games/img_4@2x.jpg 2x" alt=""></div>
+                                                <div class="fps-item__bar-containers">
+                                                    <div class="fps-item__bar-container fps-item__bar-container--small">
+                                                        <div class="fps-item__bar fps-item__bar--green" style="width: 30%"></div>
+                                                        <div class="fps-item__title">Destiny 2</div>
+                                                        <div class="fps-item__value">140 <span>FPS</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="fps-item">
+                                                <div class="fps-item__image"><img src="images/content/games/img_5.jpg" srcset="images/content/games/img_5@2x.jpg 2x" alt=""></div>
+                                                <div class="fps-item__bar-containers">
+                                                    <div class="fps-item__bar-container fps-item__bar-container--small">
+                                                        <div class="fps-item__bar fps-item__bar--green" style="width: 10%"></div>
+                                                        <div class="fps-item__title">Hitman III</div>
+                                                        <div class="fps-item__value">95 <span>FPS</span></div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card__image">
-                                <img src="images/content/computers/img_1.png" srcset="images/content/computers/img_1@2x.png 2x" alt="">
-                            </div>
-                            <div class="card__title-block">
-                                <p class="card__title">Project alisio</p>
-                                <button class="js-card-fps-opener card__fps-button" type="button" title="Посмотреть графики FPS">
-                                    <svg aria-hidden="true">
-                                        <use xlink:href="images/sprite.svg#gear" />
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="card__inner">
-                                <p class="card__info-title">Детали</p>
-                                <div class="card__info">
-                                    <p>
-                                        <span>i5-13600K</span>
-                                        <span>Intel Core 3.5-5.1GHz14 ядер/20&nbsp;потоков</span>
-                                    </p>
-                                    <p>
-                                        <span>RTX 4070Ti</span>
-                                        <span>12GB GDDR6XNVIDIA GeForce</span>
-                                    </p>
-                                    <p>
-                                        <span>32GB RGB</span>
-                                        <span>DDR5 5200Mhz2 x 16Gb</span>
-                                    </p>
-                                    <p>
-                                        <span>500GB</span>
-                                        <span>SSD NVMe 4.0W/R: 5000/6900 Мб/с</span>
-                                    </p>
-                                    <p>
-                                        <span>Не выбрано</span>
-                                        <span>Без дополнительного NVME накопителя</span>
-                                    </p>
-                                    <p>
-                                        <span>1TB</span>
-                                        <span>SSD SATA 2'5W/R: 520/560 Мб/с</span>
-                                    </p>
-                                </div>
-                                <div class="card__price-block">
-                                    <p class="card__price-container">
-                                        <span class="card__price-title">Цена</span>
-                                        <span class="card__price"><span>от 112 700 ₽</span></span>
-                                    </p>
-                                    <p class="card__credit">
-                                        <a href="#">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="images/sprite.svg#question"></use>
-                                            </svg>
-                                            Доступно в кредит
+                                <div class="card">
+                                    <div class="card__image">
+                                        <a href="computer.html">
+                                            <img src="images/content/series/alisio_xs.png" srcset="images/content/series/alisio_s.png 2x" alt="">
                                         </a>
-                                    </p>
-                                </div>
-                                <div class="card__buttons">
-                                    <a class="button button--w_385" href="#">
-                                        <span>Добавить в корзину</span>
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#button_arrow"></use>
-                                        </svg>
-                                    </a>
-                                    <a class="button button--bordered button--w_385" href="config.html">
-                                        <span>Сконфигурировать</span>
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#button_arrow"></use>
-                                        </svg>
-                                    </a>
-                                </div>
+                                    </div>
 
-                                <div class="card__fps-block">
-                                    <div class="fps-item">
-                                        <div class="fps-item__image"><img src="images/content/games/img_1.jpg" srcset="images/content/games/img_1@2x.jpg 2x" alt=""></div>
-                                        <div class="fps-item__bar-containers">
-                                            <div class="fps-item__bar-container fps-item__bar-container--small">
-                                                <div class="fps-item__bar fps-item__bar--green" style="width: 90%"></div>
-                                                <div class="fps-item__title">Tom Clancy's Rainbow Six Siege</div>
-                                                <div class="fps-item__value">214 <span>FPS</span></div>
+                                    <div class="card__title-block">
+                                        <p class="card__title"><a href="computer.html">Project alisio</a></p>
+                                        <button class="js-card-fps-opener card__fps-button" type="button" title="Посмотреть графики FPS">FPS</button>
+                                    </div>
+
+                                    <div class="card__inner">
+                                        <div class="card__inner-top">
+                                            <div class="card__price-block">
+                                                <span class="card__price"><span>от 112 700 ₽</span></span>
+                                                <p class="card__credit">
+                                                    <a href="#">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#question"></use>
+                                                        </svg>
+                                                        Доступно в кредит
+                                                    </a>
+                                                </p>
+                                            </div>
+
+                                            <div class="card__buttons">
+                                                <a class="button button--w_385" href="#">
+                                                    <span>В корзину</span>
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#button_arrow"></use>
+                                                    </svg>
+                                                </a>
+                                                <a class="button button--bordered button--w_385" href="computer.html">
+                                                    <span>Улучшить</span>
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#button_arrow"></use>
+                                                    </svg>
+                                                </a>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="fps-item">
-                                        <div class="fps-item__image"><img src="images/content/games/img_2.jpg" srcset="images/content/games/img_2@2x.jpg 2x" alt=""></div>
-                                        <div class="fps-item__bar-containers">
-                                            <div class="fps-item__bar-container fps-item__bar-container--small">
-                                                <div class="fps-item__bar fps-item__bar--green" style="width: 80%"></div>
-                                                <div class="fps-item__title">Doom Eternal (2020)</div>
-                                                <div class="fps-item__value">159 <span>FPS</span></div>
+
+                                        <div class="card__info">
+                                            <p title="Процессор">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#cpu"></use>
+                                                </svg>
+                                                <span>i5-13600K</span>
+                                            </p>
+                                            <p title="Видеокарта">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#gpu"></use>
+                                                </svg>
+                                                <span>RTX 4070Ti</span>
+                                            </p>
+                                            <p title="Оперативная память">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#ram"></use>
+                                                </svg>
+                                                <span>32GB RGB</span>
+                                            </p>
+                                            <p title="SSD накопитель">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#ssd"></use>
+                                                </svg>
+                                                <span>500GB</span>
+                                            </p>
+                                            <p title="Материнская плата">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#mb"></use>
+                                                </svg>
+                                                <span>AsRock B450</span>
+                                            </p>
+                                            <p title="Охлаждение">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#air"></use>
+                                                </svg>
+                                                <span>Zalman CNPS9X</span>
+                                            </p>
+                                        </div>
+
+                                        <button class="card__spec-button button button--bordered" type="button" data-fancybox="spec_2" data-src="#spec_popup">Полная спецификация</button>
+
+                                        <div id="spec_popup" class="popup">
+                                            <p class="popup__title">Комплектующие</p>
+
+                                            <div class="speka">
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#cpu"></use>
+                                                        </svg>
+                                                        Процессор
+                                                    </span>
+                                                    <span>Intel® Core™ i5-12400(F) [до 4.4GHz, 6 ядер]</span>
+                                                </div>
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#gpu"></use>
+                                                        </svg>
+                                                        Видеокарта
+                                                    </span>
+                                                    <span>Palit GeForce RTX 4060 Dual [8GB, 3072 CUDA]</span>
+                                                </div>
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#ram"></use>
+                                                        </svg>
+                                                        Оперативная память
+                                                    </span>
+                                                    <span>16GB Kingston Fury Beast RGB [DDR4, 3600MHz, 2x8GB]</span>
+                                                </div>
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#ssd"></use>
+                                                        </svg>
+                                                        SSD накопитель
+                                                    </span>
+                                                    <span>500GB ADATA LEGEND 800 [3500MB/s, Gen4]</span>
+                                                </div>
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#mb"></use>
+                                                        </svg>
+                                                        Материнская плата
+                                                    </span>
+                                                    <span>GIGABYTE B760M DS3H AX [DDR4, Wi-Fi]</span>
+                                                </div>
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#air"></use>
+                                                        </svg>
+                                                        Охлаждение
+                                                    </span>
+                                                    <span>ID-Cooling SE-224-XTS ARGB Black</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="fps-item">
-                                        <div class="fps-item__image"><img src="images/content/games/img_3.jpg" srcset="images/content/games/img_3@2x.jpg 2x" alt=""></div>
-                                        <div class="fps-item__bar-containers">
-                                            <div class="fps-item__bar-container fps-item__bar-container--small">
-                                                <div class="fps-item__bar fps-item__bar--green" style="width: 50%"></div>
-                                                <div class="fps-item__title">World of Tanks</div>
-                                                <div class="fps-item__value">142 <span>FPS</span></div>
+
+                                        <div class="card__fps-block">
+                                            <div class="fps-item">
+                                                <div class="fps-item__image"><img src="images/content/games/img_1.jpg" srcset="images/content/games/img_1@2x.jpg 2x" alt=""></div>
+                                                <div class="fps-item__bar-containers">
+                                                    <div class="fps-item__bar-container fps-item__bar-container--small">
+                                                        <div class="fps-item__bar fps-item__bar--green" style="width: 90%"></div>
+                                                        <div class="fps-item__title">Tom Clancy's Rainbow Six Siege</div>
+                                                        <div class="fps-item__value">214 <span>FPS</span></div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="fps-item">
-                                        <div class="fps-item__image"><img src="images/content/games/img_4.jpg" srcset="images/content/games/img_4@2x.jpg 2x" alt=""></div>
-                                        <div class="fps-item__bar-containers">
-                                            <div class="fps-item__bar-container fps-item__bar-container--small">
-                                                <div class="fps-item__bar fps-item__bar--green" style="width: 30%"></div>
-                                                <div class="fps-item__title">Destiny 2</div>
-                                                <div class="fps-item__value">140 <span>FPS</span></div>
+                                            <div class="fps-item">
+                                                <div class="fps-item__image"><img src="images/content/games/img_2.jpg" srcset="images/content/games/img_2@2x.jpg 2x" alt=""></div>
+                                                <div class="fps-item__bar-containers">
+                                                    <div class="fps-item__bar-container fps-item__bar-container--small">
+                                                        <div class="fps-item__bar fps-item__bar--green" style="width: 80%"></div>
+                                                        <div class="fps-item__title">Doom Eternal (2020)</div>
+                                                        <div class="fps-item__value">159 <span>FPS</span></div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="fps-item">
-                                        <div class="fps-item__image"><img src="images/content/games/img_5.jpg" srcset="images/content/games/img_5@2x.jpg 2x" alt=""></div>
-                                        <div class="fps-item__bar-containers">
-                                            <div class="fps-item__bar-container fps-item__bar-container--small">
-                                                <div class="fps-item__bar fps-item__bar--green" style="width: 10%"></div>
-                                                <div class="fps-item__title">Hitman III</div>
-                                                <div class="fps-item__value">95 <span>FPS</span></div>
+                                            <div class="fps-item">
+                                                <div class="fps-item__image"><img src="images/content/games/img_3.jpg" srcset="images/content/games/img_3@2x.jpg 2x" alt=""></div>
+                                                <div class="fps-item__bar-containers">
+                                                    <div class="fps-item__bar-container fps-item__bar-container--small">
+                                                        <div class="fps-item__bar fps-item__bar--green" style="width: 50%"></div>
+                                                        <div class="fps-item__title">World of Tanks</div>
+                                                        <div class="fps-item__value">142 <span>FPS</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="fps-item">
+                                                <div class="fps-item__image"><img src="images/content/games/img_4.jpg" srcset="images/content/games/img_4@2x.jpg 2x" alt=""></div>
+                                                <div class="fps-item__bar-containers">
+                                                    <div class="fps-item__bar-container fps-item__bar-container--small">
+                                                        <div class="fps-item__bar fps-item__bar--green" style="width: 30%"></div>
+                                                        <div class="fps-item__title">Destiny 2</div>
+                                                        <div class="fps-item__value">140 <span>FPS</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="fps-item">
+                                                <div class="fps-item__image"><img src="images/content/games/img_5.jpg" srcset="images/content/games/img_5@2x.jpg 2x" alt=""></div>
+                                                <div class="fps-item__bar-containers">
+                                                    <div class="fps-item__bar-container fps-item__bar-container--small">
+                                                        <div class="fps-item__bar fps-item__bar--green" style="width: 10%"></div>
+                                                        <div class="fps-item__title">Hitman III</div>
+                                                        <div class="fps-item__value">95 <span>FPS</span></div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card__image">
-                                <img src="images/content/computers/img_1.png" srcset="images/content/computers/img_1@2x.png 2x" alt="">
-                            </div>
-                            <div class="card__title-block">
-                                <p class="card__title">Project alisio</p>
-                                <button class="js-card-fps-opener card__fps-button" type="button" title="Посмотреть графики FPS">
-                                    <svg aria-hidden="true">
-                                        <use xlink:href="images/sprite.svg#gear" />
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="card__inner">
-                                <p class="card__info-title">Детали</p>
-                                <div class="card__info">
-                                    <p>
-                                        <span>i5-13600K</span>
-                                        <span>Intel Core 3.5-5.1GHz14 ядер/20&nbsp;потоков</span>
-                                    </p>
-                                    <p>
-                                        <span>RTX 4070Ti</span>
-                                        <span>12GB GDDR6XNVIDIA GeForce</span>
-                                    </p>
-                                    <p>
-                                        <span>32GB RGB</span>
-                                        <span>DDR5 5200Mhz2 x 16Gb</span>
-                                    </p>
-                                    <p>
-                                        <span>500GB</span>
-                                        <span>SSD NVMe 4.0W/R: 5000/6900 Мб/с</span>
-                                    </p>
-                                    <p>
-                                        <span>Не выбрано</span>
-                                        <span>Без дополнительного NVME накопителя</span>
-                                    </p>
-                                    <p>
-                                        <span>1TB</span>
-                                        <span>SSD SATA 2'5W/R: 520/560 Мб/с</span>
-                                    </p>
-                                </div>
-                                <div class="card__price-block">
-                                    <p class="card__price-container">
-                                        <span class="card__price-title">Цена</span>
-                                        <span class="card__price"><span>от 112 700 ₽</span></span>
-                                    </p>
-                                    <p class="card__credit">
-                                        <a href="#">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="images/sprite.svg#question"></use>
-                                            </svg>
-                                            Доступно в кредит
+                                <div class="card">
+                                    <div class="card__image">
+                                        <a href="computer.html">
+                                            <img src="images/content/series/alisio_xs.png" srcset="images/content/series/alisio_s.png 2x" alt="">
                                         </a>
-                                    </p>
-                                </div>
-                                <div class="card__buttons">
-                                    <a class="button button--w_385" href="#">
-                                        <span>Добавить в корзину</span>
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#button_arrow"></use>
-                                        </svg>
-                                    </a>
-                                    <a class="button button--bordered button--w_385" href="config.html">
-                                        <span>Сконфигурировать</span>
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#button_arrow"></use>
-                                        </svg>
-                                    </a>
-                                </div>
+                                    </div>
 
-                                <div class="card__fps-block">
-                                    <div class="fps-item">
-                                        <div class="fps-item__image"><img src="images/content/games/img_1.jpg" srcset="images/content/games/img_1@2x.jpg 2x" alt=""></div>
-                                        <div class="fps-item__bar-containers">
-                                            <div class="fps-item__bar-container fps-item__bar-container--small">
-                                                <div class="fps-item__bar fps-item__bar--green" style="width: 90%"></div>
-                                                <div class="fps-item__title">Tom Clancy's Rainbow Six Siege</div>
-                                                <div class="fps-item__value">214 <span>FPS</span></div>
+                                    <div class="card__title-block">
+                                        <p class="card__title"><a href="computer.html">Project alisio</a></p>
+                                        <button class="js-card-fps-opener card__fps-button" type="button" title="Посмотреть графики FPS">FPS</button>
+                                    </div>
+
+                                    <div class="card__inner">
+                                        <div class="card__inner-top">
+                                            <div class="card__price-block">
+                                                <span class="card__price"><span>от 112 700 ₽</span></span>
+                                                <p class="card__credit">
+                                                    <a href="#">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#question"></use>
+                                                        </svg>
+                                                        Доступно в кредит
+                                                    </a>
+                                                </p>
+                                            </div>
+
+                                            <div class="card__buttons">
+                                                <a class="button button--w_385" href="#">
+                                                    <span>В корзину</span>
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#button_arrow"></use>
+                                                    </svg>
+                                                </a>
+                                                <a class="button button--bordered button--w_385" href="computer.html">
+                                                    <span>Улучшить</span>
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#button_arrow"></use>
+                                                    </svg>
+                                                </a>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="fps-item">
-                                        <div class="fps-item__image"><img src="images/content/games/img_2.jpg" srcset="images/content/games/img_2@2x.jpg 2x" alt=""></div>
-                                        <div class="fps-item__bar-containers">
-                                            <div class="fps-item__bar-container fps-item__bar-container--small">
-                                                <div class="fps-item__bar fps-item__bar--green" style="width: 80%"></div>
-                                                <div class="fps-item__title">Doom Eternal (2020)</div>
-                                                <div class="fps-item__value">159 <span>FPS</span></div>
+
+                                        <div class="card__info">
+                                            <p title="Процессор">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#cpu"></use>
+                                                </svg>
+                                                <span>i5-13600K</span>
+                                            </p>
+                                            <p title="Видеокарта">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#gpu"></use>
+                                                </svg>
+                                                <span>RTX 4070Ti</span>
+                                            </p>
+                                            <p title="Оперативная память">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#ram"></use>
+                                                </svg>
+                                                <span>32GB RGB</span>
+                                            </p>
+                                            <p title="SSD накопитель">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#ssd"></use>
+                                                </svg>
+                                                <span>500GB</span>
+                                            </p>
+                                            <p title="Материнская плата">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#mb"></use>
+                                                </svg>
+                                                <span>AsRock B450</span>
+                                            </p>
+                                            <p title="Охлаждение">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#air"></use>
+                                                </svg>
+                                                <span>Zalman CNPS9X</span>
+                                            </p>
+                                        </div>
+
+                                        <button class="card__spec-button button button--bordered" type="button" data-fancybox="spec_3" data-src="#spec_popup">Полная спецификация</button>
+
+                                        <div id="spec_popup" class="popup">
+                                            <p class="popup__title">Комплектующие</p>
+
+                                            <div class="speka">
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#cpu"></use>
+                                                        </svg>
+                                                        Процессор
+                                                    </span>
+                                                    <span>Intel® Core™ i5-12400(F) [до 4.4GHz, 6 ядер]</span>
+                                                </div>
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#gpu"></use>
+                                                        </svg>
+                                                        Видеокарта
+                                                    </span>
+                                                    <span>Palit GeForce RTX 4060 Dual [8GB, 3072 CUDA]</span>
+                                                </div>
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#ram"></use>
+                                                        </svg>
+                                                        Оперативная память
+                                                    </span>
+                                                    <span>16GB Kingston Fury Beast RGB [DDR4, 3600MHz, 2x8GB]</span>
+                                                </div>
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#ssd"></use>
+                                                        </svg>
+                                                        SSD накопитель
+                                                    </span>
+                                                    <span>500GB ADATA LEGEND 800 [3500MB/s, Gen4]</span>
+                                                </div>
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#mb"></use>
+                                                        </svg>
+                                                        Материнская плата
+                                                    </span>
+                                                    <span>GIGABYTE B760M DS3H AX [DDR4, Wi-Fi]</span>
+                                                </div>
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#air"></use>
+                                                        </svg>
+                                                        Охлаждение
+                                                    </span>
+                                                    <span>ID-Cooling SE-224-XTS ARGB Black</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="fps-item">
-                                        <div class="fps-item__image"><img src="images/content/games/img_3.jpg" srcset="images/content/games/img_3@2x.jpg 2x" alt=""></div>
-                                        <div class="fps-item__bar-containers">
-                                            <div class="fps-item__bar-container fps-item__bar-container--small">
-                                                <div class="fps-item__bar fps-item__bar--green" style="width: 50%"></div>
-                                                <div class="fps-item__title">World of Tanks</div>
-                                                <div class="fps-item__value">142 <span>FPS</span></div>
+
+                                        <div class="card__fps-block">
+                                            <div class="fps-item">
+                                                <div class="fps-item__image"><img src="images/content/games/img_1.jpg" srcset="images/content/games/img_1@2x.jpg 2x" alt=""></div>
+                                                <div class="fps-item__bar-containers">
+                                                    <div class="fps-item__bar-container fps-item__bar-container--small">
+                                                        <div class="fps-item__bar fps-item__bar--green" style="width: 90%"></div>
+                                                        <div class="fps-item__title">Tom Clancy's Rainbow Six Siege</div>
+                                                        <div class="fps-item__value">214 <span>FPS</span></div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="fps-item">
-                                        <div class="fps-item__image"><img src="images/content/games/img_4.jpg" srcset="images/content/games/img_4@2x.jpg 2x" alt=""></div>
-                                        <div class="fps-item__bar-containers">
-                                            <div class="fps-item__bar-container fps-item__bar-container--small">
-                                                <div class="fps-item__bar fps-item__bar--green" style="width: 30%"></div>
-                                                <div class="fps-item__title">Destiny 2</div>
-                                                <div class="fps-item__value">140 <span>FPS</span></div>
+                                            <div class="fps-item">
+                                                <div class="fps-item__image"><img src="images/content/games/img_2.jpg" srcset="images/content/games/img_2@2x.jpg 2x" alt=""></div>
+                                                <div class="fps-item__bar-containers">
+                                                    <div class="fps-item__bar-container fps-item__bar-container--small">
+                                                        <div class="fps-item__bar fps-item__bar--green" style="width: 80%"></div>
+                                                        <div class="fps-item__title">Doom Eternal (2020)</div>
+                                                        <div class="fps-item__value">159 <span>FPS</span></div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="fps-item">
-                                        <div class="fps-item__image"><img src="images/content/games/img_5.jpg" srcset="images/content/games/img_5@2x.jpg 2x" alt=""></div>
-                                        <div class="fps-item__bar-containers">
-                                            <div class="fps-item__bar-container fps-item__bar-container--small">
-                                                <div class="fps-item__bar fps-item__bar--green" style="width: 10%"></div>
-                                                <div class="fps-item__title">Hitman III</div>
-                                                <div class="fps-item__value">95 <span>FPS</span></div>
+                                            <div class="fps-item">
+                                                <div class="fps-item__image"><img src="images/content/games/img_3.jpg" srcset="images/content/games/img_3@2x.jpg 2x" alt=""></div>
+                                                <div class="fps-item__bar-containers">
+                                                    <div class="fps-item__bar-container fps-item__bar-container--small">
+                                                        <div class="fps-item__bar fps-item__bar--green" style="width: 50%"></div>
+                                                        <div class="fps-item__title">World of Tanks</div>
+                                                        <div class="fps-item__value">142 <span>FPS</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="fps-item">
+                                                <div class="fps-item__image"><img src="images/content/games/img_4.jpg" srcset="images/content/games/img_4@2x.jpg 2x" alt=""></div>
+                                                <div class="fps-item__bar-containers">
+                                                    <div class="fps-item__bar-container fps-item__bar-container--small">
+                                                        <div class="fps-item__bar fps-item__bar--green" style="width: 30%"></div>
+                                                        <div class="fps-item__title">Destiny 2</div>
+                                                        <div class="fps-item__value">140 <span>FPS</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="fps-item">
+                                                <div class="fps-item__image"><img src="images/content/games/img_5.jpg" srcset="images/content/games/img_5@2x.jpg 2x" alt=""></div>
+                                                <div class="fps-item__bar-containers">
+                                                    <div class="fps-item__bar-container fps-item__bar-container--small">
+                                                        <div class="fps-item__bar fps-item__bar--green" style="width: 10%"></div>
+                                                        <div class="fps-item__title">Hitman III</div>
+                                                        <div class="fps-item__value">95 <span>FPS</span></div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card__image">
-                                <img src="images/content/computers/img_1.png" srcset="images/content/computers/img_1@2x.png 2x" alt="">
-                            </div>
-                            <div class="card__title-block">
-                                <p class="card__title">Project alisio</p>
-                                <button class="js-card-fps-opener card__fps-button" type="button" title="Посмотреть графики FPS">
-                                    <svg aria-hidden="true">
-                                        <use xlink:href="images/sprite.svg#gear" />
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="card__inner">
-                                <p class="card__info-title">Детали</p>
-                                <div class="card__info">
-                                    <p>
-                                        <span>i5-13600K</span>
-                                        <span>Intel Core 3.5-5.1GHz14 ядер/20&nbsp;потоков</span>
-                                    </p>
-                                    <p>
-                                        <span>RTX 4070Ti</span>
-                                        <span>12GB GDDR6XNVIDIA GeForce</span>
-                                    </p>
-                                    <p>
-                                        <span>32GB RGB</span>
-                                        <span>DDR5 5200Mhz2 x 16Gb</span>
-                                    </p>
-                                    <p>
-                                        <span>500GB</span>
-                                        <span>SSD NVMe 4.0W/R: 5000/6900 Мб/с</span>
-                                    </p>
-                                    <p>
-                                        <span>Не выбрано</span>
-                                        <span>Без дополнительного NVME накопителя</span>
-                                    </p>
-                                    <p>
-                                        <span>1TB</span>
-                                        <span>SSD SATA 2'5W/R: 520/560 Мб/с</span>
-                                    </p>
-                                </div>
-                                <div class="card__price-block">
-                                    <p class="card__price-container">
-                                        <span class="card__price-title">Цена</span>
-                                        <span class="card__price"><span>от 112 700 ₽</span></span>
-                                    </p>
-                                    <p class="card__credit">
-                                        <a href="#">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="images/sprite.svg#question"></use>
-                                            </svg>
-                                            Доступно в кредит
+                                <div class="card">
+                                    <div class="card__image">
+                                        <a href="computer.html">
+                                            <img src="images/content/series/alisio_xs.png" srcset="images/content/series/alisio_s.png 2x" alt="">
                                         </a>
-                                    </p>
-                                </div>
-                                <div class="card__buttons">
-                                    <a class="button button--w_385" href="#">
-                                        <span>Добавить в корзину</span>
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#button_arrow"></use>
-                                        </svg>
-                                    </a>
-                                    <a class="button button--bordered button--w_385" href="config.html">
-                                        <span>Сконфигурировать</span>
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#button_arrow"></use>
-                                        </svg>
-                                    </a>
-                                </div>
+                                    </div>
 
-                                <div class="card__fps-block">
-                                    <div class="fps-item">
-                                        <div class="fps-item__image"><img src="images/content/games/img_1.jpg" srcset="images/content/games/img_1@2x.jpg 2x" alt=""></div>
-                                        <div class="fps-item__bar-containers">
-                                            <div class="fps-item__bar-container fps-item__bar-container--small">
-                                                <div class="fps-item__bar fps-item__bar--green" style="width: 90%"></div>
-                                                <div class="fps-item__title">Tom Clancy's Rainbow Six Siege</div>
-                                                <div class="fps-item__value">214 <span>FPS</span></div>
+                                    <div class="card__title-block">
+                                        <p class="card__title"><a href="computer.html">Project alisio</a></p>
+                                        <button class="js-card-fps-opener card__fps-button" type="button" title="Посмотреть графики FPS">FPS</button>
+                                    </div>
+
+                                    <div class="card__inner">
+                                        <div class="card__inner-top">
+                                            <div class="card__price-block">
+                                                <span class="card__price"><span>от 112 700 ₽</span></span>
+                                                <p class="card__credit">
+                                                    <a href="#">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#question"></use>
+                                                        </svg>
+                                                        Доступно в кредит
+                                                    </a>
+                                                </p>
+                                            </div>
+
+                                            <div class="card__buttons">
+                                                <a class="button button--w_385" href="#">
+                                                    <span>В корзину</span>
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#button_arrow"></use>
+                                                    </svg>
+                                                </a>
+                                                <a class="button button--bordered button--w_385" href="computer.html">
+                                                    <span>Улучшить</span>
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#button_arrow"></use>
+                                                    </svg>
+                                                </a>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="fps-item">
-                                        <div class="fps-item__image"><img src="images/content/games/img_2.jpg" srcset="images/content/games/img_2@2x.jpg 2x" alt=""></div>
-                                        <div class="fps-item__bar-containers">
-                                            <div class="fps-item__bar-container fps-item__bar-container--small">
-                                                <div class="fps-item__bar fps-item__bar--green" style="width: 80%"></div>
-                                                <div class="fps-item__title">Doom Eternal (2020)</div>
-                                                <div class="fps-item__value">159 <span>FPS</span></div>
+
+                                        <div class="card__info">
+                                            <p title="Процессор">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#cpu"></use>
+                                                </svg>
+                                                <span>i5-13600K</span>
+                                            </p>
+                                            <p title="Видеокарта">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#gpu"></use>
+                                                </svg>
+                                                <span>RTX 4070Ti</span>
+                                            </p>
+                                            <p title="Оперативная память">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#ram"></use>
+                                                </svg>
+                                                <span>32GB RGB</span>
+                                            </p>
+                                            <p title="SSD накопитель">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#ssd"></use>
+                                                </svg>
+                                                <span>500GB</span>
+                                            </p>
+                                            <p title="Материнская плата">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#mb"></use>
+                                                </svg>
+                                                <span>AsRock B450</span>
+                                            </p>
+                                            <p title="Охлаждение">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#air"></use>
+                                                </svg>
+                                                <span>Zalman CNPS9X</span>
+                                            </p>
+                                        </div>
+
+                                        <button class="card__spec-button button button--bordered" type="button" data-fancybox="spec_4" data-src="#spec_popup">Полная спецификация</button>
+
+                                        <div id="spec_popup" class="popup">
+                                            <p class="popup__title">Комплектующие</p>
+
+                                            <div class="speka">
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#cpu"></use>
+                                                        </svg>
+                                                        Процессор
+                                                    </span>
+                                                    <span>Intel® Core™ i5-12400(F) [до 4.4GHz, 6 ядер]</span>
+                                                </div>
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#gpu"></use>
+                                                        </svg>
+                                                        Видеокарта
+                                                    </span>
+                                                    <span>Palit GeForce RTX 4060 Dual [8GB, 3072 CUDA]</span>
+                                                </div>
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#ram"></use>
+                                                        </svg>
+                                                        Оперативная память
+                                                    </span>
+                                                    <span>16GB Kingston Fury Beast RGB [DDR4, 3600MHz, 2x8GB]</span>
+                                                </div>
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#ssd"></use>
+                                                        </svg>
+                                                        SSD накопитель
+                                                    </span>
+                                                    <span>500GB ADATA LEGEND 800 [3500MB/s, Gen4]</span>
+                                                </div>
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#mb"></use>
+                                                        </svg>
+                                                        Материнская плата
+                                                    </span>
+                                                    <span>GIGABYTE B760M DS3H AX [DDR4, Wi-Fi]</span>
+                                                </div>
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#air"></use>
+                                                        </svg>
+                                                        Охлаждение
+                                                    </span>
+                                                    <span>ID-Cooling SE-224-XTS ARGB Black</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="fps-item">
-                                        <div class="fps-item__image"><img src="images/content/games/img_3.jpg" srcset="images/content/games/img_3@2x.jpg 2x" alt=""></div>
-                                        <div class="fps-item__bar-containers">
-                                            <div class="fps-item__bar-container fps-item__bar-container--small">
-                                                <div class="fps-item__bar fps-item__bar--green" style="width: 50%"></div>
-                                                <div class="fps-item__title">World of Tanks</div>
-                                                <div class="fps-item__value">142 <span>FPS</span></div>
+
+                                        <div class="card__fps-block">
+                                            <div class="fps-item">
+                                                <div class="fps-item__image"><img src="images/content/games/img_1.jpg" srcset="images/content/games/img_1@2x.jpg 2x" alt=""></div>
+                                                <div class="fps-item__bar-containers">
+                                                    <div class="fps-item__bar-container fps-item__bar-container--small">
+                                                        <div class="fps-item__bar fps-item__bar--green" style="width: 90%"></div>
+                                                        <div class="fps-item__title">Tom Clancy's Rainbow Six Siege</div>
+                                                        <div class="fps-item__value">214 <span>FPS</span></div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="fps-item">
-                                        <div class="fps-item__image"><img src="images/content/games/img_4.jpg" srcset="images/content/games/img_4@2x.jpg 2x" alt=""></div>
-                                        <div class="fps-item__bar-containers">
-                                            <div class="fps-item__bar-container fps-item__bar-container--small">
-                                                <div class="fps-item__bar fps-item__bar--green" style="width: 30%"></div>
-                                                <div class="fps-item__title">Destiny 2</div>
-                                                <div class="fps-item__value">140 <span>FPS</span></div>
+                                            <div class="fps-item">
+                                                <div class="fps-item__image"><img src="images/content/games/img_2.jpg" srcset="images/content/games/img_2@2x.jpg 2x" alt=""></div>
+                                                <div class="fps-item__bar-containers">
+                                                    <div class="fps-item__bar-container fps-item__bar-container--small">
+                                                        <div class="fps-item__bar fps-item__bar--green" style="width: 80%"></div>
+                                                        <div class="fps-item__title">Doom Eternal (2020)</div>
+                                                        <div class="fps-item__value">159 <span>FPS</span></div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="fps-item">
-                                        <div class="fps-item__image"><img src="images/content/games/img_5.jpg" srcset="images/content/games/img_5@2x.jpg 2x" alt=""></div>
-                                        <div class="fps-item__bar-containers">
-                                            <div class="fps-item__bar-container fps-item__bar-container--small">
-                                                <div class="fps-item__bar fps-item__bar--green" style="width: 10%"></div>
-                                                <div class="fps-item__title">Hitman III</div>
-                                                <div class="fps-item__value">95 <span>FPS</span></div>
+                                            <div class="fps-item">
+                                                <div class="fps-item__image"><img src="images/content/games/img_3.jpg" srcset="images/content/games/img_3@2x.jpg 2x" alt=""></div>
+                                                <div class="fps-item__bar-containers">
+                                                    <div class="fps-item__bar-container fps-item__bar-container--small">
+                                                        <div class="fps-item__bar fps-item__bar--green" style="width: 50%"></div>
+                                                        <div class="fps-item__title">World of Tanks</div>
+                                                        <div class="fps-item__value">142 <span>FPS</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="fps-item">
+                                                <div class="fps-item__image"><img src="images/content/games/img_4.jpg" srcset="images/content/games/img_4@2x.jpg 2x" alt=""></div>
+                                                <div class="fps-item__bar-containers">
+                                                    <div class="fps-item__bar-container fps-item__bar-container--small">
+                                                        <div class="fps-item__bar fps-item__bar--green" style="width: 30%"></div>
+                                                        <div class="fps-item__title">Destiny 2</div>
+                                                        <div class="fps-item__value">140 <span>FPS</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="fps-item">
+                                                <div class="fps-item__image"><img src="images/content/games/img_5.jpg" srcset="images/content/games/img_5@2x.jpg 2x" alt=""></div>
+                                                <div class="fps-item__bar-containers">
+                                                    <div class="fps-item__bar-container fps-item__bar-container--small">
+                                                        <div class="fps-item__bar fps-item__bar--green" style="width: 10%"></div>
+                                                        <div class="fps-item__title">Hitman III</div>
+                                                        <div class="fps-item__value">95 <span>FPS</span></div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card__image">
-                                <img src="images/content/computers/img_1.png" srcset="images/content/computers/img_1@2x.png 2x" alt="">
-                            </div>
-                            <div class="card__title-block">
-                                <p class="card__title">Project alisio</p>
-                                <button class="js-card-fps-opener card__fps-button" type="button" title="Посмотреть графики FPS">
-                                    <svg aria-hidden="true">
-                                        <use xlink:href="images/sprite.svg#gear" />
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="card__inner">
-                                <p class="card__info-title">Детали</p>
-                                <div class="card__info">
-                                    <p>
-                                        <span>i5-13600K</span>
-                                        <span>Intel Core 3.5-5.1GHz14 ядер/20&nbsp;потоков</span>
-                                    </p>
-                                    <p>
-                                        <span>RTX 4070Ti</span>
-                                        <span>12GB GDDR6XNVIDIA GeForce</span>
-                                    </p>
-                                    <p>
-                                        <span>32GB RGB</span>
-                                        <span>DDR5 5200Mhz2 x 16Gb</span>
-                                    </p>
-                                    <p>
-                                        <span>500GB</span>
-                                        <span>SSD NVMe 4.0W/R: 5000/6900 Мб/с</span>
-                                    </p>
-                                    <p>
-                                        <span>Не выбрано</span>
-                                        <span>Без дополнительного NVME накопителя</span>
-                                    </p>
-                                    <p>
-                                        <span>1TB</span>
-                                        <span>SSD SATA 2'5W/R: 520/560 Мб/с</span>
-                                    </p>
-                                </div>
-                                <div class="card__price-block">
-                                    <p class="card__price-container">
-                                        <span class="card__price-title">Цена</span>
-                                        <span class="card__price"><span>от 112 700 ₽</span></span>
-                                    </p>
-                                    <p class="card__credit">
-                                        <a href="#">
-                                            <svg aria-hidden="true">
-                                                <use xlink:href="images/sprite.svg#question"></use>
-                                            </svg>
-                                            Доступно в кредит
+                                <div class="card">
+                                    <div class="card__image">
+                                        <a href="computer.html">
+                                            <img src="images/content/series/alisio_xs.png" srcset="images/content/series/alisio_s.png 2x" alt="">
                                         </a>
-                                    </p>
-                                </div>
-                                <div class="card__buttons">
-                                    <a class="button button--w_385" href="#">
-                                        <span>Добавить в корзину</span>
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#button_arrow"></use>
-                                        </svg>
-                                    </a>
-                                    <a class="button button--bordered button--w_385" href="config.html">
-                                        <span>Сконфигурировать</span>
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#button_arrow"></use>
-                                        </svg>
-                                    </a>
-                                </div>
+                                    </div>
 
-                                <div class="card__fps-block">
-                                    <div class="fps-item">
-                                        <div class="fps-item__image"><img src="images/content/games/img_1.jpg" srcset="images/content/games/img_1@2x.jpg 2x" alt=""></div>
-                                        <div class="fps-item__bar-containers">
-                                            <div class="fps-item__bar-container fps-item__bar-container--small">
-                                                <div class="fps-item__bar fps-item__bar--green" style="width: 90%"></div>
-                                                <div class="fps-item__title">Tom Clancy's Rainbow Six Siege</div>
-                                                <div class="fps-item__value">214 <span>FPS</span></div>
+                                    <div class="card__title-block">
+                                        <p class="card__title"><a href="computer.html">Project alisio</a></p>
+                                        <button class="js-card-fps-opener card__fps-button" type="button" title="Посмотреть графики FPS">FPS</button>
+                                    </div>
+
+                                    <div class="card__inner">
+                                        <div class="card__inner-top">
+                                            <div class="card__price-block">
+                                                <span class="card__price"><span>от 112 700 ₽</span></span>
+                                                <p class="card__credit">
+                                                    <a href="#">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#question"></use>
+                                                        </svg>
+                                                        Доступно в кредит
+                                                    </a>
+                                                </p>
+                                            </div>
+
+                                            <div class="card__buttons">
+                                                <a class="button button--w_385" href="#">
+                                                    <span>В корзину</span>
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#button_arrow"></use>
+                                                    </svg>
+                                                </a>
+                                                <a class="button button--bordered button--w_385" href="computer.html">
+                                                    <span>Улучшить</span>
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#button_arrow"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="card__info">
+                                            <p title="Процессор">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#cpu"></use>
+                                                </svg>
+                                                <span>i5-13600K</span>
+                                            </p>
+                                            <p title="Видеокарта">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#gpu"></use>
+                                                </svg>
+                                                <span>RTX 4070Ti</span>
+                                            </p>
+                                            <p title="Оперативная память">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#ram"></use>
+                                                </svg>
+                                                <span>32GB RGB</span>
+                                            </p>
+                                            <p title="SSD накопитель">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#ssd"></use>
+                                                </svg>
+                                                <span>500GB</span>
+                                            </p>
+                                            <p title="Материнская плата">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#mb"></use>
+                                                </svg>
+                                                <span>AsRock B450</span>
+                                            </p>
+                                            <p title="Охлаждение">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#air"></use>
+                                                </svg>
+                                                <span>Zalman CNPS9X</span>
+                                            </p>
+                                        </div>
+
+                                        <button class="card__spec-button button button--bordered" type="button" data-fancybox="spec_5" data-src="#spec_popup">Полная спецификация</button>
+
+                                        <div id="spec_popup" class="popup">
+                                            <p class="popup__title">Комплектующие</p>
+
+                                            <div class="speka">
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#cpu"></use>
+                                                        </svg>
+                                                        Процессор
+                                                    </span>
+                                                    <span>Intel® Core™ i5-12400(F) [до 4.4GHz, 6 ядер]</span>
+                                                </div>
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#gpu"></use>
+                                                        </svg>
+                                                        Видеокарта
+                                                    </span>
+                                                    <span>Palit GeForce RTX 4060 Dual [8GB, 3072 CUDA]</span>
+                                                </div>
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#ram"></use>
+                                                        </svg>
+                                                        Оперативная память
+                                                    </span>
+                                                    <span>16GB Kingston Fury Beast RGB [DDR4, 3600MHz, 2x8GB]</span>
+                                                </div>
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#ssd"></use>
+                                                        </svg>
+                                                        SSD накопитель
+                                                    </span>
+                                                    <span>500GB ADATA LEGEND 800 [3500MB/s, Gen4]</span>
+                                                </div>
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#mb"></use>
+                                                        </svg>
+                                                        Материнская плата
+                                                    </span>
+                                                    <span>GIGABYTE B760M DS3H AX [DDR4, Wi-Fi]</span>
+                                                </div>
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#air"></use>
+                                                        </svg>
+                                                        Охлаждение
+                                                    </span>
+                                                    <span>ID-Cooling SE-224-XTS ARGB Black</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card__fps-block">
+                                            <div class="fps-item">
+                                                <div class="fps-item__image"><img src="images/content/games/img_1.jpg" srcset="images/content/games/img_1@2x.jpg 2x" alt=""></div>
+                                                <div class="fps-item__bar-containers">
+                                                    <div class="fps-item__bar-container fps-item__bar-container--small">
+                                                        <div class="fps-item__bar fps-item__bar--green" style="width: 90%"></div>
+                                                        <div class="fps-item__title">Tom Clancy's Rainbow Six Siege</div>
+                                                        <div class="fps-item__value">214 <span>FPS</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="fps-item">
+                                                <div class="fps-item__image"><img src="images/content/games/img_2.jpg" srcset="images/content/games/img_2@2x.jpg 2x" alt=""></div>
+                                                <div class="fps-item__bar-containers">
+                                                    <div class="fps-item__bar-container fps-item__bar-container--small">
+                                                        <div class="fps-item__bar fps-item__bar--green" style="width: 80%"></div>
+                                                        <div class="fps-item__title">Doom Eternal (2020)</div>
+                                                        <div class="fps-item__value">159 <span>FPS</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="fps-item">
+                                                <div class="fps-item__image"><img src="images/content/games/img_3.jpg" srcset="images/content/games/img_3@2x.jpg 2x" alt=""></div>
+                                                <div class="fps-item__bar-containers">
+                                                    <div class="fps-item__bar-container fps-item__bar-container--small">
+                                                        <div class="fps-item__bar fps-item__bar--green" style="width: 50%"></div>
+                                                        <div class="fps-item__title">World of Tanks</div>
+                                                        <div class="fps-item__value">142 <span>FPS</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="fps-item">
+                                                <div class="fps-item__image"><img src="images/content/games/img_4.jpg" srcset="images/content/games/img_4@2x.jpg 2x" alt=""></div>
+                                                <div class="fps-item__bar-containers">
+                                                    <div class="fps-item__bar-container fps-item__bar-container--small">
+                                                        <div class="fps-item__bar fps-item__bar--green" style="width: 30%"></div>
+                                                        <div class="fps-item__title">Destiny 2</div>
+                                                        <div class="fps-item__value">140 <span>FPS</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="fps-item">
+                                                <div class="fps-item__image"><img src="images/content/games/img_5.jpg" srcset="images/content/games/img_5@2x.jpg 2x" alt=""></div>
+                                                <div class="fps-item__bar-containers">
+                                                    <div class="fps-item__bar-container fps-item__bar-container--small">
+                                                        <div class="fps-item__bar fps-item__bar--green" style="width: 10%"></div>
+                                                        <div class="fps-item__title">Hitman III</div>
+                                                        <div class="fps-item__value">95 <span>FPS</span></div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="fps-item">
-                                        <div class="fps-item__image"><img src="images/content/games/img_2.jpg" srcset="images/content/games/img_2@2x.jpg 2x" alt=""></div>
-                                        <div class="fps-item__bar-containers">
-                                            <div class="fps-item__bar-container fps-item__bar-container--small">
-                                                <div class="fps-item__bar fps-item__bar--green" style="width: 80%"></div>
-                                                <div class="fps-item__title">Doom Eternal (2020)</div>
-                                                <div class="fps-item__value">159 <span>FPS</span></div>
+                                </div>
+                                <div class="card">
+                                    <div class="card__image">
+                                        <a href="computer.html">
+                                            <img src="images/content/series/alisio_xs.png" srcset="images/content/series/alisio_s.png 2x" alt="">
+                                        </a>
+                                    </div>
+
+                                    <div class="card__title-block">
+                                        <p class="card__title"><a href="computer.html">Project alisio</a></p>
+                                        <button class="js-card-fps-opener card__fps-button" type="button" title="Посмотреть графики FPS">FPS</button>
+                                    </div>
+
+                                    <div class="card__inner">
+                                        <div class="card__inner-top">
+                                            <div class="card__price-block">
+                                                <span class="card__price"><span>от 112 700 ₽</span></span>
+                                                <p class="card__credit">
+                                                    <a href="#">
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#question"></use>
+                                                        </svg>
+                                                        Доступно в кредит
+                                                    </a>
+                                                </p>
+                                            </div>
+
+                                            <div class="card__buttons">
+                                                <a class="button button--w_385" href="#">
+                                                    <span>В корзину</span>
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#button_arrow"></use>
+                                                    </svg>
+                                                </a>
+                                                <a class="button button--bordered button--w_385" href="computer.html">
+                                                    <span>Улучшить</span>
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#button_arrow"></use>
+                                                    </svg>
+                                                </a>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="fps-item">
-                                        <div class="fps-item__image"><img src="images/content/games/img_3.jpg" srcset="images/content/games/img_3@2x.jpg 2x" alt=""></div>
-                                        <div class="fps-item__bar-containers">
-                                            <div class="fps-item__bar-container fps-item__bar-container--small">
-                                                <div class="fps-item__bar fps-item__bar--green" style="width: 50%"></div>
-                                                <div class="fps-item__title">World of Tanks</div>
-                                                <div class="fps-item__value">142 <span>FPS</span></div>
+
+                                        <div class="card__info">
+                                            <p title="Процессор">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#cpu"></use>
+                                                </svg>
+                                                <span>i5-13600K</span>
+                                            </p>
+                                            <p title="Видеокарта">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#gpu"></use>
+                                                </svg>
+                                                <span>RTX 4070Ti</span>
+                                            </p>
+                                            <p title="Оперативная память">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#ram"></use>
+                                                </svg>
+                                                <span>32GB RGB</span>
+                                            </p>
+                                            <p title="SSD накопитель">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#ssd"></use>
+                                                </svg>
+                                                <span>500GB</span>
+                                            </p>
+                                            <p title="Материнская плата">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#mb"></use>
+                                                </svg>
+                                                <span>AsRock B450</span>
+                                            </p>
+                                            <p title="Охлаждение">
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#air"></use>
+                                                </svg>
+                                                <span>Zalman CNPS9X</span>
+                                            </p>
+                                        </div>
+
+                                        <button class="card__spec-button button button--bordered" type="button" data-fancybox="spec_6" data-src="#spec_popup">Полная спецификация</button>
+
+                                        <div id="spec_popup" class="popup">
+                                            <p class="popup__title">Комплектующие</p>
+
+                                            <div class="speka">
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#cpu"></use>
+                                                        </svg>
+                                                        Процессор
+                                                    </span>
+                                                    <span>Intel® Core™ i5-12400(F) [до 4.4GHz, 6 ядер]</span>
+                                                </div>
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#gpu"></use>
+                                                        </svg>
+                                                        Видеокарта
+                                                    </span>
+                                                    <span>Palit GeForce RTX 4060 Dual [8GB, 3072 CUDA]</span>
+                                                </div>
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#ram"></use>
+                                                        </svg>
+                                                        Оперативная память
+                                                    </span>
+                                                    <span>16GB Kingston Fury Beast RGB [DDR4, 3600MHz, 2x8GB]</span>
+                                                </div>
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#ssd"></use>
+                                                        </svg>
+                                                        SSD накопитель
+                                                    </span>
+                                                    <span>500GB ADATA LEGEND 800 [3500MB/s, Gen4]</span>
+                                                </div>
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#mb"></use>
+                                                        </svg>
+                                                        Материнская плата
+                                                    </span>
+                                                    <span>GIGABYTE B760M DS3H AX [DDR4, Wi-Fi]</span>
+                                                </div>
+                                                <div class="speka__item">
+                                                    <span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#air"></use>
+                                                        </svg>
+                                                        Охлаждение
+                                                    </span>
+                                                    <span>ID-Cooling SE-224-XTS ARGB Black</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="fps-item">
-                                        <div class="fps-item__image"><img src="images/content/games/img_4.jpg" srcset="images/content/games/img_4@2x.jpg 2x" alt=""></div>
-                                        <div class="fps-item__bar-containers">
-                                            <div class="fps-item__bar-container fps-item__bar-container--small">
-                                                <div class="fps-item__bar fps-item__bar--green" style="width: 30%"></div>
-                                                <div class="fps-item__title">Destiny 2</div>
-                                                <div class="fps-item__value">140 <span>FPS</span></div>
+
+                                        <div class="card__fps-block">
+                                            <div class="fps-item">
+                                                <div class="fps-item__image"><img src="images/content/games/img_1.jpg" srcset="images/content/games/img_1@2x.jpg 2x" alt=""></div>
+                                                <div class="fps-item__bar-containers">
+                                                    <div class="fps-item__bar-container fps-item__bar-container--small">
+                                                        <div class="fps-item__bar fps-item__bar--green" style="width: 90%"></div>
+                                                        <div class="fps-item__title">Tom Clancy's Rainbow Six Siege</div>
+                                                        <div class="fps-item__value">214 <span>FPS</span></div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="fps-item">
-                                        <div class="fps-item__image"><img src="images/content/games/img_5.jpg" srcset="images/content/games/img_5@2x.jpg 2x" alt=""></div>
-                                        <div class="fps-item__bar-containers">
-                                            <div class="fps-item__bar-container fps-item__bar-container--small">
-                                                <div class="fps-item__bar fps-item__bar--green" style="width: 10%"></div>
-                                                <div class="fps-item__title">Hitman III</div>
-                                                <div class="fps-item__value">95 <span>FPS</span></div>
+                                            <div class="fps-item">
+                                                <div class="fps-item__image"><img src="images/content/games/img_2.jpg" srcset="images/content/games/img_2@2x.jpg 2x" alt=""></div>
+                                                <div class="fps-item__bar-containers">
+                                                    <div class="fps-item__bar-container fps-item__bar-container--small">
+                                                        <div class="fps-item__bar fps-item__bar--green" style="width: 80%"></div>
+                                                        <div class="fps-item__title">Doom Eternal (2020)</div>
+                                                        <div class="fps-item__value">159 <span>FPS</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="fps-item">
+                                                <div class="fps-item__image"><img src="images/content/games/img_3.jpg" srcset="images/content/games/img_3@2x.jpg 2x" alt=""></div>
+                                                <div class="fps-item__bar-containers">
+                                                    <div class="fps-item__bar-container fps-item__bar-container--small">
+                                                        <div class="fps-item__bar fps-item__bar--green" style="width: 50%"></div>
+                                                        <div class="fps-item__title">World of Tanks</div>
+                                                        <div class="fps-item__value">142 <span>FPS</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="fps-item">
+                                                <div class="fps-item__image"><img src="images/content/games/img_4.jpg" srcset="images/content/games/img_4@2x.jpg 2x" alt=""></div>
+                                                <div class="fps-item__bar-containers">
+                                                    <div class="fps-item__bar-container fps-item__bar-container--small">
+                                                        <div class="fps-item__bar fps-item__bar--green" style="width: 30%"></div>
+                                                        <div class="fps-item__title">Destiny 2</div>
+                                                        <div class="fps-item__value">140 <span>FPS</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="fps-item">
+                                                <div class="fps-item__image"><img src="images/content/games/img_5.jpg" srcset="images/content/games/img_5@2x.jpg 2x" alt=""></div>
+                                                <div class="fps-item__bar-containers">
+                                                    <div class="fps-item__bar-container fps-item__bar-container--small">
+                                                        <div class="fps-item__bar fps-item__bar--green" style="width: 10%"></div>
+                                                        <div class="fps-item__title">Hitman III</div>
+                                                        <div class="fps-item__value">95 <span>FPS</span></div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1154,6 +1712,8 @@
 
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/fancybox-defaults.js"></script>
     <script src="js/video.js"></script>
     <script src="js/select2.full.min.js"></script>
     <script src="js/select2-addon.js"></script>

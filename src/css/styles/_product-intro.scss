@@ -20,7 +20,6 @@
         font-family: var(--secondary_font_family);
         font-size: 28px;
         line-height: 1;
-        letter-spacing: -2px;
         margin-bottom: 0;
         @media(min-width: $sm) {
             font-size: 32px;
@@ -33,7 +32,6 @@
         }
         @media(min-width: $hd) {
             font-size: 56px;
-            letter-spacing: -4px;
         }
         @media(min-width: $lg) {
             font-size: 64px;

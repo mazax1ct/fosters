@@ -5,12 +5,14 @@
     color: var(--text_color);
     cursor: pointer;
     display: inline-flex;
+    font-family: var(--secondary_font_family);
     font-size: 14px;
     font-weight: 600;
+    gap: 2px;
     justify-content: center;
     height: 40px;
     line-height: 1.4;
-    letter-spacing: -0.5px;
+    letter-spacing: 1px;
     padding-left: 20px;
     padding-right: 20px;
     text-decoration: none;
@@ -24,7 +26,6 @@
     }*/
     svg {
         height: 16px;
-        margin-top: 2px;
         width: 16px;
         /*@media(min-width: $fhd) {
             height: 20px;

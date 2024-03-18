@@ -20,8 +20,14 @@
     <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="preload" href="fonts/Rawline/subset-Rawline-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/Wadik/subset-WadikBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <!--<link rel="preload" href="fonts/Rawline/subset-Rawline-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Wadik/subset-WadikBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">-->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&family=Tektur:wght@400..900&display=swap"
+      rel="stylesheet">
 
     <link rel="stylesheet" href="plugins_css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -59,50 +65,122 @@
                                 </svg>
                             </a>
                             <div class="sub-menu">
-                                <ul class="sub-menu__list">
-                                    <li class="sub-menu__item">
-                                        <a class="sub-menu__link" href="series.html">
-                                            <img src="images/content/series/alisio_xs.png" alt="">
-                                            project alisio
-                                        </a>
-                                    </li>
-                                    <li class="sub-menu__item">
-                                        <a class="sub-menu__link" href="series.html">
+                                <div class="sub-menu__grid">
+                                    <div class="sub-menu__left">
+                                        <a class="sub-menu__link2" href="#">
+                                            <span class="sub-menu__link2-title">Готовые компьютеры</span>
                                             <img src="images/content/series/duoface_xs.png" alt="">
-                                            project duo face
+                                            <span class="sub-menu__link2-text">Готовые к отгрузке в день<br> заказа</span>
                                         </a>
-                                    </li>
-                                    <li class="sub-menu__item">
-                                        <a class="sub-menu__link" href="series.html">
-                                            <img src="images/content/series/evo_xs.png" alt="">
-                                            project evo
+        
+                                        <a class="sub-menu__link2" href="#">
+                                            <span class="sub-menu__link2-title">Конфигуратор</span>
+                                            <img src="images/content/series/config_xs.png" alt="">
+                                            <span class="sub-menu__link2-text">Гибкий подбор с полной<br> совместимостью всех<br> комплектующих</span>
                                         </a>
-                                    </li>
-                                    <li class="sub-menu__item">
-                                        <a class="sub-menu__link" href="series.html">
-                                            <img src="images/content/series/forge_xs.png" alt="">
-                                            project forge
-                                        </a>
-                                    </li>
-                                    <li class="sub-menu__item">
-                                        <a class="sub-menu__link" href="series.html">
-                                            <img src="images/content/series/mod_xs.png" alt="">
-                                            project mod
-                                        </a>
-                                    </li>
-                                    <li class="sub-menu__item">
-                                        <a class="sub-menu__link" href="series.html">
-                                            <img src="images/content/series/one_xs.png" alt="">
-                                            project one
-                                        </a>
-                                    </li>
-                                    <li class="sub-menu__item">
-                                        <a class="sub-menu__link" href="series.html">
-                                            <img src="images/content/series/one_max_xs.png" alt="">
-                                            project one max
-                                        </a>
-                                    </li>
-                                </ul>
+                                    </div>
+        
+                                    <div class="sub-menu__right">
+                                        <div class="sub-menu__title-block">
+                                            <p>По сериям:</p>
+                                            <a href="#">
+                                                все серии
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#arrow_right"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <ul class="sub-menu__list">
+                                            <li class="sub-menu__item">
+                                                <a class="sub-menu__link" href="series.html">
+                                                    <span class="sub-menu__link-title">project alisio</span>
+                                                    <img src="images/content/series/alisio_xs.png" alt="">
+                                                    <span class="sub-menu__link-text">Оптимальное соотношение<br> цены и качества</span>
+                                                    <span class="sub-menu__link-price">от 112 700 ₽</span>
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a class="sub-menu__link" href="series.html">
+                                                    <span class="sub-menu__link-title">project duo face</span>
+                                                    <img src="images/content/series/duoface_xs.png" alt="">
+                                                    <span class="sub-menu__link-text">Оптимальное соотношение<br> цены и качества</span>
+                                                    <span class="sub-menu__link-price">от 112 700 ₽</span>
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a class="sub-menu__link" href="series.html">
+                                                    <span class="sub-menu__link-title">project evo</span>
+                                                    <img src="images/content/series/evo_xs.png" alt="">
+                                                    <span class="sub-menu__link-text">Оптимальное соотношение<br> цены и качества</span>
+                                                    <span class="sub-menu__link-price">от 112 700 ₽</span>
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a class="sub-menu__link" href="series.html">
+                                                    <span class="sub-menu__link-title">project forge</span>
+                                                    <img src="images/content/series/forge_xs.png" alt="">
+                                                    <span class="sub-menu__link-text">Оптимальное соотношение<br> цены и качества</span>
+                                                    <span class="sub-menu__link-price">от 112 700 ₽</span>
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a class="sub-menu__link" href="series.html">
+                                                    <span class="sub-menu__link-title">project mod</span>
+                                                    <img src="images/content/series/mod_xs.png" alt="">
+                                                    <span class="sub-menu__link-text">Оптимальное соотношение<br> цены и качества</span>
+                                                    <span class="sub-menu__link-price">от 112 700 ₽</span>
+                                                </a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a class="sub-menu__link" href="series.html">
+                                                    <span class="sub-menu__link-title">project one</span>
+                                                    <img src="images/content/series/one_xs.png" alt="">
+                                                    <span class="sub-menu__link-text">Оптимальное соотношение<br> цены и качества</span>
+                                                    <span class="sub-menu__link-price">от 112 700 ₽</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+        
+                                        <div class="sub-menu__columns">
+                                            <div class="sub-menu__column">
+                                                <div class="sub-menu__title-block">
+                                                    <p>По цене:</p>
+                                                </div>
+                                                <div class="sub-menu__columns">
+                                                    <div class="sub-menu__column">
+                                                        <img src="images/content/series/one_xs__.png" alt="">
+                                                    </div>
+                                                    <div class="sub-menu__column">
+                                                        <div class="catalog-links__block">
+                                                            <a class="catalog-links__link" href="computers.html">до 80 000</a>
+                                                            <a class="catalog-links__link" href="computers.html">до 100 000</a>
+                                                            <a class="catalog-links__link" href="computers.html">до 140 000</a>
+                                                            <a class="catalog-links__link" href="computers.html">до 180 000</a>
+                                                            <a class="catalog-links__link" href="computers.html">до 250 000</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sub-menu__column">
+                                                <div class="sub-menu__title-block">
+                                                    <p>По разрешению:</p>
+                                                </div>
+                                                <div class="sub-menu__columns">
+                                                    <div class="sub-menu__column">
+                                                        <img src="images/content/series/mod_xs__.png" alt="">
+                                                    </div>
+                                                    <div class="sub-menu__column">
+                                                        <div class="catalog-links__block">
+                                                            <a class="catalog-links__link" href="computers.html">FullHD (1920x1080)</a>
+                                                            <a class="catalog-links__link" href="computers.html">2K (2560х1440)</a>
+                                                            <a class="catalog-links__link" href="computers.html">4K (3840х2160)</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </li>
                         <li class="main-menu__item">
@@ -452,69 +530,78 @@
                     </div>
                 </section>
 
-                <section class="page__section">
-                    <p class="pre-title"><span>Аксессуары для вашего компьютера</span></p>
-                    <h2>Периферия</h2>
+                <!--//= template/accessories.html-->
+
+                <div class="page__section">
+                    <p class="pre-title"><span>Наши акссесуары</span></p>
+                    <h2>Рекомендуемые<br> аксессуары</h2>
                 
-                    <div class="accessories slider-container">
-                        <div class="js-accessories swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <a class="accessories-item" href="#">
-                                        <svg class="accessories-item__arrow" aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#arrow_top_right" />
-                                        </svg>
+                    <div class="columns_1_3 recs">
+                        <div class="columns_1_3__column_1 recs__text-block">
+                            <h3 class="color-green">Наша периферия</h3>
+                            <p>Соберите полный комплект к своему новому компьютеру</p>
                 
-                                        <span class="accessories-item__title">Мышки</span>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="accessories-item" href="#">
-                                        <svg class="accessories-item__arrow" aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#arrow_top_right" />
-                                        </svg>
+                            <div class="slider-navigation">
+                                <button class="js-recs-slider-prev swiper-button-prev" type="button" title="Назад" data-id="recs_1">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#arrow_left" />
+                                    </svg>
+                                </button>
                 
-                                        <span class="accessories-item__title">Клавиатуры</span>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="accessories-item" href="#">
-                                        <svg class="accessories-item__arrow" aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#arrow_top_right" />
-                                        </svg>
+                                <div class="js-recs-slider-navigation swiper-pagination" data-id="recs_1"></div>
                 
-                                        <span class="accessories-item__title">Наушники</span>
-                                    </a>
-                                </div>
+                                <button class="js-recs-slider-next swiper-button-next" type="button" title="Вперёд" data-id="recs_1">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#arrow_right" />
+                                    </svg>
+                                </button>
                             </div>
                         </div>
                 
-                        <div class="slider-navigation">
-                            <button class="js-accessories-prev swiper-button-prev" type="button" title="Назад">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#arrow_left" />
-                                </svg>
-                            </button>
-                
-                            <div class="js-accessories-navigation swiper-pagination"></div>
-                
-                            <button class="js-accessories-next swiper-button-next" type="button" title="Вперёд">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#arrow_right" />
-                                </svg>
-                            </button>
+                        <div class="columns_1_3__column_3 recs__slider-block">
+                            <div class="js-recs-slider swiper" data-id="recs_1">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a class="recs-item" href="#">
+                                            <picture>
+                                                <source srcset="images/content/recs/img_1_desk.jpg, images/content/recs/img_1_desk@2x.jpg 2x" media="(min-width: 768px)">
+                                                <img src="images/content/recs/img_1_mob.jpg" srcset="images/content/recs/img_1_mob@2x.jpg 2x" alt="">
+                                            </picture>
+                                            <span class="recs-item__title">Микрофоны</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a class="recs-item" href="#">
+                                            <picture>
+                                                <source srcset="images/content/recs/img_2_desk.jpg, images/content/recs/img_2_desk@2x.jpg 2x" media="(min-width: 768px)">
+                                                <img src="images/content/recs/img_2_mob.jpg" srcset="images/content/recs/img_2_mob@2x.jpg 2x" alt="">
+                                            </picture>
+                                            <span class="recs-item__title">Наушники</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a class="recs-item" href="#">
+                                            <picture>
+                                                <source srcset="images/content/recs/img_3_desk.jpg, images/content/recs/img_3_desk@2x.jpg 2x" media="(min-width: 768px)">
+                                                <img src="images/content/recs/img_3_mob.jpg" srcset="images/content/recs/img_3_mob@2x.jpg 2x" alt="">
+                                            </picture>
+                                            <span class="recs-item__title">Мышки</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a class="recs-item" href="#">
+                                            <picture>
+                                                <source srcset="images/content/recs/img_1_desk.jpg, images/content/recs/img_1_desk@2x.jpg 2x" media="(min-width: 768px)">
+                                                <img src="images/content/recs/img_1_mob.jpg" srcset="images/content/recs/img_1_mob@2x.jpg 2x" alt="">
+                                            </picture>
+                                            <span class="recs-item__title">Микрофоны</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                
-                    <div class="text-center">
-                        <a class="button button--w_385" href="#">
-                            <span>Периферия</span>
-                            <svg aria-hidden="true">
-                                <use xlink:href="images/sprite.svg#button_arrow"></use>
-                            </svg>
-                        </a>
-                    </div>
-                </section>
+                </div>
 
                 <section class="feedback page__section">
                     <h2>Связь с нами</h2>
@@ -1098,6 +1185,8 @@
 
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/fancybox-defaults.js"></script>
     <script src="js/video.js"></script>
     <script src="js/select2.full.min.js"></script>
     <script src="js/select2-addon.js"></script>

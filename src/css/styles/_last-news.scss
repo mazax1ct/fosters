@@ -46,10 +46,12 @@
     }
 
     &__title {
+        font-family: var(--secondary_font_family);
         font-size: 16px;
         font-weight: 600;
         line-height: 1.1;
         margin-bottom: 10px;
+        text-transform: uppercase;
         @media(min-width: $hd) {
             font-size: 24px;
         }

@@ -16,7 +16,6 @@
     h1 {
         color: var(--primary_color);
         font-size: 56px;
-        letter-spacing: -4px;
         @media(min-width: $sm) {
             font-size: 96px;
         }
@@ -25,7 +24,6 @@
         }
         @media(min-width: $hd) {
             font-size: 144px;
-            letter-spacing: -8px;
         }
         /*@media(min-width: $lg) {
             font-size: 172px;

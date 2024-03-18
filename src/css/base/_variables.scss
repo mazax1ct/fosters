@@ -16,8 +16,13 @@ $fhd: 1900px;
     --footer_menu_color: #565656;
     --pre_title_color: #fff;
     --error_color: #E80000;
-    --primary_font_family: 'Rawline', Arial, sans-serif;
-    --secondary_font_family: 'Wadik', Arial, sans-serif;
+    //--primary_font_family: 'Rawline', Arial, sans-serif;
+    //--primary_font_family: 'Roboto', sans-serif;
+    //--primary_font_family: 'Open Sans', sans-serif;
+    --primary_font_family: 'PT Sans', sans-serif;
+    //--secondary_font_family: 'Wadik', Arial, sans-serif;
+    //--secondary_font_family: 'Russo One', sans-serif;
+    --secondary_font_family: 'Tektur', sans-serif;
     --container_padding: 15px;
     @media(min-width: $md) {
         --container_padding: 20px;

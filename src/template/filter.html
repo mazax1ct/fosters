@@ -1,0 +1,108 @@
+<button class="js-filter-opener filter-opener button" type="button">
+    <span>ОТКРЫТЬ ФИЛЬТР</span>
+    <svg aria-hidden="true">
+        <use xlink:href="images/sprite.svg#filter" />
+    </svg>
+</button>
+
+<div class="filter">
+    <div class="filter__title-block">
+        <p class="filter__title">ФИЛЬТР:</p>
+
+        <button class="js-filter-closer filter__closer" type="button" title="Закрыть фильтр">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#close" />
+            </svg>
+        </button>
+    </div>
+
+    <div class="filter__section">
+        <div class="filter__section-title">
+            <p class="filter__title">Цена:</p>
+            <button class="js-filter-section-toggler filter__toggler is-active" type="button" title="Показать раздел фильтра">
+                <svg class="header-logo__text" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#arrow_down" />
+                </svg>
+            </button>
+        </div>
+        <div class="filter__section-inner is-open" style="display: block">
+            <label class="checkbox">
+                <input type="checkbox" name="" value="">
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">30 000 - 40 000 ₽ <span>(245)</span></span>
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" name="" value="">
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">40 001 - 50 000 ₽ <span>(15)</span></span>
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" name="" value="">
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">50 001 - 60 000 ₽ <span>(65)</span></span>
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" name="" value="">
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">60 001 - 70 000 ₽ <span>(675)</span></span>
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" name="" value="">
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">70 001 - 80 000 ₽ <span>(837)</span></span>
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" name="" value="">
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">80 001 - 90 000 ₽ <span>(3)</span></span>
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" name="" value="">
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">90 001 - 100 000 ₽ <span>(283)</span></span>
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" name="" value="">
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">100 001 - 110 000 ₽ <span>(377)</span></span>
+            </label>
+        </div>
+    </div>
+    <div class="filter__section">
+        <div class="filter__section-title">
+            <p class="filter__title">Разрешение:</p>
+            <button class="js-filter-section-toggler filter__toggler" type="button" title="Показать раздел фильтра">
+                <svg class="header-logo__text" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#arrow_down" />
+                </svg>
+            </button>
+        </div>
+        <div class="filter__section-inner">
+            <label class="checkbox">
+                <input type="checkbox" name="" value="">
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">1680 х 1050 <span>(245)</span></span>
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" name="" value="">
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">1920 х 1080 <span>(15)</span></span>
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" name="" value="">
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">2560 х 1440 <span>(65)</span></span>
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" name="" value="">
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__text">3440 х 1440 и выше <span>(675)</span></span>
+            </label>
+        </div>
+    </div>
+
+    <div class="filter__buttons">
+        <button class="button button--bordered" type="reset">СБРОСИТЬ</button>
+        <button class="button" type="submit">ПРИМЕНИТЬ</button>
+    </div>
+</div>

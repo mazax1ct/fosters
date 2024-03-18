@@ -264,22 +264,6 @@ if($('.js-cards-slider').length) {
   });
 }
 
-//тогглер сортировки
-$(document).on('click', '.js-sorting-toggler', function () {
-  if(!$(this).closest('.sorting').hasClass('is-active')) {
-    $(this).closest('.sorting').addClass('is-active');
-    $(this).addClass('is-active');
-    $(this).closest('.sorting').find('.sorting__dropdown').slideToggle();
-  }else {
-    $(this).removeClass('is-active');
-    $(this).closest('.sorting').find('.sorting__dropdown').slideToggle(function () {
-      $(this).closest('.sorting').removeClass('is-active');
-    });
-  }
-
-  return false
-});
-
 //табы конфигураций
 $(document).on('click', '.js-conf-compare', function () {
   $('.js-conf-compare').removeClass('is-active');
@@ -461,4 +445,33 @@ $(document).on('click', '.js-config-component-toggler', function () {
 $(document).on('click', '.js-card-fps-opener', function () {
   $(this).closest('.card').find('.card__fps-block').toggle();
   return false;
+});
+
+//открытие фильтра
+$(document).on('click', '.js-filter-opener', function () {
+  $('body').addClass('is-overflow');
+  $('.filter').addClass('is-open');
+  return false
+});
+
+$(document).on('click', '.js-filter-closer', function () {
+  $('body').removeClass('is-overflow');
+  $('.filter').removeClass('is-open');
+  return false
+});
+
+//тогглер секции фильтра
+$(document).on('click', '.js-filter-section-toggler', function () {
+  if(!$(this).closest('.filter__section').find('.filter__section-inner').hasClass('is-open')) {
+    $(this).closest('.filter__section').find('.filter__section-inner').addClass('is-open');
+    $(this).addClass('is-active');
+    $(this).closest('.filter__section').find('.filter__section-inner').slideToggle();
+  }else {
+    $(this).removeClass('is-active');
+    $(this).closest('.filter__section').find('.filter__section-inner').slideToggle(function () {
+      $(this).closest('.filter__section').find('.filter__section-inner').removeClass('is-open');
+    });
+  }
+
+  return false
 });

@@ -35,10 +35,6 @@
             margin-left: 0;
             min-width: 190px;
         }
-        /*@media(min-width: $fhd) {
-            gap: 30px;
-            min-width: 388px;
-        }*/
     }
 
     &__link {
@@ -51,10 +47,7 @@
         position: relative;
         width: 25px;
         z-index: 1;
-        /*@media(min-width: $fhd) {
-            height: 30px;
-            width: 30px;
-        }*/
+
         &--burger {
             @media(min-width: $hd) {
                 display: none;
@@ -68,10 +61,6 @@
             fill: currentColor;
             height: 25px;
             width: 25px;
-            /*@media(min-width: $fhd) {
-                height: 30px;
-                width: 30px;
-            }*/
         }
     }
 }
@@ -83,10 +72,6 @@
     &__icon {
         height: 45px;
         width: 52px;
-        /*@media(min-width: $fhd) {
-            height: 60px;
-            width: 70px;
-        }*/
     }
 
     &__text {
@@ -96,10 +81,6 @@
         @media(min-width: $sm) {
             display: block;
         }
-        /*@media(min-width: $fhd) {
-            height: 60px;
-            width: 318px;
-        }*/
     }
     @include hover {
         color: var(--text_color);
@@ -118,9 +99,6 @@
     @media(min-width: $lg) {
         font-size: 18px;
     }
-    /*@media(min-width: $fhd) {
-        font-size: 20px;
-    }*/
     @media(max-width: $hd - 0.01px) {
         background-color: var(--body_bg);
         height: calc(100dvh - 66px);
@@ -143,9 +121,6 @@
             display: flex;
             gap: 40px;
         }
-        /*@media(min-width: $fhd) {
-            gap: 80px;
-        }*/
     }
 
     &__item {
@@ -207,40 +182,67 @@
 
 .sub-menu {
     background-color: var(--body_bg);
-    font-size: 70%;
-    padding-left: 20px;
+    @media(max-width: $hd - 0.01px) {
+        display: none;
+    }
     @media(min-width: $hd) {
         box-shadow: 0 3px 3px 0 rgba(0,0,0, 0.1);
         display: none;
+        font-size: 16px;
         left: 0;
-        padding: calc(var(--container_padding) / 2) var(--container_padding);
+        padding: var(--container_padding);
         position: absolute;
         top: 100%;
         width: 100%;
         z-index: 1;
     }
+    @media(min-width: $hd) and (min-height: 900px) {
+        padding: calc(var(--container_padding) * 2) var(--container_padding);
+    }
+
+    &__title-block {
+        align-items: center;
+        font-family: var(--secondary_font_family);
+        display: flex;
+        font-weight: 500;
+        justify-content: space-between;
+        margin-bottom: 15px;
+
+        p {
+            margin-bottom: 0;
+        }
+
+        a {
+            align-items: center;
+            display: flex;
+            gap: 4px;
+
+            svg {
+                fill: currentColor;
+                height: 22px;
+                width: 22px;
+            }
+        }
+    }
 
     &__list {
         @include list-reset;
-        @media(min-width: $hd) {
-            display: flex;
-            gap: var(--container_padding);
-            justify-content: space-between;
-            margin-left: auto;
-            margin-right: auto;
-            max-width: 1520px;
+        display: flex;
+        gap: var(--container_padding);
+        justify-content: space-between;
+        margin-bottom: 30px;
+        @media(min-height: 900px) {
+            margin-bottom: 60px;
         }
     }
 
     &__link {
         align-items: center;
         display: flex;
-        min-height: 40px;
-        text-transform: uppercase;
+        flex-direction: column;
+        height: 100%;
         text-decoration: none;
-        @media(min-width: $hd) {
-            flex-direction: column;
-        }
+        text-align: center;
         @include hover {
             img {
                 transform: scale(1.02);
@@ -251,9 +253,112 @@
             display: block;
             transition: transform 0.3s;
             transform: scale(1);
-            @media(max-width: $hd - 0.01px) {
-                display: none;
+        }
+    }
+
+    &__link-price,
+    &__link-text,
+    &__link-title {
+        display: block;
+    }
+
+    &__link-title {
+        font-family: var(--secondary_font_family);
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    &__link-text {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+
+    &__link-price {
+        font-family: var(--secondary_font_family);
+        font-weight: 600;
+        margin-top: 5px;
+        text-transform: uppercase;
+    }
+
+    &__grid {
+        display: flex;
+        gap: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1520px;
+        @media(min-width: 1520px) {
+            padding-left: var(--container_padding);
+            padding-right: var(--container_padding);
+        }
+    }
+
+    &__left {
+        border-right: 1px solid var(--primary_color);
+        padding-right: 30px;
+        padding-top: 39px;
+        width: 230px;
+    }
+
+    &__link2 {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+            @media(min-height: 900px) {
+                margin-bottom: 68px;
             }
         }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &__link2-text,
+    &__link2-title {
+        display: block;
+    }
+
+    &__link2-title {
+        font-family: var(--secondary_font_family);
+        font-weight: 600;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+
+    &__link2-text {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+
+    &__right {
+        width: calc(100% - 230px - 30px);
+    }
+
+    &__columns {
+        display: flex;
+        gap: 30px;
+
+        .sub-menu__columns {
+            .sub-menu__column {
+                &:first-child() {
+                    width: 180px;
+                }
+
+                .catalog-links__link {
+                    font-size: 14px;
+                    min-height: 48px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    &__column {
+        width: calc(100% / 2 - 15px);
     }
 }

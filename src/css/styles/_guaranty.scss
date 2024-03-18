@@ -41,14 +41,14 @@
 
     &__item-num {
         color: var(--primary_color);
+        font-family: var(--secondary_font_family);
         font-size: 90px;
         font-weight: 700;
-        line-height: 1;
-        margin-bottom: -4px;
-        margin-left: -0.25em;
+        line-height: 68px;
+        margin-left: -0.18em;
         @media(min-width: $hd) {
             font-size: 140px;
-            margin-bottom: -6px;
+            line-height: 110px;
         }
         /*@media(min-width: $fhd) {
             font-size: 200px;
