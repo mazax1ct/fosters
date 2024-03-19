@@ -27,9 +27,7 @@ html {
     @media(min-width: $lg) {
         font-size: 16px;
     }
-    /*@media(min-width: $fhd) {
-        font-size: 18px;
-    }*/
+
     &.is-overflow {
         overflow: hidden;
     }
@@ -49,22 +47,11 @@ html {
         @media(min-width: $hd) {
             padding-top: 110px;
         }
-        /*@media(min-width: $fhd) {
-            padding-bottom: 200px;
-        }*/
     }
 
     &__section {
         &:not(:last-child) {
             margin-bottom: var(--page_section_vertical_gap);
-        }
-
-        &--mod_1 {
-            &:not(:last-child) {
-                /*@media(min-width: $fhd) {
-                    margin-bottom: 120px;
-                }*/
-            }
         }
     }
 
@@ -79,9 +66,7 @@ html {
         @media(min-width: $md) {
             width: calc(100% / 3 * 2 - var(--container_padding) * 0.5);
         }
-        /*@media(min-width: $fhd) {
-            margin-bottom: 30px;
-        }*/
+
         &--mod_1 {
             font-family: var(--secondary_font_family);
             font-size: 13px;
@@ -93,9 +78,6 @@ html {
             @media(min-width: $hd) {
                 font-size: 18px;
             }
-            /*@media(min-width: $fhd) {
-                font-size: 24px;
-            }*/
         }
     }
 
@@ -188,11 +170,6 @@ h1 {
     @media(min-width: $lg) {
         font-size: 72px;
     }
-    /*@media(min-width: $fhd) {
-        font-size: 110px;
-        letter-spacing: -8px;
-        margin-bottom: 60px;
-    }*/
 }
 
 .h2,
@@ -213,11 +190,7 @@ h2 {
     @media(min-width: $lg) {
         font-size: 64px;
     }
-    /*@media(min-width: $fhd) {
-        font-size: 100px;
-        letter-spacing: -4px;
-        margin-bottom: 35px;
-    }*/
+
     &.long-word {
         @media(max-width: $sm - 0.01px) {
             font-size: 22px;

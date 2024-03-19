@@ -1,7 +1,7 @@
 <section class="page__section config">
     <h1>Конфигуратор</h1>
 
-    <p class="config__title">Выберите серию:</p>
+    <p class="config__title">1. Корпус</p>
 
     <div class="config__series">
         <label class="config__series-item">
@@ -67,47 +67,55 @@
             <img class="js-config-image" src="images/content/config/config.png" alt="">
         </div>
         <div class="config__config">
-            <p class="config__title">Комплектующие</p>
+            <p class="config__title">2. Комплектующие</p>
 
             <div class="js-config-components">
                 <div class="accordion set-item">
-                    <button class="js-config-component-toggler accordion__toggler" type="button" data-image="images/content/config/cpu.png">
+                    <button class="js-config-component-toggler accordion__toggler is-active" type="button" data-image="images/content/config/cpu.png">
                         <span>
                             <svg aria-hidden="true">
                                 <use xlink:href="images/sprite.svg#gpu" />
                             </svg>
                             Видеокарта
                         </span>
+                        <span>NVIDIA GTX 1050</span>
                         <svg aria-hidden="true">
                             <use xlink:href="images/sprite.svg#arrow_down" />
                         </svg>
                     </button>
-                    <div class="accordion__body">
-                        <div class="set-variants">
-                            <label class="checkbox set-variant">
-                                <input type="radio" name="gpu" value="Nvidia GTX 1650">
-                                <span class="checkbox__icon"></span>
-                                <span class="checkbox__text">
-                                    <span>Nvidia GTX 1650</span>
-                                    <span>+800 ₽</span>
-                                </span>
-                            </label>
-                            <label class="checkbox set-variant">
-                                <input type="radio" name="gpu" value="Nvidia GTX 1660">
-                                <span class="checkbox__icon"></span>
-                                <span class="checkbox__text">
-                                    <span>Nvidia GTX 1660</span>
-                                    <span>+2400 ₽</span>
-                                </span>
-                            </label>
-                            <label class="checkbox set-variant">
-                                <input type="radio" name="gpu" value="Nvidia GTX 2050">
-                                <span class="checkbox__icon"></span>
-                                <span class="checkbox__text">
-                                    <span>Nvidia GTX 2050</span>
-                                    <span>+3000 ₽</span>
-                                </span>
-                            </label>
+                    <div class="accordion__body" style="display: block">
+                        <div class="set-grid">
+                            <div class="set-grid__image">
+                                <img src="images/content/components/video.png" alt="">
+                            </div>
+                            <div class="set-grid__vars">
+                                <div class="set-variants">
+                                    <label class="checkbox set-variant">
+                                        <input type="radio" name="gpu" value="Nvidia GTX 1050" checked>
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">
+                                            <span>Nvidia GTX 1050</span>
+                                            <span>0 ₽</span>
+                                        </span>
+                                    </label>
+                                    <label class="checkbox set-variant">
+                                        <input type="radio" name="gpu" value="Nvidia GTX 1660">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">
+                                            <span>Nvidia GTX 1660</span>
+                                            <span class="color-green">+2400 ₽</span>
+                                        </span>
+                                    </label>
+                                    <label class="checkbox set-variant">
+                                        <input type="radio" name="gpu" value="Nvidia GTX 2050">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">
+                                            <span>Nvidia GTX 2050</span>
+                                            <span class="color-green">+3000 ₽</span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -119,36 +127,44 @@
                             </svg>
                             Процессор
                         </span>
+                        <span>Intel i3-10100F</span>
                         <svg aria-hidden="true">
                             <use xlink:href="images/sprite.svg#arrow_down" />
                         </svg>
                     </button>
                     <div class="accordion__body">
-                        <div class="set-variants">
-                            <label class="checkbox set-variant">
-                                <input type="radio" name="cpu" value="i3-10100F">
-                                <span class="checkbox__icon"></span>
-                                <span class="checkbox__text">
-                                    <span>Intel i3-10100F</span>
-                                    <span>+800 ₽</span>
-                                </span>
-                            </label>
-                            <label class="checkbox set-variant">
-                                <input type="radio" name="cpu" value="i3-10200F">
-                                <span class="checkbox__icon"></span>
-                                <span class="checkbox__text">
-                                    <span>Intel i3-10200F</span>
-                                    <span>+2400 ₽</span>
-                                </span>
-                            </label>
-                            <label class="checkbox set-variant">
-                                <input type="radio" name="cpu" value="i3-10300F">
-                                <span class="checkbox__icon"></span>
-                                <span class="checkbox__text">
-                                    <span>Intel i3-10300F</span>
-                                    <span>+3000 ₽</span>
-                                </span>
-                            </label>
+                        <div class="set-grid">
+                            <div class="set-grid__image">
+                                <img src="images/content/components/video.png" alt="">
+                            </div>
+                            <div class="set-grid__vars">
+                                <div class="set-variants">
+                                    <label class="checkbox set-variant">
+                                        <input type="radio" name="cpu" value="i3-10100F" checked>
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">
+                                            <span>Intel i3-10100F</span>
+                                            <span>0 ₽</span>
+                                        </span>
+                                    </label>
+                                    <label class="checkbox set-variant">
+                                        <input type="radio" name="cpu" value="i3-10200F">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">
+                                            <span>Intel i3-10200F</span>
+                                            <span class="color-green">+2400 ₽</span>
+                                        </span>
+                                    </label>
+                                    <label class="checkbox set-variant">
+                                        <input type="radio" name="cpu" value="i3-10300F">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">
+                                            <span>Intel i3-10300F</span>
+                                            <span class="color-green">+3000 ₽</span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -160,36 +176,44 @@
                             </svg>
                             Материнская плата
                         </span>
+                        <span>AsRock B450</span>
                         <svg aria-hidden="true">
                             <use xlink:href="images/sprite.svg#arrow_down" />
                         </svg>
                     </button>
                     <div class="accordion__body">
-                        <div class="set-variants">
-                            <label class="checkbox set-variant">
-                                <input type="radio" name="mb" value="AsRock B450">
-                                <span class="checkbox__icon"></span>
-                                <span class="checkbox__text">
-                                    <span>AsRock B450</span>
-                                    <span>+800 ₽</span>
-                                </span>
-                            </label>
-                            <label class="checkbox set-variant">
-                                <input type="radio" name="mb" value="MSI B450">
-                                <span class="checkbox__icon"></span>
-                                <span class="checkbox__text">
-                                    <span>MSI B450</span>
-                                    <span>+2400 ₽</span>
-                                </span>
-                            </label>
-                            <label class="checkbox set-variant">
-                                <input type="radio" name="mb" value="MSI B460">
-                                <span class="checkbox__icon"></span>
-                                <span class="checkbox__text">
-                                    <span>MSI B460</span>
-                                    <span>+3000 ₽</span>
-                                </span>
-                            </label>
+                        <div class="set-grid">
+                            <div class="set-grid__image">
+                                <img src="images/content/components/video.png" alt="">
+                            </div>
+                            <div class="set-grid__vars">
+                                <div class="set-variants">
+                                    <label class="checkbox set-variant">
+                                        <input type="radio" name="mb" value="AsRock B450" checked>
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">
+                                            <span>AsRock B450</span>
+                                            <span>0 ₽</span>
+                                        </span>
+                                    </label>
+                                    <label class="checkbox set-variant">
+                                        <input type="radio" name="mb" value="MSI B450">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">
+                                            <span>MSI B450</span>
+                                            <span class="color-green">+2400 ₽</span>
+                                        </span>
+                                    </label>
+                                    <label class="checkbox set-variant">
+                                        <input type="radio" name="mb" value="MSI B460">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">
+                                            <span>MSI B460</span>
+                                            <span class="color-green">+3000 ₽</span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -201,36 +225,44 @@
                             </svg>
                             Оперативная память
                         </span>
+                        <span>AData 16GB</span>
                         <svg aria-hidden="true">
                             <use xlink:href="images/sprite.svg#arrow_down" />
                         </svg>
                     </button>
                     <div class="accordion__body">
-                        <div class="set-variants">
-                            <label class="checkbox set-variant">
-                                <input type="radio" name="ram" value="AData 16GB">
-                                <span class="checkbox__icon"></span>
-                                <span class="checkbox__text">
-                                    <span>AData 16GB</span>
-                                    <span>+800 ₽</span>
-                                </span>
-                            </label>
-                            <label class="checkbox set-variant">
-                                <input type="radio" name="ram" value="Kingston Fury Beast Black KF432C16BBK2/16 DDR4 - 2x 8ГБ 3200МГц, DIMM, Ret">
-                                <span class="checkbox__icon"></span>
-                                <span class="checkbox__text">
-                                    <span>Kingston Fury Beast Black KF432C16BBK2/16 DDR4 - 2x 8ГБ 3200МГц, DIMM, Ret</span>
-                                    <span>+2400 ₽</span>
-                                </span>
-                            </label>
-                            <label class="checkbox set-variant">
-                                <input type="radio" name="ram" value="Patriot Signature PSD48G320081 DDR4 - 8ГБ 3200МГц, DIMM, Ret">
-                                <span class="checkbox__icon"></span>
-                                <span class="checkbox__text">
-                                    <span>Patriot Signature PSD48G320081 DDR4 - 8ГБ 3200МГц, DIMM, Ret</span>
-                                    <span>+3000 ₽</span>
-                                </span>
-                            </label>
+                        <div class="set-grid">
+                            <div class="set-grid__image">
+                                <img src="images/content/components/video.png" alt="">
+                            </div>
+                            <div class="set-grid__vars">
+                                <div class="set-variants">
+                                    <label class="checkbox set-variant">
+                                        <input type="radio" name="ram" value="AData 16GB" checked>
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">
+                                            <span>AData 16GB</span>
+                                            <span>0 ₽</span>
+                                        </span>
+                                    </label>
+                                    <label class="checkbox set-variant">
+                                        <input type="radio" name="ram" value="Kingston Fury Beast Black KF432C16BBK2/16 DDR4 - 2x 8ГБ 3200МГц, DIMM, Ret">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">
+                                            <span>Kingston Fury Beast Black KF432C16BBK2/16 DDR4 - 2x 8ГБ 3200МГц, DIMM, Ret</span>
+                                            <span class="color-green">+2400 ₽</span>
+                                        </span>
+                                    </label>
+                                    <label class="checkbox set-variant">
+                                        <input type="radio" name="ram" value="Patriot Signature PSD48G320081 DDR4 - 8ГБ 3200МГц, DIMM, Ret">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">
+                                            <span>Patriot Signature PSD48G320081 DDR4 - 8ГБ 3200МГц, DIMM, Ret</span>
+                                            <span class="color-green">+3000 ₽</span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -242,36 +274,44 @@
                             </svg>
                             SSD накопитель
                         </span>
+                        <span>Kingston 480ГБ</span>
                         <svg aria-hidden="true">
                             <use xlink:href="images/sprite.svg#arrow_down" />
                         </svg>
                     </button>
                     <div class="accordion__body">
-                        <div class="set-variants">
-                            <label class="checkbox set-variant">
-                                <input type="radio" name="ssd" value="Kingston A400 SA400S37/480G 480ГБ, 2.5, SATA III, SATA">
-                                <span class="checkbox__icon"></span>
-                                <span class="checkbox__text">
-                                    <span>Kingston A400 SA400S37/480G 480ГБ, 2.5", SATA III, SATA</span>
-                                    <span>+800 ₽</span>
-                                </span>
-                            </label>
-                            <label class="checkbox set-variant">
-                                <input type="radio" name="ssd" value="KINGSPEC P3-256 256ГБ">
-                                <span class="checkbox__icon"></span>
-                                <span class="checkbox__text">
-                                    <span>KINGSPEC P3-256 256ГБ</span>
-                                    <span>+2400 ₽</span>
-                                </span>
-                            </label>
-                            <label class="checkbox set-variant">
-                                <input type="radio" name="ssd" value="Samsung 970 EVO Plus MZ-V7S250BW 250ГБ, M.2 2280, PCIe 3.0 x4, NVMe, M.2">
-                                <span class="checkbox__icon"></span>
-                                <span class="checkbox__text">
-                                    <span>Samsung 970 EVO Plus MZ-V7S250BW 250ГБ, M.2 2280, PCIe 3.0 x4, NVMe, M.2</span>
-                                    <span>+3000 ₽</span>
-                                </span>
-                            </label>
+                        <div class="set-grid">
+                            <div class="set-grid__image">
+                                <img src="images/content/components/video.png" alt="">
+                            </div>
+                            <div class="set-grid__vars">
+                                <div class="set-variants">
+                                    <label class="checkbox set-variant">
+                                        <input type="radio" name="ssd" value="Kingston A400 SA400S37/480G 480ГБ, 2.5, SATA III, SATA" checked>
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">
+                                            <span>Kingston A400 SA400S37/480G 480ГБ, 2.5", SATA III, SATA</span>
+                                            <span>0 ₽</span>
+                                        </span>
+                                    </label>
+                                    <label class="checkbox set-variant">
+                                        <input type="radio" name="ssd" value="KINGSPEC P3-256 256ГБ">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">
+                                            <span>KINGSPEC P3-256 256ГБ</span>
+                                            <span class="color-green">+2400 ₽</span>
+                                        </span>
+                                    </label>
+                                    <label class="checkbox set-variant">
+                                        <input type="radio" name="ssd" value="Samsung 970 EVO Plus MZ-V7S250BW 250ГБ, M.2 2280, PCIe 3.0 x4, NVMe, M.2">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">
+                                            <span>Samsung 970 EVO Plus MZ-V7S250BW 250ГБ, M.2 2280, PCIe 3.0 x4, NVMe, M.2</span>
+                                            <span class="color-green">+3000 ₽</span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -283,36 +323,44 @@
                             </svg>
                             Блок питания
                         </span>
+                        <span>Aerocool 500W</span>
                         <svg aria-hidden="true">
                             <use xlink:href="images/sprite.svg#arrow_down" />
                         </svg>
                     </button>
                     <div class="accordion__body">
-                        <div class="set-variants">
-                            <label class="checkbox set-variant">
-                                <input type="radio" name="power" value="Aerocool VX PLUS 500W, 500Вт, 120мм, черный, retail">
-                                <span class="checkbox__icon"></span>
-                                <span class="checkbox__text">
-                                    <span>Aerocool VX PLUS 500W, 500Вт, 120мм, черный, retail</span>
-                                    <span>+800 ₽</span>
-                                </span>
-                            </label>
-                            <label class="checkbox set-variant">
-                                <input type="radio" name="power" value="GMNG PSU-650W-80BR, 650Вт, 120мм, черный, retail">
-                                <span class="checkbox__icon"></span>
-                                <span class="checkbox__text">
-                                    <span>GMNG PSU-650W-80BR, 650Вт, 120мм, черный, retail</span>
-                                    <span>+2400 ₽</span>
-                                </span>
-                            </label>
-                            <label class="checkbox set-variant">
-                                <input type="radio" name="power" value="KINGPRICE KPPSU400, 400Вт, 120мм, черный, retail">
-                                <span class="checkbox__icon"></span>
-                                <span class="checkbox__text">
-                                    <span>KINGPRICE KPPSU400, 400Вт, 120мм, черный, retail</span>
-                                    <span>+3000 ₽</span>
-                                </span>
-                            </label>
+                        <div class="set-grid">
+                            <div class="set-grid__image">
+                                <img src="images/content/components/video.png" alt="">
+                            </div>
+                            <div class="set-grid__vars">
+                                <div class="set-variants">
+                                    <label class="checkbox set-variant">
+                                        <input type="radio" name="power" value="Aerocool VX PLUS 500W, 500Вт, 120мм, черный, retail" checked>
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">
+                                            <span>Aerocool VX PLUS 500W, 500Вт, 120мм, черный, retail</span>
+                                            <span>0 ₽</span>
+                                        </span>
+                                    </label>
+                                    <label class="checkbox set-variant">
+                                        <input type="radio" name="power" value="GMNG PSU-650W-80BR, 650Вт, 120мм, черный, retail">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">
+                                            <span>GMNG PSU-650W-80BR, 650Вт, 120мм, черный, retail</span>
+                                            <span class="color-green">+2400 ₽</span>
+                                        </span>
+                                    </label>
+                                    <label class="checkbox set-variant">
+                                        <input type="radio" name="power" value="KINGPRICE KPPSU400, 400Вт, 120мм, черный, retail">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">
+                                            <span>KINGPRICE KPPSU400, 400Вт, 120мм, черный, retail</span>
+                                            <span class="color-green">+3000 ₽</span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -324,36 +372,44 @@
                             </svg>
                             Охлаждение
                         </span>
+                        <span>DeepCool</span>
                         <svg aria-hidden="true">
                             <use xlink:href="images/sprite.svg#arrow_down" />
                         </svg>
                     </button>
                     <div class="accordion__body">
-                        <div class="set-variants">
-                            <label class="checkbox set-variant">
-                                <input type="radio" name="cooler" value="DeepCool Ice Edge Mini FS V2.0, 80мм, Ret">
-                                <span class="checkbox__icon"></span>
-                                <span class="checkbox__text">
-                                    <span>DeepCool Ice Edge Mini FS V2.0, 80мм, Ret</span>
-                                    <span>+800 ₽</span>
-                                </span>
-                            </label>
-                            <label class="checkbox set-variant">
-                                <input type="radio" name="cooler" value="Zalman CNPS9X Optima, 120мм, Ret">
-                                <span class="checkbox__icon"></span>
-                                <span class="checkbox__text">
-                                    <span>Zalman CNPS9X Optima, 120мм, Ret</span>
-                                    <span>+2400 ₽</span>
-                                </span>
-                            </label>
-                            <label class="checkbox set-variant">
-                                <input type="radio" name="cooler" value="ID-COOLING SE-214-XT, 120мм, Ret">
-                                <span class="checkbox__icon"></span>
-                                <span class="checkbox__text">
-                                    <span>ID-COOLING SE-214-XT, 120мм, Ret</span>
-                                    <span>+3000 ₽</span>
-                                </span>
-                            </label>
+                        <div class="set-grid">
+                            <div class="set-grid__image">
+                                <img src="images/content/components/video.png" alt="">
+                            </div>
+                            <div class="set-grid__vars">
+                                <div class="set-variants">
+                                    <label class="checkbox set-variant">
+                                        <input type="radio" name="cooler" value="DeepCool Ice Edge Mini FS V2.0, 80мм, Ret" checked>
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">
+                                            <span>DeepCool Ice Edge Mini FS V2.0, 80мм, Ret</span>
+                                            <span>0 ₽</span>
+                                        </span>
+                                    </label>
+                                    <label class="checkbox set-variant">
+                                        <input type="radio" name="cooler" value="Zalman CNPS9X Optima, 120мм, Ret">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">
+                                            <span>Zalman CNPS9X Optima, 120мм, Ret</span>
+                                            <span class="color-green">+2400 ₽</span>
+                                        </span>
+                                    </label>
+                                    <label class="checkbox set-variant">
+                                        <input type="radio" name="cooler" value="ID-COOLING SE-214-XT, 120мм, Ret">
+                                        <span class="checkbox__icon"></span>
+                                        <span class="checkbox__text">
+                                            <span>ID-COOLING SE-214-XT, 120мм, Ret</span>
+                                            <span class="color-green">+3000 ₽</span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -361,7 +417,15 @@
         </div>
     </div>
 
-    <p class="config__title">Графики FPS</p>
+    <div class="config__title-block">
+        <p class="config__title">3. Графики FPS</p>
+        <button class="js-perf-opener config__title-button" type="button">
+            Больше FPS
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#arrow_right"></use>
+            </svg>
+        </button>
+    </div>
 
     <div class="config__fps-block">
         <div class="fps-item">
@@ -411,7 +475,164 @@
         </div>
     </div>
 
-    <p class="config__title">Сравнение конфигураций</p>
+    <p class="config__title">4. Итоговая конфигурация</p>
+
+    <div class="config_2__row config_2__row--components_2">
+        <div class="config_2__block">
+            <div class="config_2-item">
+                <div class="config_2-item__title-block">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#cpu" />
+                    </svg>
+                    <div>
+                        <p class="config_2-item__pre-title">Процессор:</p>
+                        <p class="config_2-item__title">Intel i3-10100F</p>
+                    </div>
+                </div>
+
+                <div class="config_2-item__chars">
+                    <p><span>Ядер</span> <span>4</span></p>
+                    <p><span>Потоков</span> <span>8</span></p>
+                    <p><span>Частота до</span> <span>4.3 ГГц</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="config_2__block">
+            <div class="config_2-item">
+                <div class="config_2-item__title-block">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#gpu" />
+                    </svg>
+                    <div>
+                        <p class="config_2-item__pre-title">Видеокарта:</p>
+                        <p class="config_2-item__title">GTX 1650 на 4GB</p>
+                    </div>
+                </div>
+
+                <div class="config_2-item__chars">
+                    <p><span>Объем памяти</span> <span>8 Гб</span></p>
+                    <p><span>Тип памяти</span> <span>GDDR 6</span></p>
+                    <p><span>Мах частота</span> <span>1852 МГц</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="config_2__block">
+            <div class="config_2-item">
+                <div class="config_2-item__title-block">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#mb" />
+                    </svg>
+                    <div>
+                        <p class="config_2-item__pre-title">Материнская плата:</p>
+                        <p class="config_2-item__title">MSI PRO H410M</p>
+                    </div>
+                </div>
+
+                <div class="config_2-item__chars">
+                    <p><span>Чипсет</span> <span>Intel B760</span></p>
+                    <p><span>Сокет</span> <span>LGA 1700</span></p>
+                    <p><span>Тип памяти</span> <span>DDR4</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="config_2__block">
+            <div class="config_2-item">
+                <div class="config_2-item__title-block">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#ram" />
+                    </svg>
+                    <div>
+                        <p class="config_2-item__pre-title">Оперативная память:</p>
+                        <p class="config_2-item__title">ADATA XPG на 16GB</p>
+                    </div>
+                </div>
+
+                <div class="config_2-item__chars">
+                    <p><span>Тип памяти</span> <span>DDR4</span></p>
+                    <p><span>Частота</span> <span>3600</span></p>
+                    <p><span>Объем</span> <span>16 GB</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="config_2__block">
+            <div class="config_2-item">
+                <div class="config_2-item__title-block">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#ssd" />
+                    </svg>
+                    <div>
+                        <p class="config_2-item__pre-title">SSD накопитель:</p>
+                        <p class="config_2-item__title">Colorful SL500 на 1TB</p>
+                    </div>
+                </div>
+
+                <div class="config_2-item__chars">
+                    <p><span>Объем</span> <span>240</span></p>
+                    <p><span>Мах скорость записи</span> <span>320</span></p>
+                    <p><span>Мах скорость чтения</span> <span>500</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="config_2__block">
+            <div class="config_2-item">
+                <div class="config_2-item__title-block">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#ssd" />
+                    </svg>
+                    <div>
+                        <p class="config_2-item__pre-title">SSD накопитель:</p>
+                        <p class="config_2-item__title">Colorful SL500 на 1TB</p>
+                    </div>
+                </div>
+
+                <div class="config_2-item__chars">
+                    <p><span>Объем</span> <span>240</span></p>
+                    <p><span>Мах скорость записи</span> <span>320</span></p>
+                    <p><span>Мах скорость чтения</span> <span>500</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="config_2__block">
+            <div class="config_2-item">
+                <div class="config_2-item__title-block">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#power" />
+                    </svg>
+                    <div>
+                        <p class="config_2-item__pre-title">Блок питания:</p>
+                        <p class="config_2-item__title">Deepcool на 600W</p>
+                    </div>
+                </div>
+
+                <div class="config_2-item__chars">
+                    <p><span>Сертификат</span> <span>Standard</span></p>
+                    <p><span>Мах мощность</span> <span>600</span></p>
+                    <p><span>RGB</span> <span>отсутствует</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="config_2__block">
+            <div class="config_2-item">
+                <div class="config_2-item__title-block">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#air" />
+                    </svg>
+                    <div>
+                        <p class="config_2-item__pre-title">Охлаждение:</p>
+                        <p class="config_2-item__title">Aerocool</p>
+                    </div>
+                </div>
+
+                <div class="config_2-item__chars">
+                    <p><span>Сертификат</span> <span>Standard</span></p>
+                    <p><span>Мах мощность</span> <span>600</span></p>
+                    <p><span>RGB</span> <span>отсутствует</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<p class="config__title">Сравнение конфигураций</p>
 
     <div class="conf-compare">
         <div class="conf-compare__tabs">
@@ -448,9 +669,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
 
-    <div class="config-bar">
+    <div class="config-bar compensate-for-scrollbar">
         <div class="config-bar__inner container">
             <div class="config-bar__prices">
                 <div class="config-bar__price-block">

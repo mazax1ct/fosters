@@ -39,6 +39,98 @@ $(document).ready(function() {
     var $p = $(this).closest('.select-wrapper');
     $p.removeClass('open');
 	});
+
+  if($('#before-after-slider').length) {
+    const slider = document.getElementById('before-after-slider');
+    const before = document.getElementById('before-image');
+    const beforeImage = before.getElementsByTagName('img')[0];
+    const resizer = document.getElementById('resizer');
+
+    let active = false;
+
+    //Sort overflow out for Overlay Image
+    document.addEventListener("DOMContentLoaded", function() {
+      let width = slider.offsetWidth;
+      console.log(width);
+      beforeImage.style.width = width + 'px';
+    });
+
+    //Adjust width of image on resize
+    window.addEventListener('resize', function() {
+      let width = slider.offsetWidth;
+      console.log(width);
+      beforeImage.style.width = width + 'px';
+    })
+
+    resizer.addEventListener('mousedown',function(){
+      active = true;
+     resizer.classList.add('resize');
+
+    });
+
+    document.body.addEventListener('mouseup',function(){
+      active = false;
+     resizer.classList.remove('resize');
+    });
+
+    document.body.addEventListener('mouseleave', function() {
+      active = false;
+      resizer.classList.remove('resize');
+    });
+
+    document.body.addEventListener('mousemove',function(e){
+      if (!active) return;
+      let x = e.pageX;
+      x -= slider.getBoundingClientRect().left;
+      slideIt(x);
+      pauseEvent(e);
+    });
+
+    resizer.addEventListener('touchstart',function(){
+      active = true;
+      resizer.classList.add('resize');
+    });
+
+    document.body.addEventListener('touchend',function(){
+      active = false;
+      resizer.classList.remove('resize');
+    });
+
+    document.body.addEventListener('touchcancel',function(){
+      active = false;
+      resizer.classList.remove('resize');
+    });
+
+    //calculation for dragging on touch devices
+    document.body.addEventListener('touchmove',function(e){
+      if (!active) return;
+      let x;
+
+      let i;
+      for (i=0; i < e.changedTouches.length; i++) {
+      x = e.changedTouches[i].pageX;
+      }
+
+      x -= slider.getBoundingClientRect().left;
+      slideIt(x);
+      pauseEvent(e);
+    });
+
+    function slideIt(x){
+        let transform = Math.max(0,(Math.min(x,slider.offsetWidth)));
+        before.style.width = transform+"px";
+        resizer.style.left = transform-0+"px";
+    }
+
+    //stop divs being selected.
+    function pauseEvent(e){
+        if(e.stopPropagation) e.stopPropagation();
+        if(e.preventDefault) e.preventDefault();
+        e.cancelBubble=true;
+        e.returnValue=false;
+        return false;
+    }
+  }
 });
 
 //перезапуск функции навешивания класса на шапку при скролле и ресайзе
@@ -472,6 +564,60 @@ $(document).on('click', '.js-filter-section-toggler', function () {
       $(this).closest('.filter__section').find('.filter__section-inner').removeClass('is-open');
     });
   }
-
   return false
 });
+
+//слайдер рекомендованного
+if($('.js-recommend').length) {
+  $('.js-recommend').each(function(index) {
+    var recommendSlider = new Swiper($(this)[0], {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: '.js-recommend-next[data-id="'+$(this).attr('data-id')+'"]',
+        prevEl: '.js-recommend-prev[data-id="'+$(this).attr('data-id')+'"]',
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 20
+        },
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 20
+        },
+        1400: {
+          slidesPerView: 5,
+          spaceBetween: 20
+        },
+      },
+    });
+  });
+}
+
+//слайдер отзывов  вблоке о нас
+if($('.js-about').length) {
+  $('.js-about').each(function(index) {
+    var aboutSlider = new Swiper($(this)[0], {
+      loop: true,
+      spaceBetween: 10,
+      freeMode: true,
+      speed: 11000,
+      noSwiping: true,
+      slidesPerView: "auto",
+      allowTouchMove: false,
+      followFinger: false,
+      longSwipes: false,
+      disableOnInteraction: false,
+      autoplay: {
+        delay: 0.5,
+        disableOnInteraction: false,
+      }
+    });
+  });
+}

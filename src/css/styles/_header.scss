@@ -129,7 +129,9 @@
         }
         @include hover {
             .sub-menu {
-                display: block;
+                @media(min-width: $hd) {
+                    display: block;
+                }
             }
         }
     }

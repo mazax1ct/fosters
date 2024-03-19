@@ -159,8 +159,11 @@
     &__val {
         align-items: center;
         display: flex;
+        font-family: var(--secondary_font_family);
         font-size: 16px;
+        font-weight: 500;
         min-height: 30px;
+        text-transform: uppercase;
         @media(min-width: $hd) {
             font-size: 18px;
             min-height: 40px;
@@ -193,9 +196,11 @@
     }
 
     &__price {
+        font-family: var(--secondary_font_family);
         font-size: 24px;
-        font-weight: 700;
+        font-weight: 600;
         text-align: right;
+        text-transform: uppercase;
         width: 60%;
         @media(min-width: $hd) {
             font-size: 32px;

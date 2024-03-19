@@ -1,0 +1,94 @@
+.before-after-container {
+    padding-top: 40px;
+    overflow: hidden;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+#before-after-slider {
+    width: 100%;
+    position: relative;
+    /*overflow: hidden;*/
+    @media(min-width: $hd) {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+}
+
+#after-image {
+    display: block;
+
+    img {
+        display: block;
+    }
+}
+
+#before-image {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 2;
+
+    img {
+        display: block;
+        height: 100%;
+        max-width: initial;
+    }
+}
+
+#resizer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 3px;
+    background: var(--primary_color);
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+
+    button {
+        background: url("../images/icons/cursors/horizontal-arrows.svg") no-repeat 50% 50% / 100% 100%;
+        border: none;
+        cursor: grab;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        position: absolute;
+        margin-left: -19px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    &::after,
+    &::before {
+        font-family: var(--secondary_font_family);
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+        top: -30px;
+        position: absolute;
+        white-space: nowrap;
+    }
+
+    &::before {
+        content: '<< ОПТИМАЛЬНЕE';
+        left: auto;
+        right: 20px;
+    }
+
+    &::after {
+        content: 'МОЩНЕЕ >>';
+        left: 20px;
+    }
+}

@@ -36,13 +36,11 @@
         @media(min-width: $lg) {
             font-size: 64px;
         }
-        /*@media(min-width: $fhd) {
-            font-size: 88px;
-        }*/
     }
 
     &__qnt {
         font-size: 16px;
+        font-weight: 600;
         margin-bottom: 10px;
         vertical-align: middle;
         @media(min-width: $md) {
@@ -51,9 +49,7 @@
         @media(min-width: $hd) {
             font-size: 18px;
         }
-        /*@media(min-width: $fhd) {
-            font-size: 22px;
-        }*/
+
         span {
             border-bottom: 1px solid var(--primary_color);
             display: inline-block;
@@ -64,8 +60,8 @@
         @media(min-width: $md) {
             grid-column: 2;
         }
-        /*@media(min-width: $fhd) {
-            max-width: 72%;
-        }*/
+        @media(max-width: $md - 0.01px) {
+            margin-top: 10px;
+        }
     }
 }

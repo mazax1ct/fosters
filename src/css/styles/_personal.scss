@@ -8,6 +8,7 @@
 
 .personal-menu {
     @include list-reset;
+    font-family: var(--secondary_font_family);
     @media(min-width: $hd) {
         font-size: 18px;
     }

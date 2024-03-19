@@ -28,15 +28,14 @@
 
     &__title {
         display: block;
+        font-family: var(--secondary_font_family);
         font-size: 18px;
+        font-weight: 600;
         margin-bottom: 5px;
         @media(min-width: $hd) {
             margin-top: 10px;
             margin-bottom: 0;
         }
-        /*@media(min-width: $fhd) {
-            font-size: 24px;
-        }*/
     }
 
     &__image {

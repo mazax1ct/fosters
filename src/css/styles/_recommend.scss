@@ -1,0 +1,38 @@
+.recommend-container {
+    position: relative;
+    z-index: 1;
+
+    .slider-navigation {
+        @media(min-width: $hd) {
+            height: 0;
+            left: 0;
+            margin-top: 0;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            z-index: 1;
+        }
+        @media(min-width: $xlg) {
+            left: -40px;
+            width: calc(100% + 80px);
+        }
+        @media(min-width: 1700px) {
+            left: -80px;
+            width: calc(100% + 160px);
+        }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        background-color: var(--primary_color);
+        border-color: var(--primary_color);
+    }
+}
+
+.recommend {
+    .swiper-slide {
+        height: auto;
+        padding: 1px;
+    }
+}

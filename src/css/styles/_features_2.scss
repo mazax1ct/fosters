@@ -45,6 +45,9 @@
     }
 
     &__item {
+        @media(min-width: $sm) {
+            color: #fff;
+        }
         @media(max-width: $sm - 0.01px) {
             border: 1px solid var(--primary_color);
             border-bottom: none;
@@ -74,13 +77,8 @@
             font-size: 12px;
         }
         @media(min-width: $sm) {
-            color: #fff;
             margin-bottom: 10px;
         }
-        /*@media(min-width: $fhd) {
-            font-size: 20px;
-            line-height: 1.2;
-        }*/
     }
 
     &__pref {
@@ -94,8 +92,5 @@
         @media(min-width: $hd) {
             font-size: 40px;
         }
-        /*@media(min-width: $fhd) {
-            font-size: 48px;
-        }*/
     }
 }

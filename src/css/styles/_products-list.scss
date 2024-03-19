@@ -1,1 +1,24 @@
-.products-list {}
+.products-list {
+    @media(min-width: $sm) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    @media(min-width: $md) {
+        gap: 40px 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media(min-width: $lg) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    @media(max-width: $sm - 0.01px) {
+        .card {
+            margin-left: auto;
+            margin-right: auto;
+
+            &:not(:last-child) {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}

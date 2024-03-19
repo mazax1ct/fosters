@@ -5,71 +5,146 @@
     <div class="products-list">
         <div class="card">
             <div class="card__image">
-                <img src="images/content/computers/img_1.png" srcset="images/content/computers/img_1@2x.png 2x" alt="">
+                <a href="computer.html">
+                    <img src="images/content/series/alisio_xs.png" srcset="images/content/series/alisio_s.png 2x" alt="">
+                </a>
             </div>
+
             <div class="card__title-block">
-                <p class="card__title">Project alisio</p>
-                <button class="js-card-fps-opener card__fps-button" type="button" title="Посмотреть графики FPS">
-                    <svg aria-hidden="true">
-                        <use xlink:href="images/sprite.svg#gear" />
-                    </svg>
-                </button>
+                <p class="card__title"><a href="computer.html">Project alisio</a></p>
+                <button class="js-card-fps-opener card__fps-button" type="button" title="Посмотреть графики FPS">FPS</button>
             </div>
+
             <div class="card__inner">
-                <p class="card__info-title">Детали</p>
-                <div class="card__info">
-                    <p>
-                        <span>i5-13600K</span>
-                        <span>Intel Core 3.5-5.1GHz14 ядер/20&nbsp;потоков</span>
-                    </p>
-                    <p>
-                        <span>RTX 4070Ti</span>
-                        <span>12GB GDDR6XNVIDIA GeForce</span>
-                    </p>
-                    <p>
-                        <span>32GB RGB</span>
-                        <span>DDR5 5200Mhz2 x 16Gb</span>
-                    </p>
-                    <p>
-                        <span>500GB</span>
-                        <span>SSD NVMe 4.0W/R: 5000/6900 Мб/с</span>
-                    </p>
-                    <p>
-                        <span>Не выбрано</span>
-                        <span>Без дополнительного NVME накопителя</span>
-                    </p>
-                    <p>
-                        <span>1TB</span>
-                        <span>SSD SATA 2'5W/R: 520/560 Мб/с</span>
-                    </p>
-                </div>
-                <div class="card__price-block">
-                    <p class="card__price-container">
-                        <span class="card__price-title">Цена</span>
+                <div class="card__inner-top">
+                    <div class="card__price-block">
                         <span class="card__price"><span>от 112 700 ₽</span></span>
-                    </p>
-                    <p class="card__credit">
-                        <a href="#">
+                        <p class="card__credit">
+                            <a href="#">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#question"></use>
+                                </svg>
+                                Доступно в кредит
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="card__buttons">
+                        <a class="button button--w_385" href="#">
+                            <span>В корзину</span>
                             <svg aria-hidden="true">
-                                <use xlink:href="images/sprite.svg#question"></use>
+                                <use xlink:href="images/sprite.svg#button_arrow"></use>
                             </svg>
-                            Доступно в кредит
                         </a>
+                        <a class="button button--bordered button--w_385" href="computer.html">
+                            <span>Улучшить</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#button_arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card__info">
+                    <p title="Процессор">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#cpu"></use>
+                        </svg>
+                        <span>i5-13600K</span>
+                    </p>
+                    <p title="Видеокарта">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#gpu"></use>
+                        </svg>
+                        <span>RTX 4070Ti</span>
+                    </p>
+                    <p title="Оперативная память">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#ram"></use>
+                        </svg>
+                        <span>32GB RGB</span>
+                    </p>
+                    <p title="SSD накопитель">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#ssd"></use>
+                        </svg>
+                        <span>500GB</span>
+                    </p>
+                    <p title="Материнская плата">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#mb"></use>
+                        </svg>
+                        <span>AsRock B450</span>
+                    </p>
+                    <p title="Охлаждение">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#air"></use>
+                        </svg>
+                        <span>Zalman CNPS9X</span>
                     </p>
                 </div>
-                <div class="card__buttons">
-                    <a class="button button--w_385" href="#">
-                        <span>Добавить в корзину</span>
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#button_arrow"></use>
-                        </svg>
-                    </a>
-                    <a class="button button--bordered button--w_385" href="config.html">
-                        <span>Сконфигурировать</span>
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#button_arrow"></use>
-                        </svg>
-                    </a>
+
+                <button class="card__spec-button button button--bordered" type="button" data-fancybox="spec_1" data-src="#spec_popup">Полная спецификация</button>
+
+                <div id="spec_popup" class="popup">
+                    <p class="popup__title">Комплектующие</p>
+
+                    <div class="speka">
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#cpu"></use>
+                                </svg>
+                                Процессор
+                            </span>
+                            <span>Intel® Core™ i5-12400(F) [до 4.4GHz, 6 ядер]</span>
+                        </div>
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#gpu"></use>
+                                </svg>
+                                Видеокарта
+                            </span>
+                            <span>Palit GeForce RTX 4060 Dual [8GB, 3072 CUDA]</span>
+                        </div>
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#ram"></use>
+                                </svg>
+                                Оперативная память
+                            </span>
+                            <span>16GB Kingston Fury Beast RGB [DDR4, 3600MHz, 2x8GB]</span>
+                        </div>
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#ssd"></use>
+                                </svg>
+                                SSD накопитель
+                            </span>
+                            <span>500GB ADATA LEGEND 800 [3500MB/s, Gen4]</span>
+                        </div>
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#mb"></use>
+                                </svg>
+                                Материнская плата
+                            </span>
+                            <span>GIGABYTE B760M DS3H AX [DDR4, Wi-Fi]</span>
+                        </div>
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#air"></use>
+                                </svg>
+                                Охлаждение
+                            </span>
+                            <span>ID-Cooling SE-224-XTS ARGB Black</span>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="card__fps-block">
@@ -128,71 +203,146 @@
         </div>
         <div class="card">
             <div class="card__image">
-                <img src="images/content/computers/img_1.png" srcset="images/content/computers/img_1@2x.png 2x" alt="">
+                <a href="computer.html">
+                    <img src="images/content/series/alisio_xs.png" srcset="images/content/series/alisio_s.png 2x" alt="">
+                </a>
             </div>
+
             <div class="card__title-block">
-                <p class="card__title">Project alisio</p>
-                <button class="js-card-fps-opener card__fps-button" type="button" title="Посмотреть графики FPS">
-                    <svg aria-hidden="true">
-                        <use xlink:href="images/sprite.svg#gear" />
-                    </svg>
-                </button>
+                <p class="card__title"><a href="computer.html">Project alisio</a></p>
+                <button class="js-card-fps-opener card__fps-button" type="button" title="Посмотреть графики FPS">FPS</button>
             </div>
+
             <div class="card__inner">
-                <p class="card__info-title">Детали</p>
-                <div class="card__info">
-                    <p>
-                        <span>i5-13600K</span>
-                        <span>Intel Core 3.5-5.1GHz14 ядер/20&nbsp;потоков</span>
-                    </p>
-                    <p>
-                        <span>RTX 4070Ti</span>
-                        <span>12GB GDDR6XNVIDIA GeForce</span>
-                    </p>
-                    <p>
-                        <span>32GB RGB</span>
-                        <span>DDR5 5200Mhz2 x 16Gb</span>
-                    </p>
-                    <p>
-                        <span>500GB</span>
-                        <span>SSD NVMe 4.0W/R: 5000/6900 Мб/с</span>
-                    </p>
-                    <p>
-                        <span>Не выбрано</span>
-                        <span>Без дополнительного NVME накопителя</span>
-                    </p>
-                    <p>
-                        <span>1TB</span>
-                        <span>SSD SATA 2'5W/R: 520/560 Мб/с</span>
-                    </p>
-                </div>
-                <div class="card__price-block">
-                    <p class="card__price-container">
-                        <span class="card__price-title">Цена</span>
+                <div class="card__inner-top">
+                    <div class="card__price-block">
                         <span class="card__price"><span>от 112 700 ₽</span></span>
-                    </p>
-                    <p class="card__credit">
-                        <a href="#">
+                        <p class="card__credit">
+                            <a href="#">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#question"></use>
+                                </svg>
+                                Доступно в кредит
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="card__buttons">
+                        <a class="button button--w_385" href="#">
+                            <span>В корзину</span>
                             <svg aria-hidden="true">
-                                <use xlink:href="images/sprite.svg#question"></use>
+                                <use xlink:href="images/sprite.svg#button_arrow"></use>
                             </svg>
-                            Доступно в кредит
                         </a>
+                        <a class="button button--bordered button--w_385" href="computer.html">
+                            <span>Улучшить</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#button_arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card__info">
+                    <p title="Процессор">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#cpu"></use>
+                        </svg>
+                        <span>i5-13600K</span>
+                    </p>
+                    <p title="Видеокарта">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#gpu"></use>
+                        </svg>
+                        <span>RTX 4070Ti</span>
+                    </p>
+                    <p title="Оперативная память">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#ram"></use>
+                        </svg>
+                        <span>32GB RGB</span>
+                    </p>
+                    <p title="SSD накопитель">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#ssd"></use>
+                        </svg>
+                        <span>500GB</span>
+                    </p>
+                    <p title="Материнская плата">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#mb"></use>
+                        </svg>
+                        <span>AsRock B450</span>
+                    </p>
+                    <p title="Охлаждение">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#air"></use>
+                        </svg>
+                        <span>Zalman CNPS9X</span>
                     </p>
                 </div>
-                <div class="card__buttons">
-                    <a class="button button--w_385" href="#">
-                        <span>Добавить в корзину</span>
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#button_arrow"></use>
-                        </svg>
-                    </a>
-                    <a class="button button--bordered button--w_385" href="config.html">
-                        <span>Сконфигурировать</span>
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#button_arrow"></use>
-                        </svg>
-                    </a>
+
+                <button class="card__spec-button button button--bordered" type="button" data-fancybox="spec_2" data-src="#spec_popup">Полная спецификация</button>
+
+                <div id="spec_popup" class="popup">
+                    <p class="popup__title">Комплектующие</p>
+
+                    <div class="speka">
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#cpu"></use>
+                                </svg>
+                                Процессор
+                            </span>
+                            <span>Intel® Core™ i5-12400(F) [до 4.4GHz, 6 ядер]</span>
+                        </div>
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#gpu"></use>
+                                </svg>
+                                Видеокарта
+                            </span>
+                            <span>Palit GeForce RTX 4060 Dual [8GB, 3072 CUDA]</span>
+                        </div>
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#ram"></use>
+                                </svg>
+                                Оперативная память
+                            </span>
+                            <span>16GB Kingston Fury Beast RGB [DDR4, 3600MHz, 2x8GB]</span>
+                        </div>
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#ssd"></use>
+                                </svg>
+                                SSD накопитель
+                            </span>
+                            <span>500GB ADATA LEGEND 800 [3500MB/s, Gen4]</span>
+                        </div>
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#mb"></use>
+                                </svg>
+                                Материнская плата
+                            </span>
+                            <span>GIGABYTE B760M DS3H AX [DDR4, Wi-Fi]</span>
+                        </div>
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#air"></use>
+                                </svg>
+                                Охлаждение
+                            </span>
+                            <span>ID-Cooling SE-224-XTS ARGB Black</span>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="card__fps-block">
@@ -251,71 +401,146 @@
         </div>
         <div class="card">
             <div class="card__image">
-                <img src="images/content/computers/img_1.png" srcset="images/content/computers/img_1@2x.png 2x" alt="">
+                <a href="computer.html">
+                    <img src="images/content/series/alisio_xs.png" srcset="images/content/series/alisio_s.png 2x" alt="">
+                </a>
             </div>
+
             <div class="card__title-block">
-                <p class="card__title">Project alisio</p>
-                <button class="js-card-fps-opener card__fps-button" type="button" title="Посмотреть графики FPS">
-                    <svg aria-hidden="true">
-                        <use xlink:href="images/sprite.svg#gear" />
-                    </svg>
-                </button>
+                <p class="card__title"><a href="computer.html">Project alisio</a></p>
+                <button class="js-card-fps-opener card__fps-button" type="button" title="Посмотреть графики FPS">FPS</button>
             </div>
+
             <div class="card__inner">
-                <p class="card__info-title">Детали</p>
-                <div class="card__info">
-                    <p>
-                        <span>i5-13600K</span>
-                        <span>Intel Core 3.5-5.1GHz14 ядер/20&nbsp;потоков</span>
-                    </p>
-                    <p>
-                        <span>RTX 4070Ti</span>
-                        <span>12GB GDDR6XNVIDIA GeForce</span>
-                    </p>
-                    <p>
-                        <span>32GB RGB</span>
-                        <span>DDR5 5200Mhz2 x 16Gb</span>
-                    </p>
-                    <p>
-                        <span>500GB</span>
-                        <span>SSD NVMe 4.0W/R: 5000/6900 Мб/с</span>
-                    </p>
-                    <p>
-                        <span>Не выбрано</span>
-                        <span>Без дополнительного NVME накопителя</span>
-                    </p>
-                    <p>
-                        <span>1TB</span>
-                        <span>SSD SATA 2'5W/R: 520/560 Мб/с</span>
-                    </p>
-                </div>
-                <div class="card__price-block">
-                    <p class="card__price-container">
-                        <span class="card__price-title">Цена</span>
+                <div class="card__inner-top">
+                    <div class="card__price-block">
                         <span class="card__price"><span>от 112 700 ₽</span></span>
-                    </p>
-                    <p class="card__credit">
-                        <a href="#">
+                        <p class="card__credit">
+                            <a href="#">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#question"></use>
+                                </svg>
+                                Доступно в кредит
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="card__buttons">
+                        <a class="button button--w_385" href="#">
+                            <span>В корзину</span>
                             <svg aria-hidden="true">
-                                <use xlink:href="images/sprite.svg#question"></use>
+                                <use xlink:href="images/sprite.svg#button_arrow"></use>
                             </svg>
-                            Доступно в кредит
                         </a>
+                        <a class="button button--bordered button--w_385" href="computer.html">
+                            <span>Улучшить</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#button_arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card__info">
+                    <p title="Процессор">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#cpu"></use>
+                        </svg>
+                        <span>i5-13600K</span>
+                    </p>
+                    <p title="Видеокарта">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#gpu"></use>
+                        </svg>
+                        <span>RTX 4070Ti</span>
+                    </p>
+                    <p title="Оперативная память">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#ram"></use>
+                        </svg>
+                        <span>32GB RGB</span>
+                    </p>
+                    <p title="SSD накопитель">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#ssd"></use>
+                        </svg>
+                        <span>500GB</span>
+                    </p>
+                    <p title="Материнская плата">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#mb"></use>
+                        </svg>
+                        <span>AsRock B450</span>
+                    </p>
+                    <p title="Охлаждение">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#air"></use>
+                        </svg>
+                        <span>Zalman CNPS9X</span>
                     </p>
                 </div>
-                <div class="card__buttons">
-                    <a class="button button--w_385" href="#">
-                        <span>Добавить в корзину</span>
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#button_arrow"></use>
-                        </svg>
-                    </a>
-                    <a class="button button--bordered button--w_385" href="config.html">
-                        <span>Сконфигурировать</span>
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#button_arrow"></use>
-                        </svg>
-                    </a>
+
+                <button class="card__spec-button button button--bordered" type="button" data-fancybox="spec_3" data-src="#spec_popup">Полная спецификация</button>
+
+                <div id="spec_popup" class="popup">
+                    <p class="popup__title">Комплектующие</p>
+
+                    <div class="speka">
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#cpu"></use>
+                                </svg>
+                                Процессор
+                            </span>
+                            <span>Intel® Core™ i5-12400(F) [до 4.4GHz, 6 ядер]</span>
+                        </div>
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#gpu"></use>
+                                </svg>
+                                Видеокарта
+                            </span>
+                            <span>Palit GeForce RTX 4060 Dual [8GB, 3072 CUDA]</span>
+                        </div>
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#ram"></use>
+                                </svg>
+                                Оперативная память
+                            </span>
+                            <span>16GB Kingston Fury Beast RGB [DDR4, 3600MHz, 2x8GB]</span>
+                        </div>
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#ssd"></use>
+                                </svg>
+                                SSD накопитель
+                            </span>
+                            <span>500GB ADATA LEGEND 800 [3500MB/s, Gen4]</span>
+                        </div>
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#mb"></use>
+                                </svg>
+                                Материнская плата
+                            </span>
+                            <span>GIGABYTE B760M DS3H AX [DDR4, Wi-Fi]</span>
+                        </div>
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#air"></use>
+                                </svg>
+                                Охлаждение
+                            </span>
+                            <span>ID-Cooling SE-224-XTS ARGB Black</span>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="card__fps-block">
@@ -374,71 +599,146 @@
         </div>
         <div class="card">
             <div class="card__image">
-                <img src="images/content/computers/img_1.png" srcset="images/content/computers/img_1@2x.png 2x" alt="">
+                <a href="computer.html">
+                    <img src="images/content/series/alisio_xs.png" srcset="images/content/series/alisio_s.png 2x" alt="">
+                </a>
             </div>
+
             <div class="card__title-block">
-                <p class="card__title">Project alisio</p>
-                <button class="js-card-fps-opener card__fps-button" type="button" title="Посмотреть графики FPS">
-                    <svg aria-hidden="true">
-                        <use xlink:href="images/sprite.svg#gear" />
-                    </svg>
-                </button>
+                <p class="card__title"><a href="computer.html">Project alisio</a></p>
+                <button class="js-card-fps-opener card__fps-button" type="button" title="Посмотреть графики FPS">FPS</button>
             </div>
+
             <div class="card__inner">
-                <p class="card__info-title">Детали</p>
-                <div class="card__info">
-                    <p>
-                        <span>i5-13600K</span>
-                        <span>Intel Core 3.5-5.1GHz14 ядер/20&nbsp;потоков</span>
-                    </p>
-                    <p>
-                        <span>RTX 4070Ti</span>
-                        <span>12GB GDDR6XNVIDIA GeForce</span>
-                    </p>
-                    <p>
-                        <span>32GB RGB</span>
-                        <span>DDR5 5200Mhz2 x 16Gb</span>
-                    </p>
-                    <p>
-                        <span>500GB</span>
-                        <span>SSD NVMe 4.0W/R: 5000/6900 Мб/с</span>
-                    </p>
-                    <p>
-                        <span>Не выбрано</span>
-                        <span>Без дополнительного NVME накопителя</span>
-                    </p>
-                    <p>
-                        <span>1TB</span>
-                        <span>SSD SATA 2'5W/R: 520/560 Мб/с</span>
-                    </p>
-                </div>
-                <div class="card__price-block">
-                    <p class="card__price-container">
-                        <span class="card__price-title">Цена</span>
+                <div class="card__inner-top">
+                    <div class="card__price-block">
                         <span class="card__price"><span>от 112 700 ₽</span></span>
-                    </p>
-                    <p class="card__credit">
-                        <a href="#">
+                        <p class="card__credit">
+                            <a href="#">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#question"></use>
+                                </svg>
+                                Доступно в кредит
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="card__buttons">
+                        <a class="button button--w_385" href="#">
+                            <span>В корзину</span>
                             <svg aria-hidden="true">
-                                <use xlink:href="images/sprite.svg#question"></use>
+                                <use xlink:href="images/sprite.svg#button_arrow"></use>
                             </svg>
-                            Доступно в кредит
                         </a>
+                        <a class="button button--bordered button--w_385" href="computer.html">
+                            <span>Улучшить</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#button_arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card__info">
+                    <p title="Процессор">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#cpu"></use>
+                        </svg>
+                        <span>i5-13600K</span>
+                    </p>
+                    <p title="Видеокарта">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#gpu"></use>
+                        </svg>
+                        <span>RTX 4070Ti</span>
+                    </p>
+                    <p title="Оперативная память">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#ram"></use>
+                        </svg>
+                        <span>32GB RGB</span>
+                    </p>
+                    <p title="SSD накопитель">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#ssd"></use>
+                        </svg>
+                        <span>500GB</span>
+                    </p>
+                    <p title="Материнская плата">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#mb"></use>
+                        </svg>
+                        <span>AsRock B450</span>
+                    </p>
+                    <p title="Охлаждение">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#air"></use>
+                        </svg>
+                        <span>Zalman CNPS9X</span>
                     </p>
                 </div>
-                <div class="card__buttons">
-                    <a class="button button--w_385" href="#">
-                        <span>Добавить в корзину</span>
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#button_arrow"></use>
-                        </svg>
-                    </a>
-                    <a class="button button--bordered button--w_385" href="config.html">
-                        <span>Сконфигурировать</span>
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#button_arrow"></use>
-                        </svg>
-                    </a>
+
+                <button class="card__spec-button button button--bordered" type="button" data-fancybox="spec_4" data-src="#spec_popup">Полная спецификация</button>
+
+                <div id="spec_popup" class="popup">
+                    <p class="popup__title">Комплектующие</p>
+
+                    <div class="speka">
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#cpu"></use>
+                                </svg>
+                                Процессор
+                            </span>
+                            <span>Intel® Core™ i5-12400(F) [до 4.4GHz, 6 ядер]</span>
+                        </div>
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#gpu"></use>
+                                </svg>
+                                Видеокарта
+                            </span>
+                            <span>Palit GeForce RTX 4060 Dual [8GB, 3072 CUDA]</span>
+                        </div>
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#ram"></use>
+                                </svg>
+                                Оперативная память
+                            </span>
+                            <span>16GB Kingston Fury Beast RGB [DDR4, 3600MHz, 2x8GB]</span>
+                        </div>
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#ssd"></use>
+                                </svg>
+                                SSD накопитель
+                            </span>
+                            <span>500GB ADATA LEGEND 800 [3500MB/s, Gen4]</span>
+                        </div>
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#mb"></use>
+                                </svg>
+                                Материнская плата
+                            </span>
+                            <span>GIGABYTE B760M DS3H AX [DDR4, Wi-Fi]</span>
+                        </div>
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#air"></use>
+                                </svg>
+                                Охлаждение
+                            </span>
+                            <span>ID-Cooling SE-224-XTS ARGB Black</span>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="card__fps-block">
@@ -497,71 +797,146 @@
         </div>
         <div class="card">
             <div class="card__image">
-                <img src="images/content/computers/img_1.png" srcset="images/content/computers/img_1@2x.png 2x" alt="">
+                <a href="computer.html">
+                    <img src="images/content/series/alisio_xs.png" srcset="images/content/series/alisio_s.png 2x" alt="">
+                </a>
             </div>
+
             <div class="card__title-block">
-                <p class="card__title">Project alisio</p>
-                <button class="js-card-fps-opener card__fps-button" type="button" title="Посмотреть графики FPS">
-                    <svg aria-hidden="true">
-                        <use xlink:href="images/sprite.svg#gear" />
-                    </svg>
-                </button>
+                <p class="card__title"><a href="computer.html">Project alisio</a></p>
+                <button class="js-card-fps-opener card__fps-button" type="button" title="Посмотреть графики FPS">FPS</button>
             </div>
+
             <div class="card__inner">
-                <p class="card__info-title">Детали</p>
-                <div class="card__info">
-                    <p>
-                        <span>i5-13600K</span>
-                        <span>Intel Core 3.5-5.1GHz14 ядер/20&nbsp;потоков</span>
-                    </p>
-                    <p>
-                        <span>RTX 4070Ti</span>
-                        <span>12GB GDDR6XNVIDIA GeForce</span>
-                    </p>
-                    <p>
-                        <span>32GB RGB</span>
-                        <span>DDR5 5200Mhz2 x 16Gb</span>
-                    </p>
-                    <p>
-                        <span>500GB</span>
-                        <span>SSD NVMe 4.0W/R: 5000/6900 Мб/с</span>
-                    </p>
-                    <p>
-                        <span>Не выбрано</span>
-                        <span>Без дополнительного NVME накопителя</span>
-                    </p>
-                    <p>
-                        <span>1TB</span>
-                        <span>SSD SATA 2'5W/R: 520/560 Мб/с</span>
-                    </p>
-                </div>
-                <div class="card__price-block">
-                    <p class="card__price-container">
-                        <span class="card__price-title">Цена</span>
+                <div class="card__inner-top">
+                    <div class="card__price-block">
                         <span class="card__price"><span>от 112 700 ₽</span></span>
-                    </p>
-                    <p class="card__credit">
-                        <a href="#">
+                        <p class="card__credit">
+                            <a href="#">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#question"></use>
+                                </svg>
+                                Доступно в кредит
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="card__buttons">
+                        <a class="button button--w_385" href="#">
+                            <span>В корзину</span>
                             <svg aria-hidden="true">
-                                <use xlink:href="images/sprite.svg#question"></use>
+                                <use xlink:href="images/sprite.svg#button_arrow"></use>
                             </svg>
-                            Доступно в кредит
                         </a>
+                        <a class="button button--bordered button--w_385" href="computer.html">
+                            <span>Улучшить</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#button_arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card__info">
+                    <p title="Процессор">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#cpu"></use>
+                        </svg>
+                        <span>i5-13600K</span>
+                    </p>
+                    <p title="Видеокарта">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#gpu"></use>
+                        </svg>
+                        <span>RTX 4070Ti</span>
+                    </p>
+                    <p title="Оперативная память">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#ram"></use>
+                        </svg>
+                        <span>32GB RGB</span>
+                    </p>
+                    <p title="SSD накопитель">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#ssd"></use>
+                        </svg>
+                        <span>500GB</span>
+                    </p>
+                    <p title="Материнская плата">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#mb"></use>
+                        </svg>
+                        <span>AsRock B450</span>
+                    </p>
+                    <p title="Охлаждение">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#air"></use>
+                        </svg>
+                        <span>Zalman CNPS9X</span>
                     </p>
                 </div>
-                <div class="card__buttons">
-                    <a class="button button--w_385" href="#">
-                        <span>Добавить в корзину</span>
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#button_arrow"></use>
-                        </svg>
-                    </a>
-                    <a class="button button--bordered button--w_385" href="config.html">
-                        <span>Сконфигурировать</span>
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#button_arrow"></use>
-                        </svg>
-                    </a>
+
+                <button class="card__spec-button button button--bordered" type="button" data-fancybox="spec_5" data-src="#spec_popup">Полная спецификация</button>
+
+                <div id="spec_popup" class="popup">
+                    <p class="popup__title">Комплектующие</p>
+
+                    <div class="speka">
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#cpu"></use>
+                                </svg>
+                                Процессор
+                            </span>
+                            <span>Intel® Core™ i5-12400(F) [до 4.4GHz, 6 ядер]</span>
+                        </div>
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#gpu"></use>
+                                </svg>
+                                Видеокарта
+                            </span>
+                            <span>Palit GeForce RTX 4060 Dual [8GB, 3072 CUDA]</span>
+                        </div>
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#ram"></use>
+                                </svg>
+                                Оперативная память
+                            </span>
+                            <span>16GB Kingston Fury Beast RGB [DDR4, 3600MHz, 2x8GB]</span>
+                        </div>
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#ssd"></use>
+                                </svg>
+                                SSD накопитель
+                            </span>
+                            <span>500GB ADATA LEGEND 800 [3500MB/s, Gen4]</span>
+                        </div>
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#mb"></use>
+                                </svg>
+                                Материнская плата
+                            </span>
+                            <span>GIGABYTE B760M DS3H AX [DDR4, Wi-Fi]</span>
+                        </div>
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#air"></use>
+                                </svg>
+                                Охлаждение
+                            </span>
+                            <span>ID-Cooling SE-224-XTS ARGB Black</span>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="card__fps-block">
@@ -620,71 +995,146 @@
         </div>
         <div class="card">
             <div class="card__image">
-                <img src="images/content/computers/img_1.png" srcset="images/content/computers/img_1@2x.png 2x" alt="">
+                <a href="computer.html">
+                    <img src="images/content/series/alisio_xs.png" srcset="images/content/series/alisio_s.png 2x" alt="">
+                </a>
             </div>
+
             <div class="card__title-block">
-                <p class="card__title">Project alisio</p>
-                <button class="js-card-fps-opener card__fps-button" type="button" title="Посмотреть графики FPS">
-                    <svg aria-hidden="true">
-                        <use xlink:href="images/sprite.svg#gear" />
-                    </svg>
-                </button>
+                <p class="card__title"><a href="computer.html">Project alisio</a></p>
+                <button class="js-card-fps-opener card__fps-button" type="button" title="Посмотреть графики FPS">FPS</button>
             </div>
+
             <div class="card__inner">
-                <p class="card__info-title">Детали</p>
-                <div class="card__info">
-                    <p>
-                        <span>i5-13600K</span>
-                        <span>Intel Core 3.5-5.1GHz14 ядер/20&nbsp;потоков</span>
-                    </p>
-                    <p>
-                        <span>RTX 4070Ti</span>
-                        <span>12GB GDDR6XNVIDIA GeForce</span>
-                    </p>
-                    <p>
-                        <span>32GB RGB</span>
-                        <span>DDR5 5200Mhz2 x 16Gb</span>
-                    </p>
-                    <p>
-                        <span>500GB</span>
-                        <span>SSD NVMe 4.0W/R: 5000/6900 Мб/с</span>
-                    </p>
-                    <p>
-                        <span>Не выбрано</span>
-                        <span>Без дополнительного NVME накопителя</span>
-                    </p>
-                    <p>
-                        <span>1TB</span>
-                        <span>SSD SATA 2'5W/R: 520/560 Мб/с</span>
-                    </p>
-                </div>
-                <div class="card__price-block">
-                    <p class="card__price-container">
-                        <span class="card__price-title">Цена</span>
+                <div class="card__inner-top">
+                    <div class="card__price-block">
                         <span class="card__price"><span>от 112 700 ₽</span></span>
-                    </p>
-                    <p class="card__credit">
-                        <a href="#">
+                        <p class="card__credit">
+                            <a href="#">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#question"></use>
+                                </svg>
+                                Доступно в кредит
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="card__buttons">
+                        <a class="button button--w_385" href="#">
+                            <span>В корзину</span>
                             <svg aria-hidden="true">
-                                <use xlink:href="images/sprite.svg#question"></use>
+                                <use xlink:href="images/sprite.svg#button_arrow"></use>
                             </svg>
-                            Доступно в кредит
                         </a>
+                        <a class="button button--bordered button--w_385" href="computer.html">
+                            <span>Улучшить</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#button_arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card__info">
+                    <p title="Процессор">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#cpu"></use>
+                        </svg>
+                        <span>i5-13600K</span>
+                    </p>
+                    <p title="Видеокарта">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#gpu"></use>
+                        </svg>
+                        <span>RTX 4070Ti</span>
+                    </p>
+                    <p title="Оперативная память">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#ram"></use>
+                        </svg>
+                        <span>32GB RGB</span>
+                    </p>
+                    <p title="SSD накопитель">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#ssd"></use>
+                        </svg>
+                        <span>500GB</span>
+                    </p>
+                    <p title="Материнская плата">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#mb"></use>
+                        </svg>
+                        <span>AsRock B450</span>
+                    </p>
+                    <p title="Охлаждение">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#air"></use>
+                        </svg>
+                        <span>Zalman CNPS9X</span>
                     </p>
                 </div>
-                <div class="card__buttons">
-                    <a class="button button--w_385" href="#">
-                        <span>Добавить в корзину</span>
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#button_arrow"></use>
-                        </svg>
-                    </a>
-                    <a class="button button--bordered button--w_385" href="config.html">
-                        <span>Сконфигурировать</span>
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#button_arrow"></use>
-                        </svg>
-                    </a>
+
+                <button class="card__spec-button button button--bordered" type="button" data-fancybox="spec_6" data-src="#spec_popup">Полная спецификация</button>
+
+                <div id="spec_popup" class="popup">
+                    <p class="popup__title">Комплектующие</p>
+
+                    <div class="speka">
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#cpu"></use>
+                                </svg>
+                                Процессор
+                            </span>
+                            <span>Intel® Core™ i5-12400(F) [до 4.4GHz, 6 ядер]</span>
+                        </div>
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#gpu"></use>
+                                </svg>
+                                Видеокарта
+                            </span>
+                            <span>Palit GeForce RTX 4060 Dual [8GB, 3072 CUDA]</span>
+                        </div>
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#ram"></use>
+                                </svg>
+                                Оперативная память
+                            </span>
+                            <span>16GB Kingston Fury Beast RGB [DDR4, 3600MHz, 2x8GB]</span>
+                        </div>
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#ssd"></use>
+                                </svg>
+                                SSD накопитель
+                            </span>
+                            <span>500GB ADATA LEGEND 800 [3500MB/s, Gen4]</span>
+                        </div>
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#mb"></use>
+                                </svg>
+                                Материнская плата
+                            </span>
+                            <span>GIGABYTE B760M DS3H AX [DDR4, Wi-Fi]</span>
+                        </div>
+                        <div class="speka__item">
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#air"></use>
+                                </svg>
+                                Охлаждение
+                            </span>
+                            <span>ID-Cooling SE-224-XTS ARGB Black</span>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="card__fps-block">
