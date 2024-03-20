@@ -15,9 +15,6 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 60px var(--horizontal_gap);
     }
-    /*@media(min-width: $fhd) {
-        gap: 100px var(--horizontal_gap);
-    }*/
 }
 
 .series-item {
@@ -78,10 +75,6 @@
                 height: 18px;
                 width: 32px;
             }
-            /*@media(min-width: $fhd) {
-                height: 20px;
-                width: 34px;
-            }*/
         }
     }
 

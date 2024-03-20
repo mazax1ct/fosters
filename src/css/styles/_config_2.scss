@@ -198,11 +198,19 @@
     &__radio-title {}
 
     &__radio-add {
+        font-family: var(--secondary_font_family);
         white-space: nowrap;
     }
 
     &__price-block {
         margin-top: auto;
+
+        .config_2__price {
+            font-size: 24px;
+            @media(min-width: $lg) {
+                font-size: 28px;
+            }
+        }
     }
 
     &__price-container {
@@ -226,7 +234,7 @@
 
     &__price {
         font-family: var(--secondary_font_family);
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 700;
         text-align: right;
         @media(min-width: $md) and (max-width: $hd - 0.01px) {
@@ -307,6 +315,7 @@
         }
 
         svg {
+            fill: var(--text_color);
             height: 40px;
             min-width: 40px;
             width: 40px;
@@ -356,6 +365,7 @@
 
             span {
                 &:nth-child(2) {
+                    font-family: var(--secondary_font_family);
                     font-weight: 600;
                 }
             }

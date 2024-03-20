@@ -203,6 +203,7 @@
 
 .config-bar {
     background-color: var(--body_bg);
+    border-top: 1px solid #fff;
     box-shadow: 0 -3px 6px 0 rgba(0,0,0, 0.1);
     bottom: 0;
     left: 0;
@@ -422,6 +423,8 @@
             &:nth-child(1) {}
 
             &:nth-child(2) {
+                font-family: var(--secondary_font_family);
+                font-weight: 500;
                 white-space: nowrap;
             }
         }
@@ -548,6 +551,7 @@
         width: 1px;
 
         span {
+            font-family: var(--secondary_font_family);
             left: 50%;
             position: absolute;
             top: -20px;

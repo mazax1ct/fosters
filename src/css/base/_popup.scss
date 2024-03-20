@@ -1,5 +1,7 @@
 .popup {
+    --text_color: #0E0E0E;
     background-color: #fff;
+    color: var(--text_color);
     display: none;
     width: 100%;
     @media(min-width: $sm) {

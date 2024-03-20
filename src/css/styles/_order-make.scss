@@ -15,9 +15,6 @@
             @media(min-width: $hd) {
                 margin-bottom: 75px;
             }
-            /*@media(min-width: $fhd) {
-                margin-bottom: 100px;
-            }*/
         }
     }
 
@@ -138,7 +135,10 @@
     }
 
     &__val {
+        font-family: var(--secondary_font_family);
+        font-weight: 500;
         line-height: 1;
+        text-transform: uppercase;
         @media(max-width: $md - 0.01px) {
             font-size: 16px;
         }
