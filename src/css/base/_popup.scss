@@ -3,13 +3,10 @@
     background-color: #fff;
     color: var(--text_color);
     display: none;
+    padding: 40px 24px;
     width: 100%;
     @media(min-width: $sm) {
         padding: 60px;
-        max-width: 600px;
-    }
-    @media(min-width: $hd) {
-        max-width: 1000px;
     }
 
     &__title {
@@ -24,11 +21,13 @@
         }
     }
 
-    &.fancybox-content {
+    &--liquid_w_1000.fancybox-content {
+        max-width: 1000px;
+    }
+
+    &--w_1000.fancybox-content {
         max-width: 400px;
-        padding: 40px 24px;
         @media(min-width: $sm) {
-            padding: 60px;
             max-width: 600px;
         }
         @media(min-width: $md) {
@@ -36,6 +35,14 @@
         }
         @media(min-width: $hd) {
             max-width: 1000px;
+        }
+    }
+
+    &--w_600.fancybox-content {
+        max-width: 400px;
+        padding: 40px 24px;
+        @media(min-width: $sm) {
+            max-width: 600px;
         }
     }
 }

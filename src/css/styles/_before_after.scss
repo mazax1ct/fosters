@@ -1,3 +1,9 @@
+.before-after {
+    @media(max-width: $hd - 0.01px) {
+        display: none;
+    }
+}
+
 .before-after-container {
     padding-top: 40px;
     overflow: hidden;

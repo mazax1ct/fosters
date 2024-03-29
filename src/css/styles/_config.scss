@@ -199,6 +199,35 @@
             }
         }
     }
+
+    &__save {
+        align-items: center;
+        border-top: 1px solid var(--secondary_color);
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding-top: 20px;
+        @media(max-width: $md - 0.01px) {
+            justify-content: center;
+        }
+        @media(min-width: $md) {
+            flex-wrap: nowrap;
+        }
+        @media(min-width: $hd) {
+            padding-left: 50%;
+        }
+    }
+
+    &__save-note {
+        color: var(--secondary_color);
+        @media(max-width: $md - 0.01px) {
+            text-align: center;
+        }
+
+        a {
+            color: inherit;
+        }
+    }
 }
 
 .config-bar {

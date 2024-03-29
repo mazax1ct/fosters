@@ -1,58 +1,54 @@
 .guaranty {
     --gap: 10px;
     display: flex;
-    flex-wrap: wrap;
     gap: var(--gap);
+    overflow-x: auto;
+    overflow-y: hidden;
     @media(min-width: $md) {
         --gap: 20px;
     }
+    @media(max-width: $lg - 0.01px) {
+        margin-left: calc(0.01px - var(--container_padding));
+        margin-right: calc(0.01px - var(--container_padding));
+        padding-left: var(--container_padding);
+        padding-right: var(--container_padding);
+    }
 
     &__item {
-        align-items: flex-end;
+        align-items: center;
         border: 1px solid var(--primary_color);
         display: flex;
-        font-size: 12px;
-        gap: 5px;
-        overflow: hidden;
-        padding: 10px;
-        width: calc(100% / 2 - var(--gap) / 2);
-        @media(min-width: $sm) {
-            width: calc(100% / 3 - var(--gap) * 2 / 3);
-        }
+        flex-direction: column;
+        font-family: var(--secondary_font_family);
+        font-size: 14px;
+        font-weight: 700;
+        justify-content: space-between;
+        height: 300px;
+        min-width: 200px;
+        padding: 10px 10px 0;
+        text-align: center;
+        width: 200px;
         @media(min-width: $md) {
-            font-size: 14px;
+            font-size: 18px;
+            height: 380px;
+            min-width: 280px;
+            padding: 20px 20px 0;
+            width: 280px;
         }
-        @media(min-width: $hd) {
-            font-size: 16px;
-            gap: 10px;
-        }
-        /*@media(min-width: $fhd) {
-            font-size: 20px;
-        }*/
-        &--background {
-            background-image: url("../images/backgrounds/guaranty/back.jpg");
-            background-color: var(--primary_color);
-            background-position: 50% 50%;
-            background-repeat: no-repeat;
-            background-size: cover;
-            border: none;
+        @media(min-width: $lg) {
+            min-width: calc(100% / 5 - var(--gap) * 4 / 5);
+            width: calc(100% / 5 - var(--gap) * 4 / 5);
         }
     }
 
     &__item-num {
         color: var(--primary_color);
-        font-family: var(--secondary_font_family);
         font-size: 90px;
         font-weight: 700;
         line-height: 68px;
-        margin-left: -0.18em;
         @media(min-width: $hd) {
             font-size: 140px;
             line-height: 110px;
         }
-        /*@media(min-width: $fhd) {
-            font-size: 200px;
-            margin-left: -0.2em;
-        }*/
     }
 }
