@@ -16,6 +16,7 @@
     h1 {
         color: var(--primary_color);
         font-size: 56px;
+        margin-bottom: 20px;
         @media(min-width: $sm) {
             font-size: 96px;
         }

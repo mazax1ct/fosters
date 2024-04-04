@@ -36,29 +36,28 @@
                     <li class="breadcrumbs__item">Project one</li>
                 </ul>
 
-                <section class="page__section">
-                    <div class="columns_1_3 detail-intro">
-                        <div class="columns_1_3__column_1 detail-intro__back-link">
-                            <p>
-                                <a class="back-link" href="series.html">
-                                    <svg aria-hidden="true">
-                                        <use xlink:href="images/sprite.svg#arrow_left" />
-                                    </svg>
-                                    Вернуться на страницу серий
-                                </a>
-                            </p>
-                        </div>
-                        <div class="columns_1_3__column_3">
-                            <h1>Project one</h1>
-                            <div class="detail-intro__text">
-                                <p>Представляем вашему вниманию хит продаж - Project ONE. Компактный и доступный компьютер, который станет идеальным выбором для широкого круга пользователей.</p>
-                                <p class="h3">Базовая цена <span class="color-green">от 214&nbsp;800&nbsp;₽</span></p>
+                <section class="page__section detail-intro">
+                    <h1>Project one</h1>
+
+                    <div class="detail-banner">
+                        <div class="detail-banner__inner detail-banner__inner--shade" style="background-image: url(images/content/img_wide.jpg)">
+                            <div class="detail-banner__container container">
+                                <div class="detail-banner__content">
+                                    <p class="detail-banner__title">Непревзойдённая мощность в компактном корпусе. Идеальный выбор для опытных пользователей</p>
+                                    <div class="detail-banner__image">
+                                        <picture>
+                                            <source srcset="images/content/series/alisio_b.png" media="(min-width: 1200px)">
+                                            <img src="images/content/series/alisio_s.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="detail-banner__text">
+                                        <p>
+                                            Базовая цена <span class="color-green">от&nbsp;214&nbsp;800&nbsp;₽</span>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="image-wide">
-                        <img src="images/content/img_wide.jpg" srcset="images/content/img_wide@2x.jpg 2x" alt="">
                     </div>
                 </section>
 
@@ -66,11 +65,11 @@
 
                 //= template/details.html
 
-                //= template/features.html
+                //= template/fps.html
+
+                <!--//= template/features.html-->
 
                 //= template/components.html
-
-                //= template/fps.html
 
                 //= template/service.html
 

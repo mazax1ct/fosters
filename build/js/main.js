@@ -454,6 +454,11 @@ if($('.js-recs-slider').length) {
           slidesPerView: 3,
           slidesPerGroup: 3,
           spaceBetween: 20
+        },
+        1200: {
+          slidesPerView: 4,
+          slidesPerGroup: 4,
+          spaceBetween: 20
         }
       },
       pagination: {
