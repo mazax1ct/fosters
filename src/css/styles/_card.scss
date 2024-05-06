@@ -1,5 +1,7 @@
 .card {
     border: 1px solid var(--secondary_color);
+    display: flex;
+    flex-direction: column;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
@@ -49,10 +51,9 @@
         @media(min-width: $md) {
             font-size: 24px;
         }
-        @media(min-width: $lg) {
+        /*@media(min-width: $lg) {
             font-size: 28px;
-        }
-
+        }*/
         a {
             text-decoration: none;
         }
@@ -68,6 +69,7 @@
         gap: 10px;
         height: 40px;
         justify-content: center;
+        min-width: 40px;
         text-transform: uppercase;
         transition: border-color 0.3s, color 0.3s;
         width: 40px;
@@ -78,6 +80,9 @@
     }
 
     &__inner {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
         position: relative;
         z-index: 1;
     }
@@ -100,7 +105,7 @@
     &__info {
         display: flex;
         flex-wrap: wrap;
-        gap: 20px 10px;
+        gap: 20px 9px;
 
         &:not(:last-child) {
             margin-bottom: 20px;
@@ -113,7 +118,7 @@
             font-weight: 600;
             margin-bottom: 0;
             text-align: center;
-            width: calc(100% / 3 - 10px * 2 / 3);
+            width: calc((100% / 3) - (10px * 2 / 3));
 
             svg {
                 fill: var(--text_color);
@@ -147,7 +152,7 @@
         font-size: 20px;
         font-weight: 600;
         @media(min-width: $lg) {
-            font-size: 24px;
+            font-size: 22px;
         }
 
         span {
@@ -218,6 +223,7 @@
 
     &__spec-button {
         border-color: var(--text_color);
+        margin-top: auto;
         width: 100%;
 
         &:not(.disabled),

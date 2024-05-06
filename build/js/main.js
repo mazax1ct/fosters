@@ -254,6 +254,7 @@ if($('.js-reviews').length) {
     loop: true,
     slidesPerView: 1,
     spaceBetween: 10,
+    watchSlidesProgress: true,
     breakpoints: {
       480: {
         slidesPerView: 2,
