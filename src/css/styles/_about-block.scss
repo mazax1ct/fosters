@@ -1,0 +1,128 @@
+.about-block {
+    &:not(:last-child) {
+        margin-bottom: var(--page_section_vertical_gap);
+    }
+    @media(min-width: $sm) {
+        display: grid;
+        gap: 5%;
+        grid-template-columns: 40% 55%;
+    }
+
+    &__title {
+        color: var(--primary_color);
+        @media(min-width: $sm) {
+            margin-bottom: 0;
+        }
+        @media(min-width: $md) {
+            margin-bottom: 0;
+        }
+        @media(min-width: $lg) {
+            padding-top: 1em;
+        }
+    }
+
+    &__image {
+        @media(min-width: $sm) {
+            grid-row: span 3;
+        }
+        @media(max-width: $sm - 0.01px) {
+            margin-bottom: 0.55em;
+        }
+
+        img {
+            display: block;
+        }
+    }
+
+    &__text {
+        @media(min-width: $sm) {
+            font-size: 16px;
+        }
+        @media(min-width: $md) {
+            font-size: 18px;
+        }
+        @media(min-width: $hd) {
+            font-size: 20px;
+        }
+    }
+}
+
+.about-socials {
+    font-size: 20px;
+    text-align: center;
+
+    &:not(:last-child) {
+        margin-bottom: var(--page_section_vertical_gap);
+    }
+
+    h2 {
+        @media(min-width: $lg) {
+            margin-bottom: 60px;
+        }
+    }
+
+    &__inner {
+        @media(min-width: $sm) {
+            display: flex;
+            gap: 24px;
+        }
+    }
+
+    &__item {
+        @media(max-width: $sm - 0.01px) {
+            margin-bottom: 48px;
+        }
+        @media(min-width: $sm) {
+            width: calc(100% / 3 - 24px * 2 / 3);
+        }
+    }
+
+    svg {
+        height: 80px;
+        width: 80px;
+        @media(min-width: $hd) {
+            height: 100px;
+            width: 100px;
+        }
+    }
+}
+
+.contacts {
+    font-size: 20px;
+
+    &:not(:last-child) {
+        margin-bottom: var(--page_section_vertical_gap);
+    }
+
+    h2 {
+        @media(min-width: $lg) {
+            margin-bottom: 60px;
+        }
+    }
+
+    &__inner {
+        @media(min-width: $md) {
+            display: grid;
+            gap: 5%;
+            grid-template-columns: 55% 40%;
+        }
+    }
+
+    &__block {
+        &:not(:last-child) {
+            @media(max-width: $md - 0.01px) {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+.requsites {
+    font-size: 20px;
+
+    h2 {
+        @media(min-width: $lg) {
+            margin-bottom: 60px;
+        }
+    }
+}

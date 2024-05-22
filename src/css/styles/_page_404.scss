@@ -1,0 +1,30 @@
+.page_404 {
+    font-size: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+
+    h1 {
+        font-size: 140px;
+        margin-bottom: 40px;
+        @media(min-width: $hd) {
+            font-size: 200px;
+        }
+
+        small {
+            display: block;
+            font-size: 24px;
+            @media(min-width: $sm) {
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+.dark-theme {
+    .page_404 {
+        h1 {
+            color: #fff;
+        }
+    }
+}
