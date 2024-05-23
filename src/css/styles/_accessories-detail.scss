@@ -1,0 +1,125 @@
+.accessories-detail {
+    &__inner {
+        @media (min-width: $md) {
+            display: grid;
+            grid-column-gap: 2.5%;
+            grid-template-columns: 47.5% 50%;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: var(--page_section_vertical_gap);
+        }
+    }
+
+    h1 {
+        order: 2;
+    }
+
+    &__images {
+        grid-row: span 3;
+        order: 1;
+        overflow: hidden;
+        @media(max-width: $md - 0.01px) {
+            margin-bottom: 24px;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &__text-block {
+        order: 3;
+    }
+
+    &__price-block {
+        align-items: center;
+        display: flex;
+        gap: 24px;
+        line-height: 1.1;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    &__price {
+        color: var(--primary_color);
+        display: block;
+        font-size: 24px;
+        font-family: var(--secondary_font_family);
+        font-weight: 700;
+        @media(min-width: $lg) {
+            font-size: 32px;
+        }
+    }
+
+    &__old-price {
+        display: block;
+        font-family: var(--secondary_font_family);
+        font-size: 18px;
+        font-weight: 500;
+        text-decoration: line-through;
+    }
+
+    &__credit {
+        @include active-area;
+        align-items: center;
+        display: inline-flex;
+        font-size: 14px;
+        gap: 8px;
+        position: relative;
+        text-decoration: none;
+
+        svg {
+            height: 16px;
+            min-width: 16px;
+            margin-top: 2px;
+            width: 16px;
+        }
+    }
+
+    &__buy-button {
+        max-width: 360px;
+        width: 100%;
+    }
+
+    &__chars {
+        max-width: 910px;
+        margin-right: auto;
+        margin-left: auto;
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border-bottom: 1px solid var(--secondary_color);
+            padding: 12px 0;
+        }
+
+        td {
+            &:nth-child(1) {
+                padding-right: 16px;
+            }
+
+            &:nth-child(2) {
+                font-family: var(--secondary_font_family);
+                font-weight: 400;
+                text-align: right;
+            }
+        }
+
+        th {
+            font-family: var(--secondary_font_family);
+            font-weight: 700;
+            text-align: left;
+            text-transform: uppercase;
+            @media(min-width: $lg) {
+                font-size: 24px;
+            }
+        }
+    }
+}
