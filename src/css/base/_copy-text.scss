@@ -1,0 +1,14 @@
+.copy-text {
+    display: flex;
+
+    &__input {
+        border-right: none;
+    }
+
+    &__button {
+        height: 50px;
+        @media(min-width: $hd) {
+            height: 60px;
+        }
+    }
+}

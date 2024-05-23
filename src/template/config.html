@@ -618,7 +618,7 @@
                         <use xlink:href="images/sprite.svg#air" />
                     </svg>
                     <div>
-                        <p class="config_2-item__pre-title">Охлаждение:</p>
+                        <p class="config_2-item__pre-title">Воздушное охлаждение:</p>
                         <p class="config_2-item__title">Aerocool</p>
                     </div>
                 </div>
@@ -630,10 +630,36 @@
                 </div>
             </div>
         </div>
+        <div class="config_2__block">
+            <div class="config_2-item">
+                <div class="config_2-item__title-block">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#water" />
+                    </svg>
+                    <div>
+                        <p class="config_2-item__pre-title">Водяное охлаждение:</p>
+                        <p class="config_2-item__title">нет</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="config_2__block">
+            <div class="config_2-item">
+                <div class="config_2-item__title-block">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#cable" />
+                    </svg>
+                    <div>
+                        <p class="config_2-item__pre-title">Кабели в оплетке:</p>
+                        <p class="config_2-item__title">нет</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="config__save">
-        <button class="button" type="button">
+        <button class="button" type="button" data-fancybox="config_save" data-src="#config_save">
             <span>Сохранить конфигурацию</span>
             <svg aria-hidden="true">
                 <use xlink:href="images/sprite.svg#button_arrow"></use>
@@ -642,6 +668,17 @@
 
         <div class="config__save-note">
             *Для того чтобы сохранить конфигурацию <a href="register.html">зарегистрируйтесь</a>&nbsp;или&nbsp;<a href="auth.html">авторизуйтесь</a>
+        </div>
+    </div>
+
+    <div id="config_save" class="popup popup--w_600">
+        <p class="popup__title">Ваш конфиг сохранен</p>
+
+        <p>Уникальная ссылка на сохраннную конфигурацию:</p>
+
+        <div class="copy-text">
+            <input class="copy-text__input input" type="text" value="http://cg50490.tw1.ru/configurator/274cf0429a1c1028cee912eecc7b1c25/">
+            <button class="js-copy-text copy-text__button button" type="button">Скопировать</button>
         </div>
     </div>
 

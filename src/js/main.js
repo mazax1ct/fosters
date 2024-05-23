@@ -627,3 +627,14 @@ if($('.js-about').length) {
     });
   });
 }
+
+//копирование текст
+$(document).on("click", ".js-copy-text", function() {
+  var button = $(this);
+  var text = button.closest('.copy-text').find('input').val();
+  navigator.clipboard.writeText(text);
+  button.html('Скопировано');
+  setTimeout(function() {
+    button.html('Скопировать');
+  }, 500);
+});
