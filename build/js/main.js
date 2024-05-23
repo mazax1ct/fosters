@@ -632,9 +632,19 @@ if($('.js-about').length) {
 $(document).on("click", ".js-copy-text", function() {
   var button = $(this);
   var text = button.closest('.copy-text').find('input').val();
-  navigator.clipboard.writeText(text);
-  button.html('Скопировано');
-  setTimeout(function() {
-    button.html('Скопировать');
-  }, 500);
+  var input = button.closest('.copy-text').find('input');
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(text);
+    button.html('Скопировано');
+    setTimeout(function() {
+      button.html('Скопировать');
+    }, 500);
+  } else {
+    input.select();
+    document.execCommand('copy');
+    button.html('Скопировано');
+    setTimeout(function() {
+      button.html('Скопировать');
+    }, 500);
+  }
 });
