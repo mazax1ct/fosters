@@ -111,6 +111,7 @@
             margin-bottom: 40px;
         }
         @media(min-width: $md) {
+            align-items: center;
             display: flex;
             gap: var(--container_padding);
         }
@@ -121,17 +122,22 @@
             display: none;
         }
         @media(min-width: $md) {
-            width: calc(40% - calc(var(--container_padding) / 2));
+            position: sticky;
+            top: 80px;
+            width: calc(50% - calc(var(--container_padding) / 2));
         }
 
         img {
             display: block;
+            @media(min-width: $md) {
+                border-radius: 15px;
+            }
         }
     }
 
     &__config {
         @media(min-width: $md) {
-            width: calc(60% - calc(var(--container_padding)/2));
+            width: calc(50% - calc(var(--container_padding)/2));
         }
     }
 
