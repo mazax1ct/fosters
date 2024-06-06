@@ -2,7 +2,18 @@
     <div class="js-slider swiper" data-id="main_banner">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <div class="main-banner__slide main-banner__slide--shade" style="background-image: url(images/content/img_wide.jpg)">
+                <div id="slide_id_1" class="main-banner__slide">
+                    <style>
+                        /*#slide_id_1 {
+                            background-image: url('../images/content/img_wide.jpg');
+                        }*/
+
+                        @media(min-width: 768px) {
+                            #slide_id_1 {
+                                background-image: url('../images/content/main-banner/img_3.jpg');
+                            }
+                        }
+                    </style>
                     <div class="main-banner__banner container">
                         <div class="main-banner__content">
                             <h1 class="main-banner__title">Заголовок слайда для привлечения внимания</h1>
@@ -24,7 +35,7 @@
             </div>
 
             <div class="swiper-slide">
-                <a class="main-banner__slide main-banner__slide--shade" style="background-image: url(images/content/video_wide_2.jpg)" href="#">
+                <a class="main-banner__slide" style="background-image: url(images/content/video_wide_2.jpg)" href="#">
                     <div class="main-banner__banner container">
                         <div class="main-banner__content">
                             <p class="main-banner__title">Более длинный заголовок слайда для привлечения внимания и проверки всего на свете</p>

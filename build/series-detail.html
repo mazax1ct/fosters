@@ -252,7 +252,17 @@
                     <h1>Project one</h1>
 
                     <div class="detail-banner">
-                        <div class="detail-banner__inner detail-banner__inner--shade" style="background-image: url(images/content/img_wide.jpg)">
+                        <div id="detail_banner_id" class="detail-banner__inner">
+                            <style>
+                                #detail_banner_id {}
+
+                                @media(min-width: 768px) {
+                                    #detail_banner_id {
+                                        background-image: url('../images/content/detail-banner/bg.jpg')
+                                    }
+                                }
+                            </style>
+
                             <div class="detail-banner__container container">
                                 <div class="detail-banner__content">
                                     <p class="detail-banner__title">Непревзойдённая мощность в компактном корпусе. Идеальный выбор для опытных пользователей</p>

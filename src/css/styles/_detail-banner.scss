@@ -1,5 +1,7 @@
 .detail-banner {
     &__inner {
+        background-image: url("../images/backgrounds/detail-banner-mob.bg.jpg");
+        background-color: var(--text_color);
         background-position: 50% 100%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -79,8 +81,9 @@
 
     &__image {
         @media(min-width: $sm) {
-            grid-column: 1;
-            grid-row: span 2;
+            display: none;
+            /*grid-column: 1;
+            grid-row: span 2;*/
         }
 
         img {

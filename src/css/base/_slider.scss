@@ -162,6 +162,8 @@
     }
 
     &__slide {
+        background-image: url("../images/backgrounds/main-banner-mob-bg.jpg");
+        background-color: var(--text_color);
         background-position: 50% 100%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -195,26 +197,7 @@
             }
         }
     }
-    /*&__slide-back {
-        background-position: 50% 100%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        bottom: 0;
-        left: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    &__slide-inner {
-        position: relative;
-        width: 100%;
-        z-index: 1;
 
-        & > div {
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }*/
     &__banner {
         margin: auto;
         position: relative;
@@ -259,7 +242,8 @@
 
     &__image {
         @media(min-width: $sm) {
-            grid-row: span 2;
+            display: none;
+            //grid-row: span 2;
         }
 
         img {
