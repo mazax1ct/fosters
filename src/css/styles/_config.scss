@@ -253,12 +253,11 @@
         @media(min-width: $md) {
             align-items: center;
             display: flex;
-            gap: 0 var(--container_padding);
-            flex-wrap: wrap;
+            gap: 0 10px;
             justify-content: space-between;
         }
-        @media(min-width: $hd) {
-            gap: 0 calc(var(--container_padding) * 2);
+        @media(min-width: $lg) {
+            gap: 0 var(--container_padding);
         }
     }
 
@@ -269,17 +268,37 @@
             gap: calc(var(--container_padding) / 2) var(--container_padding);
             justify-content: space-between;
         }
-        @media(min-width: $lg) {
+        @media(min-width: $md) {
             display: flex;
             flex-wrap: wrap;
-            gap: calc(var(--container_padding) / 2) var(--container_padding);
-            justify-content: space-between;
+            gap: 5px 10px;
+            min-width: 200px;
+            width: 200px;
+        }
+        @media(min-width: $lg) {
+            min-width: 300px;
+            width: 300px;
+        }
+        @media(min-width: $fhd) {
+            min-width: 340px;
+            width: 340px;
+        }
+    }
+
+    &__prices-title {
+        color: var(--secondary_color_dark);
+        display: none;
+        font-size: 14px;
+        white-space: nowrap;
+        @media(min-width: $lg) {
+            display: block;
+            width: 100%;
         }
     }
 
     &__price-block {
         font-family: var(--secondary_font_family);
-        @media(max-width: $lg - 0.01px) {
+        @media(max-width: $md - 0.01px) {
             align-items: center;
             display: flex;
             gap: var(--container_padding);
@@ -291,22 +310,60 @@
         color: var(--secondary_color_dark);
         font-size: 12px;
         margin-bottom: 0;
-        @media(min-width: $hd) {
-            font-size: 14px;
+        @media(min-width: $lg) {
+            display: none;
         }
     }
 
     &__price {
         font-size: 24px;
         font-weight: 700;
+        line-height: 1.2;
         white-space: nowrap;
+        @media(min-width: $md) and (max-width: $lg - 0.01px) {
+            font-size: 20px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 26px;
+        }
+    }
+
+    &__fps {
+        display: flex;
+        gap: 16px;
+        width: calc(100% - 400px - 20px);
         @media(min-width: $lg) {
-            font-size: 32px;
+            width: calc(100% - 600px - var(--container_padding) * 2);
+        }
+        @media(min-width: $fhd) {
+            width: calc(100% - 640px - var(--container_padding) * 2);
+        }
+        @media(max-width: $md - 0.01px) {
+            display: none;
+        }
+
+        .fps-item {
+            @media(min-width: $md) {
+                width: calc(100% / 3 - 16px * 2 / 3);
+            }
+        }
+
+        .fps-item__image {
+            min-width: 40px;
+            width: 40px;
+        }
+
+        .fps-item__bar-container--small {
+            height: 16px;
+        }
+
+        .fps-item__value {
+            font-size: 11px;
         }
     }
 
     &__buttons {
-        @media(max-width: $hd - 0.01px) {
+        @media(max-width: $md - 0.01px) {
             margin-top: calc(var(--container_padding) / 2);
         }
         @media(min-width: $sm) {
@@ -314,22 +371,44 @@
             gap: var(--container_padding);
         }
         @media(min-width: $md) {
-            flex-grow: 1;
+            flex-direction: column;
+            gap: 5px;
+        }
+        @media(min-width: $md) {
+            min-width: 200px;
+            width: 200px;
+        }
+        @media(min-width: $lg) {
+            min-width: 300px;
+            width: 300px;
         }
     }
 
     &__buy-button {
+        text-align: center;
         @media(max-width: $sm - 0.01px) {
             width: 100%;
         }
-        @media(min-width: $sm) and (max-width: $hd - 0.01px) {
+        @media(min-width: $sm) and (max-width: $md - 0.01px) {
             width: calc(100% / 2 - 10px);
         }
         @media(min-width: $md) {
             max-width: 385px;
-            margin-left: auto;
-            margin-right: auto;
-            width: 100%;
+        }
+        @media(min-width: $md) and (max-width: $lg - 0.01px) {
+            font-size: 12px;
+        }
+
+        span {
+            @media(min-width: $md) and (max-width: $lg - 0.01px) {
+                white-space: normal;
+            }
+        }
+
+        svg {
+            @media(min-width: $md) and (max-width: $lg - 0.01px) {
+                display: none;
+            }
         }
     }
 
@@ -350,16 +429,15 @@
             color: var(--primary_color);
             border-color: var(--primary_color);
         }
-        @media(max-width: $xs - 0.01px) {
-            font-size: 12px;
-        }
         @media(max-width: $sm - 0.01px) {
             margin-top: calc(var(--container_padding) / 2);
             width: 100%;
         }
-        @media(min-width: $sm) and (max-width: $hd - 0.01px) {
-            font-size: 12px;
+        @media(min-width: $sm) and (max-width: $md - 0.01px) {
             width: calc(100% / 2 - 10px);
+        }
+        @media(min-width: $md) and (max-width: $lg - 0.01px) {
+            font-size: 12px;
         }
 
         svg {
