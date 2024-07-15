@@ -2,7 +2,7 @@
     display: flex;
     gap: 40px;
     justify-content: space-between;
-    @media(max-width: $sm - 0.01px) {
+    @media(max-width: $sm - 0.02px) {
         align-items: center;
         flex-direction: column;
     }

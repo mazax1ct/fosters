@@ -2,13 +2,13 @@
     @media(min-width: $md) {
         display: flex;
     }
-    @media(max-width: $md - 0.01px) {
+    @media(max-width: $md - 0.02px) {
         position: relative;
         z-index: 1;
     }
 
     &__text-block {
-        @media(max-width: $md - 0.01px) {
+        @media(max-width: $md - 0.02px) {
             margin-bottom: 20px;
         }
         @media(min-width: $md) {
@@ -20,13 +20,13 @@
     }
 
     &__slider-block {
-        @media(max-width: $md - 0.01px) {
+        @media(max-width: $md - 0.02px) {
             padding-bottom: 60px;
         }
     }
 
     .slider-navigation {
-        @media(max-width: $md - 0.01px) {
+        @media(max-width: $md - 0.02px) {
             bottom: 0;
             left: 0;
             position: absolute;

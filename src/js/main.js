@@ -648,3 +648,18 @@ $(document).on("click", ".js-copy-text", function() {
     }, 500);
   }
 });
+
+//тогглер описание в корзине
+$(document).on('click', '.js-cart-item-description-toggler', function () {
+  var _this = $(this);
+  if(!_this.hasClass('is-active')) {
+    _this.text('Свернуть описание');
+    _this.addClass('is-active');
+  }else{
+    _this.text('Развернуть описание');
+    _this.removeClass('is-active');
+  }
+  _this.prev('.cart-item__description').slideToggle();
+
+  return false;
+});

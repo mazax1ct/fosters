@@ -4,7 +4,7 @@
     }
 
     &__image {
-        @media(max-width: $md - 0.01px) {
+        @media(max-width: $md - 0.02px) {
             display: none;
         }
 
@@ -189,7 +189,7 @@
     &__credit {
         padding-left: 40%;
         text-align: right;
-        @media(max-width: $sm - 0.01px) {
+        @media(max-width: $sm - 0.02px) {
             font-size: 12px;
         }
 
@@ -220,7 +220,7 @@
 
         .button {
             & + .button {
-                @media(max-width: $hd - 0.01px) {
+                @media(max-width: $hd - 0.02px) {
                     margin-top: 15px;
                 }
             }

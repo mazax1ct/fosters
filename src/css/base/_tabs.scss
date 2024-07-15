@@ -23,7 +23,7 @@
         text-decoration: none;
         text-align: center;
         text-transform: uppercase;
-        @media(max-width: $md - 0.01px) {
+        @media(max-width: $md - 0.02px) {
             flex-grow: 1;
             width: calc(100% /3);
         }
@@ -36,7 +36,7 @@
             width: 300px;
         }*/
         &:not(:last-child) {
-            @media(max-width: $md - 0.01px) {
+            @media(max-width: $md - 0.02px) {
                 border-right: none;
             }
         }
@@ -68,7 +68,7 @@
         &.is-active {
             color: var(--primary_color);
         }
-        @media(max-width: $xs - 0.01px) {
+        @media(max-width: $xs - 0.02px) {
             font-size: 12px;
         }
         @media(min-width: $sm) {

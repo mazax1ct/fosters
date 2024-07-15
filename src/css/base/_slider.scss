@@ -144,7 +144,7 @@
         .swiper-button-prev {
             color: #fff;
             border-color: #fff;
-            @media(max-width: $md - 0.01px) {
+            @media(max-width: $md - 0.02px) {
                 display: none;
             }
             @include hover {
@@ -213,7 +213,7 @@
         flex-direction: column;
         justify-content: center;
         gap: var(--container_padding);
-        @media(max-width: $sm - 0.01px) {
+        @media(max-width: $sm - 0.02px) {
             text-align: center;
         }
         @media(min-width: $sm) {
@@ -229,7 +229,7 @@
         line-height: 1;
         margin-bottom: 0;
         text-transform: uppercase;
-        @media(max-width: $hd - 0.01px) {
+        @media(max-width: $hd - 0.02px) {
             font-size: 32px;
         }
         @media(min-width: $sm) {

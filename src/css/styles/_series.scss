@@ -47,7 +47,7 @@
     &__info-top {
         font-family: var(--secondary_font_family);
         display: flex;
-        @media(max-width: $md - 0.01px) {
+        @media(max-width: $md - 0.02px) {
             margin-bottom: 20px;
         }
 
@@ -58,7 +58,7 @@
 
             &:first-child {
                 border-left: none;
-                @media(max-width: $sm - 0.01px) {
+                @media(max-width: $sm - 0.02px) {
                     padding-left: 0;
                 }
             }
@@ -79,7 +79,7 @@
 
     &__info-num,
     &__info-title {
-        @media(max-width: $md - 0.01px) {
+        @media(max-width: $md - 0.02px) {
             font-size: 12px;
         }
     }
@@ -163,7 +163,7 @@
     }
 
     &__price-block {
-        @media(max-width: $lg - 0.01px) {
+        @media(max-width: $lg - 0.02px) {
             align-items: center;
             display: flex;
             justify-content: space-between;
@@ -189,7 +189,7 @@
         display: flex;
         gap: 4px;
         text-decoration: none;
-        @media(max-width: $sm - 0.01px) {
+        @media(max-width: $sm - 0.02px) {
             font-size: 12px;
         }
 
@@ -203,7 +203,7 @@
     &__bottom-block {
         border-top: 1px solid var(--primary_color);
         padding-top: 10px;
-        @media(max-width: $md - 0.01px) {
+        @media(max-width: $md - 0.02px) {
             margin-top: 10px;
         }
         @media(min-width: $md) {
@@ -223,7 +223,7 @@
 
         .button {
             width: 100%;
-            @media(max-width: $lg - 0.01px) {
+            @media(max-width: $lg - 0.02px) {
                 margin-top: 10px;
             }
             @media(min-width: $lg) {

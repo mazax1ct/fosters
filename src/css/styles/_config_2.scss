@@ -27,7 +27,7 @@
                 z-index: 1;
 
                 &:nth-child(odd) {
-                    @media(max-width: $md - 0.01px) {
+                    @media(max-width: $md - 0.02px) {
                         &::after {
                             border-left: 1px solid var(--primary_color);
                             content: '';
@@ -84,7 +84,7 @@
                 z-index: 1;
 
                 &:nth-child(odd) {
-                    @media(max-width: $md - 0.01px) {
+                    @media(max-width: $md - 0.02px) {
                         &::after {
                             border-left: 1px solid var(--primary_color);
                             content: '';
@@ -99,7 +99,7 @@
 
                 &:not(:nth-child(4n + 4)) {
                     &::after {
-                        @media(min-width: $md) and (max-width: $lg - 0.01px) {
+                        @media(min-width: $md) and (max-width: $lg - 0.02px) {
                             border-left: 1px solid var(--primary_color);
                             content: '';
                             height: 100%;
@@ -149,7 +149,7 @@
 
             .config_2__block {
                 &:not(:last-child) {
-                    @media(max-width: $sm - 0.01px) {
+                    @media(max-width: $sm - 0.02px) {
                         margin-bottom: 30px;
                     }
                 }
@@ -242,7 +242,7 @@
     }
 
     &__price-title {
-        @media(min-width: $md) and (max-width: $hd - 0.01px) {
+        @media(min-width: $md) and (max-width: $hd - 0.02px) {
             font-size: 12px;
         }
         @media(min-width: $hd) {
@@ -255,7 +255,7 @@
         font-size: 20px;
         font-weight: 700;
         text-align: right;
-        @media(min-width: $md) and (max-width: $hd - 0.01px) {
+        @media(min-width: $md) and (max-width: $hd - 0.02px) {
             font-size: 20px;
         }
 
@@ -267,7 +267,7 @@
     &__credit {
         margin-bottom: 20px;
         text-align: right;
-        @media(max-width: $sm - 0.01px) {
+        @media(max-width: $sm - 0.02px) {
             font-size: 12px;
         }
 
@@ -311,7 +311,7 @@
     }
 
     &__image {
-        @media(max-width: $md - 0.01px) {
+        @media(max-width: $md - 0.02px) {
             display: none;
         }
     }
@@ -337,7 +337,7 @@
             height: 40px;
             min-width: 40px;
             width: 40px;
-            @media(max-width: $sm - 0.01px) {
+            @media(max-width: $sm - 0.02px) {
                 display: none;
             }
         }
@@ -366,7 +366,7 @@
     &__chars {
         line-height: 1.3;
         margin-top: auto;
-        @media(max-width: $md - 0.01px) {
+        @media(max-width: $md - 0.02px) {
             font-size: 13px;
         }
 

@@ -25,7 +25,7 @@
     }
 
     &:not(:last-child) {
-        @media(max-width: $sm - 0.01px) {
+        @media(max-width: $sm - 0.02px) {
             margin-bottom: 40px;
         }
         @media(min-width: $sm) {
@@ -70,10 +70,10 @@
     }
 
     &__buttons {
-        @media(max-width: $xs - 0.01px) {
+        @media(max-width: $xs - 0.02px) {
             grid-column: span 3;
         }
-        @media(min-width: $xs) and (max-width: $sm - 0.01px) {
+        @media(min-width: $xs) and (max-width: $sm - 0.02px) {
             grid-column: span 4;
         }
         @media(min-width: $sm) {

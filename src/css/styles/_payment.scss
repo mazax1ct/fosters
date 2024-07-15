@@ -32,7 +32,7 @@
             min-height: 340px;
         }*/
         small {
-            @media(max-width: $sm - 0.01px) {
+            @media(max-width: $sm - 0.02px) {
                 font-size: 10px;
             }
         }

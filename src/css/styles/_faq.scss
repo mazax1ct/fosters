@@ -15,7 +15,7 @@
         }
 
         .faq-item__text {
-            @media(max-width: $md - 0.01px) {
+            @media(max-width: $md - 0.02px) {
                 margin-bottom: 0.55em;
             }
             @media(min-width: $md) {

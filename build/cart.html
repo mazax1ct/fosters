@@ -307,169 +307,192 @@
 
                 <div class="cart-list">
                     <div class="cart-item">
-                        <label class="checkbox cart-item__checkbox" title="Выбрать">
-                            <input type="checkbox">
-                            <span class="checkbox__icon"></span>
-                        </label>
-                        <a class="cart-item__image" href="#">
+                        <div class="cart-item__image">
                             <img src="images/content/order-make/img_1.png" srcset="images/content/order-make/img_1@2x.png 2x" alt="">
-                        </a>
-                        <div class="cart-item__block">
-                            <p class="cart-item__title">Ваш товар:</p>
-                            <p class="cart-item__val"><a href="#">Project FORGE</a></p>
                         </div>
-                        <div class="cart-item__block">
+
+                        <div class="cart-item__description-block">
+                            <p class="cart-item__title">Ваш товар:</p>
+
+                            <p class="cart-item__val"><span>Project Alisio #5755 Intel I5 12400F + GeForce RTX 4060 TI</span></p>
+
+                            <p class="cart-item__description">
+                                <span>Видеокарта: GeForce RTX 4060 TI</span>
+                                <span>Процессор: Intel I5 12400F</span>
+                                <span>Материнская плата: H510 M</span>
+                                <span>Оперативная память: DDR4 16 GB</span>
+                                <span>SSD накопитель: SATA 1 TB</span>
+                                <span>Блок питания: 700W</span>
+                                <span>Воздушное охлаждение: Paladin EX400S</span>
+                                <span>Кабели в оплетке: Черные</span>
+                                <span>Цвет корпуса: Черный</span>
+                            </p>
+
+                            <button class="js-cart-item-description-toggler cart-item__description-toggler" type="button">Развенуть описание</button>
+                        </div>
+
+                        <div class="cart-item__quantity-block">
                             <p class="cart-item__title">Количество:</p>
+
                             <div class="qnt">
-                                <button class="qnt__button" type="button" title="Уменьшить">
+                                <button class="qnt__button" type="button" disabled>
                                     <svg aria-hidden="true">
-                                        <use xlink:href="images/sprite.svg#minus" />
+                                        <use xlink:href="images/sprite.svg#minus"></use>
                                     </svg>
                                 </button>
-                                <input class="qnt__input" type="text" value="1">
-                                <button class="qnt__button" type="button" title="Увеличить">
+
+                                <input class="qnt__input o-buy-item__count-input" data-pid="24" id="QUANTITY_INPUT_24" name="QUANTITY_INPUT_24" value="1" readonly="" type="text">
+
+                                <button class="qnt__button" type="button">
                                     <svg aria-hidden="true">
-                                        <use xlink:href="images/sprite.svg#plus" />
+                                        <use xlink:href="images/sprite.svg#plus"></use>
                                     </svg>
                                 </button>
+
+                                <input type="hidden" id="QUANTITY_24" name="QUANTITY_24" value="1">
                             </div>
                         </div>
-                        <div class="cart-item__block">
+
+                        <div class="cart-item__price-block">
                             <p class="cart-item__title">Стоимость:</p>
-                            <p class="cart-item__val cart-item__price">359 000 ₽</p>
+
+                            <p class="cart-item__price o-buy-item__price" id="current_price_24">106&nbsp;000&nbsp;₽</p>
                         </div>
-                        <div class="cart-item__block">
-                            <p class="cart-item__title">Гарантия:</p>
-                            <p class="cart-item__val cart-item__price">1 год</p>
-                        </div>
+
                         <div class="cart-item__buttons">
                             <p class="cart-item__title">&nbsp;</p>
-                            <button class="cart-item__delete" type="button" title="Удалить">
-                                <span>Удалить</span>
-                                <svg class="cart-item__button-icon" aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#button_arrow"></use>
-                                </svg>
-                                <svg class="cart-item__delete-icon" aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#trash"></use>
-                                </svg>
-                            </button>
 
-                            <a class="button" href="#">
-                                <span>Перейти к товару</span>
+                            <a class="cart-item__delete" title="Удалить" href="/cart/?basketAction=delete&amp;id=24">
                                 <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#button_arrow"></use>
+                                    <use xlink:href="images/sprite.svg#trash"></use>
                                 </svg>
                             </a>
                         </div>
                     </div>
+
                     <div class="cart-item">
-                        <label class="checkbox cart-item__checkbox" title="Выбрать">
-                            <input type="checkbox">
-                            <span class="checkbox__icon"></span>
-                        </label>
-                        <a class="cart-item__image" href="#">
+                        <div class="cart-item__image">
                             <img src="images/content/order-make/img_1.png" srcset="images/content/order-make/img_1@2x.png 2x" alt="">
-                        </a>
-                        <div class="cart-item__block">
-                            <p class="cart-item__title">Ваш товар:</p>
-                            <p class="cart-item__val"><a href="#">Project FORGE</a></p>
                         </div>
-                        <div class="cart-item__block">
+
+                        <div class="cart-item__description-block">
+                            <p class="cart-item__title">Ваш товар:</p>
+
+                            <p class="cart-item__val"><span>Project Alisio #5755 Intel I5 12400F + GeForce RTX 4060 TI</span></p>
+
+                            <p class="cart-item__description">
+                                <span>Видеокарта: GeForce RTX 4060 TI</span>
+                                <span>Процессор: Intel I5 12400F</span>
+                                <span>Материнская плата: H510 M</span>
+                                <span>Оперативная память: DDR4 16 GB</span>
+                                <span>SSD накопитель: SATA 1 TB</span>
+                                <span>Блок питания: 700W</span>
+                                <span>Воздушное охлаждение: Paladin EX400S</span>
+                                <span>Кабели в оплетке: Черные</span>
+                                <span>Цвет корпуса: Черный</span>
+                            </p>
+
+                            <button class="js-cart-item-description-toggler cart-item__description-toggler" type="button">Развенуть описание</button>
+                        </div>
+
+                        <div class="cart-item__quantity-block">
                             <p class="cart-item__title">Количество:</p>
+
                             <div class="qnt">
-                                <button class="qnt__button" type="button" title="Уменьшить">
+                                <button class="qnt__button" type="button" disabled>
                                     <svg aria-hidden="true">
-                                        <use xlink:href="images/sprite.svg#minus" />
+                                        <use xlink:href="images/sprite.svg#minus"></use>
                                     </svg>
                                 </button>
-                                <input class="qnt__input" type="text" value="1">
-                                <button class="qnt__button" type="button" title="Увеличить">
+
+                                <input class="qnt__input o-buy-item__count-input" data-pid="24" id="QUANTITY_INPUT_24" name="QUANTITY_INPUT_24" value="1" readonly="" type="text">
+
+                                <button class="qnt__button" type="button">
                                     <svg aria-hidden="true">
-                                        <use xlink:href="images/sprite.svg#plus" />
+                                        <use xlink:href="images/sprite.svg#plus"></use>
                                     </svg>
                                 </button>
+
+                                <input type="hidden" id="QUANTITY_24" name="QUANTITY_24" value="1">
                             </div>
                         </div>
-                        <div class="cart-item__block">
+
+                        <div class="cart-item__price-block">
                             <p class="cart-item__title">Стоимость:</p>
-                            <p class="cart-item__val cart-item__price">359 000 ₽</p>
+
+                            <p class="cart-item__price o-buy-item__price" id="current_price_24">106&nbsp;000&nbsp;₽</p>
                         </div>
-                        <div class="cart-item__block">
-                            <p class="cart-item__title">Гарантия:</p>
-                            <p class="cart-item__val cart-item__price">1 год</p>
-                        </div>
+
                         <div class="cart-item__buttons">
                             <p class="cart-item__title">&nbsp;</p>
-                            <button class="cart-item__delete" type="button" title="Удалить">
-                                <span>Удалить</span>
-                                <svg class="cart-item__button-icon" aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#button_arrow"></use>
-                                </svg>
-                                <svg class="cart-item__delete-icon" aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#trash"></use>
-                                </svg>
-                            </button>
 
-                            <a class="button" href="#">
-                                <span>Перейти к товару</span>
+                            <a class="cart-item__delete" title="Удалить" href="/cart/?basketAction=delete&amp;id=24">
                                 <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#button_arrow"></use>
+                                    <use xlink:href="images/sprite.svg#trash"></use>
                                 </svg>
                             </a>
                         </div>
                     </div>
+
                     <div class="cart-item">
-                        <label class="checkbox cart-item__checkbox" title="Выбрать">
-                            <input type="checkbox">
-                            <span class="checkbox__icon"></span>
-                        </label>
-                        <a class="cart-item__image" href="#">
+                        <div class="cart-item__image">
                             <img src="images/content/order-make/img_1.png" srcset="images/content/order-make/img_1@2x.png 2x" alt="">
-                        </a>
-                        <div class="cart-item__block">
-                            <p class="cart-item__title">Ваш товар:</p>
-                            <p class="cart-item__val"><a href="#">Project FORGE</a></p>
                         </div>
-                        <div class="cart-item__block">
+
+                        <div class="cart-item__description-block">
+                            <p class="cart-item__title">Ваш товар:</p>
+
+                            <p class="cart-item__val"><span>Project Alisio #5755 Intel I5 12400F + GeForce RTX 4060 TI</span></p>
+
+                            <p class="cart-item__description">
+                                <span>Видеокарта: GeForce RTX 4060 TI</span>
+                                <span>Процессор: Intel I5 12400F</span>
+                                <span>Материнская плата: H510 M</span>
+                                <span>Оперативная память: DDR4 16 GB</span>
+                                <span>SSD накопитель: SATA 1 TB</span>
+                                <span>Блок питания: 700W</span>
+                                <span>Воздушное охлаждение: Paladin EX400S</span>
+                                <span>Кабели в оплетке: Черные</span>
+                                <span>Цвет корпуса: Черный</span>
+                            </p>
+
+                            <button class="js-cart-item-description-toggler cart-item__description-toggler" type="button">Развенуть описание</button>
+                        </div>
+
+                        <div class="cart-item__quantity-block">
                             <p class="cart-item__title">Количество:</p>
+
                             <div class="qnt">
-                                <button class="qnt__button" type="button" title="Уменьшить">
+                                <button class="qnt__button" type="button" disabled>
                                     <svg aria-hidden="true">
-                                        <use xlink:href="images/sprite.svg#minus" />
+                                        <use xlink:href="images/sprite.svg#minus"></use>
                                     </svg>
                                 </button>
-                                <input class="qnt__input" type="text" value="1">
-                                <button class="qnt__button" type="button" title="Увеличить">
+
+                                <input class="qnt__input o-buy-item__count-input" data-pid="24" id="QUANTITY_INPUT_24" name="QUANTITY_INPUT_24" value="1" readonly="" type="text">
+
+                                <button class="qnt__button" type="button">
                                     <svg aria-hidden="true">
-                                        <use xlink:href="images/sprite.svg#plus" />
+                                        <use xlink:href="images/sprite.svg#plus"></use>
                                     </svg>
                                 </button>
+
+                                <input type="hidden" id="QUANTITY_24" name="QUANTITY_24" value="1">
                             </div>
                         </div>
-                        <div class="cart-item__block">
+
+                        <div class="cart-item__price-block">
                             <p class="cart-item__title">Стоимость:</p>
-                            <p class="cart-item__val cart-item__price">359 000 ₽</p>
+
+                            <p class="cart-item__price o-buy-item__price" id="current_price_24">106&nbsp;000&nbsp;₽</p>
                         </div>
-                        <div class="cart-item__block">
-                            <p class="cart-item__title">Гарантия:</p>
-                            <p class="cart-item__val cart-item__price">1 год</p>
-                        </div>
+
                         <div class="cart-item__buttons">
                             <p class="cart-item__title">&nbsp;</p>
-                            <button class="cart-item__delete" type="button" title="Удалить">
-                                <span>Удалить</span>
-                                <svg class="cart-item__button-icon" aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#button_arrow"></use>
-                                </svg>
-                                <svg class="cart-item__delete-icon" aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#trash"></use>
-                                </svg>
-                            </button>
 
-                            <a class="button" href="#">
-                                <span>Перейти к товару</span>
+                            <a class="cart-item__delete" title="Удалить" href="/cart/?basketAction=delete&amp;id=24">
                                 <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#button_arrow"></use>
+                                    <use xlink:href="images/sprite.svg#trash"></use>
                                 </svg>
                             </a>
                         </div>

@@ -1,5 +1,5 @@
 .features_2 {
-    @media(max-width: $sm - 0.01px) {
+    @media(max-width: $sm - 0.02px) {
         margin-top: 10px;
     }
     @media(min-width: $sm) {
@@ -48,7 +48,7 @@
         @media(min-width: $sm) {
             color: #fff;
         }
-        @media(max-width: $sm - 0.01px) {
+        @media(max-width: $sm - 0.02px) {
             border: 1px solid var(--primary_color);
             border-bottom: none;
             border-right: none;
@@ -57,7 +57,7 @@
         }
 
         br {
-            @media(max-width: $sm - 0.01px) {
+            @media(max-width: $sm - 0.02px) {
                 display: none;
             }
         }
@@ -66,14 +66,14 @@
     &__num {
         display: none;
         margin-bottom: 15px;
-        @media(max-width: $sm - 0.01px) {
+        @media(max-width: $sm - 0.02px) {
             display: block;
             font-size: 12px;
         }
     }
 
     &__text {
-        @media(max-width: $sm - 0.01px) {
+        @media(max-width: $sm - 0.02px) {
             font-size: 12px;
         }
         @media(min-width: $sm) {

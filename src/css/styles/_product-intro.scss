@@ -60,7 +60,7 @@
         @media(min-width: $md) {
             grid-column: 2;
         }
-        @media(max-width: $md - 0.01px) {
+        @media(max-width: $md - 0.02px) {
             margin-top: 10px;
         }
     }

@@ -3,48 +3,97 @@
     --image_margin: 30px;
     --gap: 10px;
     display: grid;
-    grid-template-columns: calc(var(--image_width) + var(--image_margin)) 1fr 1fr;
+    grid-template-columns: var(--image_width) 1fr 40px;
     gap: var(--gap);
     position: relative;
     z-index: 1;
-    @media(min-width: 640px) {
-        align-items: center;
-        grid-template-columns: calc(var(--image_width) + var(--image_margin)) 1fr 1fr 1fr 1fr;
-    }
     @media(min-width: $sm) {
+        grid-template-columns: var(--image_width) 1fr 1fr 40px;
+    }
+    @media(min-width: $md) {
         --image_width: 140px;
-        grid-template-columns: calc(var(--image_width) + var(--image_margin)) 1fr 1fr 1fr 1fr auto;
+        --gap: 20px;
+        grid-template-columns: var(--image_width) auto 160px 160px 40px;
         border-bottom: 1px solid var(--secondary_color);
         margin-bottom: 20px;
         padding-bottom: 20px;
     }
-    @media(min-width: $md) {
-        --gap: 20px;
-    }
     @media(min-width: $hd) {
         --image_width: 180px;
+        grid-template-columns: var(--image_width) auto 200px 200px 40px;
     }
     @media(min-width: $lg) {
         --image_width: 220px;
     }
 
     &:not(:last-child) {
-        @media(max-width: $sm - 0.01px) {
+        @media(max-width: $md - 0.02px) {
             margin-bottom: 40px;
         }
     }
 
-    &__checkbox {
-        left: 0;
-        position: absolute;
-        top: 0;
-        z-index: 1;
+    &__image {
+        width: var(--image_width);
+        @media(max-width: $sm - 0.02px) {
+            grid-row: span 2;
+        }
     }
 
-    &__image {
-        margin-left: 30px;
-        @media(max-width: 640px - 0.01px) {
-            grid-row: span 2;
+    &__description-block {
+        @media(max-width: $md - 0.02px) {
+            grid-row: 3;
+            grid-column: span 3;
+        }
+    }
+
+    &__description {
+        color: var(--secondary_color);
+        display: none;
+
+        span {
+            display: block;
+        }
+    }
+
+    &__description-toggler {
+        @include button-reset;
+        border-bottom: 1px dashed currentColor;
+        color: var(--secondary_color);
+        cursor: pointer;
+        transition: color 0.3s;
+        @include hover {
+            color: var(--text_color);
+        }
+    }
+
+    &__quantity-block {}
+
+    &__price-block {
+        @media(max-width: $sm - 0.02px) {
+            grid-row: 2;
+            grid-column: 2;
+        }
+        @media(min-width: $sm) and (max-width: $md - 0.02px) {
+            grid-column: 3;
+        }
+    }
+
+    &__price {
+        font-family: var(--secondary_font_family);
+        font-size: 18px;
+        font-weight: 500;
+        min-height: 30px;
+        text-transform: uppercase;
+        @media(min-width: $md) {
+            align-items: center;
+            display: flex;
+            min-height: 40px;
+        }
+        @media(min-width: $hd) {
+            font-size: 18px;
+        }
+        @media(min-width: $lg) {
+            font-size: 24px;
         }
     }
 
@@ -52,77 +101,25 @@
         a {
             text-decoration: none;
         }
-
-        &:nth-child(4) {
-            @media(max-width: 640px - 0.01px) {
-                grid-row: 2;
-                grid-column: 2;
-            }
-        }
     }
 
     &__buttons {
-        @media(max-width: 640px - 0.01px) {
-            grid-column: span 3;
+        @media(max-width: $sm - 0.02px) {
+            grid-row: 1;
+            grid-column: 3;
         }
-        @media(min-width: 640px) and (max-width: $sm - 0.01px) {
-            grid-column: span 5;
-        }
-
-        .button {
-            display: flex;
-            @media(max-width: $sm - 0.01px) {
-                width: 100%;
-            }
-            @media(min-width: $sm) {
-                border: none;
-                height: 40px;
-                padding: 0;
-                width: 40px;
-            }
-
-            &:not(:last-child) {
-                @media(max-width: $sm - 0.01px) {
-                    margin-bottom: 10px;
-                }
-            }
-
-            &:last-child {
-                @media(min-width: $sm) {
-                    display: none;
-                }
-            }
-
-            span {
-                @media(min-width: $sm) {
-                    display: none;
-                }
-            }
-        }
-
-        .cart-item__title {
-            @media(max-width: $lg - 0.01px) {
-                display: none;
-            }
+        @media(min-width: $sm) and (max-width: $md - 0.02px) {
+            grid-column: 4;
         }
     }
 
     &__delete {
-        @extend .button;
-        @extend .button--bordered;
-        @media(min-width: $sm) {
-            color: var(--secondary_color_dark);
-        }
-
-        .cart-item__delete-icon {
-            @media(max-width: $sm - 0.01px) {
-                display: none;
-            }
-            @media(min-width: $sm) {
-                height: 32px;
-                width: 32px;
-            }
-        }
+        align-items: center;
+        color: var(--secondary_color_dark);
+        display: flex;
+        height: 40px;
+        justify-content: center;
+        width: 40px;
 
         &:not(.disabled),
         &:not(:disabled),
@@ -132,11 +129,11 @@
                 color: var(--error_color);
             }
         }
-    }
 
-    &__button-icon {
-        @media(min-width: $sm) {
-            display: none;
+        svg {
+            fill: currentColor;
+            height: 32px;
+            width: 32px;
         }
     }
 
@@ -157,16 +154,12 @@
     }
 
     &__val {
-        align-items: center;
-        display: flex;
         font-family: var(--secondary_font_family);
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 500;
-        min-height: 30px;
         text-transform: uppercase;
         @media(min-width: $hd) {
-            font-size: 18px;
-            min-height: 40px;
+            font-size: 20px;
         }
         @media(min-width: $lg) {
             font-size: 24px;
@@ -213,7 +206,7 @@
 
     &__credit {
         text-align: right;
-        @media(max-width: $sm - 0.01px) {
+        @media(max-width: $sm - 0.02px) {
             font-size: 12px;
         }
 

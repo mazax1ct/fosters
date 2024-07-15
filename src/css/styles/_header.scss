@@ -99,7 +99,7 @@
     @media(min-width: $lg) {
         font-size: 18px;
     }
-    @media(max-width: $hd - 0.01px) {
+    @media(max-width: $hd - 0.02px) {
         background-color: var(--body_bg);
         height: calc(100dvh - 66px);
         left: 0;
@@ -151,7 +151,7 @@
         }
 
         span {
-            @media(max-width: $hd - 0.01px) {
+            @media(max-width: $hd - 0.02px) {
                 min-width: 260px;
             }
         }
@@ -184,7 +184,7 @@
 
 .sub-menu {
     background-color: var(--body_bg);
-    @media(max-width: $hd - 0.01px) {
+    @media(max-width: $hd - 0.02px) {
         display: none;
     }
     @media(min-width: $hd) {

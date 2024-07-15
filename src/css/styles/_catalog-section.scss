@@ -27,7 +27,7 @@
             @media(min-width: $lg) {
                 grid-template-columns: 1fr 1fr 1fr;
             }
-            @media(max-width: $sm - 0.01px) {
+            @media(max-width: $sm - 0.02px) {
                 .card {
                     margin-left: auto;
                     margin-right: auto;

@@ -64,7 +64,7 @@
         border-left: 1px solid var(--secondary_color);
         padding-left: 10px;
         width: calc(100% / 2 - var(--gap) / 2);
-        @media(max-width: $sm - 0.01px) {
+        @media(max-width: $sm - 0.02px) {
             font-size: 13px;
         }
         @media(min-width: $sm) {
@@ -78,7 +78,7 @@
         }
 
         br {
-            @media(max-width: $md - 0.01px) {
+            @media(max-width: $md - 0.02px) {
                 display: none;
             }
         }

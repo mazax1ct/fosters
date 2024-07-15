@@ -9,7 +9,7 @@
 .filter {
     position: sticky;
     top: 20px;
-    @media(max-width: $md - 0.01px) {
+    @media(max-width: $md - 0.02px) {
         background-color: #fff;
         display: none;
         left: 0;
@@ -21,7 +21,7 @@
         width: 100%;
         z-index: 10;
     }
-    @media(min-width: $sm) and (max-width: $md - 0.01px) {
+    @media(min-width: $sm) and (max-width: $md - 0.02px) {
         padding: 40px;
     }
 

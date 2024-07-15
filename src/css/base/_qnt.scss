@@ -1,12 +1,11 @@
 .qnt {
-    --control_size: 30px;
+    --control_size: 40px;
     border: 1px solid var(--secondary_color);
     display: inline-flex;
     vertical-align: middle;
-    @media(min-width: $hd) {
+    /*@media(min-width: $hd) {
         --control_size: 40px;
-    }
-
+    }*/
     &__button {
         @include button-reset;
         align-items: center;
@@ -14,9 +13,23 @@
         height: var(--control_size);
         justify-content: center;
         min-width: var(--control_size);
+        transition: color 0.3s;
         width: var(--control_size);
 
+        &:not(:disabled) {
+            @include hover {
+                background-color: transparent !important;
+                color: var(--primary_color);
+            }
+        }
+
+        &:disabled {
+            color: var(--secondary_color);
+            cursor: default;
+        }
+
         svg {
+            fill: currentColor;
             height: 16px;
             width: 16px;
         }

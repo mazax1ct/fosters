@@ -62,7 +62,7 @@
 
         &:last-child {
             .footer__menu-title {
-                @media(max-width: $md - 0.01px) {
+                @media(max-width: $md - 0.02px) {
                     display: none;
                 }
             }
@@ -83,7 +83,7 @@
         position: relative;
         text-transform: uppercase;
         z-index: 1;
-        @media(max-width: $md - 0.01px) {
+        @media(max-width: $md - 0.02px) {
             padding-top: 15px;
             padding-bottom: 15px;
         }
@@ -126,7 +126,7 @@
     &__menu-list {
         @include list-reset;
         display: none;
-        @media(max-width: $md - 0.01px) {
+        @media(max-width: $md - 0.02px) {
             padding-bottom: 25px;
         }
         @media(min-width: $md) {
@@ -189,7 +189,7 @@
     /*@media(min-width: $fhd) {
         gap: 40px;
     }*/
-    @media(max-width: $md - 0.01px) {
+    @media(max-width: $md - 0.02px) {
         padding-top: 15px;
     }
 }

@@ -192,7 +192,7 @@ h2 {
     }
 
     &.long-word {
-        @media(max-width: $sm - 0.01px) {
+        @media(max-width: $sm - 0.02px) {
             font-size: 22px;
         }
         @media(min-width: $md) {

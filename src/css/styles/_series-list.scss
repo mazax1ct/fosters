@@ -22,7 +22,7 @@
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    @media(max-width: $sm - 0.01px) {
+    @media(max-width: $sm - 0.02px) {
         max-width: 385px;
         margin-left: auto;
         margin-right: auto;
@@ -55,7 +55,7 @@
         gap: 8px;
         line-height: 1;
         margin-bottom: 40px;
-        @media(min-width: $md) and (max-width: $xlg - 0.01px) {
+        @media(min-width: $md) and (max-width: $xlg - 0.02px) {
             font-size: 24px;
         }
         @media(min-width: $hd) {
@@ -68,7 +68,7 @@
             height: 14px;
             margin-top: 4px;
             width: 20px;
-            @media(max-width: $hd - 0.01px) {
+            @media(max-width: $hd - 0.02px) {
                 display: none;
             }
             @media(min-width: $xlg) {

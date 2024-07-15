@@ -25,7 +25,7 @@
         @media(min-width: $sm) {
             grid-row: span 3;
         }
-        @media(max-width: $sm - 0.01px) {
+        @media(max-width: $sm - 0.02px) {
             margin-bottom: 0.55em;
         }
 
@@ -69,7 +69,7 @@
     }
 
     &__item {
-        @media(max-width: $sm - 0.01px) {
+        @media(max-width: $sm - 0.02px) {
             margin-bottom: 48px;
         }
         @media(min-width: $sm) {
@@ -110,7 +110,7 @@
 
     &__block {
         &:not(:last-child) {
-            @media(max-width: $md - 0.01px) {
+            @media(max-width: $md - 0.02px) {
                 margin-bottom: 40px;
             }
         }

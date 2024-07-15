@@ -11,7 +11,7 @@
         }
 
         &:nth-child(2) {
-            @media(max-width: $md - 0.01px) {
+            @media(max-width: $md - 0.02px) {
                 display: none !important;
             }
         }

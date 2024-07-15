@@ -66,7 +66,7 @@
     &__button {
         max-width: 280px;
         width: 100%;
-        @media(max-width: $sm - 0.01px) {
+        @media(max-width: $sm - 0.02px) {
             display: none;
         }
         /*@media(min-width: $fhd) {

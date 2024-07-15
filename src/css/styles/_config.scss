@@ -13,7 +13,7 @@
         margin-bottom: var(--container_padding);
         overflow-x: auto;
         scroll-snap-type: x mandatory;
-        @media(max-width: $md - 0.01px) {
+        @media(max-width: $md - 0.02px) {
             margin-left: calc(0.01px - var(--container_padding));
             margin-right: calc(0.01px - var(--container_padding));
             padding-left: var(--container_padding);
@@ -31,10 +31,10 @@
         scroll-snap-align: center;
         text-align: center;
         z-index: 1;
-        @media(max-width: $md - 0.01px) {
+        @media(max-width: $md - 0.02px) {
             min-width: 280px;
         }
-        @media(min-width: $md) and (max-width: $hd - 0.01px) {
+        @media(min-width: $md) and (max-width: $hd - 0.02px) {
             font-size: 10px;
         }
         @media(min-width: $hd) {
@@ -118,7 +118,7 @@
     }
 
     &__image-block {
-        @media(max-width: $md - 0.01px) {
+        @media(max-width: $md - 0.02px) {
             display: none;
         }
         @media(min-width: $md) {
@@ -188,7 +188,7 @@
     &__fps-block {
         display: flex;
         gap: var(--container_padding);
-        @media(max-width: $sm - 0.01px) {
+        @media(max-width: $sm - 0.02px) {
             flex-direction: column;
         }
 
@@ -213,7 +213,7 @@
         gap: 20px;
         flex-wrap: wrap;
         padding-top: 20px;
-        @media(max-width: $md - 0.01px) {
+        @media(max-width: $md - 0.02px) {
             justify-content: center;
         }
         @media(min-width: $md) {
@@ -226,7 +226,7 @@
 
     &__save-note {
         color: var(--secondary_color);
-        @media(max-width: $md - 0.01px) {
+        @media(max-width: $md - 0.02px) {
             text-align: center;
         }
 
@@ -262,7 +262,7 @@
     }
 
     &__prices {
-        @media(min-width: $sm) and (max-width: $md - 0.01px) {
+        @media(min-width: $sm) and (max-width: $md - 0.02px) {
             display: flex;
             flex-wrap: wrap;
             gap: calc(var(--container_padding) / 2) var(--container_padding);
@@ -298,7 +298,7 @@
 
     &__price-block {
         font-family: var(--secondary_font_family);
-        @media(max-width: $md - 0.01px) {
+        @media(max-width: $md - 0.02px) {
             align-items: center;
             display: flex;
             gap: var(--container_padding);
@@ -320,7 +320,7 @@
         font-weight: 700;
         line-height: 1.2;
         white-space: nowrap;
-        @media(min-width: $md) and (max-width: $lg - 0.01px) {
+        @media(min-width: $md) and (max-width: $lg - 0.02px) {
             font-size: 20px;
         }
         @media(min-width: $fhd) {
@@ -338,7 +338,7 @@
         @media(min-width: $fhd) {
             width: calc(100% - 640px - var(--container_padding) * 2);
         }
-        @media(max-width: $md - 0.01px) {
+        @media(max-width: $md - 0.02px) {
             display: none;
         }
 
@@ -363,7 +363,7 @@
     }
 
     &__buttons {
-        @media(max-width: $md - 0.01px) {
+        @media(max-width: $md - 0.02px) {
             margin-top: calc(var(--container_padding) / 2);
         }
         @media(min-width: $sm) {
@@ -386,27 +386,27 @@
 
     &__buy-button {
         text-align: center;
-        @media(max-width: $sm - 0.01px) {
+        @media(max-width: $sm - 0.02px) {
             width: 100%;
         }
-        @media(min-width: $sm) and (max-width: $md - 0.01px) {
+        @media(min-width: $sm) and (max-width: $md - 0.02px) {
             width: calc(100% / 2 - 10px);
         }
         @media(min-width: $md) {
             max-width: 385px;
         }
-        @media(min-width: $md) and (max-width: $lg - 0.01px) {
+        @media(min-width: $md) and (max-width: $lg - 0.02px) {
             font-size: 12px;
         }
 
         span {
-            @media(min-width: $md) and (max-width: $lg - 0.01px) {
+            @media(min-width: $md) and (max-width: $lg - 0.02px) {
                 white-space: normal;
             }
         }
 
         svg {
-            @media(min-width: $md) and (max-width: $lg - 0.01px) {
+            @media(min-width: $md) and (max-width: $lg - 0.02px) {
                 display: none;
             }
         }
@@ -429,14 +429,14 @@
             color: var(--primary_color);
             border-color: var(--primary_color);
         }
-        @media(max-width: $sm - 0.01px) {
+        @media(max-width: $sm - 0.02px) {
             margin-top: calc(var(--container_padding) / 2);
             width: 100%;
         }
-        @media(min-width: $sm) and (max-width: $md - 0.01px) {
+        @media(min-width: $sm) and (max-width: $md - 0.02px) {
             width: calc(100% / 2 - 10px);
         }
-        @media(min-width: $md) and (max-width: $lg - 0.01px) {
+        @media(min-width: $md) and (max-width: $lg - 0.02px) {
             font-size: 12px;
         }
 
@@ -498,7 +498,7 @@
 
     &__image {
         width: 200px;
-        @media(max-width: $hd - 0.01px) {
+        @media(max-width: $hd - 0.02px) {
             display: none;
         }
     }

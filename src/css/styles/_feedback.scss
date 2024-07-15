@@ -40,7 +40,7 @@
             font-size: 24px;
         }*/
         br {
-            @media(max-width: $md - 0.01px) {
+            @media(max-width: $md - 0.02px) {
                 display: none;
             }
         }
@@ -64,7 +64,7 @@
                 font-size: 14px;
             }*/
             br {
-                @media(max-width: $sm - 0.01px) {
+                @media(max-width: $sm - 0.02px) {
                     display: none;
                 }
             }

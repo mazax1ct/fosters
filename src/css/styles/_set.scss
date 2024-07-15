@@ -28,7 +28,7 @@
     &__item-title {
         color: var(--secondary_color_dark);
         margin-bottom: 0;
-        @media(max-width: $sm - 0.01px) {
+        @media(max-width: $sm - 0.02px) {
             font-size: 12px;
         }
         @media(min-width: $lg) {
