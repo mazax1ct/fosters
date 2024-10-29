@@ -11,6 +11,11 @@ html {
     padding: 0;
 }
 
+html {
+    scrollbar-gutter: stable;
+    scrollbar-width: thin;
+}
+
 .page {
     background-color: var(--body_bg);
     color: var(--text_color);

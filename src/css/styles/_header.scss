@@ -127,13 +127,13 @@
         @media(min-width: $hd) {
             display: flex;
         }
-        @include hover {
+        /*@include hover {
             .sub-menu {
                 @media(min-width: $hd) {
                     display: block;
                 }
             }
-        }
+        }*/
     }
 
     &__link {
@@ -188,7 +188,7 @@
         display: none;
     }
     @media(min-width: $hd) {
-        box-shadow: 0 3px 3px 0 rgba(0,0,0, 0.1);
+        /*box-shadow: 0 3px 3px 0 rgba(0,0,0, 0.1);
         display: none;
         font-size: 16px;
         left: 0;
@@ -196,7 +196,22 @@
         position: absolute;
         top: 100%;
         width: 100%;
+        z-index: 1;*/
+        font-size: 16px;
+        position: absolute;
         z-index: 1;
+        top: 100%;
+        left: 0;
+        display: none;
+        overflow-y: auto;
+        width: 100%;
+        height: calc(100vh - 80px);
+        max-height: calc(100vh - 80px);
+        padding: var(--container_padding);
+        -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+        box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+        scrollbar-gutter: stable;
+        scrollbar-width: thin;
     }
     @media(min-width: $hd) and (min-height: 900px) {
         padding: calc(var(--container_padding) * 2) var(--container_padding);
